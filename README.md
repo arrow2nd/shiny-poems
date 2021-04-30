@@ -1,1 +1,5 @@
-# sc-clothes-poem
+# shiny-poems
+
+シャニマスの衣装ポエムが検索できるやつ
+
+まだハリボテです。
