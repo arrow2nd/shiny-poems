@@ -1,4 +1,6 @@
-export const clothsData = [
+import { Poem } from '../types/poem'
+
+export const poemData: Poem[] = [
   {
     ownName: '櫻木真乃',
     clothsName: 'シャイニーサマー',

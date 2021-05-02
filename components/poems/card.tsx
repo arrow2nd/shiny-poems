@@ -5,7 +5,9 @@ type CardProps = {
 }
 
 const Card = (props: CardProps) => {
-  const poemText = props.poem.split(/(?<=。)/).map((e) => <p key={e}>{e}</p>)
+  const poemText = props.poem
+    .split(/(?<=[。！])/)
+    .map((e) => <p key={e}>{e}</p>)
 
   return (
     <div

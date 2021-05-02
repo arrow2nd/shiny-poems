@@ -1,35 +1,34 @@
 import { useRef, useState } from 'react'
-import { clothsData } from '../../data/cloths'
+import { poemData } from '../../data/poem-data'
 import Select from './select'
 
-const Search = () => {
+type SearchProps = {
+  onSearch: (type: 'ownName' | 'clothsName', label: string) => void
+}
+
+const Search = (props: SearchProps) => {
   const [idolNames] = useState(
-    Array.from(new Set(clothsData.map((e) => e.ownName)))
+    Array.from(new Set(poemData.map((e) => e.ownName)))
   )
   const [clothsNames] = useState(
-    Array.from(new Set(clothsData.map((e) => e.clothsName))).sort()
+    Array.from(new Set(poemData.map((e) => e.clothsName))).sort()
   )
 
-  // TODO: 鬼汚いのでなんとか纏める
-  const idolRef = useRef(null)
-  const clothsRef = useRef(null)
+  const idolSelect = useRef(null)
+  const clothsSelect = useRef(null)
 
-  const handleChangeIdolName = (index: number) => {
-    if (clothsRef.current.state.value) {
-      clothsRef.current.select.clearValue()
-      return
+  const handleChangeIdolName = (label: string) => {
+    if (clothsSelect.current.state.value) {
+      clothsSelect.current.select.clearValue()
     }
-
-    console.log(`[ select ] ${idolNames[index]}`)
+    props.onSearch('ownName', label)
   }
 
-  const handleChangeClothsName = (index: number) => {
-    if (idolRef.current.state.value) {
-      idolRef.current.select.clearValue()
-      return
+  const handleChangeClothsName = (label: string) => {
+    if (idolSelect.current.state.value) {
+      idolSelect.current.select.clearValue()
     }
-
-    console.log(`[ select ] ${clothsNames[index]}`)
+    props.onSearch('clothsName', label)
   }
 
   return (
@@ -43,13 +42,13 @@ const Search = () => {
           placeholder="アイドル名から"
           options={idolNames}
           onChange={handleChangeIdolName}
-          ref={idolRef}
+          ref={idolSelect}
         />
         <Select
           placeholder="衣装名から"
           options={clothsNames}
           onChange={handleChangeClothsName}
-          ref={clothsRef}
+          ref={clothsSelect}
         />
       </div>
     </div>

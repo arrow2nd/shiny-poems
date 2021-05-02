@@ -4,7 +4,7 @@ import ReactSelect from 'react-select'
 type SelectProps = {
   placeholder: string
   options: string[]
-  onChange: (index: number) => void
+  onChange: (label: string) => void
 }
 
 const Select = forwardRef(
@@ -16,14 +16,13 @@ const Select = forwardRef(
 
     const handleChange = (value: { value: number; label: string }) => {
       if (value) {
-        console.log(value)
-        props.onChange(value.value)
+        props.onChange(value.label)
       }
     }
 
     return (
       <ReactSelect
-        className="w-48 h-8 m-1 rounded-md border border-gray-200"
+        className="w-64 h-8 mx-1 my-2 rounded-md border border-gray-200"
         instanceId={props.placeholder}
         placeholder={props.placeholder}
         options={options}
