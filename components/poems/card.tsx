@@ -5,19 +5,21 @@ type CardProps = {
 }
 
 const Card = (props: CardProps) => {
+  // "。" と "！" で改行
+  // 1つ以上重なっている "！" は無視する
   const poemText = props.poem
-    .split(/(?<=[。！])/)
+    .split(/(?<=。|！(?!！+))/)
     .map((e) => <p key={e}>{e}</p>)
 
   return (
     <div
-      className="m-2 w-72 rounded-md shadow-md bg-gray-50 text-center"
+      className="flex items-center justify-center m-2 w-96 h-48 rounded-md shadow-md bg-gray-50"
       key={props.poem}
     >
-      <div className="p-4">
-        <div className="px-5 pt-2 pb-5 font-bold text-xl">{poemText}</div>
+      <div className="text-center">
+        <div className="mb-3 font-bold text-xl">{poemText}</div>
         <div className="text-xs">
-          <p className="mb-1">{props.clothesName}</p>
+          <p className="mb-1">『 {props.clothesName} 』</p>
           <p>{props.ownerName}</p>
         </div>
       </div>
