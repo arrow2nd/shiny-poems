@@ -6,6 +6,16 @@ type PoemsProps = {
 }
 
 const Poems = (props: PoemsProps) => {
+  // ようこそメッセージ
+  const wellcomeCard = (
+    <Card
+      clothesName="ようこそ！"
+      ownerName="📔"
+      poem="↑から検索してください..."
+      key="nothing"
+    />
+  )
+
   const cards = props.items.map((e) => (
     <Card
       clothesName={e.clothesName}
@@ -15,7 +25,11 @@ const Poems = (props: PoemsProps) => {
     />
   ))
 
-  return <div className="flex flex-wrap justify-center mt-2">{cards}</div>
+  return (
+    <div className="flex flex-wrap justify-center mt-2">
+      {cards.length ? cards : wellcomeCard}
+    </div>
+  )
 }
 
 export default Poems
