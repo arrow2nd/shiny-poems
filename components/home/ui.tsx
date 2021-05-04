@@ -6,20 +6,25 @@ import Search from '../search/search'
 import { usePoemData } from './usePoemData'
 
 const UI = () => {
-  const [results, setResults] = useState([] as Poem[])
+  const [searchResults, setSearchResults] = useState([] as Poem[])
 
+  // 検索条件が変更された
   const handleChangeSelect = (
-    type: 'ownName' | 'clothsName',
+    type: 'ownName' | 'clothesName',
     label: string
   ) => {
-    console.log(`[ search ] ${type} / ${label}`)
-    setResults(usePoemData(type, label))
+    const newSearchResults = usePoemData(type, label)
+
+    // 異なっていれば更新する
+    if (searchResults !== newSearchResults) {
+      setSearchResults(newSearchResults)
+    }
   }
 
   return (
     <>
       <Search onSearch={handleChangeSelect} />
-      <Poems items={results} />
+      <Poems items={searchResults} />
     </>
   )
 }

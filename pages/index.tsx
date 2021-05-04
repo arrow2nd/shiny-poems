@@ -1,10 +1,5 @@
-import Layout from '../components/layout/layout'
-import UI from '../components/UI/UI'
+import Home from '../components/home/home'
 
-const ClothesPoem = () => (
-  <Layout>
-    <UI />
-  </Layout>
-)
+const ClothesPoem = () => <Home />
 
 export default ClothesPoem

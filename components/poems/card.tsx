@@ -9,7 +9,7 @@ const Card = (props: CardProps) => {
   // 1つ以上重なっている "！" は無視する
   const poemText = props.poem
     .split(/(?<=。|！(?!！+))/)
-    .map((e) => <p key={e}>{e}</p>)
+    .map((e) => <p key={e}>{e.trim()}</p>)
 
   return (
     <div
@@ -18,7 +18,7 @@ const Card = (props: CardProps) => {
     >
       <div className="text-center">
         <div className="mb-3 font-bold text-xl">{poemText}</div>
-        <div className="text-xs">
+        <div className="text-sm">
           <p className="mb-1">『 {props.clothesName} 』</p>
           <p>{props.ownerName}</p>
         </div>

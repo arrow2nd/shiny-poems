@@ -1,11 +1,8 @@
 import Head from 'next/head'
-import { ReactNode } from 'react'
 
-type LayoutProps = {
-  children: ReactNode
-}
+import UI from './ui'
 
-const Layout = (props: LayoutProps) => (
+const Home = () => (
   <div>
     <Head>
       <title>ShinyPoems | シャニマス衣装ポエム検索</title>
@@ -22,7 +19,9 @@ const Layout = (props: LayoutProps) => (
       </div>
     </header>
 
-    <main className="mx-4">{props.children}</main>
+    <main className="mx-4">
+      <UI />
+    </main>
 
     <footer className="flex items-center justify-center w-full h-24 mt-10 bg-shiny">
       <div className="text-white text-center">
@@ -35,4 +34,4 @@ const Layout = (props: LayoutProps) => (
   </div>
 )
 
-export default Layout
+export default Home

@@ -14,7 +14,7 @@ const Select = forwardRef(
       [props.options]
     )
 
-    const handleChange = (value: { value: number; label: string }) => {
+    const handleChangeSelect = (value: { value: number; label: string }) => {
       if (value) {
         props.onChange(value.label)
       }
@@ -26,7 +26,7 @@ const Select = forwardRef(
         instanceId={props.placeholder}
         placeholder={props.placeholder}
         options={options}
-        onChange={handleChange}
+        onChange={handleChangeSelect}
         ref={ref}
       />
     )

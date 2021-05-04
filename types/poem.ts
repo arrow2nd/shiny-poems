@@ -1,5 +1,5 @@
 export type Poem = {
   ownName: string
-  clothsName: string
+  clothesName: string
   text: string
 }

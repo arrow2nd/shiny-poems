@@ -8,7 +8,7 @@ type PoemsProps = {
 const Poems = (props: PoemsProps) => {
   const cards = props.items.map((e) => (
     <Card
-      clothesName={e.clothsName}
+      clothesName={e.clothesName}
       ownerName={e.ownName}
       poem={e.text}
       key={e.text}

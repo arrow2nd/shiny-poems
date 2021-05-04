@@ -2,7 +2,7 @@ import { poemData } from '../../data/poem-data'
 import { Poem } from '../../types/poem'
 
 export const usePoemData = (
-  type: 'ownName' | 'clothsName',
+  type: 'ownName' | 'clothesName',
   keyword: string
 ): Poem[] => {
   console.log(`[ usePoemData ] ${type} / ${keyword}`)
