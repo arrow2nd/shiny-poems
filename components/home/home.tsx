@@ -21,7 +21,7 @@ const Home = () => (
     <main className="flex-grow mx-4">
       <UI />
     </main>
-    <footer className="flex flex-col items-center justify-center w-full h-48 mt-10 bg-shiny text-white text-center">
+    <footer className="flex flex-col items-center justify-center w-full h-48 mt-10 p-3 bg-shiny text-white text-center">
       <div>
         <LinkButton href="https://twitter.com/arrow_2nd" icon="ol-twitter-f" />
         <LinkButton
