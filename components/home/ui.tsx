@@ -14,11 +14,7 @@ const UI = () => {
     label: string
   ) => {
     const newSearchResults = usePoemData(type, label)
-
-    // 異なっていれば更新する
-    if (searchResults !== newSearchResults) {
-      setSearchResults(newSearchResults)
-    }
+    setSearchResults(newSearchResults)
   }
 
   return (

@@ -5,8 +5,5 @@ export const usePoemData = (
   type: 'ownName' | 'clothesName',
   keyword: string
 ): Poem[] => {
-  console.log(`[ usePoemData ] ${type} / ${keyword}`)
-
-  const results = poemData.filter((e) => e[type] === keyword)
-  return results
+  return poemData.filter((e) => e[type] === keyword)
 }
