@@ -9,19 +9,21 @@ const Poems = (props: PoemsProps) => {
   // ようこそメッセージ
   const wellcomeCard = (
     <Card
+      key="nothing"
       clothesName="ようこそ！"
       ownerName="📔"
-      poem="↑から検索してください..."
-      key="nothing"
+      poem="↑から検索してください"
+      shouldShowButton={false}
     />
   )
 
   const cards = props.items.map((e) => (
     <Card
+      key={e.text}
       clothesName={e.clothesName}
       ownerName={e.ownName}
       poem={e.text}
-      key={e.text}
+      shouldShowButton={true}
     />
   ))
 
