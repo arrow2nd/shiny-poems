@@ -117,8 +117,6 @@ async function main() {
     (a, b) => idolList.indexOf(a.idolName) - idolList.indexOf(b.idolName)
   )
 
-  console.log(sortedPoemData)
-
   // 保存
   const exp = `import { Poem } from '../types/poem'\n\nexport const poemData: Poem[] = ${JSON.stringify(
     sortedPoemData,
