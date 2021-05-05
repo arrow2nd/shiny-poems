@@ -10,7 +10,7 @@ const UI = () => {
 
   // 検索条件が変更された
   const handleChangeSelect = (
-    type: 'ownName' | 'clothesName',
+    type: 'idolName' | 'clothesTitle',
     label: string
   ) => {
     const newSearchResults = usePoemData(type, label)

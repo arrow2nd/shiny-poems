@@ -1,11 +1,11 @@
 import { Poem } from '../../types/poem'
 import Card from './card'
 
-type PoemsProps = {
+type Props = {
   items: Poem[]
 }
 
-const Poems = (props: PoemsProps) => {
+const Poems = (props: Props) => {
   // ようこそメッセージ
   const wellcomeCard = (
     <Card
@@ -21,7 +21,7 @@ const Poems = (props: PoemsProps) => {
     <Card
       key={e.text}
       clothesName={e.clothesName}
-      ownerName={e.ownName}
+      ownerName={e.idolName}
       poem={e.text}
       shouldShowButton={true}
     />

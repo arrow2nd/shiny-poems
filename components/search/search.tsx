@@ -2,20 +2,20 @@ import { useRef, useState } from 'react'
 import { poemData } from '../../data/poem-data'
 import Select from './select'
 
-type SearchProps = {
-  onSearch: (type: 'ownName' | 'clothesName', label: string) => void
+type Props = {
+  onSearch: (type: 'idolName' | 'clothesTitle', label: string) => void
 }
 
-const Search = (props: SearchProps) => {
+const Search = (props: Props) => {
   const idolSelect = useRef(null)
   const clothesSelect = useRef(null)
 
   // 選択要素に使用するアイドル名・衣装名
   const [idolNames] = useState(
-    Array.from(new Set(poemData.map((e) => e.ownName)))
+    Array.from(new Set(poemData.map((e) => e.idolName)))
   )
-  const [clothesNames] = useState(
-    Array.from(new Set(poemData.map((e) => e.clothesName))).sort()
+  const [clothesTitles] = useState(
+    Array.from(new Set(poemData.map((e) => e.clothesTitle))).sort()
   )
 
   const handleChangeIdolName = (label: string) => {
@@ -24,16 +24,16 @@ const Search = (props: SearchProps) => {
       clothesSelect.current.select.clearValue()
     }
 
-    props.onSearch('ownName', label)
+    props.onSearch('idolName', label)
   }
 
-  const handleChangeClothesName = (label: string) => {
+  const handleChangeclothesTitle = (label: string) => {
     // アイドル名の選択をクリア
     if (idolSelect.current.state.value) {
       idolSelect.current.select.clearValue()
     }
 
-    props.onSearch('clothesName', label)
+    props.onSearch('clothesTitle', label)
   }
 
   return (
@@ -51,8 +51,8 @@ const Search = (props: SearchProps) => {
         />
         <Select
           placeholder="衣装名から"
-          options={clothesNames}
-          onChange={handleChangeClothesName}
+          options={clothesTitles}
+          onChange={handleChangeclothesTitle}
           ref={clothesSelect}
         />
       </div>
