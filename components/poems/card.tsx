@@ -1,13 +1,13 @@
 import CopyButton from './copy-button'
 
-type CardProps = {
+type Props = {
   clothesName: string
   ownerName: string
   poem: string
   shouldShowButton: boolean
 }
 
-const Card = (props: CardProps) => {
+const Card = (props: Props) => {
   // 「。！」で改行 （1つ以上重なっている場合は無視）
   const poemText = props.poem
     .split(/(?<=。|！(?!！+))/)
