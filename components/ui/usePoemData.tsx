@@ -2,7 +2,8 @@ import { poemData } from '../../data/poem-data'
 import { Poem } from '../../types/poem'
 
 export const usePoemData = (type: string, keyword: string): Poem[] => {
-  const results = poemData.filter((e) => e[type] === keyword)
+  // キーワードに一致するものを探す
+  const results = poemData.filter((e) => RegExp(keyword).test(e[type]))
 
   // アイドル名での検索なら衣装名昇順でソート
   if (type === 'idolName') {

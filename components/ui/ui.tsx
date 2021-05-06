@@ -2,21 +2,21 @@ import { useState } from 'react'
 import { Poem } from '../../types/poem'
 
 import Poems from '../poems/poems'
-import Search from '../search/search'
+import Search from './search'
 import { usePoemData } from './usePoemData'
 
 const UI = () => {
   const [searchResults, setSearchResults] = useState([] as Poem[])
 
-  // 検索条件が変更された
-  const handleChangeSelect = (type: string, label: string) => {
-    const newSearchResults = usePoemData(type, label)
+  // 条件とキーワードから検索する
+  const handleSearch = (type: string, keyword: string) => {
+    const newSearchResults = usePoemData(type, keyword)
     setSearchResults(newSearchResults)
   }
 
   return (
     <>
-      <Search onSearch={handleChangeSelect} />
+      <Search onSearch={handleSearch} />
       <Poems items={searchResults} />
     </>
   )

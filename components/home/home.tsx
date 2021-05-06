@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import UI from './ui'
+import UI from '../ui/ui'
 import LinkButton from './link-button'
 
 type Props = {

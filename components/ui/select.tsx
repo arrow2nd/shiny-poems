@@ -21,7 +21,7 @@ const Select = forwardRef((props: Props, ref: React.MutableRefObject<any>) => {
 
   return (
     <ReactSelect
-      className="w-64 h-8 mx-1 my-2 rounded-md border border-gray-200"
+      className="w-64 h-8 mx-1 my-2 rounded-md"
       instanceId={props.placeholder}
       placeholder={props.placeholder}
       options={options}
