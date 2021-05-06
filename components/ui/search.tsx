@@ -68,8 +68,8 @@ const Search = (props: Props) => {
   }
 
   return (
-    <div className="px-4 py-8">
-      <div className="flex flex-row items-center justify-center">
+    <div className="px-4 py-8 text-center">
+      <div className="flex flex-row items-center justify-center text-center">
         <FiSearch className="text-2xl mr-2" />
         <p className="text-2xl">SEARCH</p>
       </div>
