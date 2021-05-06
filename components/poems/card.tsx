@@ -1,6 +1,5 @@
-import { RiTwitterLine } from 'react-icons/ri'
-
 import CopyButton from './copy-button'
+import TweetButton from './tweet-button'
 
 type Props = {
   clothesName: string
@@ -15,22 +14,12 @@ const Card = (props: Props) => {
     .split(/(?<=。|！(?!！+))/)
     .map((e) => <p key={e}>{e.trim()}</p>)
 
-  const tweetText = encodeURIComponent(
-    `${props.poem}\n（${props.clothesName} / ${props.ownerName}）`
-  )
-
-  const copyText = `${props.poem} （${props.clothesName} / ${props.ownerName}）`
+  const copyText = `${props.poem} #${props.clothesName} #${props.ownerName}`
+  const hashtags = `シャニマス,${props.clothesName},${props.ownerName}`
 
   const buttons = (
     <div className="flex flex-row justify-center mt-3">
-      <a
-        className="mr-2"
-        href={'https://twitter.com/intent/tweet?text=' + tweetText}
-        target="_blank"
-        rel="noopener"
-      >
-        <RiTwitterLine />
-      </a>
+      <TweetButton text={props.poem} hashtags={hashtags} />
       <CopyButton text={copyText} />
     </div>
   )
