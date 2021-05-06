@@ -6,12 +6,11 @@ type Props = {
 }
 
 const Poems = (props: Props) => {
-  // ようこそメッセージ
   const wellcomeCard = (
     <Card
       key="nothing"
-      clothesName="ようこそ！"
-      ownerName="📔"
+      clothesName="なんもないわ"
+      ownerName=""
       poem="↑から検索してください"
       shouldShowButton={false}
     />
