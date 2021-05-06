@@ -1,3 +1,5 @@
+import { RiTwitterLine } from 'react-icons/ri'
+
 import CopyButton from './copy-button'
 
 type Props = {
@@ -20,13 +22,15 @@ const Card = (props: Props) => {
   const copyText = `${props.poem} （${props.clothesName} / ${props.ownerName}）`
 
   const buttons = (
-    <div className="mt-2">
+    <div className="flex flex-row justify-center mt-3">
       <a
-        className="ol-twitter-o mr-2"
+        className="mr-2"
         href={'https://twitter.com/intent/tweet?text=' + tweetText}
         target="_blank"
         rel="noopener"
-      />
+      >
+        <RiTwitterLine />
+      </a>
       <CopyButton text={copyText} />
     </div>
   )

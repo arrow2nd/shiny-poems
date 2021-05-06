@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
+import { FiCopy } from 'react-icons/fi'
+import { AiOutlineCheckCircle } from 'react-icons/ai'
 
 type Props = {
   text: string
@@ -18,12 +20,9 @@ const CopyButton = (props: Props) => {
 
   return (
     <CopyToClipboard text={props.text}>
-      <button
-        className={`focus:outline-none ${
-          isCopied ? 'ol-confirm-f' : 'ol-copy-o'
-        }`}
-        onClick={handleClickCopy}
-      />
+      <button className="focus:outline-none" onClick={handleClickCopy}>
+        {isCopied ? <AiOutlineCheckCircle /> : <FiCopy />}
+      </button>
     </CopyToClipboard>
   )
 }
