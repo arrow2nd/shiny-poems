@@ -30,8 +30,10 @@ const Home = (props: Props) => {
       </Head>
       <header className="flex items-center justify-center w-full h-28 mb-2 bg-shiny">
         <div className="text-white text-center">
-          <p className="text-4xl font-bold">{props.title}</p>
-          <p className="text-sm mt-1">{props.subtitle}</p>
+          <a href="/">
+            <p className="text-4xl font-bold">{props.title}</p>
+            <p className="text-sm mt-1">{props.subtitle}</p>
+          </a>
         </div>
       </header>
       <main className="flex-grow mx-4">
