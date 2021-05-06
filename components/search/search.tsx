@@ -3,7 +3,7 @@ import { poemData } from '../../data/poem-data'
 import Select from './select'
 
 type Props = {
-  onSearch: (type: 'idolName' | 'clothesTitle', label: string) => void
+  onSearch: (type: string, label: string) => void
 }
 
 const Search = (props: Props) => {

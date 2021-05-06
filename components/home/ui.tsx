@@ -9,10 +9,7 @@ const UI = () => {
   const [searchResults, setSearchResults] = useState([] as Poem[])
 
   // 検索条件が変更された
-  const handleChangeSelect = (
-    type: 'idolName' | 'clothesTitle',
-    label: string
-  ) => {
+  const handleChangeSelect = (type: string, label: string) => {
     const newSearchResults = usePoemData(type, label)
     setSearchResults(newSearchResults)
   }
