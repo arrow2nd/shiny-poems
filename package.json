@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "update": "node ./tools/create-data.js"
   },
   "dependencies": {
     "next": "10.2.0",
