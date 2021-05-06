@@ -1,4 +1,5 @@
 import { forwardRef } from 'react'
+import { FiSearch } from 'react-icons/fi'
 
 type Props = {
   placeholder: string
@@ -27,7 +28,7 @@ const Input = forwardRef((props: Props, ref: React.MutableRefObject<any>) => {
           className="flex justify-center w-12 text-gray-500 hover:text-gray-400 focus:outline-none"
           onClick={props.onSubmit}
         >
-          <i className="ol-search-so"></i>
+          <FiSearch />
         </button>
       </div>
     </div>

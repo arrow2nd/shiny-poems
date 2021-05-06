@@ -1,5 +1,6 @@
-import Head from 'next/head'
+import { AiFillTwitterCircle, AiFillGithub } from 'react-icons/ai'
 
+import Head from 'next/head'
 import UI from '../ui/ui'
 import LinkButton from './link-button'
 
@@ -30,10 +31,6 @@ const Home = (props: Props) => {
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={props.desc} />
         <meta name="twitter:image" content={props.ogpImg} />
-        <link
-          rel="stylesheet"
-          href="http://olicons.yemaosheji.com/css/olicons.css"
-        />
       </Head>
       <header className="flex items-center justify-center w-full h-28 mb-2 bg-shiny">
         <div className="text-white text-center">
@@ -45,15 +42,13 @@ const Home = (props: Props) => {
         <UI />
       </main>
       <footer className="flex flex-col items-center justify-center w-full h-48 mt-10 p-3 bg-shiny text-white text-center">
-        <div>
-          <LinkButton
-            href="https://twitter.com/arrow_2nd"
-            icon="ol-twitter-f"
-          />
-          <LinkButton
-            href="https://github.com/arrow2nd/shiny-poems"
-            icon="ol-github-f"
-          />
+        <div className="flex flex-row">
+          <LinkButton href="https://twitter.com/arrow_2nd">
+            <AiFillTwitterCircle />
+          </LinkButton>
+          <LinkButton href="https://github.com/arrow2nd/shiny-poems">
+            <AiFillGithub />
+          </LinkButton>
         </div>
         <div className="mt-3">
           <p>

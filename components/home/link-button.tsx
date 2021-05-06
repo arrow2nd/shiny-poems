@@ -1,12 +1,12 @@
 type Props = {
   href: string
-  icon: string
+  children: React.ReactNode
 }
 
 const LinkButton = (props: Props) => (
   <span className="text-3xl m-2">
     <a href={props.href} target="_blank" rel="noopener">
-      <i className={props.icon} />
+      {props.children}
     </a>
   </span>
 )

@@ -1,5 +1,7 @@
 import { useRef, useState } from 'react'
+import { FiSearch } from 'react-icons/fi'
 import { poemData } from '../../data/poem-data'
+
 import Input from './input'
 import Select from './select'
 
@@ -66,11 +68,11 @@ const Search = (props: Props) => {
   }
 
   return (
-    <div className="px-4 py-8 text-center">
-      <p className="text-2xl">
-        <i className="ol-search-o mr-3" />
-        SEARCH
-      </p>
+    <div className="px-4 py-8">
+      <div className="flex flex-row items-center justify-center">
+        <FiSearch className="text-2xl mr-2" />
+        <p className="text-2xl">SEARCH</p>
+      </div>
       <div className="flex flex-col items-center mt-4">
         <Input
           placeholder="キーワードから"
