@@ -675,7 +675,7 @@ export const poemData: Poem[] = [
   },
   {
     idolName: '小宮果穂',
-    clothesTitle: 'パジャマ・デ・カブカブ',
+    clothesTitle: 'パジャマ・デシリーズ',
     clothesName: 'パジャマ・デ・カブカブ',
     text: 'スリープオーバー。肉球でふにふにします！'
   },
