@@ -9,7 +9,6 @@ type Props = {
   subtitle: string
   desc: string
   url: string
-  ogpImg: string
 }
 
 const Home = (props: Props) => {
@@ -21,16 +20,13 @@ const Home = (props: Props) => {
         <title>{title}</title>
         <meta />
         <meta name="description" content={props.desc} />
-        <meta name="image" content="" />
         <meta property="og:url" content={props.url} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={props.desc} />
-        <meta property="og:image" content={props.ogpImg} />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:creator" content="arrow_2nd" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={props.desc} />
-        <meta name="twitter:image" content={props.ogpImg} />
       </Head>
       <header className="flex items-center justify-center w-full h-28 mb-2 bg-shiny">
         <div className="text-white text-center">
