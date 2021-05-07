@@ -1,8 +1,6 @@
-import { AiFillTwitterCircle, AiFillGithub } from 'react-icons/ai'
-
 import Head from 'next/head'
 import UI from '../ui/ui'
-import LinkButton from './link-button'
+import Footer from './fotter'
 
 type Props = {
   title: string
@@ -30,6 +28,7 @@ const Home = (props: Props) => {
         <meta name="twitter:description" content={props.desc} />
         <meta name="twitter:image" content={ogpImgUrl} />
       </Head>
+
       <header className="flex items-center justify-center w-full h-28 mb-2 bg-shiny">
         <div className="text-white text-center">
           <a href="/">
@@ -38,25 +37,12 @@ const Home = (props: Props) => {
           </a>
         </div>
       </header>
+
       <main className="flex-grow mx-4">
         <UI />
       </main>
-      <footer className="flex flex-col items-center justify-center w-full h-48 mt-10 p-3 bg-shiny text-white text-center">
-        <div className="flex flex-row">
-          <LinkButton href="https://twitter.com/arrow_2nd">
-            <AiFillTwitterCircle />
-          </LinkButton>
-          <LinkButton href="https://github.com/arrow2nd/shiny-poems">
-            <AiFillGithub />
-          </LinkButton>
-        </div>
-        <div className="mt-3">
-          <p>
-            The copyright of the contents related to THE IDOLM@STER belongs to
-            BANDAI NAMCO Entertainment Inc.
-          </p>
-        </div>
-      </footer>
+
+      <Footer />
     </div>
   )
 }
