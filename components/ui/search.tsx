@@ -75,7 +75,7 @@ const Search = (props: Props) => {
       </div>
       <div className="flex flex-col items-center mt-4">
         <Input
-          placeholder="キーワードから"
+          placeholder="ポエムの一部から"
           onSubmit={handleSubmit}
           ref={keywordInput}
         />

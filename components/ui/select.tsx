@@ -25,6 +25,7 @@ const Select = forwardRef((props: Props, ref: React.MutableRefObject<any>) => {
       instanceId={props.placeholder}
       placeholder={props.placeholder}
       options={options}
+      inputProps={{ readOnly: true }}
       onChange={handleChangeSelect}
       ref={ref}
     />
