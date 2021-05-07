@@ -11,7 +11,7 @@ const Poems = (props: Props) => {
       key="nothing"
       clothesName="なんもないわ"
       ownerName=""
-      poem="↑から検索してください"
+      poem="ポエムがみつかりませんでした"
       shouldShowButton={false}
     />
   )
