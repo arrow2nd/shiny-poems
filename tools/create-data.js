@@ -63,7 +63,7 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX imas: <https://sparql.crssnky.xyz/imasrdf/URIs/imas-schema.ttl#>
 PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT distinct ?name ?clothesName ?clothesDesc
+SELECT distinct ?name ?owns ?clothesName ?clothesDesc
 WHERE {
   ?d rdf:type imas:Idol;
      imas:Brand ?brand;
@@ -94,6 +94,9 @@ async function main() {
   const data = await fetch()
 
   const poemData = data.map((e) => {
+    const idStr = e.owns.value.match(
+      /https:\/\/sparql\.crssnky\.xyz\/imasrdf\/RDFs\/detail\/(.*)/
+    )[1]
     const clothesName = e.clothesName.value
     let clothesTitle = e.clothesName.value
 
@@ -106,6 +109,7 @@ async function main() {
     })
 
     return {
+      id: idStr,
       idolName: e.name.value,
       clothesTitle: clothesTitle,
       clothesName: clothesName,
