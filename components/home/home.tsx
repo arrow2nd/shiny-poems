@@ -8,7 +8,7 @@ const Home = () => {
   const desc = 'シャイニーカラーズの衣装ポエムが検索できるサイトです'
 
   const url = 'https://shiny-poems.vercel.app/'
-  const ogpImgUrl = `${url}/shiny-poems.png`
+  const ogpImgUrl = `${url}/obp-home.png`
 
   return (
     <div className="flex flex-col min-h-screen">
