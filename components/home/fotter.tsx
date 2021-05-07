@@ -3,7 +3,7 @@ import LinkButton from './link-button'
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col items-center justify-center w-full h-56 md:h-48 mt-10 p-3 bg-shiny text-white text-center">
+    <footer className="flex flex-col items-center justify-center w-full h-56 mt-10 p-3 bg-shiny text-white text-center">
       <div className="flex flex-row">
         <LinkButton href="https://twitter.com/arrow_2nd">
           <AiFillTwitterCircle />
