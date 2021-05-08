@@ -10,7 +10,7 @@ export const generateOgpImageUrl = (query: ParsedUrlQuery): string => {
   if (!idStr) return 'https://shiny-poems.vercel.app/ogp-home.png'
 
   const poem = poemList.find((e) => e.id === idStr)
-  const text = poem.text.replace(/(?<=。|！(?!！+))(?<!$)/, '\n') // 末尾以外の「。！」で改行
+  const text = poem.text.replace(/(?<=。|！)(?![！　]+)(?<!$)/g, '\n') // 末尾以外の「。！」で改行
   const subtext = `${poem.clothesName} / ${poem.idolName}`
 
   const encode = (str: string) =>

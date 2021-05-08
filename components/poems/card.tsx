@@ -10,7 +10,7 @@ type Props = {
 const Card = ({ poem, shouldShowButton }: Props) => {
   // 「。！」で分割する
   const poemText = poem.text
-    .split(/(?<=。|！(?!！+))/)
+    .split(/(?<=。|！)(?![！　]+)/)
     .map((e) => <p key={e}>{e.trim()}</p>)
 
   const shareUrl = `https://shiny-poems.vercel.app?id=${poem.id}`
