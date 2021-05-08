@@ -1,6 +1,6 @@
 import { Poem } from '../types/poem'
 
-export const poemData: Poem[] = [
+export const poemList: Poem[] = [
   {
     id: 'ShinySummer_SakuragiMano',
     idolName: '櫻木真乃',

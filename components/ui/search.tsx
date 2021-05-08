@@ -1,7 +1,6 @@
 import { useRef, useState } from 'react'
 import { FiSearch } from 'react-icons/fi'
-import { poemData } from '../../data/poem-data'
-
+import { poemList } from '../../data/poem-list'
 import Input from './input'
 import Select from './select'
 
@@ -12,12 +11,12 @@ type Props = {
 const Search = (props: Props) => {
   // 選択要素に使用するアイドル名
   const [idolNames] = useState(
-    Array.from(new Set(poemData.map((e) => e.idolName)))
+    Array.from(new Set(poemList.map((e) => e.idolName)))
   )
 
   // 選択要素に使用する衣装名
   const [clothesTitles] = useState(
-    Array.from(new Set(poemData.map((e) => e.clothesTitle))).sort()
+    Array.from(new Set(poemList.map((e) => e.clothesTitle))).sort()
   )
 
   const keywordInput = useRef(null)

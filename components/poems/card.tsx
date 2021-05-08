@@ -1,41 +1,43 @@
+import { Poem } from '../../types/poem'
 import CopyButton from './copy-button'
 import TweetButton from './tweet-button'
 
 type Props = {
-  clothesName: string
-  ownerName: string
-  poem: string
+  poem: Poem
   shouldShowButton: boolean
 }
 
-const Card = (props: Props) => {
-  // 「。！」で改行 （1つ以上重なっている場合は無視）
-  const poemText = props.poem
+const Card = ({ poem, shouldShowButton }: Props) => {
+  // 「。！」で分割する
+  const poemText = poem.text
     .split(/(?<=。|！(?!！+))/)
     .map((e) => <p key={e}>{e.trim()}</p>)
 
-  const copyText = `${props.poem} #${props.clothesName} #${props.ownerName}`
-  const hashtags = `シャニマス,${props.clothesName},${props.ownerName}`
+  const shareUrl = `https://shiny-poems.vercel.app?id=${poem.id}`
+  const hashtags = `#シャニマス #${poem.clothesName} #${poem.idolName}`
+
+  const tweetText = `${poem.text}\n${hashtags}\n${shareUrl}`
+  const copyText = `${poem.text} ${hashtags} ${shareUrl}`
 
   const buttons = (
     <div className="flex flex-row justify-center mt-3">
-      <TweetButton text={props.poem} hashtags={hashtags} />
+      <TweetButton text={tweetText} />
       <CopyButton text={copyText} />
     </div>
   )
 
   return (
     <div
-      className="flex items-center justify-center m-2 w-96 h-56 rounded-md shadow-md bg-gray-50"
-      key={props.poem}
+      className="flex items-center justify-center m-2 p-1 w-96 h-56 rounded-md shadow-md bg-gray-50"
+      key={poem.id}
     >
       <div className="text-center">
         <div className="font-bold text-xl">{poemText}</div>
         <div className="mt-3 text-sm">
-          <p className="mb-1">『 {props.clothesName} 』</p>
-          <p>{props.ownerName}</p>
+          <p className="mb-1">『 {poem.clothesName} 』</p>
+          <p>{poem.idolName}</p>
         </div>
-        {props.shouldShowButton && buttons}
+        {shouldShowButton && buttons}
       </div>
     </div>
   )
