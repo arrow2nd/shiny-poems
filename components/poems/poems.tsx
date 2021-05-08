@@ -5,25 +5,23 @@ type Props = {
   items: Poem[]
 }
 
-const Poems = (props: Props) => {
+const Poems = ({ items }: Props) => {
   const wellcomeCard = (
     <Card
       key="nothing"
-      clothesName="なんもないわ"
-      ownerName=""
-      poem="ポエムがみつかりませんでした"
+      poem={{
+        id: '',
+        idolName: '',
+        clothesTitle: '',
+        clothesName: 'なんもないわ',
+        text: 'ポエムがみつかりませんでした'
+      }}
       shouldShowButton={false}
     />
   )
 
-  const cards = props.items.map((e) => (
-    <Card
-      key={e.text}
-      clothesName={e.clothesName}
-      ownerName={e.idolName}
-      poem={e.text}
-      shouldShowButton={true}
-    />
+  const cards = items.map((e) => (
+    <Card key={e.text} poem={e} shouldShowButton={true} />
   ))
 
   return (

@@ -122,13 +122,13 @@ async function main() {
   )
 
   // 保存
-  const exp = `import { Poem } from '../types/poem'\n\nexport const poemData: Poem[] = ${JSON.stringify(
+  const exp = `import { Poem } from '../types/poem'\n\nexport const poemList: Poem[] = ${JSON.stringify(
     sortedPoemData,
     null,
     '  '
   )}`
 
-  fs.writeFileSync('./data/poem-data.ts', exp)
+  fs.writeFileSync('./data/poem-list.ts', exp)
 
   console.log('[ success! ]')
 }

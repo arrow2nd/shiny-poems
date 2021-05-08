@@ -7,7 +7,7 @@ type Props = {
   text: string
 }
 
-const CopyButton = (props: Props) => {
+const CopyButton = ({ text }: Props) => {
   const [isCopied, setCopied] = useState(false)
 
   const handleClickCopy = () => {
@@ -21,7 +21,7 @@ const CopyButton = (props: Props) => {
   }
 
   return (
-    <CopyToClipboard text={props.text} onCopy={handleClickCopy}>
+    <CopyToClipboard text={text} onCopy={handleClickCopy}>
       <button className="focus:outline-none">
         {isCopied ? <AiOutlineCheckCircle /> : <FiCopy />}
       </button>

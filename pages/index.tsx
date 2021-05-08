@@ -1,5 +1,23 @@
+import { GetServerSidePropsContext, GetServerSidePropsResult } from 'next'
 import Home from '../components/home/home'
+import { generateOgpImageUrl } from '../scripts/generate-ogp'
 
-const ClothesPoem = () => <Home />
+type Props = {
+  ogpImageUrl: string
+}
+
+const ClothesPoem = (props: Props) => <Home {...props} />
+
+export const getServerSideProps = ({
+  query
+}: GetServerSidePropsContext): GetServerSidePropsResult<Props> => {
+  const url = generateOgpImageUrl(query)
+
+  return {
+    props: {
+      ogpImageUrl: url
+    }
+  }
+}
 
 export default ClothesPoem

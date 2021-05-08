@@ -1,9 +1,8 @@
 import { useState } from 'react'
+import { usePoemData } from './usePoemData'
 import { Poem } from '../../types/poem'
-
 import Poems from '../poems/poems'
 import Search from './search'
-import { usePoemData } from './usePoemData'
 
 const UI = () => {
   const [searchResults, setSearchResults] = useState([] as Poem[])

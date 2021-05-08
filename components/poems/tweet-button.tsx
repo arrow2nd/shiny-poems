@@ -2,16 +2,14 @@ import { RiTwitterLine } from 'react-icons/ri'
 
 type Props = {
   text: string
-  hashtags: string
 }
 
-const TweetButton = (props: Props) => {
-  const tweetText = encodeURIComponent(props.text + '\n')
-  const hashtags = encodeURIComponent(props.hashtags)
-  const url = `https://twitter.com/intent/tweet?text=${tweetText}&hashtags=${hashtags}`
+const TweetButton = ({ text }: Props) => {
+  const encodedText = encodeURIComponent(text + '\n')
+  const tweetUrl = `https://twitter.com/intent/tweet?text=${encodedText}`
 
   return (
-    <a className="mr-2" href={url} target="_blank" rel="noopener">
+    <a className="mr-2" href={tweetUrl} target="_blank" rel="noopener">
       <RiTwitterLine />
     </a>
   )
