@@ -11,6 +11,8 @@ const CopyButton = (props: Props) => {
   const [isCopied, setCopied] = useState(false)
 
   const handleClickCopy = () => {
+    if (isCopied) return
+
     setCopied(true)
 
     setTimeout(() => {
@@ -19,8 +21,8 @@ const CopyButton = (props: Props) => {
   }
 
   return (
-    <CopyToClipboard text={props.text}>
-      <button className="focus:outline-none" onClick={handleClickCopy}>
+    <CopyToClipboard text={props.text} onCopy={handleClickCopy}>
+      <button className="focus:outline-none">
         {isCopied ? <AiOutlineCheckCircle /> : <FiCopy />}
       </button>
     </CopyToClipboard>

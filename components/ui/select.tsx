@@ -25,10 +25,6 @@ const Select = forwardRef((props: Props, ref: React.MutableRefObject<any>) => {
       instanceId={props.placeholder}
       placeholder={props.placeholder}
       options={options}
-      formatOptionLabel={(option) => (
-        <div className="needsclick">{option.label}</div>
-      )}
-      // isSearchable={false}
       onChange={handleChangeSelect}
       ref={ref}
     />

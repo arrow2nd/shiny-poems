@@ -16,7 +16,6 @@ const Footer = () => {
         <div>
           {'Logo icon made by '}
           <a
-            className="font-semibold"
             title="Pixel perfect"
             href="https://www.flaticon.com/authors/pixel-perfect"
             target="_blank"
@@ -26,7 +25,6 @@ const Footer = () => {
           </a>
           {' from '}
           <a
-            className="font-semibold"
             title="Flaticon"
             href="https://www.flaticon.com/"
             target="_blank"
