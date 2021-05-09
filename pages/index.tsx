@@ -6,7 +6,7 @@ type Props = {
   ogpImageUrl: string
 }
 
-const ClothesPoem = (props: Props) => <Home {...props} />
+const ShinyPoems = (props: Props) => <Home {...props} />
 
 export const getServerSideProps = ({
   query
@@ -20,4 +20,4 @@ export const getServerSideProps = ({
   }
 }
 
-export default ClothesPoem
+export default ShinyPoems
