@@ -5,7 +5,7 @@ type Props = {
 }
 
 const TweetButton = ({ text }: Props) => {
-  const encodedText = encodeURIComponent(text + '\n')
+  const encodedText = encodeURIComponent(text)
   const tweetUrl = `https://twitter.com/intent/tweet?text=${encodedText}`
 
   return (
