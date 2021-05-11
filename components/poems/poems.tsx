@@ -6,7 +6,7 @@ type Props = {
 }
 
 const Poems = ({ items }: Props) => {
-  const wellcomeCard = (
+  const nothingCard = (
     <Card
       key="nothing"
       poem={{
@@ -26,7 +26,7 @@ const Poems = ({ items }: Props) => {
 
   return (
     <div className="flex flex-wrap justify-center mt-2">
-      {cards.length ? cards : wellcomeCard}
+      {cards.length ? cards : nothingCard}
     </div>
   )
 }
