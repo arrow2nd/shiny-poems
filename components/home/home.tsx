@@ -29,9 +29,7 @@ const Home = ({ ogpImageUrl }: Props) => {
         <meta name="twitter:image" content={ogpImageUrl} />
       </Head>
       <Header />
-      <main className="flex-grow mx-4">
-        <UI />
-      </main>
+      <UI />
       <Footer />
     </div>
   )

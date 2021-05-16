@@ -14,10 +14,10 @@ const UI = () => {
   }
 
   return (
-    <>
+    <div className="flex-grow mx-4">
       <Search onSearch={handleSearch} />
       <Poems items={searchResults} />
-    </>
+    </div>
   )
 }
 
