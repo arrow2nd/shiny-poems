@@ -1,4 +1,5 @@
 import { ParsedUrlQuery } from 'node:querystring'
+import { splitText } from './util'
 import { poemList } from '../data/poem-list'
 import cloudinary from 'cloudinary'
 
@@ -10,7 +11,8 @@ export const generateOgpImageUrl = (query: ParsedUrlQuery): string => {
   if (!idStr) return 'https://shiny-poems.vercel.app/ogp-home.png'
 
   const poem = poemList.find((e) => e.id === idStr)
-  const text = poem.text.replace(/(?<=。|！)(?![！　]+)(?<!$)/g, '\n') // 末尾以外の「。！」で改行
+
+  const text = splitText(poem.text).join('\n')
   const subtext = `${poem.clothesName} / ${poem.idolName}`
 
   const encode = (str: string) =>

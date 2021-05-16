@@ -1,22 +1,11 @@
 import { Poem } from '../../types/poem'
+import { splitText } from '../../scripts/util'
 import CopyButton from './copy-button'
 import TweetButton from './tweet-button'
 
 type Props = {
   poem: Poem
   shouldShowButton: boolean
-}
-
-// 「。！」で分割する
-function splitText(text: string) {
-  const splited = text.match(/(.*?[。！])(.*)/)
-
-  // 分割できなかったならそのまま返す
-  if (!splited) {
-    return [text]
-  }
-
-  return [splited[1], splited[2]]
 }
 
 const Card = ({ poem, shouldShowButton }: Props) => {
