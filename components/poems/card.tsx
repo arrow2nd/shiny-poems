@@ -7,11 +7,21 @@ type Props = {
   shouldShowButton: boolean
 }
 
+// 「。！」で分割する
+function splitText(text: string) {
+  const splited = text.match(/(.*?[。！])(.*)/)
+
+  // 分割できなかったならそのまま返す
+  if (!splited) {
+    return [text]
+  }
+
+  return [splited[1], splited[2]]
+}
+
 const Card = ({ poem, shouldShowButton }: Props) => {
-  // 「。！」で分割する
-  const poemText = poem.text
-    .split(/(?<=。|！)(?![！　]+)/)
-    .map((e) => <p key={e}>{e.trim()}</p>)
+  const splited = splitText(poem.text)
+  const poemText = splited.map((e) => <p key={e}>{e.trim()}</p>)
 
   const shareUrl = `https://shiny-poems.vercel.app?id=${poem.id}`
   const hashtags = `#シャニマス #${poem.clothesName} #${poem.idolName}`
