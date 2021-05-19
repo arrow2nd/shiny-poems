@@ -19,7 +19,7 @@ const Card = ({ poem, shouldShowButton }: Props) => {
   const copyText = `${poem.text} ${hashtags} ${shareUrl}`
 
   const buttons = (
-    <div className="flex flex-row justify-center mt-3">
+    <div className="flex flex-row text-sm">
       <TweetButton text={tweetText} />
       <CopyButton text={copyText} />
     </div>
@@ -27,14 +27,17 @@ const Card = ({ poem, shouldShowButton }: Props) => {
 
   return (
     <div
-      className="flex items-center justify-center m-2 p-1 w-96 h-56 rounded-md shadow-md bg-gray-50"
+      className="flex items-center text-left m-3 w-96 h-60 rounded-md shadow-md bg-white text-natural-black"
       key={poem.id}
     >
-      <div className="text-center">
-        <div className="font-bold text-xl">{poemText}</div>
-        <div className="mt-3 text-sm">
-          <p className="mb-1">『 {poem.clothesName} 』</p>
-          <p>{poem.idolName}</p>
+      <div className="mx-8">
+        <div className="my-4">
+          <p className="font-bold text-xl">{poemText}</p>
+        </div>
+        <div className="py-0.5 w-10 rounded-full bg-shiny" />
+        <div className="my-4">
+          <p className="mb-1 text-md"> {poem.clothesName} </p>
+          <p className="text-xs">{poem.idolName}</p>
         </div>
         {shouldShowButton && buttons}
       </div>

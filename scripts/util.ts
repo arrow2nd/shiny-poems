@@ -1,5 +1,5 @@
 export const splitText = (text: string) => {
-  const splited = text.match(/(.*?[。！])(.*)/)
+  const splited = text.match(/(.*?[。！？!?])(.*)/)
 
   // 分割できなかったならそのまま返す
   if (!splited) {
