@@ -10,7 +10,6 @@
     "update:color": "node ./tools/create-color-class-list.js"
   },
   "dependencies": {
-    "@fontsource/m-plus-rounded-1c": "^4.3.0",
     "cloudinary": "^1.25.1",
     "next": "10.2.0",
     "react": "17.0.2",
