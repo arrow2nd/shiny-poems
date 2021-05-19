@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 
+/* 全体 */
 body {
   font-family: 'M PLUS Rounded 1c';
   background-color: #faf8f7;
@@ -14,6 +15,7 @@ input,
   transform: rotate(0.05deg);
 }
 
+/* 色 */
 .text-natural-black {
   color: #5a5a5a;
 }
@@ -21,5 +23,8 @@ input,
 .bg-shiny {
   background-color: #8dbbff;
 }
+
+/* アイドルのイメージカラー */
+@import './idol-color.css';
 
 @tailwind utilities;

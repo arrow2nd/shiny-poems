@@ -1,5 +1,6 @@
 import { Poem } from '../../types/poem'
 import { splitText } from '../../scripts/util'
+import { colorClassList } from '../../data/color-class-list'
 import CopyButton from './copy-button'
 import TweetButton from './tweet-button'
 
@@ -18,6 +19,9 @@ const Card = ({ poem, shouldShowButton }: Props) => {
   const tweetText = `${poem.text}\n${hashtags}\n${shareUrl}`
   const copyText = `${poem.text} ${hashtags} ${shareUrl}`
 
+  const idolColor = colorClassList.find((e) => e.idolName === poem.idolName)
+  const bgColorClass = idolColor ? idolColor.className : 'bg-shiny'
+
   const buttons = (
     <div className="flex flex-row text-sm">
       <TweetButton text={tweetText} />
@@ -34,7 +38,9 @@ const Card = ({ poem, shouldShowButton }: Props) => {
         <div className="my-4">
           <p className="font-bold text-xl">{poemText}</p>
         </div>
-        <div className="py-0.5 w-10 rounded-full bg-shiny" />
+        <div
+          className={`py-0.5 w-10 rounded-full border border-gray-100 ${bgColorClass}`}
+        />
         <div className="my-4">
           <p className="mb-1 text-md"> {poem.clothesName} </p>
           <p className="text-xs">{poem.idolName}</p>
