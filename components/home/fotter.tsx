@@ -2,8 +2,8 @@ import { AiFillTwitterCircle, AiFillGithub } from 'react-icons/ai'
 import LinkButton from './link-button'
 
 const Footer = () => (
-  <footer className="flex flex-col items-center justify-center w-full h-56 mt-10 p-3 bg-shiny text-white text-center">
-    <div className="flex flex-row">
+  <footer className="flex flex-col items-center justify-center text-center w-full h-64 bg-shiny text-white">
+    <div className="flex flex-row mb-8">
       <LinkButton href="https://twitter.com/arrow_2nd">
         <AiFillTwitterCircle />
       </LinkButton>
@@ -11,10 +11,11 @@ const Footer = () => (
         <AiFillGithub />
       </LinkButton>
     </div>
-    <div className="mt-3">
-      <div>
+    <div className="mb-2">
+      <span>
         {'Logo icon made by '}
         <a
+          className="font-bold"
           title="Pixel perfect"
           href="https://www.flaticon.com/authors/pixel-perfect"
           target="_blank"
@@ -24,6 +25,7 @@ const Footer = () => (
         </a>
         {' from '}
         <a
+          className="font-bold"
           title="Flaticon"
           href="https://www.flaticon.com/"
           target="_blank"
@@ -31,13 +33,13 @@ const Footer = () => (
         >
           www.flaticon.com
         </a>
-      </div>
-      <div className="mt-2">
-        <p>
-          The copyright of all content related to THE iDOLM@STER belongs to
-          BANDAI NAMCO Entertainment Inc.
-        </p>
-      </div>
+      </span>
+    </div>
+    <div>
+      <p>
+        The copyright of all content related to THE iDOLM@STER belongs to BANDAI
+        NAMCO Entertainment Inc.
+      </p>
     </div>
   </footer>
 )
