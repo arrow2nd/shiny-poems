@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import { FiSearch } from 'react-icons/fi'
+import { BiSearch } from 'react-icons/bi'
 import { poemList } from '../../data/poem-list'
 import Input from './input'
 import Select from './select'
@@ -67,31 +67,29 @@ const Search = (props: Props) => {
   }
 
   return (
-    <div className="px-4 py-8 text-center">
-      <div className="flex flex-row items-center justify-center text-center">
-        <FiSearch className="text-2xl mr-2" />
+    <div className="text-center px-4 mb-10 lg:mb-14">
+      <div className="flex flex-row items-center justify-center text-center mb-2 lg:mb-4 text-natural-black">
+        <BiSearch className="mr-2 text-3xl" />
         <p className="text-2xl">SEARCH</p>
       </div>
-      <div className="flex flex-col items-center mt-4">
+      <div className="flex flex-wrap justify-center">
         <Input
           placeholder="ポエムの一部から"
           onSubmit={handleSubmit}
           ref={keywordInput}
         />
-        <div className="flex flex-wrap justify-center">
-          <Select
-            placeholder="アイドル名から"
-            options={idolNames}
-            onChange={handleChangeIdolName}
-            ref={idolSelect}
-          />
-          <Select
-            placeholder="衣装名から"
-            options={clothesTitles}
-            onChange={handleChangeclothesTitle}
-            ref={clothesSelect}
-          />
-        </div>
+        <Select
+          placeholder="アイドル名から"
+          options={idolNames}
+          onChange={handleChangeIdolName}
+          ref={idolSelect}
+        />
+        <Select
+          placeholder="衣装名から"
+          options={clothesTitles}
+          onChange={handleChangeclothesTitle}
+          ref={clothesSelect}
+        />
       </div>
     </div>
   )

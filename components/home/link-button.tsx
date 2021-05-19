@@ -4,7 +4,7 @@ type Props = {
 }
 
 const LinkButton = (props: Props) => (
-  <span className="text-3xl m-2">
+  <span className="mx-2 text-4xl">
     <a href={props.href} target="_blank" rel="noopener">
       {props.children}
     </a>

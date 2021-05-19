@@ -1,6 +1,6 @@
 'use strict'
 const fs = require('fs')
-const axios = require('axios')
+const { fetchIdolData } = require('./util')
 
 const idolList = [
   '櫻木真乃',
@@ -76,24 +76,10 @@ WHERE {
 order by ?name
 `
 
-async function fetch() {
-  const url = `https://sparql.crssnky.xyz/spql/imas/query?output=json&query=${encodeURIComponent(
-    query
-  )}`
-
-  try {
-    const res = await axios.get(url)
-    return res.data.results.bindings
-  } catch (err) {
-    console.error(err)
-    throw err
-  }
-}
-
 async function main() {
-  const data = await fetch()
+  const data = await fetchIdolData(query)
 
-  const poemData = data.map((e) => {
+  const poem = data.map((e) => {
     const idStr = e.owns.value.match(
       /https:\/\/sparql\.crssnky\.xyz\/imasrdf\/RDFs\/detail\/(.*)/
     )[1]
@@ -117,7 +103,7 @@ async function main() {
     }
   })
 
-  const sortedPoemData = poemData.sort(
+  const sortedPoemData = poem.sort(
     (a, b) => idolList.indexOf(a.idolName) - idolList.indexOf(b.idolName)
   )
 

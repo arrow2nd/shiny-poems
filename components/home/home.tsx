@@ -13,7 +13,7 @@ const Home = ({ ogpImageUrl }: Props) => {
   const url = 'https://shiny-poems.vercel.app'
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen font-default">
       <Head>
         <title>{title}</title>
         <meta name="description" content={desc} />

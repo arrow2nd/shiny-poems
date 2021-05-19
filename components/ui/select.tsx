@@ -21,10 +21,15 @@ const Select = forwardRef((props: Props, ref: React.MutableRefObject<any>) => {
 
   return (
     <ReactSelect
-      className="w-64 h-8 mx-1 my-2 rounded-md"
+      className="w-72 h-8 mx-1 my-2 rounded-md bg-white"
       instanceId={props.placeholder}
-      placeholder={props.placeholder}
+      placeholder={<p>{props.placeholder}</p>}
       options={options}
+      formatOptionLabel={(option) => (
+        <div>
+          <p>{option.label}</p>
+        </div>
+      )}
       onChange={handleChangeSelect}
       ref={ref}
     />

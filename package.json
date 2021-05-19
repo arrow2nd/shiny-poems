@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "update": "node ./tools/create-data.js"
+    "update:poem": "node ./tools/create-poem-list.js",
+    "update:color": "node ./tools/create-color-class-list.js"
   },
   "dependencies": {
     "cloudinary": "^1.25.1",

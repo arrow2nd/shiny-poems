@@ -3,21 +3,12 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      body: [
-        'Avenir',
-        '"Helvetica Neue"',
-        'Helvetica',
-        'Arial',
-        '"Hiragino Sans"',
-        'ヒラギノ角ゴシック',
-        'YuGothic',
-        '"Yu Gothic"',
-        'メイリオ',
-        'Meiryo',
-        '"ＭＳ Ｐゴシック"',
-        'MS PGothic',
-        'monospace'
-      ]
+      default: ['"M PLUS Rounded 1c"', 'sans-serif']
+    },
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px'
     }
   },
   variants: {
