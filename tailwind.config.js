@@ -3,7 +3,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      default: ['"M PLUS Rounded 1c"']
+      default: ['"M PLUS Rounded 1c"', 'sans-serif']
     },
     screens: {
       sm: '640px',
