@@ -126,6 +126,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/m-plus-rounded-1c@^4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/m-plus-rounded-1c/-/m-plus-rounded-1c-4.3.0.tgz#1a0a5abfff292c10096e2d0dcc4f603dbdd23ad7"
+  integrity sha512-YplmE/j/1eQVBNX5eLe9iydAUE5fIffbcSrAHsrStiB9c1A3HmAaOURt7Cz7PVTrNBcwDdWMI7m91buLTbNQww==
+
 "@fullhuman/postcss-purgecss@^3.1.3":
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/@fullhuman/postcss-purgecss/-/postcss-purgecss-3.1.3.tgz#47af7b87c9bfb3de4bc94a38f875b928fffdf339"

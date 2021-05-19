@@ -1,6 +1,23 @@
 @tailwind base;
 @tailwind components;
 
+body {
+  font-family: 'M PLUS Rounded 1c';
+  background-color: #faf8f7;
+}
+
+a,
+p,
+input,
+.select-option {
+  /* Windowsでのジャギー対策 */
+  transform: rotate(0.05deg);
+}
+
+.text-natural-black {
+  color: #5a5a5a;
+}
+
 .bg-shiny {
   background-color: #8dbbff;
 }
