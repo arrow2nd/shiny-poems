@@ -11,7 +11,7 @@ type Props = {
 
 const Card = ({ poem, shouldShowButton }: Props) => {
   const splited = splitText(poem.text)
-  const poemText = splited.map((e) => <p key={e}>{e.trim()}</p>)
+  const poemContent = splited.map((e) => <p key={e}>{e.trim()}</p>)
 
   const shareUrl = `https://shiny-poems.vercel.app?id=${poem.id}`
   const hashtags = `#シャニマス #${poem.clothesName} #${poem.idolName}`
@@ -35,14 +35,12 @@ const Card = ({ poem, shouldShowButton }: Props) => {
       key={poem.id}
     >
       <div className="mx-8">
-        <div className="my-4">
-          <p className="text-base lg:text-xl font-bold">{poemText}</p>
-        </div>
+        <div className="font-bold my-4 text-base lg:text-xl">{poemContent}</div>
         <div
           className={`py-0.5 w-10 rounded-full border border-gray-100 ${bgColorClass}`}
         />
         <div className="my-4">
-          <p className="mb-1 text-sm md:text-base"> {poem.clothesName} </p>
+          <p className="mb-1 text-sm md:text-base">{poem.clothesName}</p>
           <p className="text-xs">{poem.idolName}</p>
         </div>
         {shouldShowButton && buttons}
