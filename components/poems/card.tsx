@@ -23,7 +23,7 @@ const Card = ({ poem, shouldShowButton }: Props) => {
   const bgColorClass = idolColor ? idolColor.className : 'bg-shiny'
 
   const buttons = (
-    <div className="flex flex-row text-sm">
+    <div className="text-xs lg:text-sm flex flex-row">
       <TweetButton text={tweetText} />
       <CopyButton text={copyText} />
     </div>
@@ -31,18 +31,18 @@ const Card = ({ poem, shouldShowButton }: Props) => {
 
   return (
     <div
-      className="flex items-center text-left m-3 w-96 h-60 rounded-md shadow-md bg-white text-natural-black"
+      className="flex items-center text-left w-96 h-60 m-1.5 md:m-3 rounded-md shadow-md bg-white text-natural-black"
       key={poem.id}
     >
       <div className="mx-8">
         <div className="my-4">
-          <p className="font-bold text-xl">{poemText}</p>
+          <p className="text-base lg:text-xl font-bold">{poemText}</p>
         </div>
         <div
           className={`py-0.5 w-10 rounded-full border border-gray-100 ${bgColorClass}`}
         />
         <div className="my-4">
-          <p className="mb-1 text-md"> {poem.clothesName} </p>
+          <p className="mb-1 text-sm md:text-base"> {poem.clothesName} </p>
           <p className="text-xs">{poem.idolName}</p>
         </div>
         {shouldShowButton && buttons}

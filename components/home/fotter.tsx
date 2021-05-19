@@ -2,7 +2,7 @@ import { AiFillTwitterCircle, AiFillGithub } from 'react-icons/ai'
 import LinkButton from './link-button'
 
 const Footer = () => (
-  <footer className="flex flex-col items-center justify-center text-center w-full h-64 bg-shiny text-white">
+  <footer className="flex flex-col items-center justify-center text-center w-full h-80 md:h-64 bg-shiny text-white">
     <div className="flex flex-row mb-8">
       <LinkButton href="https://twitter.com/arrow_2nd">
         <AiFillTwitterCircle />
