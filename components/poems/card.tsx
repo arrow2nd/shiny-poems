@@ -1,6 +1,6 @@
 import { Poem } from '../../types/poem'
 import { splitText } from '../../scripts/util'
-import { colorClassList } from '../../data/color-class-list'
+import { colorList } from '../../data/color-list'
 import CopyButton from './copy-button'
 import TweetButton from './tweet-button'
 
@@ -19,7 +19,7 @@ const Card = ({ poem, shouldShowButton }: Props) => {
   const tweetText = `${poem.text}\n${hashtags}\n${shareUrl}`
   const copyText = `${poem.text} ${hashtags} ${shareUrl}`
 
-  const idolColor = colorClassList.find((e) => e.idolName === poem.idolName)
+  const idolColor = colorList.find((e) => e.idolName === poem.idolName)
   const bgColorClass = idolColor ? idolColor.className : 'bg-shiny'
 
   const buttons = (
