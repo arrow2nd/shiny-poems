@@ -15,7 +15,7 @@ const Input = forwardRef((props: Props, ref: React.MutableRefObject<any>) => {
   }
 
   return (
-    <div className="w-72 h-9 m-1 my-2">
+    <div className="w-72 h-9 mx-1 my-2">
       <div className="flex items-center rounded-md border border-gray-300 bg-white">
         <input
           className="w-full h-9 p-4 rounded-md focus:outline-none"

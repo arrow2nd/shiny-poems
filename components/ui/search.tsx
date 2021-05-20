@@ -67,8 +67,8 @@ const Search = (props: Props) => {
   }
 
   return (
-    <div className="text-center px-4 mb-10 lg:mb-14">
-      <div className="flex flex-row items-center justify-center text-center mb-2 lg:mb-4 text-natural-black">
+    <div className="text-center px-4 mb-10 md:mb-14">
+      <div className="flex flex-row items-center justify-center text-center mb-4 text-natural-black">
         <BiSearch className="mr-2 text-3xl" />
         <p className="text-2xl">SEARCH</p>
       </div>
