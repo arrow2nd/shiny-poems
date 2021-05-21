@@ -9,7 +9,12 @@ const TweetButton = ({ text }: Props) => {
   const tweetUrl = `https://twitter.com/intent/tweet?text=${encodedText}`
 
   return (
-    <a className="mr-2" href={tweetUrl} target="_blank" rel="noopener">
+    <a
+      className="mr-2 transition-colors text-natural-black hover:text-gray-800"
+      href={tweetUrl}
+      target="_blank"
+      rel="noopener"
+    >
       <RiTwitterLine />
     </a>
   )

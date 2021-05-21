@@ -16,7 +16,7 @@ const Input = forwardRef((props: Props, ref: React.MutableRefObject<any>) => {
 
   return (
     <div className="w-72 h-9 mx-1 my-2">
-      <div className="flex items-center rounded-md border border-gray-300 bg-white">
+      <div className="flex items-center rounded-md transition-colors border border-gray-300 hover:border-gray-400 bg-white">
         <input
           className="w-full h-9 ml-2.5 rounded-md focus:outline-none"
           type="text"
@@ -25,7 +25,7 @@ const Input = forwardRef((props: Props, ref: React.MutableRefObject<any>) => {
           ref={ref}
         />
         <button
-          className="mx-1 p-2 text-gray-500 hover:text-gray-400 focus:outline-none"
+          className="mx-1 p-2 transition-colors text-gray-400 hover:text-gray-500 focus:outline-none"
           onClick={props.onSubmit}
         >
           <FiSearch />
