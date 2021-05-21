@@ -8,7 +8,7 @@ type Props = {
   onSearch: (type: string, label: string) => void
 }
 
-const Search = (props: Props) => {
+const Search = ({ onSearch }: Props) => {
   // 選択要素に使用するアイドル名
   const [idolNames] = useState(
     Array.from(new Set(poemList.map((e) => e.idolName)))
@@ -46,24 +46,26 @@ const Search = (props: Props) => {
 
   const handleSubmit = () => {
     const keyword = keywordInput.current.value
+    if (!keyword) return
 
-    if (keyword) {
-      clearIdolSelect()
-      clearClothesSelect()
-      props.onSearch('text', keyword)
-    }
+    clearIdolSelect()
+    clearClothesSelect()
+
+    onSearch('text', keyword)
   }
 
   const handleChangeIdolName = (label: string) => {
     clearKeywordInput()
     clearClothesSelect()
-    props.onSearch('idolName', label)
+
+    onSearch('idolName', label)
   }
 
   const handleChangeclothesTitle = (label: string) => {
     clearKeywordInput()
     clearIdolSelect()
-    props.onSearch('clothesTitle', label)
+
+    onSearch('clothesTitle', label)
   }
 
   return (
