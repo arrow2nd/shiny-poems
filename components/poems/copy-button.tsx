@@ -14,15 +14,12 @@ const CopyButton = ({ text }: Props) => {
     if (isCopied) return
 
     setCopied(true)
-
-    setTimeout(() => {
-      setCopied(false)
-    }, 1500)
+    setTimeout(() => setCopied(false), 1500)
   }
 
   return (
     <CopyToClipboard text={text} onCopy={handleClickCopy}>
-      <button className="focus:outline-none">
+      <button className="transition-colors text-natural-black hover:text-gray-800 focus:outline-none">
         {isCopied ? <AiOutlineCheckCircle /> : <FiCopy />}
       </button>
     </CopyToClipboard>

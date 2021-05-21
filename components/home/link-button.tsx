@@ -3,10 +3,10 @@ type Props = {
   children: React.ReactNode
 }
 
-const LinkButton = (props: Props) => (
+const LinkButton = ({ href, children }: Props) => (
   <span className="mx-2 text-4xl">
-    <a href={props.href} target="_blank" rel="noopener">
-      {props.children}
+    <a href={href} target="_blank" rel="noopener">
+      {children}
     </a>
   </span>
 )

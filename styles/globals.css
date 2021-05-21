@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
+
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+@import './idol-color.css';
 
 /* 全体 */
 body {
@@ -23,8 +25,5 @@ input,
 .bg-shiny {
   background-color: #8dbbff;
 }
-
-/* アイドルのイメージカラー */
-@import './idol-color.css';
 
 @tailwind utilities;
