@@ -7,7 +7,10 @@ type Props = {
   onChange: (label: string) => void
 }
 
-const Select = forwardRef((props: Props, ref: React.MutableRefObject<any>) => {
+const Select = forwardRef(function SelectContent(
+  props: Props,
+  ref: React.MutableRefObject<any>
+) {
   const options = useMemo(
     () => props.options.map((e, i) => ({ value: i, label: e })),
     [props.options]

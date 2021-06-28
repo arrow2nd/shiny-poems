@@ -17,6 +17,10 @@ input,
   transform: rotate(0.05deg);
 }
 
+.font-size-none {
+  font-size: 0;
+}
+
 /* 色 */
 .text-natural-black {
   color: #1c1c1c;
