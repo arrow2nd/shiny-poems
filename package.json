@@ -10,31 +10,28 @@
     "update:color": "node ./tools/create-color-list.js"
   },
   "dependencies": {
-    "cloudinary": "^1.25.1",
-    "next": "10.2.0",
+    "cloudinary": "^1.26.1",
+    "next": "11.0.1",
     "react": "17.0.2",
     "react-copy-to-clipboard": "^5.0.3",
     "react-dom": "17.0.2",
     "react-icons": "^4.2.0",
-    "react-select": "^4.3.0"
+    "react-select": "^4.3.1"
   },
   "devDependencies": {
     "@types/node": "^15.0.1",
-    "@types/react": "^17.0.4",
+    "@types/react": "^17.0.11",
     "@types/react-copy-to-clipboard": "^5.0.0",
-    "@types/react-dom": "^17.0.3",
-    "@types/react-select": "^4.0.15",
-    "@typescript-eslint/eslint-plugin": "^4.22.0",
-    "@typescript-eslint/parser": "^4.22.0",
-    "autoprefixer": "^10.2.5",
+    "@types/react-dom": "^17.0.8",
+    "@types/react-select": "^4.0.16",
+    "autoprefixer": "^10.2.6",
     "axios": "^0.21.1",
-    "eslint": "^7.25.0",
+    "eslint": "^7.29.0",
+    "eslint-config-next": "^11.0.1",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-react": "^7.23.2",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "postcss": "^8.2.13",
-    "prettier": "^2.2.1",
-    "tailwindcss": "^2.1.2",
-    "typescript": "^4.2.4"
+    "postcss": "^8.3.5",
+    "prettier": "^2.3.2",
+    "tailwindcss": "^2.2.4",
+    "typescript": "^4.3.4"
   }
 }

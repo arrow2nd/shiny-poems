@@ -13,7 +13,7 @@ const TweetButton = ({ text }: Props) => {
       className="mr-2 transition-colors text-natural-black hover:text-gray-800"
       href={tweetUrl}
       target="_blank"
-      rel="noopener"
+      rel="noopener noreferrer"
     >
       <RiTwitterLine />
     </a>

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { usePoemData } from './usePoemData'
+import { searchPoem } from '../../scripts/search-poem'
 import { Poem } from '../../types/poem'
 import Poems from '../poems/poems'
 import Search from './search'
@@ -9,7 +9,7 @@ const UI = () => {
 
   // 条件とキーワードから検索する
   const handleSearch = (type: string, keyword: string) => {
-    const newSearchResults = usePoemData(type, keyword)
+    const newSearchResults = searchPoem(type, keyword)
     setSearchResults(newSearchResults)
   }
 

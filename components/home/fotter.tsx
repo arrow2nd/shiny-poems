@@ -19,7 +19,7 @@ const Footer = () => (
           title="Pixel perfect"
           href="https://www.flaticon.com/authors/pixel-perfect"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           Pixel perfect
         </a>
@@ -29,7 +29,7 @@ const Footer = () => (
           title="Flaticon"
           href="https://www.flaticon.com/"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           www.flaticon.com
         </a>

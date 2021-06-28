@@ -1,7 +1,7 @@
-import { poemList } from '../../data/poem-list'
-import { Poem } from '../../types/poem'
+import { poemList } from '../data/poem-list'
+import { Poem } from '../types/poem'
 
-export const usePoemData = (type: string, keyword: string): Poem[] => {
+export const searchPoem = (type: string, keyword: string): Poem[] => {
   // キーワードに一致するものを探す
   const results = poemList.filter((e: Poem) => {
     const item: string = e[type]

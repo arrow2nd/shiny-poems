@@ -17,9 +17,13 @@ input,
   transform: rotate(0.05deg);
 }
 
+.font-size-none {
+  font-size: 0;
+}
+
 /* 色 */
 .text-natural-black {
-  color: #5a5a5a;
+  color: #2c2c2c;
 }
 
 .bg-shiny {
