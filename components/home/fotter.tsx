@@ -37,7 +37,7 @@ const Footer = () => (
     </div>
     <div>
       <p>
-        The copyright of all content related to THE iDOLM@STER belongs to BANDAI
+        The copyright of all content related to THE IDOLM@STER belongs to BANDAI
         NAMCO Entertainment Inc.
       </p>
     </div>
