@@ -8,6 +8,15 @@ module.exports = {
     screens: {
       sm: '640px',
       md: '768px'
+    },
+    extend: {
+      colors: {
+        'natural-black': '#2c2c2c',
+        shiny: '#8dbbff'
+      },
+      fontSize: {
+        none: 0
+      }
     }
   },
   variants: {
