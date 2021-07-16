@@ -15,7 +15,7 @@ const Footer = () => (
       <span>
         {'Logo icon made by '}
         <a
-          className="font-bold"
+          className="underline hover:text-gray-500 transition-colors"
           title="Pixel perfect"
           href="https://www.flaticon.com/authors/pixel-perfect"
           target="_blank"
@@ -25,7 +25,7 @@ const Footer = () => (
         </a>
         {' from '}
         <a
-          className="font-bold"
+          className="underline hover:text-gray-500 transition-colors"
           title="Flaticon"
           href="https://www.flaticon.com/"
           target="_blank"

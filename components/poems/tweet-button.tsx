@@ -10,7 +10,7 @@ const TweetButton = ({ text }: Props) => {
 
   return (
     <a
-      className="mr-2 transition-colors text-natural-black hover:text-gray-800"
+      className="mr-2 text-natural-black hover:text-black transition-colors"
       href={tweetUrl}
       target="_blank"
       rel="noopener noreferrer"
