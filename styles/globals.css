@@ -16,17 +16,4 @@ input,
   transform: rotate(0.05deg);
 }
 
-.font-size-none {
-  font-size: 0;
-}
-
-/* 色 */
-.text-natural-black {
-  color: #2c2c2c;
-}
-
-.bg-shiny {
-  background-color: #8dbbff;
-}
-
 @tailwind utilities;
