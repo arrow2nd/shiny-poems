@@ -1,21 +1,21 @@
-import { AiFillTwitterCircle, AiFillGithub } from 'react-icons/ai'
+import { FaGithubAlt, FaTwitter } from 'react-icons/fa'
 import LinkButton from './link-button'
 
 const Footer = () => (
   <footer className="flex flex-col items-center justify-center text-center w-full h-80 md:h-64 px-5 bg-shiny text-white">
     <div className="flex flex-row mb-8">
       <LinkButton href="https://twitter.com/arrow_2nd">
-        <AiFillTwitterCircle />
+        <FaTwitter />
       </LinkButton>
       <LinkButton href="https://github.com/arrow2nd/shiny-poems">
-        <AiFillGithub />
+        <FaGithubAlt />
       </LinkButton>
     </div>
     <div className="mb-2">
       <span>
         {'Logo icon made by '}
         <a
-          className="underline hover:text-gray-500 transition-colors"
+          className="underline"
           title="Pixel perfect"
           href="https://www.flaticon.com/authors/pixel-perfect"
           target="_blank"
@@ -25,7 +25,7 @@ const Footer = () => (
         </a>
         {' from '}
         <a
-          className="underline hover:text-gray-500 transition-colors"
+          className="underline"
           title="Flaticon"
           href="https://www.flaticon.com/"
           target="_blank"
