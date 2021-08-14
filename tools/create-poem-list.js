@@ -57,6 +57,8 @@ const seriesList = [
   }
 ]
 
+// どのゲームに登場した衣装ポエムなのか判別できそうにないので
+// 暫定的にポエムが1文字以上40文字未満のものを取得
 const query = `
 PREFIX schema: <http://schema.org/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -72,6 +74,7 @@ WHERE {
   filter(contains(?brand, 'ShinyColors')).
   ?owns schema:name ?clothesName;
         schema:description ?clothesDesc.
+  filter(strlen(?clothesDesc) > 0 && strlen(?clothesDesc) < 40).
 }
 order by ?name
 `
