@@ -44,6 +44,13 @@ export const poemList: Poem[] = [
     text: 'スタッカート。空を渡るいろたち'
   },
   {
+    id: 'FountainSummer_SakuragiMano',
+    idolName: '櫻木真乃',
+    clothesTitle: 'ファウンテンサマー',
+    clothesName: 'ファウンテンサマー',
+    text: 'スプラッシュ！それぞれの色をまとって'
+  },
+  {
     id: 'MidnightMonster_SakuragiMano',
     idolName: '櫻木真乃',
     clothesTitle: 'ミッドナイトモンスター',
@@ -77,6 +84,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ユナイトバースプラネタリ',
     clothesName: 'ユナイトバースプラネタリ',
     text: 'リフトオフ。無重力の中へだって羽ばたいて'
+  },
+  {
+    id: 'PrivateDressDown_SakuragiMano',
+    idolName: '櫻木真乃',
+    clothesTitle: 'プライベートドレスダウン',
+    clothesName: 'プライベートドレスダウン',
+    text: 'ルームウェア。目を閉じたら星とお出かけ'
   },
   {
     id: 'OvercastMonochrome_SakuragiMano',
@@ -140,6 +154,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'サンセットスカイパッセージ',
     clothesName: 'サンセットスカイパッセージ',
     text: 'スタッカート。翼を得た。空を感じた。それから'
+  },
+  {
+    id: 'FountainSummer_KazanoHiori',
+    idolName: '風野灯織',
+    clothesTitle: 'ファウンテンサマー',
+    clothesName: 'ファウンテンサマー',
+    text: 'スプラッシュ！夏色トライアングル'
   },
   {
     id: 'MidnightMonster_KazanoHiori',
@@ -233,6 +254,13 @@ export const poemList: Poem[] = [
     text: 'スタッカート。ねぇ、どんな色が見えてる？'
   },
   {
+    id: 'FountainSummer_HachimiyaMeguru',
+    idolName: '八宮めぐる',
+    clothesTitle: 'ファウンテンサマー',
+    clothesName: 'ファウンテンサマー',
+    text: 'スプラッシュ！ビビッド・サマー'
+  },
+  {
     id: 'MidnightMonster_HachimiyaMeguru',
     idolName: '八宮めぐる',
     clothesTitle: 'ミッドナイトモンスター',
@@ -322,6 +350,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'サンセットスカイパッセージ',
     clothesName: 'サンセットスカイパッセージ',
     text: 'スタッカート。ここは何度目の'
+  },
+  {
+    id: 'FountainSummer_TsukiokaKogane',
+    idolName: '月岡恋鐘',
+    clothesTitle: 'ファウンテンサマー',
+    clothesName: 'ファウンテンサマー',
+    text: 'スプラッシュ！静かの海を纏って'
   },
   {
     id: 'MidnightMonster_TsukiokaKogane',
@@ -415,6 +450,13 @@ export const poemList: Poem[] = [
     text: 'スタッカート。少しでも遠くへなんてね'
   },
   {
+    id: 'FountainSummer_TanakaMamimi',
+    idolName: '田中摩美々',
+    clothesTitle: 'ファウンテンサマー',
+    clothesName: 'ファウンテンサマー',
+    text: 'スプラッシュ！永遠にさめない熱にやられたい'
+  },
+  {
     id: 'MidnightMonster_TanakaMamimi',
     idolName: '田中摩美々',
     clothesTitle: 'ミッドナイトモンスター',
@@ -504,6 +546,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'サンセットスカイパッセージ',
     clothesName: 'サンセットスカイパッセージ',
     text: 'スタッカート。この空の下で歌う'
+  },
+  {
+    id: 'FountainSummer_ShiraseSakuya',
+    idolName: '白瀬咲耶',
+    clothesTitle: 'ファウンテンサマー',
+    clothesName: 'ファウンテンサマー',
+    text: 'スプラッシュ！大輪、眩しく'
   },
   {
     id: 'MidnightMonster_ShiraseSakuya',
@@ -597,6 +646,13 @@ export const poemList: Poem[] = [
     text: 'スタッカート。私は雨上がりの空で踊る'
   },
   {
+    id: 'FountainSummer_MitsumineYuika',
+    idolName: '三峰結華',
+    clothesTitle: 'ファウンテンサマー',
+    clothesName: 'ファウンテンサマー',
+    text: 'スプラッシュ！一緒にバカになりたいの、ねぇ'
+  },
+  {
     id: 'MidnightMonster_MitsumineYuika',
     idolName: '三峰結華',
     clothesTitle: 'ミッドナイトモンスター',
@@ -686,6 +742,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'サンセットスカイパッセージ',
     clothesName: 'サンセットスカイパッセージ',
     text: 'スタッカート。まなうらにほら、赤橙黄緑霧藍紫'
+  },
+  {
+    id: 'FountainSummer_YukokuKiriko',
+    idolName: '幽谷霧子',
+    clothesTitle: 'ファウンテンサマー',
+    clothesName: 'ファウンテンサマー',
+    text: 'スプラッシュ！きみのことを波に話そう'
   },
   {
     id: 'MidnightMonster_YukokuKiriko',
@@ -786,6 +849,13 @@ export const poemList: Poem[] = [
     text: 'スタッカート。たくさんの色は、強い'
   },
   {
+    id: 'FountainSummer_KomiyaKaho',
+    idolName: '小宮果穂',
+    clothesTitle: 'ファウンテンサマー',
+    clothesName: 'ファウンテンサマー',
+    text: 'スプラッシュ！おそろいでテンション最高潮'
+  },
+  {
     id: 'Pajamas_De_Kabukabu',
     idolName: '小宮果穂',
     clothesTitle: 'パジャマ・デシリーズ',
@@ -875,6 +945,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'サンセットスカイパッセージ',
     clothesName: 'サンセットスカイパッセージ',
     text: 'スタッカート。右の二の腕が不安なんて言わない'
+  },
+  {
+    id: 'FountainSummer_SonodaChiyoko',
+    idolName: '園田智代子',
+    clothesTitle: 'ファウンテンサマー',
+    clothesName: 'ファウンテンサマー',
+    text: 'スプラッシュ！おやつは桃まんかごま団子か'
   },
   {
     id: 'Pajamas_De_Hamuhamu',
@@ -968,6 +1045,13 @@ export const poemList: Poem[] = [
     text: 'スタッカート。輝きを空へ返すように'
   },
   {
+    id: 'FountainSummer_SaijoJuri',
+    idolName: '西城樹里',
+    clothesTitle: 'ファウンテンサマー',
+    clothesName: 'ファウンテンサマー',
+    text: 'スプラッシュ！盛夏、熱烈歓迎！'
+  },
+  {
     id: 'Pajamas_De_Gaogao',
     idolName: '西城樹里',
     clothesTitle: 'パジャマ・デシリーズ',
@@ -1057,6 +1141,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'サンセットスカイパッセージ',
     clothesName: 'サンセットスカイパッセージ',
     text: 'スタッカート。ひかり、きみを通過して分光する'
+  },
+  {
+    id: 'FountainSummer_MorinoRinze',
+    idolName: '杜野凛世',
+    clothesTitle: 'ファウンテンサマー',
+    clothesName: 'ファウンテンサマー',
+    text: 'スプラッシュ！Build Back Better World tgt'
   },
   {
     id: 'Pajamas_De_Penpen',
@@ -1150,6 +1241,13 @@ export const poemList: Poem[] = [
     text: 'スタッカート。『きっと、なれるわ』'
   },
   {
+    id: 'FountainSummer_ArisugawaNatsuha',
+    idolName: '有栖川夏葉',
+    clothesTitle: 'ファウンテンサマー',
+    clothesName: 'ファウンテンサマー',
+    text: 'スプラッシュ！お揃いチャイナもマストバイ'
+  },
+  {
     id: 'Pajamas_De_Wanwan',
     idolName: '有栖川夏葉',
     clothesTitle: 'パジャマ・デシリーズ',
@@ -1239,6 +1337,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'サンセットスカイパッセージ',
     clothesName: 'サンセットスカイパッセージ',
     text: 'スタッカート。キミと飛ぶ空はきっと晴れて'
+  },
+  {
+    id: 'FountainSummer_OsakiAmana',
+    idolName: '大崎甘奈',
+    clothesTitle: 'ファウンテンサマー',
+    clothesName: 'ファウンテンサマー',
+    text: 'スプラッシュ！海に咲く花のように'
   },
   {
     id: 'MidnightMonster_OsakiAmana',
@@ -1332,6 +1437,13 @@ export const poemList: Poem[] = [
     text: 'スタッカート。虹色、君にも'
   },
   {
+    id: 'FountainSummer_OsakiTenka',
+    idolName: '大崎甜花',
+    clothesTitle: 'ファウンテンサマー',
+    clothesName: 'ファウンテンサマー',
+    text: 'スプラッシュ！やっぱり布が多い方が、甜花'
+  },
+  {
     id: 'MidnightMonster_OsakiTenka',
     idolName: '大崎甜花',
     clothesTitle: 'ミッドナイトモンスター',
@@ -1423,6 +1535,13 @@ export const poemList: Poem[] = [
     text: 'スタッカート。曇ったら笑う、晴れても笑う'
   },
   {
+    id: 'FountainSummer_KuwayamaChiyuki',
+    idolName: '桑山千雪',
+    clothesTitle: 'ファウンテンサマー',
+    clothesName: 'ファウンテンサマー',
+    text: 'スプラッシュ！波しぶきのフリンジを重ねて'
+  },
+  {
     id: 'MidnightMonster_KuwayamaChiyuki',
     idolName: '桑山千雪',
     clothesTitle: 'ミッドナイトモンスター',
@@ -1505,6 +1624,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'サンセットスカイパッセージ',
     clothesName: 'サンセットスカイパッセージ',
     text: 'スタッカート。空から探そう！　楽しいこと！'
+  },
+  {
+    id: 'FountainSummer_SerizawaAsahi',
+    idolName: '芹沢あさひ',
+    clothesTitle: 'ファウンテンサマー',
+    clothesName: 'ファウンテンサマー',
+    text: 'スプラッシュ！ひまわりよりも高く！'
   },
   {
     id: 'MidnightMonster_SerizawaAsahi',
@@ -1591,6 +1717,13 @@ export const poemList: Poem[] = [
     text: 'スタッカート。足りないでしょう？'
   },
   {
+    id: 'FountainSummer_MayuzumiFuyuko',
+    idolName: '黛冬優子',
+    clothesTitle: 'ファウンテンサマー',
+    clothesName: 'ファウンテンサマー',
+    text: 'スプラッシュ！夏ごと、食べますか？'
+  },
+  {
     id: 'MidnightMonster_MayuzumiFuyuko',
     idolName: '黛冬優子',
     clothesTitle: 'ミッドナイトモンスター',
@@ -1675,6 +1808,13 @@ export const poemList: Poem[] = [
     text: 'スタッカート。なんかキラキラしててよくない？'
   },
   {
+    id: 'FountainSummer_IzumiMei',
+    idolName: '和泉愛依',
+    clothesTitle: 'ファウンテンサマー',
+    clothesName: 'ファウンテンサマー',
+    text: 'スプラッシュ！クール or キュート？'
+  },
+  {
     id: 'MidnightMonster_IzumiMei',
     idolName: '和泉愛依',
     clothesTitle: 'ミッドナイトモンスター',
@@ -1745,6 +1885,13 @@ export const poemList: Poem[] = [
     text: 'スタッカート。4Kなんかじゃ、追いつかない'
   },
   {
+    id: 'FountainSummer_AsakuraToru',
+    idolName: '浅倉透',
+    clothesTitle: 'ファウンテンサマー',
+    clothesName: 'ファウンテンサマー',
+    text: 'スプラッシュ！そういうこと'
+  },
+  {
     id: 'MidnightMonster_AsakuraToru',
     idolName: '浅倉透',
     clothesTitle: 'ミッドナイトモンスター',
@@ -1773,6 +1920,13 @@ export const poemList: Poem[] = [
     text: 'リフトオフ。トオル・スターダスト'
   },
   {
+    id: 'PrivateDressDown_AsakuraToru',
+    idolName: '浅倉透',
+    clothesTitle: 'プライベートドレスダウン',
+    clothesName: 'プライベートドレスダウン',
+    text: 'ルームウェア。トオル、最後の戦い'
+  },
+  {
     id: 'OvercastMonochrome_AsakuraToru',
     idolName: '浅倉透',
     clothesTitle: 'オーバーキャストモノクローム',
@@ -1799,6 +1953,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'サンセットスカイパッセージ',
     clothesName: 'サンセットスカイパッセージ',
     text: 'スタッカート。これからよろしくね！'
+  },
+  {
+    id: 'FountainSummer_HiguchiMadoka',
+    idolName: '樋口円香',
+    clothesTitle: 'ファウンテンサマー',
+    clothesName: 'ファウンテンサマー',
+    text: 'スプラッシュ！困らせないで？PURE MINT'
   },
   {
     id: 'MidnightMonster_HiguchiMadoka',
@@ -1857,6 +2018,13 @@ export const poemList: Poem[] = [
     text: 'スタッカート。しあわせの海は空にあるの？'
   },
   {
+    id: 'FountainSummer_IchikawaHinana',
+    idolName: '市川雛菜',
+    clothesTitle: 'ファウンテンサマー',
+    clothesName: 'ファウンテンサマー',
+    text: 'スプラッシュ！真夏のきせかえ人形'
+  },
+  {
     id: 'MidnightMonster_IchikawaHinana',
     idolName: '市川雛菜',
     clothesTitle: 'ミッドナイトモンスター',
@@ -1913,6 +2081,13 @@ export const poemList: Poem[] = [
     text: 'スタッカート。明日もし羽が生えたら'
   },
   {
+    id: 'FountainSummer_FukumaruKoito',
+    idolName: '福丸小糸',
+    clothesTitle: 'ファウンテンサマー',
+    clothesName: 'ファウンテンサマー',
+    text: 'スプラッシュ！絶唱マーメイド'
+  },
+  {
     id: 'MidnightMonster_FukumaruKoito',
     idolName: '福丸小糸',
     clothesTitle: 'ミッドナイトモンスター',
@@ -1955,11 +2130,25 @@ export const poemList: Poem[] = [
     text: '水色ジャージ。いつかの衣装のための'
   },
   {
+    id: 'FountainSummer_NanakusaNichika',
+    idolName: '七草にちか',
+    clothesTitle: 'ファウンテンサマー',
+    clothesName: 'ファウンテンサマー',
+    text: 'スプラッシュ！恋しらずのボレロ'
+  },
+  {
     id: 'UniteversePlanetary_NanakusaNichika',
     idolName: '七草にちか',
     clothesTitle: 'ユナイトバースプラネタリ',
     clothesName: 'ユナイトバースプラネタリ',
     text: 'リフトオフ。かわいいって言ってください！'
+  },
+  {
+    id: 'FountainSummer_AketaMikoto',
+    idolName: '緋田美琴',
+    clothesTitle: 'ファウンテンサマー',
+    clothesName: 'ファウンテンサマー',
+    text: 'スプラッシュ！soak up the rays'
   },
   {
     id: 'UniteversePlanetary_AketaMikoto',
