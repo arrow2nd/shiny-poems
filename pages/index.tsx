@@ -1,6 +1,6 @@
 import { GetServerSidePropsContext, GetServerSidePropsResult } from 'next'
-import Home from '../components/home/home'
 import { generateOgpImageUrl } from '../scripts/generate-ogp'
+import Home from '../components/home'
 
 type Props = {
   ogpImageUrl: string

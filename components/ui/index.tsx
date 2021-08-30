@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { searchPoem } from '../../scripts/search-poem'
 import { Poem } from '../../types/poem'
-import Poems from '../poems/poems'
+import Poems from '../poems'
 import Search from './search'
 
 const UI = () => {

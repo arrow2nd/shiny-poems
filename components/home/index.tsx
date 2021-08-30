@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import UI from '../ui/ui'
+import UI from '../ui'
 import Footer from './fotter'
 import Header from './header'
 
