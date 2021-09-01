@@ -72,7 +72,7 @@ const Search = ({ onSearch }: Props) => {
     <div className="text-center px-4 mb-10 md:mb-14">
       <div className="flex flex-row items-center justify-center text-center mb-4 text-natural-black">
         <BiSearch className="mr-2 text-3xl" />
-        <p className="text-2xl">SEARCH</p>
+        <span className="text-2xl tracking-wider">SEARCH</span>
       </div>
       <div className="flex flex-wrap justify-center">
         <Input
