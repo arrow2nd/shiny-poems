@@ -12,7 +12,7 @@ module.exports = {
     extend: {
       colors: {
         'natural-black': '#2c2c2c',
-        shiny: '#8dbbff'
+        shiny: '#78aeff'
       },
       fontSize: {
         none: 0
