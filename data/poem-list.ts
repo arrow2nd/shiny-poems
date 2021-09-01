@@ -1192,6 +1192,13 @@ export const poemList: Poem[] = [
     text: 'リフトオフ。テレスコオプで見つけて'
   },
   {
+    id: 'PrivateDressDown_MorinoRinze',
+    idolName: '杜野凛世',
+    clothesTitle: 'プライベートドレスダウン',
+    clothesName: 'プライベートドレスダウン',
+    text: 'ルームウェア。すまじきものは恋'
+  },
+  {
     id: 'OvercastMonochrome_MorinoRinze',
     idolName: '杜野凛世',
     clothesTitle: 'オーバーキャストモノクローム',
@@ -1379,6 +1386,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ユナイトバースプラネタリ',
     clothesName: 'ユナイトバースプラネタリ',
     text: 'リフトオフ。キミと見つけたい、甘奈の☆'
+  },
+  {
+    id: 'PrivateDressDown_OsakiAmana',
+    idolName: '大崎甘奈',
+    clothesTitle: 'プライベートドレスダウン',
+    clothesName: 'プライベートドレスダウン',
+    text: 'ルームウェア。まんまるお団子☆ふわふわアイス'
   },
   {
     id: 'OvercastMonochrome_OsakiAmana',
@@ -1899,6 +1913,13 @@ export const poemList: Poem[] = [
     text: 'トリック・オア・トリート！......'
   },
   {
+    id: 'AssortParfait_AsakuraToru',
+    idolName: '浅倉透',
+    clothesTitle: 'アソヲトパッフェ',
+    clothesName: 'アソヲトパッフェ',
+    text: 'フルーツパーラー。メロン党、起立。'
+  },
+  {
     id: 'RefreshSummer_AsakuraToru',
     idolName: '浅倉透',
     clothesTitle: 'リフレッシュサマー',
@@ -1969,6 +1990,13 @@ export const poemList: Poem[] = [
     text: 'トリック・オア・トリート！ミッドナイトver.'
   },
   {
+    id: 'AssortParfait_HiguchiMadoka',
+    idolName: '樋口円香',
+    clothesTitle: 'アソヲトパッフェ',
+    clothesName: 'アソヲトパッフェ',
+    text: 'フルーツパーラー。乙女と浪漫とイチゴクリーム'
+  },
+  {
     id: 'RefreshSummer_HiguchiMadoka',
     idolName: '樋口円香',
     clothesTitle: 'リフレッシュサマー',
@@ -2032,6 +2060,13 @@ export const poemList: Poem[] = [
     text: 'トリック・オア・トリート！きみを食べたらどんな味？'
   },
   {
+    id: 'AssortParfait_IchikawaHinana',
+    idolName: '市川雛菜',
+    clothesTitle: 'アソヲトパッフェ',
+    clothesName: 'アソヲトパッフェ',
+    text: 'フルーツパーラー。パーフェクトアイスクリーム'
+  },
+  {
     id: 'RefreshSummer_IchikawaHinana',
     idolName: '市川雛菜',
     clothesTitle: 'リフレッシュサマー',
@@ -2093,6 +2128,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ミッドナイトモンスター',
     clothesName: 'ミッドナイトモンスター',
     text: 'トリック・オア・トリート！おかしくれたら魔法をあげる'
+  },
+  {
+    id: 'AssortParfait_FukumaruKoito',
+    idolName: '福丸小糸',
+    clothesTitle: 'アソヲトパッフェ',
+    clothesName: 'アソヲトパッフェ',
+    text: 'フルーツパーラー。特別な日のめしあがれ'
   },
   {
     id: 'RefreshSummer_FukumaruKoito',
