@@ -24,7 +24,7 @@ jobs:
         run: yarn update:poem
 
       - name: Run formatter
-        run: yarn fmt
+        run: yarn prettier --write ./data/*
 
       - name: Commit the changes
         uses: stefanzweifel/git-auto-commit-action@v4
