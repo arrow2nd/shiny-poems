@@ -6,7 +6,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "fmt": "yarn prettier --write **/*.{tsx?}",
     "update:poem": "node ./tools/create-poem-list.js",
     "update:color": "node ./tools/create-color-list.js"
   },
