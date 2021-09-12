@@ -1,9 +1,6 @@
 @tailwind base;
 @tailwind components;
 
-@import './idol-color.css';
-
-/* 全体 */
 body {
   background-color: #faf8f7;
 }
