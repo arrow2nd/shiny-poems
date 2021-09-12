@@ -15,8 +15,8 @@ WHERE {
      rdfs:label ?name;
      schema:givenName ?gname;
      imas:Color ?color.
-     filter(contains(?brand, 'ShinyColors')).
-     filter(lang(?gname)="en")
+  filter(contains(?brand, 'ShinyColors'))
+  filter(lang(?gname)="en")
 }
 order by ?gname
 `
@@ -24,28 +24,19 @@ order by ?gname
 async function main() {
   const data = await fetchIdolData(query)
 
-  const color = data.map((e) => ({
+  const colorData = data.map((e) => ({
     idolName: e.name.value,
-    className: `bg-${e.gname.value.toLowerCase()}`,
     hex: e.color.value
   }))
 
-  const css = data.map(
-    (e) =>
-      `.bg-${e.gname.value.toLowerCase()} { background-color: #${
-        e.color.value
-      } }\n`
-  )
-
   // 保存
-  const colorClassList = `import { Color } from '../types/color'\n\nexport const colorList: Color[] = ${JSON.stringify(
-    color,
+  const result = `import { Color } from '../types/color'\n\nexport const colorList: Color[] = ${JSON.stringify(
+    colorData,
     null,
     '  '
   )}`
 
-  fs.writeFileSync('./data/color-list.ts', colorClassList)
-  fs.writeFileSync('./styles/idol-color.css', css.join('\n'))
+  fs.writeFileSync('./data/color-list.ts', result)
 
   console.log('[ success! ]')
 }
