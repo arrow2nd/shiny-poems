@@ -1,9 +1,9 @@
-import { Poem } from '../../types/poem'
-import { splitText } from '../../scripts/util'
-import { colorList } from '../../data/color-list'
+import { Poem } from '../../../types/poem'
+import { splitText } from '../../../scripts/util'
+import { colorList } from '../../../data/color-list'
 import Accent from './accent'
-import CopyButton from './copy-button'
-import TweetButton from './tweet-button'
+import CopyButton from '../button/copy'
+import TweetButton from '../button/tweet'
 
 type Props = {
   poem: Poem

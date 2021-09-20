@@ -1,5 +1,5 @@
 import { ServerSideProps } from '../../types/server-side-props'
-import SEO from '../seo'
+import SEO from '../common/seo'
 import UI from '../ui'
 import Footer from './fotter'
 import Header from './header'
