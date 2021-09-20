@@ -1,9 +1,9 @@
-import { Poem } from '../../types/poem'
-import { splitText } from '../../scripts/util'
-import { colorList } from '../../data/color-list'
+import { Poem } from '../../../types/poem'
+import { splitPoemText } from '../../../scripts/util'
+import { colorList } from '../../../data/color-list'
 import Accent from './accent'
-import CopyButton from './copy-button'
-import TweetButton from './tweet-button'
+import CopyButton from '../button/copy'
+import TweetButton from '../button/tweet'
 
 type Props = {
   poem: Poem
@@ -11,17 +11,15 @@ type Props = {
 }
 
 const Card = ({ poem, shouldShowButton }: Props) => {
-  const poemContents = splitText(poem.text).map((e) => (
-    <p key={e}>{e.trim()}</p>
-  ))
-  const textContents = [
-    poem.text,
+  const splitedPoem = splitPoemText(poem.text)
+  const poemContents = splitedPoem.map((e) => <p key={e}>{e.trim()}</p>)
+
+  const linkText = [
     `#シャニマス #${poem.clothesName} #${poem.idolName}`,
     `https://shiny-poems.vercel.app?id=${poem.id}`
   ]
-
-  const tweetText = textContents.join('\n')
-  const copyText = textContents.join(' ')
+  const tweetText = [splitedPoem.join('\n'), ...linkText].join('\n')
+  const copyText = [poem.text, ...linkText].join(' ')
 
   const buttons = (
     <div className="flex flex-row text-md">

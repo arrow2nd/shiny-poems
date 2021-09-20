@@ -1,6 +1,6 @@
-'use strict'
-const fs = require('fs')
-const { fetchIdolData } = require('./util')
+import fs from 'fs'
+import { Color } from '../types/color'
+import { fetchIdolData } from './util'
 
 const query = `
 PREFIX schema: <http://schema.org/>
@@ -24,10 +24,12 @@ order by ?gname
 async function main() {
   const data = await fetchIdolData(query)
 
-  const colorData = data.map((e) => ({
-    idolName: e.name.value,
-    hex: e.color.value
-  }))
+  const colorData: Color[] = data.map(
+    (e): Color => ({
+      idolName: e.name.value,
+      hex: e.color.value
+    })
+  )
 
   // 保存
   const result = `import { Color } from '../types/color'\n\nexport const colorList: Color[] = ${JSON.stringify(

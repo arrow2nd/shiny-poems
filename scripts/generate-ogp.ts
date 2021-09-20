@@ -1,5 +1,5 @@
 import { ParsedUrlQuery } from 'node:querystring'
-import { splitText, encode } from './util'
+import { splitPoemText, encodeForCloudinary } from './util'
 import { poemList } from '../data/poem-list'
 import { colorList } from '../data/color-list'
 import cloudinary from 'cloudinary'
@@ -20,7 +20,7 @@ export const generateOgpImageUrl = (
 
   // アイドル名からイメージカラーを取得
   const idolColor = colorList.find((e) => e.idolName === poem.idolName)
-  const poemText = splitText(poem.text).join('\n')
+  const poemText = splitPoemText(poem.text).join('\n')
 
   const ogpImgUrl = cloudinary.v2.url('shiny-poems/ogp-base.png', {
     secure: true,
@@ -28,9 +28,9 @@ export const generateOgpImageUrl = (
     transformation: [
       {
         variables: [
-          ['$poem', `!${encode(poemText)}!`],
-          ['$clothes', `!${encode(poem.clothesName)}!`],
-          ['$idol', `!${encode(poem.idolName)}!`],
+          ['$poem', `!${encodeForCloudinary(poemText)}!`],
+          ['$clothes', `!${encodeForCloudinary(poem.clothesName)}!`],
+          ['$idol', `!${encodeForCloudinary(poem.idolName)}!`],
           ['$color', `!rgb:${idolColor.hex}!`]
         ]
       },

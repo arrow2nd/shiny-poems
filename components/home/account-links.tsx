@@ -1,5 +1,5 @@
 import { FaGithubAlt, FaTwitter } from 'react-icons/fa'
-import LinkButton from '../common/link-button'
+import LinkButton from '../common/link/button'
 
 const AccountLinks = () => (
   <div className="flex flex-row mb-8">
