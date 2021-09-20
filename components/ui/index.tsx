@@ -1,7 +1,5 @@
-import { useEffect } from 'react'
-import { useState } from 'react'
-import { searchPoem } from '../../scripts/search-poem'
-import { Poem } from '../../types/poem'
+import { useState, useEffect } from 'react'
+import { usePoem } from '../../hooks/usePoem'
 import Poems from '../poems'
 import Search from './search'
 
@@ -10,25 +8,26 @@ type Props = {
 }
 
 const UI = ({ poemText }: Props) => {
-  const [searchResults, setSearchResults] = useState([] as Poem[])
+  const [type, setType] = useState('')
+  const [keyword, setKeyword] = useState('')
+  const poems = usePoem(type, keyword)
 
-  // 条件とキーワードから検索する
   const handleSearch = (type: string, keyword: string) => {
-    const newSearchResults = searchPoem(type, keyword)
-    setSearchResults(newSearchResults)
+    setType(type)
+    setKeyword(keyword)
   }
 
   // idで指定されたポエムがあれば検索する
   useEffect(() => {
-    if (poemText != '') {
+    if (poemText !== '') {
       handleSearch('text', poemText)
     }
-  }, [])
+  }, [poemText])
 
   return (
     <div className="flex-grow mx-4">
       <Search onSearch={handleSearch} />
-      <Poems items={searchResults} />
+      <Poems items={poems} />
     </div>
   )
 }

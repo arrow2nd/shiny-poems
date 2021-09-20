@@ -1,26 +1,22 @@
 /**
- * 文の区切りで分割
+ * ポエムを文の区切りで分割
  *
  * @param text 文字列
  * @returns 文字列配列
  */
-export const splitText = (text: string) => {
+export const splitPoemText = (text: string) => {
   const splited = text.match(/(.*?[。！？!?])(.*)/)
 
-  // 分割できなかったならそのまま返す
-  if (!splited) {
-    return [text]
-  }
-
-  return [splited[1], splited[2]]
+  // 分割できなければそのまま返す
+  return splited ? [splited[1], splited[2]] : [text]
 }
 
 /**
- * 文字列をエンコード
+ * Cloudinary用に文字列をエンコード
  *
  * @param str 文字列
  * @returns エンコードされた文字列
  */
-export const encode = (str: string) => {
+export const encodeForCloudinary = (str: string) => {
   return encodeURIComponent(str.replace(/\,/g, '%2C').replace(/\//g, '%2F'))
 }
