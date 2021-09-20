@@ -1,13 +1,14 @@
 {
   "name": "shiny-poems",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "update:poem": "node ./tools/create-poem-list.js",
-    "update:color": "node ./tools/create-color-list.js"
+    "update:poem": "ts-node ./tools/create-poem-data.ts",
+    "update:color": "ts-node ./tools/create-color-data.ts",
+    "fmt:data": "yarn prettier --write ./data/*"
   },
   "dependencies": {
     "cloudinary": "^1.27.0",
@@ -31,6 +32,7 @@
     "postcss": "^8.3.6",
     "prettier": "^2.4.1",
     "tailwindcss": "^2.2.15",
+    "ts-node": "^10.2.1",
     "typescript": "^4.4.3"
   }
 }
