@@ -1,5 +1,11 @@
 import axios from 'axios'
 
+interface IImasAPIResponse {
+  results: {
+    bindings: any[]
+  }
+}
+
 /**
  * imasparql にクエリを投げる
  *
@@ -12,7 +18,7 @@ export async function fetchIdolData(query: string) {
   )}`
 
   try {
-    const res = await axios.get(url)
+    const res = await axios.get<IImasAPIResponse>(url)
     return res.data.results.bindings
   } catch (err) {
     console.error(err)
