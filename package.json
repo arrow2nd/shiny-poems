@@ -11,28 +11,29 @@
     "fmt:data": "yarn prettier --write ./data/*"
   },
   "dependencies": {
-    "cloudinary": "^1.27.0",
+    "cloudinary": "^1.27.1",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-copy-to-clipboard": "^5.0.4",
     "react-dom": "17.0.2",
-    "react-icons": "^4.2.0",
-    "react-select": "^4.3.1"
+    "react-hot-toast": "^2.1.1",
+    "react-icons": "^4.3.1",
+    "react-select": "^5.1.0"
   },
   "devDependencies": {
-    "@types/react": "^17.0.22",
-    "@types/react-copy-to-clipboard": "^5.0.1",
-    "@types/react-dom": "^17.0.9",
-    "@types/react-select": "^4.0.17",
-    "autoprefixer": "^10.3.4",
-    "axios": "^0.21.4",
-    "eslint": "^7.32.0",
+    "@types/react": "^17.0.31",
+    "@types/react-copy-to-clipboard": "^5.0.2",
+    "@types/react-dom": "^17.0.10",
+    "@types/react-select": "^5.0.1",
+    "autoprefixer": "^10.3.7",
+    "axios": "^0.23.0",
+    "eslint": "^8.1.0",
     "eslint-config-next": "^11.1.2",
     "eslint-config-prettier": "^8.3.0",
-    "postcss": "^8.3.6",
+    "postcss": "^8.3.11",
     "prettier": "^2.4.1",
-    "tailwindcss": "^2.2.15",
-    "ts-node": "^10.2.1",
-    "typescript": "^4.4.3"
+    "tailwindcss": "^2.2.17",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
   }
 }
