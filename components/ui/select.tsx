@@ -1,5 +1,5 @@
 import React, { useMemo, forwardRef } from 'react'
-import ReactSelect from 'react-select'
+import ReactSelect, { StylesConfig } from 'react-select'
 
 type Props = {
   placeholder: string
@@ -22,17 +22,28 @@ const Select = forwardRef(function SelectContent(
     }
   }
 
+  const styles: StylesConfig = {
+    placeholder: (provided) => ({
+      ...provided,
+      textAlign: 'left'
+    }),
+    menu: (provided) => ({
+      ...provided,
+      textAlign: 'center'
+    }),
+    singleValue: (provided) => ({
+      ...provided,
+      textAlign: 'left'
+    })
+  }
+
   return (
     <ReactSelect
       className="w-72 h-9 mx-1 my-2 rounded-md bg-white"
       instanceId={props.placeholder}
       placeholder={<p>{props.placeholder}</p>}
       options={options}
-      formatOptionLabel={(option) => (
-        <div>
-          <p>{option.label}</p>
-        </div>
-      )}
+      styles={styles}
       onChange={handleChangeSelect}
       ref={ref}
     />

@@ -32,15 +32,15 @@ const Search = ({ onSearch }: Props) => {
 
   // アイドル名の選択をクリア
   const clearIdolSelect = () => {
-    if (idolSelect.current.state.value) {
-      idolSelect.current.select.clearValue()
+    if (idolSelect.current.state.selectValue) {
+      idolSelect.current.clearValue()
     }
   }
 
   // 衣装名の選択をクリア
   const clearClothesSelect = () => {
-    if (clothesSelect.current.state.value) {
-      clothesSelect.current.select.clearValue()
+    if (clothesSelect.current.state.selectValue) {
+      clothesSelect.current.clearValue()
     }
   }
 
