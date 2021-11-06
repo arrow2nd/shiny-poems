@@ -19,7 +19,10 @@ const CopyButton = ({ text }: Props) => {
 
   return (
     <CopyToClipboard text={text} onCopy={handleClickCopy}>
-      <button className="text-natural-black hover:text-black focus:outline-none transition-colors">
+      <button
+        className="text-natural-black hover:text-black focus:outline-none transition-colors"
+        title="コピーする"
+      >
         {isCopied ? <AiOutlineCheckCircle /> : <FiCopy />}
       </button>
     </CopyToClipboard>
