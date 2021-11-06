@@ -2,7 +2,7 @@
 
 [![UpdateData](https://github.com/arrow2nd/shiny-poems/actions/workflows/update-data.yaml/badge.svg)](https://github.com/arrow2nd/shiny-poems/actions/workflows/update-data.yaml)
 
-> https://shiny-poems.vercel.app/
+> https://shiny-poems.vercel.app
 
 シャニマスの衣装ポエムが検索できるやつ
 
