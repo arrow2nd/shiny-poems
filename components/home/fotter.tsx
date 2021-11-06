@@ -2,7 +2,7 @@ import AccountLinks from './account-links'
 import Link from '../common/link'
 
 const Footer = () => (
-  <footer className="flex flex-col items-center justify-center w-full h-80 md:h-64 px-5 text-sm bg-shiny text-white">
+  <footer className="flex flex-col items-center justify-center text-center w-full h-80 md:h-64 px-5 text-sm bg-shiny text-white">
     <AccountLinks />
     <div className="mb-1">
       {'All data is obtained from '}
