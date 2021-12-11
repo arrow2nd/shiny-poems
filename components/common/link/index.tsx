@@ -1,17 +1,13 @@
 type Props = {
-  text: string
+  className?: string
+  children?: React.ReactNode
+  title: string
   href: string
 }
 
-const Link = ({ text, href }: Props) => (
-  <a
-    className="underline text-white hover:text-mano transition-colors"
-    title={text}
-    href={href}
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    {text}
+const Link = (props: Props) => (
+  <a {...props} target="_blank" rel="noopener noreferrer">
+    {props.children || props.title}
   </a>
 )
 

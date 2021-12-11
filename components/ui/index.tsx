@@ -23,7 +23,7 @@ const UI = ({ poemText }: Props) => {
   const handleSearch = (type: string, keyword: string) => {
     search(type, keyword)
     toast(`「${keyword}」の検索結果です`, {
-      icon: '📖'
+      icon: '🔍'
     })
   }
 
@@ -36,7 +36,7 @@ const UI = ({ poemText }: Props) => {
 
   return (
     <div className="flex-grow mx-4">
-      <Toaster toastOptions={{ duration: 2500 }} />
+      <Toaster toastOptions={{ duration: 3000 }} />
       <Search onSearch={handleSearch} />
       <Poems items={poems} />
     </div>
