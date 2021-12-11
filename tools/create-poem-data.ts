@@ -60,7 +60,7 @@ async function main() {
   )
 
   // 保存
-  const exp = `import { Poem } from '../types/poem'\n\nexport const poemList: Poem[] = ${JSON.stringify(
+  const exp = `import { Poem } from 'types/poem'\n\nexport const poemList: Poem[] = ${JSON.stringify(
     sortedPoemData,
     null,
     '  '
