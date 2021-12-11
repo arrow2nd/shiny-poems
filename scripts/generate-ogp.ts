@@ -1,8 +1,10 @@
-import { ParsedUrlQuery } from 'node:querystring'
-import { splitPoemText, encodeForCloudinary } from './util'
-import { poemList } from '../data/poem-list'
-import { colorList } from '../data/color-list'
 import cloudinary from 'cloudinary'
+import { ParsedUrlQuery } from 'node:querystring'
+
+import { encodeForCloudinary, splitPoemText } from 'scripts/util'
+
+import { colorList } from 'data/color-list'
+import { poemList } from 'data/poem-list'
 
 export const generateOgpImageUrl = (
   query: ParsedUrlQuery

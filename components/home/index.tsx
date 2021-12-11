@@ -1,8 +1,9 @@
-import { ServerSideProps } from '../../types/server-side-props'
-import SEO from '../common/seo'
-import UI from '../ui'
-import Footer from './fotter'
-import Header from './header'
+import SEO from 'components/common/seo'
+import Footer from 'components/home/footer'
+import Header from 'components/home/header'
+import UI from 'components/ui'
+
+import { ServerSideProps } from 'types/server-side-props'
 
 const Home = ({ ogpImageUrl, poemText }: ServerSideProps) => (
   <div className="flex flex-col min-h-screen font-default">

@@ -1,4 +1,4 @@
-import { Color } from '../types/color'
+import { Color } from 'types/color'
 
 export const colorList: Color[] = [
   {

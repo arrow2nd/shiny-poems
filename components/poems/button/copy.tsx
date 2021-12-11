@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
-import { FiCopy } from 'react-icons/fi'
 import { AiOutlineCheckCircle } from 'react-icons/ai'
+import { FiCopy } from 'react-icons/fi'
 
 type Props = {
   text: string

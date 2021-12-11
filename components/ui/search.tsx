@@ -1,8 +1,10 @@
 import { useRef, useState } from 'react'
 import { BiSearch } from 'react-icons/bi'
-import { poemList } from '../../data/poem-list'
-import Input from './input'
-import Select from './select'
+
+import Input from 'components/ui/input'
+import Select from 'components/ui/select'
+
+import { poemList } from 'data/poem-list'
 
 type Props = {
   onSearch: (type: string, label: string) => void

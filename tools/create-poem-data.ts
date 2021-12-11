@@ -1,7 +1,9 @@
 import fs from 'fs'
-import { fetchIdolData } from './util'
+
+import { Poem } from 'types/poem'
+
 import { idolList, seriesList } from './data'
-import { Poem } from '../types/poem'
+import { fetchIdolData } from './util'
 
 // どのゲームに登場した衣装ポエムなのか判別できそうにないので
 // 暫定的にポエムが1文字以上40文字未満のものを取得

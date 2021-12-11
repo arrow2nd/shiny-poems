@@ -1,5 +1,5 @@
-import AccountLinks from './account-links'
-import Link from '../common/link'
+import Link from 'components/common/link'
+import AccountLinks from 'components/home/account-links'
 
 const Footer = () => (
   <footer className="flex flex-col items-center justify-center text-center w-full px-5 py-12 text-sm bg-shiny text-white">

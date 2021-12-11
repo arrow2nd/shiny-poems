@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
-import { poemList } from '../data/poem-list'
-import { Poem } from '../types/poem'
+
+import { poemList } from 'data/poem-list'
+
+import { Poem } from 'types/poem'
 
 export const usePoem = (type: string, keyword: string): Poem[] => {
   const [poems, setPoems] = useState([] as Poem[])
