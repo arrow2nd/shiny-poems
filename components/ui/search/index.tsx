@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react'
-import { BiSearch } from 'react-icons/bi'
 
 import Input from 'components/ui/input'
+import Label from 'components/ui/search/label'
 import Select from 'components/ui/select'
 
 import { poemList } from 'data/poem-list'
@@ -72,10 +72,7 @@ const Search = ({ onSearch }: Props) => {
 
   return (
     <div className="text-center px-4 mb-10 md:mb-14">
-      <div className="flex flex-row items-center justify-center text-center mb-4 text-natural-black">
-        <BiSearch className="mr-2 text-3xl" />
-        <span className="text-2xl tracking-wider">SEARCH</span>
-      </div>
+      <Label />
       <div className="flex flex-wrap justify-center">
         <Input
           placeholder="ポエムの一部から"

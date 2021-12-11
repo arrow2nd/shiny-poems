@@ -2,9 +2,13 @@ import { FaGithubAlt, FaTwitter } from 'react-icons/fa'
 
 import LinkButton from 'components/common/link/button'
 
-const AccountLinks = () => (
-  <div className="flex flex-row mb-6">
-    <LinkButton title="Twitter" href="https://twitter.com/arrow_2nd">
+const Links = () => (
+  <div className="flex flex-row mb-4 text-3xl text-white">
+    <LinkButton
+      className="mr-4"
+      title="Twitter"
+      href="https://twitter.com/arrow_2nd"
+    >
       <FaTwitter />
     </LinkButton>
     <LinkButton title="GitHub" href="https://github.com/arrow2nd/shiny-poems">
@@ -13,4 +17,4 @@ const AccountLinks = () => (
   </div>
 )
 
-export default AccountLinks
+export default Links

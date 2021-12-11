@@ -1,4 +1,8 @@
-import { GetServerSidePropsContext, GetServerSidePropsResult } from 'next'
+import {
+  GetServerSidePropsContext,
+  GetServerSidePropsResult,
+  InferGetServerSidePropsType
+} from 'next'
 
 import Home from 'components/home'
 
@@ -6,7 +10,11 @@ import { generateOgpImageUrl } from 'scripts/generate-ogp'
 
 import { ServerSideProps } from 'types/server-side-props'
 
-const ShinyPoems = (props: ServerSideProps) => <Home {...props} />
+type Props = InferGetServerSidePropsType<typeof getServerSideProps>
+
+const ShinyPoems = (props: Props) => <Home {...props} />
+
+export default ShinyPoems
 
 export const getServerSideProps = ({
   query
@@ -20,5 +28,3 @@ export const getServerSideProps = ({
     }
   }
 }
-
-export default ShinyPoems
