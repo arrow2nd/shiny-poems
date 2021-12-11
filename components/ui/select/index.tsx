@@ -1,4 +1,4 @@
-import React, { useMemo, forwardRef } from 'react'
+import React, { forwardRef, useMemo } from 'react'
 import ReactSelect, { StylesConfig } from 'react-select'
 
 type Props = {

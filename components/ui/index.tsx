@@ -1,8 +1,10 @@
-import { useState, useEffect } from 'react'
-import { usePoem } from '../../hooks/usePoem'
+import { useEffect, useState } from 'react'
 import toast, { Toaster } from 'react-hot-toast'
-import Poems from '../poems'
-import Search from './search'
+
+import Poems from 'components/poems'
+import Search from 'components/ui/search'
+
+import { usePoem } from 'hooks/usePoem'
 
 type Props = {
   poemText: string
@@ -21,7 +23,7 @@ const UI = ({ poemText }: Props) => {
   const handleSearch = (type: string, keyword: string) => {
     search(type, keyword)
     toast(`「${keyword}」の検索結果です`, {
-      icon: '📖'
+      icon: '🔍'
     })
   }
 
@@ -34,7 +36,7 @@ const UI = ({ poemText }: Props) => {
 
   return (
     <div className="flex-grow mx-4">
-      <Toaster toastOptions={{ duration: 2500 }} />
+      <Toaster toastOptions={{ duration: 3000 }} />
       <Search onSearch={handleSearch} />
       <Poems items={poems} />
     </div>

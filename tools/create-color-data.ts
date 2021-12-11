@@ -1,5 +1,7 @@
 import fs from 'fs'
-import { Color } from '../types/color'
+
+import { Color } from 'types/color'
+
 import { fetchIdolData } from './util'
 
 const query = `
@@ -32,7 +34,7 @@ async function main() {
   )
 
   // 保存
-  const result = `import { Color } from '../types/color'\n\nexport const colorList: Color[] = ${JSON.stringify(
+  const result = `import { Color } from 'types/color'\n\nexport const colorList: Color[] = ${JSON.stringify(
     colorData,
     null,
     '  '

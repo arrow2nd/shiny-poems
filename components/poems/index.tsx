@@ -1,5 +1,6 @@
-import { Poem } from '../../types/poem'
-import Card from './card'
+import Card from 'components/poems/card'
+
+import { Poem } from 'types/poem'
 
 type Props = {
   items: Poem[]

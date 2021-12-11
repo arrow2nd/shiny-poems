@@ -1,4 +1,4 @@
-import { Poem } from '../types/poem'
+import { Poem } from 'types/poem'
 
 export const poemList: Poem[] = [
   {

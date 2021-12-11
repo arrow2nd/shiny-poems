@@ -1,13 +1,13 @@
 import Head from 'next/head'
 
+import { Site } from 'data/site'
+
 type Props = {
   ogpImageUrl: string
 }
 
 const SEO = ({ ogpImageUrl }: Props) => {
-  const title = 'ShinyPoems | シャニマス衣装ポエム検索'
-  const desc = 'シャイニーカラーズの衣装ポエムが検索できるサイトです'
-  const url = 'https://shiny-poems.vercel.app'
+  const { title, desc, url, twitterUsername } = Site
 
   return (
     <Head>
@@ -18,7 +18,7 @@ const SEO = ({ ogpImageUrl }: Props) => {
       <meta property="og:description" content={desc} />
       <meta property="og:image" content={ogpImageUrl} />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:creator" content="@arrow_2nd" />
+      <meta name="twitter:creator" content={twitterUsername} />
       <meta name="twitter:url" content={url} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={desc} />

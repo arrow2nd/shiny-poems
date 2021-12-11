@@ -1,6 +1,8 @@
 module.exports = {
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}'
+  ],
   theme: {
     fontFamily: {
       default: ['"M PLUS Rounded 1c"', 'sans-serif']
@@ -19,9 +21,6 @@ module.exports = {
         none: 0
       }
     }
-  },
-  variants: {
-    extend: {}
   },
   plugins: []
 }
