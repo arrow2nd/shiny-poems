@@ -8,7 +8,6 @@ interface IImasAPIResponse {
 
 /**
  * imasparql にクエリを投げる
- *
  * @param query 検索クエリ
  * @returns 検索結果
  */

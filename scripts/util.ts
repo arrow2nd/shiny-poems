@@ -1,6 +1,5 @@
 /**
  * ポエムを文の区切りで分割
- *
  * @param text 文字列
  * @returns 文字列配列
  */
@@ -13,7 +12,6 @@ export const splitPoemText = (text: string) => {
 
 /**
  * Cloudinary用に文字列をエンコード
- *
  * @param str 文字列
  * @returns エンコードされた文字列
  */

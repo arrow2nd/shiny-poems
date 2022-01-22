@@ -1,11 +1,16 @@
 import cloudinary from 'cloudinary'
 import { ParsedUrlQuery } from 'node:querystring'
 
-import { encodeForCloudinary, splitPoemText } from 'scripts/util'
-
 import { colorList } from 'data/color-list'
 import { poemList } from 'data/poem-list'
 
+import { encodeForCloudinary, splitPoemText } from './util'
+
+/**
+ * OGP画像のURLを生成
+ * @param query URLクエリ
+ * @returns [OGP画像のURL, ポエムテキスト]
+ */
 export const generateOgpImageUrl = (
   query: ParsedUrlQuery
 ): [string, string] => {

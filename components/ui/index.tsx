@@ -2,9 +2,10 @@ import { useEffect, useState } from 'react'
 import toast, { Toaster } from 'react-hot-toast'
 
 import Poems from 'components/poems'
-import Search from 'components/ui/search'
 
 import { usePoem } from 'hooks/usePoem'
+
+import Search from './search'
 
 type Props = {
   poemText: string
