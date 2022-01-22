@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## Changed
+
+- ロゴアイコンを変更
+- 一部デザイン・レイアウトを変更
+
 # [0.7.0] - 2021-12-11
 
 ### Changed
@@ -39,6 +44,14 @@
 - フォントの読み込み速度を改善
 - サイト・OGP 画像のデザインを刷新
 
-## [0.1.0] - 2021-05-06
+## 0.1.0 - 2021-05-06
 
 - リリース 🍚
+
+[unreleased]: https://github.com/arrow2nd/shiny-poems/compare/v0.8.0...HEAD
+[0.7.0]: https://github.com/arrow2nd/shiny-poems/compare/v0.6.0...v0.7.0
+[0.6.0]: https://github.com/arrow2nd/shiny-poems/compare/v0.5.0...v0.6.0
+[0.5.0]: https://github.com/arrow2nd/shiny-poems/compare/v0.4.0...v0.5.0
+[0.4.0]: https://github.com/arrow2nd/shiny-poems/compare/v0.3.0...v0.4.0
+[0.3.0]: https://github.com/arrow2nd/shiny-poems/compare/v0.2.0...v0.3.0
+[0.2.0]: https://github.com/arrow2nd/shiny-poems/compare/v0.1.0...v0.2.0
