@@ -16,28 +16,44 @@ const UI = ({ poemText }: Props) => {
   const [keyword, setKeyword] = useState('')
   const poems = usePoem(type, keyword)
 
-  const search = (type: string, keyword: string) => {
+  const setSearchKeyword = (type: string, keyword: string) => {
     setType(type)
     setKeyword(keyword)
   }
 
   const handleSearch = (type: string, keyword: string) => {
-    search(type, keyword)
-    toast(`「${keyword}」の検索結果です`, {
-      icon: '🔍'
+    // 40文字以上なら切り取る
+    if (keyword.length >= 40) {
+      keyword = keyword.slice(0, 40)
+    }
+
+    // 検索キーワードをセット
+    setSearchKeyword(type, keyword)
+
+    // トーストを表示
+    toast.success(`「${keyword}」の検索結果です`, {
+      style: {
+        border: '1px solid #e5e7eb',
+        padding: '12px'
+      },
+      iconTheme: {
+        primary: '#78aeff',
+        secondary: '#FFFAEE'
+      },
+      duration: 4000
     })
   }
 
   // idで指定されたポエムがあれば検索する
   useEffect(() => {
     if (poemText !== '') {
-      search('text', poemText)
+      setSearchKeyword('text', poemText)
     }
   }, [poemText])
 
   return (
     <div className="flex-grow mx-4">
-      <Toaster toastOptions={{ duration: 3000 }} />
+      <Toaster />
       <Search onSearch={handleSearch} />
       <Poems items={poems} />
     </div>
