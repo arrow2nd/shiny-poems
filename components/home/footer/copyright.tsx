@@ -13,20 +13,6 @@ const Copyright = () => {
           href="https://sparql.crssnky.xyz/imas/"
         />
       </span>
-      <span className="mb-1">
-        {'Logo icon made by '}
-        <Link
-          className={linkStyle}
-          title="Pixel perfect"
-          href="https://www.flaticon.com/authors/pixel-perfect"
-        />
-        {' from '}
-        <Link
-          className={linkStyle}
-          title="flaticon"
-          href="https://www.flaticon.com/"
-        />
-      </span>
       <span>
         The copyright of all content related to THE IDOLM@STER belongs to BANDAI
         NAMCO Entertainment Inc.

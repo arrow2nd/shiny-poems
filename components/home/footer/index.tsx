@@ -1,9 +1,10 @@
 import Copyright from './copyright'
-import Links from './links'
+import GitHubLink from './github-link'
 
 const Footer = () => (
   <footer className="flex flex-col items-center justify-center text-center w-full px-6 py-10 text-sm bg-shiny text-white">
-    <Links />
+    <GitHubLink />
+    <span className="w-16 h-px mb-4 border border-white rounded-full" />
     <Copyright />
   </footer>
 )
