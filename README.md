@@ -1,4 +1,4 @@
-# 🪶 shiny-poems
+# shiny-poems
 
 シャニマスの衣装ポエムが検索できる Web アプリ
 
