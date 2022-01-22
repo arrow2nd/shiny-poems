@@ -1,10 +1,11 @@
 import { useRef, useState } from 'react'
 
 import Input from 'components/ui/input'
-import Label from 'components/ui/search/label'
 import Select from 'components/ui/select'
 
 import { poemList } from 'data/poem-list'
+
+import Label from './label'
 
 type Props = {
   onSearch: (type: string, label: string) => void

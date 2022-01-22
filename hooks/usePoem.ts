@@ -4,6 +4,12 @@ import { poemList } from 'data/poem-list'
 
 import { Poem } from 'types/poem'
 
+/**
+ * ポエムを検索
+ * @param type 検索条件
+ * @param keyword キーワード
+ * @returns 該当するポエムデータの配列
+ */
 export const usePoem = (type: string, keyword: string): Poem[] => {
   const [poems, setPoems] = useState([] as Poem[])
 

@@ -6,10 +6,7 @@ type Props = {
   onSubmit: () => void
 }
 
-const Input = forwardRef(function InputContent(
-  props: Props,
-  ref: React.MutableRefObject<any>
-) {
+const Input = (props: Props, ref: React.MutableRefObject<any>) => {
   const handleKeyDown = (ev: any) => {
     // Enterが入力された
     if (ev.which === 13) {
@@ -36,6 +33,6 @@ const Input = forwardRef(function InputContent(
       </div>
     </div>
   )
-})
+}
 
-export default Input
+export default forwardRef(Input)
