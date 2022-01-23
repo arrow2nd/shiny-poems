@@ -2,7 +2,7 @@ import Image from 'next/image'
 import LogoImg from 'public/logo.png'
 
 const Header = () => (
-  <header className="flex justify-center items-center w-full h-28 mb-12 md:mb-16 bg-shiny">
+  <header className="flex justify-center items-center w-full p-8 mb-12 md:mb-16 bg-shiny">
     <a className="text-none" href="">
       <Image
         src={LogoImg}

@@ -1,11 +1,13 @@
-import Copyright from './copyright'
-import GitHubLink from './github-link'
+import Links from './links'
 
 const Footer = () => (
-  <footer className="flex flex-col items-center justify-center text-center w-full px-6 py-10 text-sm bg-shiny text-white">
-    <GitHubLink />
-    <span className="w-16 h-0.5 mb-4 bg-white rounded-full" />
-    <Copyright />
+  <footer className="flex flex-col items-center justify-center text-center w-full px-6 py-12 bg-shiny">
+    <Links />
+    <span className="w-8 h-0.5 mb-6 bg-white rounded-full" />
+    <span className="text-white text-sm">
+      The rights to all content related to THE IDOLM@STER belong to BANDAI NAMCO
+      Entertainment Inc.
+    </span>
   </footer>
 )
 
