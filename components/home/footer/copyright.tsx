@@ -14,8 +14,8 @@ const Copyright = () => {
         />
       </span>
       <span>
-        The copyright of all content related to THE IDOLM@STER belongs to BANDAI
-        NAMCO Entertainment Inc.
+        The rights to all content related to THE IDOLM@STER belong to
+        BANDAI NAMCO Entertainment Inc.
       </span>
     </>
   )
