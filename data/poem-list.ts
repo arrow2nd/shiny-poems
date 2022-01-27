@@ -16,6 +16,13 @@ export const poemList: Poem[] = [
     text: 'Cheers! 泡沫の間の輝き'
   },
   {
+    id: 'BaitwudeiRestaurant_SakuragiMano',
+    idolName: '櫻木真乃',
+    clothesTitle: 'バイトゥデイレストラント',
+    clothesName: 'バイトゥデイレストラント',
+    text: 'いらっしゃいませ、輝ける場所へ'
+  },
+  {
     id: 'RingingPreppyGirl_SakuragiMano',
     idolName: '櫻木真乃',
     clothesTitle: 'リンギングプレッピーガール',
@@ -149,6 +156,13 @@ export const poemList: Poem[] = [
     text: 'しろはえの浴衣。跳ねる気持ちを浅縹は知っている'
   },
   {
+    id: 'BaitwudeiRestaurant_KazanoHiori',
+    idolName: '風野灯織',
+    clothesTitle: 'バイトゥデイレストラント',
+    clothesName: 'バイトゥデイレストラント',
+    text: 'オーダーはお決まりですか？'
+  },
+  {
     id: 'FashionableSummer_KazanoHiori',
     idolName: '風野灯織',
     clothesTitle: 'ファッショナブルサマー',
@@ -275,6 +289,13 @@ export const poemList: Poem[] = [
     text: 'トリック・オア・トリート！たくましき生命は人を愛したい'
   },
   {
+    id: 'BaitwudeiRestaurant_HachimiyaMeguru',
+    idolName: '八宮めぐる',
+    clothesTitle: 'バイトゥデイレストラント',
+    clothesName: 'バイトゥデイレストラント',
+    text: 'トレイ捌きはお任せ♪'
+  },
+  {
     id: 'InnocentSailor_HachimiyaMeguru',
     idolName: '八宮めぐる',
     clothesTitle: 'イノセントセーラー',
@@ -301,6 +322,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ユナイトバースプラネタリ',
     clothesName: 'ユナイトバースプラネタリ',
     text: 'リフトオフ。ハローハロー！　そちらはどう？'
+  },
+  {
+    id: 'PrivateDressDown_HachimiyaMeguru',
+    idolName: '八宮めぐる',
+    clothesTitle: 'プライベートドレスダウン',
+    clothesName: 'プライベートドレスダウン',
+    text: 'ルームウェア。瞬発力オッケー！'
   },
   {
     id: 'OvercastMonochrome_HachimiyaMeguru',
@@ -408,6 +436,20 @@ export const poemList: Poem[] = [
     text: 'ワンステップ。纏うは白金、歌えよ黄金'
   },
   {
+    id: 'PrivateDressDown_TsukiokaKogane',
+    idolName: '月岡恋鐘',
+    clothesTitle: 'プライベートドレスダウン',
+    clothesName: 'プライベートドレスダウン',
+    text: '夢で逢っても焦らない'
+  },
+  {
+    id: 'ReflectionThemePark_TsukiokaKogane',
+    idolName: '月岡恋鐘',
+    clothesTitle: 'リフレクションテーマパーク',
+    clothesName: 'リフレクションテーマパーク',
+    text: '尻尾は素直なお年頃'
+  },
+  {
     id: 'NewYearHaregi_TsukiokaKogane',
     idolName: '月岡恋鐘',
     clothesTitle: 'ニューイヤーハレギ',
@@ -441,6 +483,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ホリディプリンセス',
     clothesName: 'ホリディプリンセス',
     text: 'Bedtime Story／キマグレ・プリンセス'
+  },
+  {
+    id: 'ReflectionThemePark_TanakaMamimi',
+    idolName: '田中摩美々',
+    clothesTitle: 'リフレクションテーマパーク',
+    clothesName: 'リフレクションテーマパーク',
+    text: 'ようこそ、ここではみんな子ども'
   },
   {
     id: 'FashionableSummer_TanakaMamimi',
@@ -604,6 +653,13 @@ export const poemList: Poem[] = [
     text: 'ワンステップ。この空の下にいる'
   },
   {
+    id: 'ReflectionThemePark_ShiraseSakuya',
+    idolName: '白瀬咲耶',
+    clothesTitle: 'リフレクションテーマパーク',
+    clothesName: 'リフレクションテーマパーク',
+    text: '君がキミを忘れるまで'
+  },
+  {
     id: 'NewYearHaregi_ShiraseSakuya',
     idolName: '白瀬咲耶',
     clothesTitle: 'ニューイヤーハレギ',
@@ -637,6 +693,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ホリディプリンセス',
     clothesName: 'ホリディプリンセス',
     text: 'Bedtime Story／私をお姫様にして'
+  },
+  {
+    id: 'ReflectionThemePark_MitsumineYuika',
+    idolName: '三峰結華',
+    clothesTitle: 'リフレクションテーマパーク',
+    clothesName: 'リフレクションテーマパーク',
+    text: 'キララ乱反射'
   },
   {
     id: 'FashionableSummer_MitsumineYuika',
@@ -807,6 +870,13 @@ export const poemList: Poem[] = [
     text: 'ワンステップ。小鳥よ小鳥、世界はきみの庭'
   },
   {
+    id: 'ReflectionThemePark_YukokuKiriko',
+    idolName: '幽谷霧子',
+    clothesTitle: 'リフレクションテーマパーク',
+    clothesName: 'リフレクションテーマパーク',
+    text: '心の鍵、お預かりします'
+  },
+  {
     id: 'NewYearHaregi_YukokuKiriko',
     idolName: '幽谷霧子',
     clothesTitle: 'ニューイヤーハレギ',
@@ -847,6 +917,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'アンユージュアルアワー',
     clothesName: 'アンユージュアルアワー',
     text: '【特集】少しだけ、背伸び'
+  },
+  {
+    id: 'KissaClimaxSeifuku_KomiyaKaho',
+    idolName: '小宮果穂',
+    clothesTitle: '喫茶くらいまっくす制服',
+    clothesName: '喫茶くらいまっくす制服',
+    text: 'おやつは手作りケーキで'
   },
   {
     id: 'FashionableSummer_KomiyaKaho',
@@ -910,6 +987,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ユナイトバースプラネタリ',
     clothesName: 'ユナイトバースプラネタリ',
     text: 'リフトオフ。宇宙と書いてそらと読んで'
+  },
+  {
+    id: 'PrivateDressDown_KomiyaKaho',
+    idolName: '小宮果穂',
+    clothesTitle: 'プライベートドレスダウン',
+    clothesName: 'プライベートドレスダウン',
+    text: 'ルームウェア。小宮家のヒーロー'
   },
   {
     id: 'OvercastMonochrome_KomiyaKaho',
@@ -1017,6 +1101,13 @@ export const poemList: Poem[] = [
     text: 'ワンステップ。お腹のボタン、飛びませんように'
   },
   {
+    id: 'KissaClimaxSeifuku_SonodaChiyoko',
+    idolName: '園田智代子',
+    clothesTitle: '喫茶くらいまっくす制服',
+    clothesName: '喫茶くらいまっくす制服',
+    text: '樹里ちゃん直伝の極意を武器に'
+  },
+  {
     id: 'Jogging_Suits_SonodaChiyoko',
     idolName: '園田智代子',
     clothesTitle: 'ジャージ',
@@ -1120,6 +1211,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ジャージ',
     clothesName: 'ジャージ',
     text: '水色ジャージ。元バスケ部の風格'
+  },
+  {
+    id: 'KissaClimaxSeifuku_SaijoJuri',
+    idolName: '西城樹里',
+    clothesTitle: '喫茶くらいまっくす制服',
+    clothesName: '喫茶くらいまっくす制服',
+    text: '筋書き通りにはいかないもの'
   },
   {
     id: 'ShinySummer_MorinoRinze',
@@ -1227,6 +1325,13 @@ export const poemList: Poem[] = [
     text: '水色ジャージ。ジッパーは閉づべし撫子'
   },
   {
+    id: 'KissaClimaxSeifuku_MorinoRinze',
+    idolName: '杜野凛世',
+    clothesTitle: '喫茶くらいまっくす制服',
+    clothesName: '喫茶くらいまっくす制服',
+    text: '純情完売。'
+  },
+  {
     id: 'ShinySummer_ArisugawaNatsuha',
     idolName: '有栖川夏葉',
     clothesTitle: 'シャイニーサマー',
@@ -1325,6 +1430,13 @@ export const poemList: Poem[] = [
     text: '水色ジャージ。最高のパフォーマンスを演出'
   },
   {
+    id: 'KissaClimaxSeifuku_ArisugawaNatsuha',
+    idolName: '有栖川夏葉',
+    clothesTitle: '喫茶くらいまっくす制服',
+    clothesName: '喫茶くらいまっくす制服',
+    text: '紅茶に檸檬を添えて'
+  },
+  {
     id: 'ShinySummer_OsakiAmana',
     idolName: '大崎甘奈',
     clothesTitle: 'シャイニーサマー',
@@ -1344,6 +1456,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ティータイムシリーズ',
     clothesName: 'キューティータイムスイーツ',
     text: 'お菓子なティータイム。☆あまなあまあま☆'
+  },
+  {
+    id: 'OpporsiParadiso_OsakiAmana',
+    idolName: '大崎甘奈',
+    clothesTitle: 'オポーズパラディーソ',
+    clothesName: 'オポーズパラディーソ',
+    text: 'たとえ堕ちるとも君となら'
   },
   {
     id: 'FashionableSummer_OsakiAmana',
@@ -1451,6 +1570,13 @@ export const poemList: Poem[] = [
     text: 'お菓子なティータイム。あくまとおかしです'
   },
   {
+    id: 'OpporsiParadiso_OsakiTenka',
+    idolName: '大崎甜花',
+    clothesTitle: 'オポーズパラディーソ',
+    clothesName: 'オポーズパラディーソ',
+    text: 'たとえ君が堕ちようとも'
+  },
+  {
     id: 'FashionableSummer_OsakiTenka',
     idolName: '大崎甜花',
     clothesTitle: 'ファッショナブルサマー',
@@ -1526,6 +1652,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ジャージ',
     clothesName: 'ジャージ',
     text: '水色ジャージ。すぐバテるけどやる気はある'
+  },
+  {
+    id: 'PrivateDressDown_OsakiTenka',
+    idolName: '大崎甜花',
+    clothesTitle: 'プライベートドレスダウン',
+    clothesName: 'プライベートドレスダウン',
+    text: '閉店時の正装'
   },
   {
     id: 'ShinySummer_KuwayamaChiyuki',
@@ -1619,6 +1752,13 @@ export const poemList: Poem[] = [
     text: '優雅な午後に。糊をきかせて。心零れぬよう'
   },
   {
+    id: 'OpporsiParadiso_KuwayamaChiyuki',
+    idolName: '桑山千雪',
+    clothesTitle: 'オポーズパラディーソ',
+    clothesName: 'オポーズパラディーソ',
+    text: '受け止めて抱きしめる、両の腕'
+  },
+  {
     id: 'Jogging_Suits_KuwayamaChiyuki',
     idolName: '桑山千雪',
     clothesTitle: 'ジャージ',
@@ -1638,6 +1778,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'アムールオブホワイト',
     clothesName: 'アムールオブホワイト',
     text: "What's white?　紐解いてみせる"
+  },
+  {
+    id: 'FreesideJK_SerizawaAsahi',
+    idolName: '芹沢あさひ',
+    clothesTitle: 'フリーサイドジェイケー',
+    clothesName: 'フリーサイドジェイケー',
+    text: 'サイキョーの仲間入り！'
   },
   {
     id: 'FashionableSummer_SerizawaAsahi',
@@ -1731,6 +1878,13 @@ export const poemList: Poem[] = [
     text: "What's white?　すべての恋を跪かせる"
   },
   {
+    id: 'FreesideJK_MayuzumiFuyuko',
+    idolName: '黛冬優子',
+    clothesTitle: 'フリーサイドジェイケー',
+    clothesName: 'フリーサイドジェイケー',
+    text: 'この手のカワイイだって余裕'
+  },
+  {
     id: 'FashionableSummer_MayuzumiFuyuko',
     idolName: '黛冬優子',
     clothesTitle: 'ファッショナブルサマー',
@@ -1820,6 +1974,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'アムールオブホワイト',
     clothesName: 'アムールオブホワイト',
     text: "What's white?　愛に溺れさせてあげる♪"
+  },
+  {
+    id: 'FreesideJK_IzumiMei',
+    idolName: '和泉愛依',
+    clothesTitle: 'フリーサイドジェイケー',
+    clothesName: 'フリーサイドジェイケー',
+    text: 'ちょーハンパない系のうちら♪'
   },
   {
     id: 'FashionableSummer_IzumiMei',
@@ -1913,6 +2074,13 @@ export const poemList: Poem[] = [
     text: ':) 見るなー。100円'
   },
   {
+    id: 'FancyFreeNursing_AsakuraToru',
+    idolName: '浅倉透',
+    clothesTitle: 'ファンシーフリーナーシング',
+    clothesName: 'ファンシーフリーナーシング',
+    text: 'はい、心臓出してー'
+  },
+  {
     id: 'SunsetSkyPassage_AsakuraToru',
     idolName: '浅倉透',
     clothesTitle: 'サンセットスカイパッセージ',
@@ -1990,6 +2158,13 @@ export const poemList: Poem[] = [
     text: ':) ゆらゆらファニィ×ファニィ'
   },
   {
+    id: 'FancyFreeNursing_HiguchiMadoka',
+    idolName: '樋口円香',
+    clothesTitle: 'ファンシーフリーナーシング',
+    clothesName: 'ファンシーフリーナーシング',
+    text: 'あまやかに、ちくっとするの'
+  },
+  {
     id: 'SunsetSkyPassage_HiguchiMadoka',
     idolName: '樋口円香',
     clothesTitle: 'サンセットスカイパッセージ',
@@ -2058,6 +2233,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ラブラフラビッツ',
     clothesName: 'ラブラフラビッツ',
     text: ':) かわいいってしあわせ！'
+  },
+  {
+    id: 'FancyFreeNursing_IchikawaHinana',
+    idolName: '市川雛菜',
+    clothesTitle: 'ファンシーフリーナーシング',
+    clothesName: 'ファンシーフリーナーシング',
+    text: 'しあわせ1週間分処方'
   },
   {
     id: 'SunsetSkyPassage_IchikawaHinana',
@@ -2137,6 +2319,13 @@ export const poemList: Poem[] = [
     text: ':) 甘いよ手づくりピンク'
   },
   {
+    id: 'FancyFreeNursing_FukumaruKoito',
+    idolName: '福丸小糸',
+    clothesTitle: 'ファンシーフリーナーシング',
+    clothesName: 'ファンシーフリーナーシング',
+    text: 'どうぞおだいじに'
+  },
+  {
     id: 'SunsetSkyPassage_FukumaruKoito',
     idolName: '福丸小糸',
     clothesTitle: 'サンセットスカイパッセージ',
@@ -2214,6 +2403,13 @@ export const poemList: Poem[] = [
     text: 'トリック・オア・トリート！駆ル狩ル刈ルキル'
   },
   {
+    id: 'HolyNightCape_NanakusaNichika',
+    idolName: '七草にちか',
+    clothesTitle: 'ホーリーナイトケープ',
+    clothesName: 'ホーリーナイトケープ',
+    text: 'メリークリスマス！クリスマスのばかやろ'
+  },
+  {
     id: 'UniteversePlanetary_NanakusaNichika',
     idolName: '七草にちか',
     clothesTitle: 'ユナイトバースプラネタリ',
@@ -2221,11 +2417,32 @@ export const poemList: Poem[] = [
     text: 'リフトオフ。かわいいって言ってください！'
   },
   {
+    id: 'OvercastMonochrome_NanakusaNichika',
+    idolName: '七草にちか',
+    clothesTitle: 'オーバーキャストモノクローム',
+    clothesName: 'オーバーキャストモノクローム',
+    text: 'ワンステップ。めちゃめちゃ灰色'
+  },
+  {
+    id: 'SetupCrazy_NanakusaNichika',
+    idolName: '七草にちか',
+    clothesTitle: 'セットアップクレイジー',
+    clothesName: 'セットアップクレイジー',
+    text: '意地っ張りのツイード'
+  },
+  {
     id: 'Jogging_Suits_NanakusaNichika',
     idolName: '七草にちか',
     clothesTitle: 'ジャージ',
     clothesName: 'ジャージ',
     text: '水色ジャージ。おろしたての匂い'
+  },
+  {
+    id: 'SetupCrazy_AketaMikoto',
+    idolName: '緋田美琴',
+    clothesTitle: 'セットアップクレイジー',
+    clothesName: 'セットアップクレイジー',
+    text: 'checkmate!'
   },
   {
     id: 'FountainSummer_AketaMikoto',
@@ -2242,6 +2459,13 @@ export const poemList: Poem[] = [
     text: 'トリック・オア・トリート！Found you！'
   },
   {
+    id: 'HolyNightCape_AketaMikoto',
+    idolName: '緋田美琴',
+    clothesTitle: 'ホーリーナイトケープ',
+    clothesName: 'ホーリーナイトケープ',
+    text: 'メリークリスマス！Winter wishes'
+  },
+  {
     id: 'UniteversePlanetary_AketaMikoto',
     idolName: '緋田美琴',
     clothesTitle: 'ユナイトバースプラネタリ',
@@ -2254,6 +2478,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'プライベートドレスダウン',
     clothesName: 'プライベートドレスダウン',
     text: 'ルームウェア。wear and tear'
+  },
+  {
+    id: 'OvercastMonochrome_AketaMikoto',
+    idolName: '緋田美琴',
+    clothesTitle: 'オーバーキャストモノクローム',
+    clothesName: 'オーバーキャストモノクローム',
+    text: 'ワンステップ。Cloudy, fine later'
   },
   {
     id: 'Jogging_Suits_AketaMikoto',
