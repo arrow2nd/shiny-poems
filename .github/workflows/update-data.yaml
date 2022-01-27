@@ -9,6 +9,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Set branch name as environment variable
+        run: echo "NEW_BRANCH_NAME=update-poem-$(date '+%s')" >> $GITHUB_ENV
+
       - name: Checkout
         uses: actions/checkout@v2
 
@@ -27,7 +30,22 @@ jobs:
       - name: Run formatter
         run: yarn fmt:data
 
+      - name: Create new branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git switch -c ${{ env.NEW_BRANCH_NAME }}
+
       - name: Commit the changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
+          branch: ${{ env.NEW_BRANCH_NAME }}
           commit_message: 'update: poem data'
+
+      - name: Create pull request
+        uses: repo-sync/pull-request@v2
+        with:
+          source_branch: ${{ env.NEW_BRANCH_NAME }}
+          destination_branch: 'main'
+          pr_title: 'update: 衣装ポエムデータ'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
