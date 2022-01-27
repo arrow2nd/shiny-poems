@@ -2,6 +2,7 @@ name: UpdateData
 
 on:
   schedule:
+    # 日本時間の昼12時と深夜0時
     - cron: '0 3,15 * * *'
 
 jobs:
@@ -18,7 +19,7 @@ jobs:
           cache: yarn
 
       - name: Install dependencies
-        run: yarn install
+        run: yarn install --immutable
 
       - name: Update poem data
         run: yarn update:poem
