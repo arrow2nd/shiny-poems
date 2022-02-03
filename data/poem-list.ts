@@ -51,6 +51,13 @@ export const poemList: Poem[] = [
     text: 'サマーダイブ！とうめいな空と海で遊ぶ'
   },
   {
+    id: 'ThreeStarPatissier_SakuragiMano',
+    idolName: '櫻木真乃',
+    clothesTitle: 'スリースターパティシエ',
+    clothesName: 'スリースターパティシエ',
+    text: 'ショコラティエ。隠せない味はたっぷりの気持ち'
+  },
+  {
     id: 'SunsetSkyPassage_SakuragiMano',
     idolName: '櫻木真乃',
     clothesTitle: 'サンセットスカイパッセージ',
@@ -170,6 +177,13 @@ export const poemList: Poem[] = [
     text: 'サマーダイブ！大人っぽさを重視してみた'
   },
   {
+    id: 'ThreeStarPatissier_KazanoHiori',
+    idolName: '風野灯織',
+    clothesTitle: 'スリースターパティシエ',
+    clothesName: 'スリースターパティシエ',
+    text: 'ショコラティエ。胸元の星に誓って'
+  },
+  {
     id: 'SunsetSkyPassage_KazanoHiori',
     idolName: '風野灯織',
     clothesTitle: 'サンセットスカイパッセージ',
@@ -266,6 +280,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ファッショナブルサマー',
     clothesName: 'ファッショナブルサマー',
     text: 'サマーダイブ！大海原で赤を探して'
+  },
+  {
+    id: 'ThreeStarPatissier_HachimiyaMeguru',
+    idolName: '八宮めぐる',
+    clothesTitle: 'スリースターパティシエ',
+    clothesName: 'スリースターパティシエ',
+    text: 'ショコラティエ。きみにとっておきをお届け'
   },
   {
     id: 'SunsetSkyPassage_HachimiyaMeguru',
@@ -1199,6 +1220,13 @@ export const poemList: Poem[] = [
     text: 'リフトオフ。輝け、強く'
   },
   {
+    id: 'PrivateDressDown_SaijoJuri',
+    idolName: '西城樹里',
+    clothesTitle: 'プライベートドレスダウン',
+    clothesName: 'プライベートドレスダウン',
+    text: 'ルームウェア。動きやすさに勝るものはなし'
+  },
+  {
     id: 'OvercastMonochrome_SaijoJuri',
     idolName: '西城樹里',
     clothesTitle: 'オーバーキャストモノクローム',
@@ -1848,6 +1876,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ユナイトバースプラネタリ',
     clothesName: 'ユナイトバースプラネタリ',
     text: 'リフトオフ。宇宙船に飛び乗って'
+  },
+  {
+    id: 'PrivateDressDown_SerizawaAsahi',
+    idolName: '芹沢あさひ',
+    clothesTitle: 'プライベートドレスダウン',
+    clothesName: 'プライベートドレスダウン',
+    text: 'ルームウェア。求ム。夢ノ記録装置'
   },
   {
     id: 'OvercastMonochrome_SerizawaAsahi',
