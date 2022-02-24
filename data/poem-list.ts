@@ -142,6 +142,13 @@ export const poemList: Poem[] = [
     text: '1stシーズンの水着。日焼けは......大丈夫！'
   },
   {
+    id: 'DressUpParfum_KazanoHiori',
+    idolName: '風野灯織',
+    clothesTitle: 'ドレスアップパルファム',
+    clothesName: 'ドレスアップパルファム',
+    text: 'Cheers! 掌にきらめき'
+  },
+  {
     id: 'RingingPreppyGirl_KazanoHiori',
     idolName: '風野灯織',
     clothesTitle: 'リンギングプレッピーガール',
@@ -259,6 +266,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'シャイニーサマー',
     clothesName: 'シャイニーサマー',
     text: '1stシーズンの水着。太陽を水彩で染めて'
+  },
+  {
+    id: 'DressUpParfum_HachimiyaMeguru',
+    idolName: '八宮めぐる',
+    clothesTitle: 'ドレスアップパルファム',
+    clothesName: 'ドレスアップパルファム',
+    text: 'Cheers! キラキラ　キラキラ　ゆらめく'
   },
   {
     id: 'RingingPreppyGirl_HachimiyaMeguru',
