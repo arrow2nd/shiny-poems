@@ -16,5 +16,7 @@ export const splitPoemText = (text: string) => {
  * @returns エンコードされた文字列
  */
 export const encodeForCloudinary = (str: string) => {
-  return encodeURIComponent(str.replace(/\,/g, '%2C').replace(/\//g, '%2F'))
+  return encodeURIComponent(
+    str.replace(/\,/g, '%2C').replace(/\//g, '%2F').replace(/!/g, '%21')
+  )
 }
