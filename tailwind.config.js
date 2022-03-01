@@ -8,10 +8,6 @@ module.exports = {
       default: ['Arial', 'sans-serif'],
       kiwi: ['Kiwi Maru', 'sans-serif']
     },
-    screens: {
-      sm: '640px',
-      md: '768px'
-    },
     extend: {
       colors: {
         'natural-black': '#2c2c2c',
