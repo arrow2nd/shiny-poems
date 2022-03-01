@@ -26,7 +26,7 @@ const Poems = ({ items }: Props) => {
   ))
 
   return (
-    <div className="flex flex-wrap justify-center mb-12 md:mb-16 font-kiwi">
+    <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-16 font-kiwi">
       {cards.length ? cards : nothingCard}
     </div>
   )

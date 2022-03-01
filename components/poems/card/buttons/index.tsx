@@ -1,5 +1,5 @@
-import CopyButton from 'components/poems/button/copy'
-import TweetButton from 'components/poems/button/tweet'
+import CopyButton from './copy'
+import TweetButton from './tweet'
 
 type Props = {
   tweetText: string
@@ -7,7 +7,9 @@ type Props = {
 }
 
 const Buttons = ({ tweetText, copyText }: Props): JSX.Element => (
-  <div className="flex flex-row">
+  <div
+    className={`absolute right-0 bottom-0 p-8 flex flex-row space-x-4 text-main`}
+  >
     <TweetButton text={tweetText} />
     <CopyButton text={copyText} />
   </div>

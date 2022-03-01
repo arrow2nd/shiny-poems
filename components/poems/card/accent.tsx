@@ -9,7 +9,7 @@ const Accent = ({ bgColor }: Props): JSX.Element => {
 
   return (
     <div
-      className="py-0.5 w-10 rounded-full border border-gray-100"
+      className="mb-4 py-0.5 w-10 rounded-full border border-gray-100"
       style={style}
     />
   )

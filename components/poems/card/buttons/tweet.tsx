@@ -10,13 +10,12 @@ const TweetButton = ({ text }: Props) => {
 
   return (
     <a
-      className="mr-3 text-natural-black hover:text-gray-500 transition-colors"
       title="ツイートする"
       href={tweetUrl}
       target="_blank"
       rel="noopener noreferrer"
     >
-      <FiTwitter />
+      <FiTwitter size={20} />
     </a>
   )
 }
