@@ -16,7 +16,7 @@ module.exports = {
       colors: {
         'natural-black': '#2c2c2c',
         shiny: '#78aeff',
-        luca: '#1E140E'
+        main: '#4C7ABE'
       },
       fontSize: {
         none: 0

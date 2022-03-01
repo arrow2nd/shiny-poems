@@ -3773,6 +3773,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-github-corner@npm:^2.5.0":
+  version: 2.5.0
+  resolution: "react-github-corner@npm:2.5.0"
+  peerDependencies:
+    react: "*"
+  checksum: cf1bb0f165b638df880f874447999950168d11a78ee2a382007e81c74372eb3453ecf1d4f9d0c7ccc6080315e3c88b2d4062735531311d7d645387ac0a949690
+  languageName: node
+  linkType: hard
+
 "react-hot-toast@npm:^2.2.0":
   version: 2.2.0
   resolution: "react-hot-toast@npm:2.2.0"
@@ -4134,6 +4143,7 @@ __metadata:
     react: 17.0.2
     react-copy-to-clipboard: ^5.0.4
     react-dom: 17.0.2
+    react-github-corner: ^2.5.0
     react-hot-toast: ^2.2.0
     react-icons: ^4.3.1
     react-select: ^5.2.2
