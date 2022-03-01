@@ -22,7 +22,8 @@ const Select = (props: Props, ref: React.MutableRefObject<any>) => {
   const styles: StylesConfig = {
     control: (provided) => ({
       ...provided,
-      borderWidth: 2
+      borderWidth: 2,
+      boxShadow: 'none'
     })
   }
 
