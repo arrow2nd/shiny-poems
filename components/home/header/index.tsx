@@ -4,12 +4,12 @@ import GithubCorner from 'react-github-corner'
 
 const Header = () => (
   <header className="flex justify-center items-center py-20 w-full">
-    <a className="text-none" href="">
+    <a className="w-80 text-none" href="">
       <Image
         src={LogoImg}
         alt="logo"
-        width={256}
-        height={58}
+        width={618}
+        height={140}
         placeholder="blur"
       />
     </a>
