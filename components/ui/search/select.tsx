@@ -1,5 +1,5 @@
 import React, { forwardRef, useMemo } from 'react'
-import ReactSelect, { StylesConfig } from 'react-select'
+import ReactSelect from 'react-select'
 
 type Props = {
   placeholder: string
@@ -19,28 +19,37 @@ const Select = (props: Props, ref: React.MutableRefObject<any>) => {
     }
   }
 
-  const styles: StylesConfig = {
-    placeholder: (provided) => ({
-      ...provided,
-      textAlign: 'left'
-    }),
-    menu: (provided) => ({
-      ...provided,
-      textAlign: 'center'
-    }),
-    singleValue: (provided) => ({
-      ...provided,
-      textAlign: 'left'
-    })
+  const themeColors = {
+    primary: '#4C7ABE',
+    primary25: '#8FA2BE',
+    primary50: '#8FA2BE',
+    primary75: '#4C7ABE',
+    neutral5: '#4C7ABE',
+    neutral10: '#4C7ABE',
+    neutral20: '#4C7ABE',
+    neutral30: '#4C7ABE',
+    neutral40: '#4C7ABE',
+    neutral50: '#8FA2BE',
+    neutral60: '#4C7ABE',
+    neutral70: '#4C7ABE',
+    neutral80: '#4C7ABE',
+    neutral90: '#4C7ABE'
   }
 
   return (
     <ReactSelect
-      className="w-72 h-9 mx-1 my-2 rounded-md bg-white"
+      className="w-72 my-4 bg-white"
       instanceId={props.placeholder}
       placeholder={<p>{props.placeholder}</p>}
       options={options}
-      styles={styles}
+      theme={(theme) => ({
+        ...theme,
+        borderRadius: 6, // rounded-md
+        colors: {
+          ...theme.colors,
+          ...themeColors
+        }
+      })}
       onChange={handleChangeSelect}
       ref={ref}
     />

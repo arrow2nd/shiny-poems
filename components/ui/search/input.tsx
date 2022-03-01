@@ -15,17 +15,17 @@ const Input = (props: Props, ref: React.MutableRefObject<any>) => {
   }
 
   return (
-    <div className="w-72 h-9 mx-1 my-2">
-      <div className="flex items-center rounded-md transition-colors border border-gray-300 hover:border-gray-400 bg-white">
+    <div className="w-72 my-4">
+      <div className="flex items-center rounded-md border border-main text-main bg-white">
         <input
-          className="w-full h-9 ml-2.5 rounded-md focus:outline-none"
+          className="w-full h-9 ml-2.5 placeholder-sub rounded-md focus:outline-none"
           type="text"
           placeholder={props.placeholder}
           onKeyDown={handleKeyDown}
           ref={ref}
         />
         <button
-          className="mx-1 p-2 transition-colors text-gray-400 hover:text-gray-500 focus:outline-none"
+          className="mx-1 p-2 transition-colors focus:outline-none"
           onClick={props.onSubmit}
         >
           <FiSearch />
