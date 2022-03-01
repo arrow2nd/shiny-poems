@@ -12,9 +12,9 @@ class MyDocument extends Document {
             crossOrigin="true"
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap"
             rel="stylesheet"
-          />
+          />{' '}
         </Head>
         <body>
           <Main />

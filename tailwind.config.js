@@ -5,7 +5,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      default: ['"M PLUS Rounded 1c"', 'sans-serif']
+      default: ['Arial', 'sans-serif'],
+      kiwi: ['Kiwi Maru', 'sans-serif']
     },
     screens: {
       sm: '640px',
