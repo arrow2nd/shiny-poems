@@ -11,7 +11,8 @@ module.exports = {
     extend: {
       colors: {
         main: '#4C7ABE',
-        sub: '#8FA2BE'
+        sub: '#8FA2BE',
+        'neutral-white': '#FEFEFE'
       },
       fontSize: {
         none: 0
