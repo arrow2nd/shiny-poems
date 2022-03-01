@@ -16,7 +16,7 @@ const Input = (props: Props, ref: React.MutableRefObject<any>) => {
 
   return (
     <div className="w-72 my-4">
-      <div className="flex items-center rounded-md border border-main text-main bg-white">
+      <div className="flex items-center rounded-md border-2 border-main text-main bg-white">
         <input
           className="w-full h-9 ml-2.5 placeholder-sub rounded-md focus:outline-none"
           type="text"

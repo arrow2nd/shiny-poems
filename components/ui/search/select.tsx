@@ -1,5 +1,5 @@
 import React, { forwardRef, useMemo } from 'react'
-import ReactSelect from 'react-select'
+import ReactSelect, { StylesConfig, ThemeConfig } from 'react-select'
 
 type Props = {
   placeholder: string
@@ -19,22 +19,34 @@ const Select = (props: Props, ref: React.MutableRefObject<any>) => {
     }
   }
 
-  const themeColors = {
-    primary: '#4C7ABE',
-    primary25: '#8FA2BE',
-    primary50: '#8FA2BE',
-    primary75: '#4C7ABE',
-    neutral5: '#4C7ABE',
-    neutral10: '#4C7ABE',
-    neutral20: '#4C7ABE',
-    neutral30: '#4C7ABE',
-    neutral40: '#4C7ABE',
-    neutral50: '#8FA2BE',
-    neutral60: '#4C7ABE',
-    neutral70: '#4C7ABE',
-    neutral80: '#4C7ABE',
-    neutral90: '#4C7ABE'
+  const styles: StylesConfig = {
+    control: (provided) => ({
+      ...provided,
+      borderWidth: 2
+    })
   }
+
+  const theme: ThemeConfig = (theme) => ({
+    ...theme,
+    borderRadius: 6, // rounded-md
+    colors: {
+      ...theme.colors,
+      primary: '#4C7ABE',
+      primary25: '#8FA2BE',
+      primary50: '#8FA2BE',
+      primary75: '#4C7ABE',
+      neutral5: '#4C7ABE',
+      neutral10: '#4C7ABE',
+      neutral20: '#4C7ABE',
+      neutral30: '#4C7ABE',
+      neutral40: '#4C7ABE',
+      neutral50: '#8FA2BE',
+      neutral60: '#4C7ABE',
+      neutral70: '#4C7ABE',
+      neutral80: '#4C7ABE',
+      neutral90: '#4C7ABE'
+    }
+  })
 
   return (
     <ReactSelect
@@ -42,14 +54,8 @@ const Select = (props: Props, ref: React.MutableRefObject<any>) => {
       instanceId={props.placeholder}
       placeholder={<p>{props.placeholder}</p>}
       options={options}
-      theme={(theme) => ({
-        ...theme,
-        borderRadius: 6, // rounded-md
-        colors: {
-          ...theme.colors,
-          ...themeColors
-        }
-      })}
+      styles={styles}
+      theme={theme}
       onChange={handleChangeSelect}
       ref={ref}
     />
