@@ -10,7 +10,7 @@ type Props = {
 
 const Poems = ({ items }: Props) => {
   const nothing = (
-    <div className="flex flex-row justify-center items-center text-main text-xl">
+    <div className="flex flex-row justify-center items-center py-8 text-main text-lg md:text-xl">
       <BsEmojiExpressionless />
       <span className="ml-2">ポエムが見つかりません…</span>
     </div>
