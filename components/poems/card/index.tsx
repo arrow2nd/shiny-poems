@@ -35,7 +35,7 @@ const Card = ({ poem, shouldShowButton }: Props) => {
       key={poem.id}
     >
       <div>
-        <div className="mb-4 text-base md:text-xl">{poemContents}</div>
+        <div className="mb-4 text-lg md:text-xl">{poemContents}</div>
         <Accent bgColor={accentColor} />
         <div className="">
           <p className="mb-1 text-sm md:text-base">{poem.clothesName}</p>
