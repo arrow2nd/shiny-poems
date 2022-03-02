@@ -72,7 +72,8 @@ const Search = ({ onSearch }: Props) => {
 
   return (
     <div className="flex justify-center mb-16">
-      <div>
+      {/* 画面幅が lg 以下なら縦並びにする */}
+      <div className="w-full lg:w-auto max-w-lg lg:max-w-none">
         <Label />
         <div className="flex flex-wrap">
           <Input
