@@ -51,7 +51,7 @@ const Select = (props: Props, ref: React.MutableRefObject<any>) => {
 
   return (
     <ReactSelect
-      className="w-72 my-4 bg-white"
+      className="w-full lg:w-72 m-2 bg-white"
       instanceId={props.placeholder}
       placeholder={<p>{props.placeholder}</p>}
       options={options}

@@ -71,10 +71,10 @@ const Search = ({ onSearch }: Props) => {
   }
 
   return (
-    <div className="flex justify-center px-4 mb-16">
+    <div className="flex justify-center mb-16">
       <div>
         <Label />
-        <div className="flex flex-wrap space-x-4">
+        <div className="flex flex-wrap">
           <Input
             placeholder="ポエムの一部から"
             onSubmit={handleSubmit}
