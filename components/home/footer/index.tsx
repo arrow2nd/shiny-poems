@@ -16,7 +16,7 @@ const Footer = () => (
     />
     <div className="flex flex-col items-center justify-center text-center px-8 pb-20 tracking-wider bg-main">
       <Links />
-      <span className="w-8 mb-8 border border-dashed border-white" />
+      <span className="w-8 mb-8 border-b-2 border-dashed border-white" />
       <span className="text-white text-sm">
         The rights to all content related to THE IDOLM@STER belong to BANDAI
         NAMCO Entertainment Inc.
