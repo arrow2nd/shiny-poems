@@ -14,7 +14,7 @@ import { encodeForCloudinary, splitPoemText } from './util'
 export const generateOgpImageUrl = (
   query: ParsedUrlQuery
 ): [string, string] => {
-  const defaultOgp = 'https://shiny-poems.vercel.app/ogp-home.png'
+  const defaultOgp = 'https://shiny-poems.vercel.app/ogp-default.png'
 
   // クエリからidを取得
   const id = query.id || ''
