@@ -35,10 +35,10 @@ export const generateOgpImageUrl = (
     transformation: [
       {
         variables: [
+          ['$color', `!rgb:${idolColor.hex}!`],
           ['$poem', `!${encodeForCloudinary(poemText)}!`],
           ['$clothes', `!${encodeForCloudinary(poem.clothesName)}!`],
-          ['$idol', `!${encodeForCloudinary(poem.idolName)}!`],
-          ['$color', `!rgb:${idolColor.hex}!`]
+          ['$idol', `!${encodeForCloudinary(poem.idolName)}!`]
         ]
       },
       {
