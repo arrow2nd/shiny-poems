@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
-import toast, { Toaster } from 'react-hot-toast'
 
 import Poems from 'components/poems'
 
 import { usePoem } from 'hooks/usePoem'
 
+import Line from './line'
 import Search from './search'
 
 type Props = {
@@ -29,19 +29,6 @@ const UI = ({ poemText }: Props) => {
 
     // 検索キーワードをセット
     setSearchKeyword(type, keyword)
-
-    // トーストを表示
-    toast.success(`「${keyword}」の検索結果です`, {
-      style: {
-        border: '1px solid #e5e7eb',
-        padding: '12px'
-      },
-      iconTheme: {
-        primary: '#78aeff',
-        secondary: '#FFFAEE'
-      },
-      duration: 4000
-    })
   }
 
   // idで指定されたポエムがあれば検索する
@@ -52,9 +39,9 @@ const UI = ({ poemText }: Props) => {
   }, [poemText])
 
   return (
-    <div className="flex-grow mx-4">
-      <Toaster />
+    <div className="flex-grow mx-6 md:mx-12">
       <Search onSearch={handleSearch} />
+      <Line />
       <Poems items={poems} />
     </div>
   )

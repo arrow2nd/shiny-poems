@@ -1,17 +1,26 @@
 import Image from 'next/image'
 import LogoImg from 'public/logo.png'
+import GithubCorner from 'react-github-corner'
 
 const Header = () => (
-  <header className="flex justify-center items-center w-full h-28 mb-12 md:mb-16 bg-shiny">
-    <a className="text-none" href="">
+  <header className="flex justify-center items-center py-20 w-full">
+    <a className="w-64 md:w-80 text-none" href="">
       <Image
         src={LogoImg}
         alt="logo"
-        width={256}
-        height={58}
+        width={618}
+        height={140}
         placeholder="blur"
       />
     </a>
+
+    <GithubCorner
+      href="https://github.com/arrow2nd/shiny-poems"
+      bannerColor="#4C7ABE"
+      octoColor="#fff"
+      size={80}
+      direction="right"
+    />
   </header>
 )
 

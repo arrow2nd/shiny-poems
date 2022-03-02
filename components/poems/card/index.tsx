@@ -22,7 +22,7 @@ const Card = ({ poem, shouldShowButton }: Props) => {
     `#シャニマス #${poem.clothesName} #${poem.idolName}`,
     `https://shiny-poems.vercel.app?id=${poem.id}`
   ]
-  const tweetText = [splitedPoem.join('\n'), ...linkText].join('\n')
+  const tweetText = [...splitedPoem, ...linkText].join('\n')
   const copyText = [poem.text, ...linkText].join(' ')
 
   // 色
@@ -31,18 +31,18 @@ const Card = ({ poem, shouldShowButton }: Props) => {
 
   return (
     <div
-      className="flex items-center text-left w-96 h-60 m-1.5 md:m-3 border border-gray-200 rounded-md shadow-md bg-white text-natural-black"
+      className="relative flex items-center w-96 h-60 m-2 p-8 border-2 border-main rounded-md bg-white text-main"
       key={poem.id}
     >
-      <div className="mx-8">
-        <div className="my-3 text-base md:text-xl">{poemContents}</div>
+      <div>
+        <div className="mb-4 text-lg md:text-xl">{poemContents}</div>
         <Accent bgColor={accentColor} />
-        <div className="my-4">
+        <div className="">
           <p className="mb-1 text-sm md:text-base">{poem.clothesName}</p>
           <p className="text-xs md:text-sm">{poem.idolName}</p>
         </div>
-        {shouldShowButton && <Buttons {...{ tweetText, copyText }} />}
       </div>
+      {shouldShowButton && <Buttons {...{ tweetText, copyText }} />}
     </div>
   )
 }

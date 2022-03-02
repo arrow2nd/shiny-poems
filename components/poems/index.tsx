@@ -1,3 +1,5 @@
+import { BsEmojiExpressionless } from 'react-icons/bs'
+
 import { Poem } from 'types/poem'
 
 import Card from './card'
@@ -7,29 +9,22 @@ type Props = {
 }
 
 const Poems = ({ items }: Props) => {
-  const nothingCard = (
-    <Card
-      key="nothing"
-      poem={{
-        id: '',
-        idolName: '',
-        clothesTitle: '',
-        clothesName: 'なんもないわ',
-        text: 'ポエムがみつかりませんでした'
-      }}
-      shouldShowButton={false}
-    />
-  )
-
-  const cards = items.map((e) => (
-    <Card key={e.text} poem={e} shouldShowButton={true} />
-  ))
-
-  return (
-    <div className="flex flex-wrap justify-center mb-12 md:mb-16">
-      {cards.length ? cards : nothingCard}
+  const nothing = (
+    <div className="flex flex-row justify-center items-center py-8 text-main text-lg md:text-xl">
+      <BsEmojiExpressionless />
+      <span className="ml-2">ポエムが見つかりません…</span>
     </div>
   )
+
+  const cards = (
+    <div className="flex flex-wrap justify-center">
+      {items.map((e) => (
+        <Card key={e.text} poem={e} shouldShowButton={true} />
+      ))}
+    </div>
+  )
+
+  return <div className="mb-16 font-kiwi">{items.length ? cards : nothing}</div>
 }
 
 export default Poems

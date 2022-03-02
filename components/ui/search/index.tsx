@@ -1,11 +1,10 @@
 import { useRef, useState } from 'react'
 
-import Input from 'components/ui/input'
-import Select from 'components/ui/select'
-
 import { poemList } from 'data/poem-list'
 
+import Input from './input'
 import Label from './label'
+import Select from './select'
 
 type Props = {
   onSearch: (type: string, label: string) => void
@@ -72,26 +71,29 @@ const Search = ({ onSearch }: Props) => {
   }
 
   return (
-    <div className="text-center px-4 mb-10 md:mb-14">
-      <Label />
-      <div className="flex flex-wrap justify-center">
-        <Input
-          placeholder="ポエムの一部から"
-          onSubmit={handleSubmit}
-          ref={keywordInput}
-        />
-        <Select
-          placeholder="アイドル名から"
-          options={idolNames}
-          onChange={handleChangeIdolName}
-          ref={idolSelect}
-        />
-        <Select
-          placeholder="衣装名から"
-          options={clothesTitles}
-          onChange={handleChangeclothesTitle}
-          ref={clothesSelect}
-        />
+    <div className="flex justify-center mb-16">
+      {/* 画面幅が lg 以下なら縦並びにする */}
+      <div className="w-full lg:w-auto max-w-lg lg:max-w-none">
+        <Label />
+        <div className="flex flex-wrap">
+          <Input
+            placeholder="ポエムの一部から"
+            onSubmit={handleSubmit}
+            ref={keywordInput}
+          />
+          <Select
+            placeholder="アイドル名から"
+            options={idolNames}
+            onChange={handleChangeIdolName}
+            ref={idolSelect}
+          />
+          <Select
+            placeholder="衣装名から"
+            options={clothesTitles}
+            onChange={handleChangeclothesTitle}
+            ref={clothesSelect}
+          />
+        </div>
       </div>
     </div>
   )

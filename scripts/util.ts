@@ -4,7 +4,7 @@
  * @returns 文字列配列
  */
 export const splitPoemText = (text: string) => {
-  const splited = text.match(/(.*?[。！？!?])(.*)/)?.map((e) => e.trim())
+  const splited = text.match(/(.+?[。！？!?])(.+)/)?.map((e) => e.trim())
 
   // 分割できなければそのまま返す
   return splited ? [splited[1], splited[2]] : [text]

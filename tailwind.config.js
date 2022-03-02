@@ -5,17 +5,14 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      default: ['"M PLUS Rounded 1c"', 'sans-serif']
-    },
-    screens: {
-      sm: '640px',
-      md: '768px'
+      default: ['Arial', 'sans-serif'],
+      kiwi: ['Kiwi Maru', 'sans-serif']
     },
     extend: {
       colors: {
-        'natural-black': '#2c2c2c',
-        shiny: '#78aeff',
-        luca: '#1E140E'
+        main: '#4C7ABE',
+        sub: '#8FA2BE',
+        'neutral-white': '#FEFEFE'
       },
       fontSize: {
         none: 0

@@ -7,7 +7,7 @@ import Footer from './footer'
 import Header from './header'
 
 const Home = ({ ogpImageUrl, poemText }: ServerSideProps) => (
-  <div className="flex flex-col min-h-screen font-default">
+  <div className="flex flex-col min-h-screen bg-neutral-white font-default">
     <SEO ogpImageUrl={ogpImageUrl} />
     <Header />
     <UI poemText={poemText} />

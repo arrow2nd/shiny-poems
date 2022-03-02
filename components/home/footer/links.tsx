@@ -1,20 +1,25 @@
-import { FaCode, FaDatabase } from 'react-icons/fa'
+import { FiDatabase } from 'react-icons/fi'
+import { HiCode } from 'react-icons/hi'
 
 import Link from './link'
 
 const Links = () => (
-  <div className="mb-6 text-sm text-white">
+  <div className="mb-8 text-sm text-white">
     <Link
       className="mb-2"
-      title="GitHub"
-      href="https://github.com/arrow2nd/shiny-poems"
+      title="Twitter"
+      text="by arrow2nd"
+      href="https://twitter.com/arrow_2nd"
     >
-      <FaCode className="mr-2 text-2xl" />
-      <span> by arrow2nd</span>
+      <HiCode className="mr-2 text-2xl" />
     </Link>
-    <Link title="im@sparql" href="https://sparql.crssnky.xyz/imas/">
-      <FaDatabase className="mr-2 text-2xl" />
-      <span> by im@sparql</span>
+
+    <Link
+      title="im@sparql"
+      href="https://sparql.crssnky.xyz/imas"
+      text="by im@sparql"
+    >
+      <FiDatabase className="mr-2 text-2xl" />
     </Link>
   </div>
 )
