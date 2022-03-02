@@ -10,6 +10,7 @@ const Input = (props: Props, ref: React.MutableRefObject<any>) => {
   const handleKeyDown = (ev: any) => {
     // Enterが入力された
     if (ev.which === 13) {
+      ref.current.blur()
       props.onSubmit()
     }
   }
