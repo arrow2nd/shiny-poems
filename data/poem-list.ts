@@ -898,6 +898,13 @@ export const poemList: Poem[] = [
     text: "リフトオフ。Earthman, let's go"
   },
   {
+    id: 'PrivateDressDown_YukokuKiriko',
+    idolName: '幽谷霧子',
+    clothesTitle: 'プライベートドレスダウン',
+    clothesName: 'プライベートドレスダウン',
+    text: 'ルームウェア。ポリエステル100、モエヤスシ'
+  },
+  {
     id: 'OvercastMonochrome_YukokuKiriko',
     idolName: '幽谷霧子',
     clothesTitle: 'オーバーキャストモノクローム',
@@ -945,6 +952,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ブレイブソウルサラウンド',
     clothesName: 'ブレイブソウルサラウンド',
     text: '5ピース★この音が君に届いていますように'
+  },
+  {
+    id: 'EleganceOfWhite_KomiyaKaho',
+    idolName: '小宮果穂',
+    clothesTitle: 'エレガンスオブホワイト',
+    clothesName: 'エレガンスオブホワイト',
+    text: 'White heart! まだ白く　まだ青く'
   },
   {
     id: 'UnusualHour_KomiyaKaho',
@@ -1059,6 +1073,13 @@ export const poemList: Poem[] = [
     text: '5ピース★後輩ちゃんはくるくるな髪にうきうき'
   },
   {
+    id: 'EleganceOfWhite_SonodaChiyoko',
+    idolName: '園田智代子',
+    clothesTitle: 'エレガンスオブホワイト',
+    clothesName: 'エレガンスオブホワイト',
+    text: 'White heart! 『かっこいい』を所望します！'
+  },
+  {
     id: 'UnusualHour_SonodaChiyoko',
     idolName: '園田智代子',
     clothesTitle: 'アンユージュアルアワー',
@@ -1129,6 +1150,13 @@ export const poemList: Poem[] = [
     text: 'リフトオフ。輪っかに慣れたのはつい最近'
   },
   {
+    id: 'PrivateDressDown_SonodaChiyoko',
+    idolName: '園田智代子',
+    clothesTitle: 'プライベートドレスダウン',
+    clothesName: 'プライベートドレスダウン',
+    text: 'ルームウェア。寝る時も美味しそうであるべき'
+  },
+  {
     id: 'OvercastMonochrome_SonodaChiyoko',
     idolName: '園田智代子',
     clothesTitle: 'オーバーキャストモノクローム',
@@ -1162,6 +1190,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ブレイブソウルサラウンド',
     clothesName: 'ブレイブソウルサラウンド',
     text: '5ピース★ドクロ・イナズマ・ロック'
+  },
+  {
+    id: 'EleganceOfWhite_SaijoJuri',
+    idolName: '西城樹里',
+    clothesTitle: 'エレガンスオブホワイト',
+    clothesName: 'エレガンスオブホワイト',
+    text: 'White heart! いつ何時も、誠意を込めて'
   },
   {
     id: 'UnusualHour_SaijoJuri',
@@ -1276,6 +1311,13 @@ export const poemList: Poem[] = [
     text: '5ピース★意味はない、リズムもいらない'
   },
   {
+    id: 'EleganceOfWhite_MorinoRinze',
+    idolName: '杜野凛世',
+    clothesTitle: 'エレガンスオブホワイト',
+    clothesName: 'エレガンスオブホワイト',
+    text: 'White heart! キミゴコロ諜報部、主査'
+  },
+  {
     id: 'UnusualHour_MorinoRinze',
     idolName: '杜野凛世',
     clothesTitle: 'アンユージュアルアワー',
@@ -1386,6 +1428,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ブレイブソウルサラウンド',
     clothesName: 'ブレイブソウルサラウンド',
     text: '5ピース★イエローネイル握って'
+  },
+  {
+    id: 'EleganceOfWhite_ArisugawaNatsuha',
+    idolName: '有栖川夏葉',
+    clothesTitle: 'エレガンスオブホワイト',
+    clothesName: 'エレガンスオブホワイト',
+    text: 'White heart! 青色チェックで包装'
   },
   {
     id: 'UnusualHour_ArisugawaNatsuha',
