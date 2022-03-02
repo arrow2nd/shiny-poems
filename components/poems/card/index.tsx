@@ -31,10 +31,10 @@ const Card = ({ poem, shouldShowButton }: Props) => {
 
   return (
     <div
-      className="relative flex items-center w-96 h-60 p-8 border-2 border-main rounded-md bg-white text-main"
+      className="relative flex items-center w-96 h-60 m-2 p-8 border-2 border-main rounded-md bg-white text-main"
       key={poem.id}
     >
-      <div className="w-full">
+      <div>
         <div className="mb-4 text-base md:text-xl">{poemContents}</div>
         <Accent bgColor={accentColor} />
         <div className="">

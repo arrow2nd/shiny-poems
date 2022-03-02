@@ -39,7 +39,7 @@ const UI = ({ poemText }: Props) => {
   }, [poemText])
 
   return (
-    <div className="flex-grow mx-12">
+    <div className="flex-grow mx-6 md:mx-12">
       <Search onSearch={handleSearch} />
       <Line />
       <Poems items={poems} />
