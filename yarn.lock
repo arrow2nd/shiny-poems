@@ -3665,7 +3665,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.5.8, prop-types@npm:^15.6.0, prop-types@npm:^15.6.2, prop-types@npm:^15.7.2":
+"prop-types@npm:^15.5.8, prop-types@npm:^15.6.0, prop-types@npm:^15.6.2, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -3837,6 +3837,17 @@ __metadata:
     react: ">=16.6.0"
     react-dom: ">=16.6.0"
   checksum: b67bf5b3e86dbab72d658b9a52a3589e5960583ab28c7c66272427d8fe30d4c7de422d5046ae96bd2683cdf80cc3264b2516f5ce80cae1dbe6cf3ca6dda392c5
+  languageName: node
+  linkType: hard
+
+"react-wavify@npm:^1.5.7":
+  version: 1.5.7
+  resolution: "react-wavify@npm:1.5.7"
+  dependencies:
+    prop-types: ^15.8.1
+  peerDependencies:
+    react: ^0.13.0 || ^0.14.0 || >=15
+  checksum: 1d12649594c6dd5d31bac49164a66178fa90803872bbbb04fe1a83efd48032440589bfddba7a56c7071d3ce4c98b964a5c57d9229808632729799ea9c16cf960
   languageName: node
   linkType: hard
 
@@ -4125,6 +4136,7 @@ __metadata:
     react-github-corner: ^2.5.0
     react-icons: ^4.3.1
     react-select: ^5.2.2
+    react-wavify: ^1.5.7
     tailwindcss: ^3.0.23
     ts-node: ^10.5.0
     typescript: ^4.6.2
