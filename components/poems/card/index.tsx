@@ -10,10 +10,9 @@ import Buttons from './buttons'
 
 type Props = {
   poem: Poem
-  shouldShowButton: boolean
 }
 
-const Card = ({ poem, shouldShowButton }: Props) => {
+const Card = ({ poem }: Props) => {
   const splitedPoem = splitPoemText(poem.text)
   const poemContents = splitedPoem.map((e) => <p key={e}>{e.trim()}</p>)
 
@@ -42,7 +41,7 @@ const Card = ({ poem, shouldShowButton }: Props) => {
           <p className="text-xs md:text-sm">{poem.idolName}</p>
         </div>
       </div>
-      {shouldShowButton && <Buttons {...{ tweetText, copyText }} />}
+      <Buttons {...{ tweetText, copyText }} />
     </div>
   )
 }

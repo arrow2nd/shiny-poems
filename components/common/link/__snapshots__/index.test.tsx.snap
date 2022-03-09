@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link 設定したPropsが反映されているかどうか 1`] = `
+<div>
+  <a
+    class="m-1"
+    href="http://example.com/"
+    rel="noopener noreferrer"
+    target="_blank"
+    title="test"
+  >
+    <span>
+      TEST
+    </span>
+  </a>
+</div>
+`;
+
+exports[`Link 設定したPropsが反映されているかどうか 2`] = `
+<div>
+  <a
+    class="m-1"
+    href="http://example.com/"
+    rel="noopener noreferrer"
+    target="_blank"
+    title="test"
+  >
+    test
+  </a>
+</div>
+`;
+
+exports[`Link 設定したPropsが反映されているかどうか 3`] = `
+<div>
+  <a
+    href="http://example.com/"
+    rel="noopener noreferrer"
+    target="_blank"
+    title="test"
+  >
+    <p>
+      test
+    </p>
+  </a>
+</div>
+`;
+
+exports[`Link 設定したPropsが反映されているかどうか 4`] = `
+<div>
+  <a
+    href="http://example.com/"
+    rel="noopener noreferrer"
+    target="_blank"
+    title="test"
+  >
+    test
+  </a>
+</div>
+`;

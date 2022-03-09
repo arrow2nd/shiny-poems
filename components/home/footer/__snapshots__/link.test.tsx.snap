@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link 設定したPropsが反映されているか 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <a
+      class="inline-flex flex-row items-center hover:text-black transition-colors"
+      href="http://example.com/"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="test"
+    >
+      <p>
+        test
+      </p>
+      <span>
+        by test
+      </span>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Link 設定したPropsが反映されているか 2`] = `
+<div>
+  <div
+    class=""
+  >
+    <a
+      class="inline-flex flex-row items-center hover:text-black transition-colors"
+      href="http://example.com/"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="TEST"
+    >
+      <span>
+        by TEST
+      </span>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Link 設定したPropsが反映されているか 3`] = `
+<div>
+  <div
+    class="m-1"
+  >
+    <a
+      class="inline-flex flex-row items-center hover:text-black transition-colors"
+      href="http://example.com/"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="test"
+    >
+      <p>
+        test
+      </p>
+      <span>
+        by test
+      </span>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Link 設定したPropsが反映されているか 4`] = `
+<div>
+  <div
+    class="m-1"
+  >
+    <a
+      class="inline-flex flex-row items-center hover:text-black transition-colors"
+      href="http://example.com/"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="TEST"
+    >
+      <span>
+        by TEST
+      </span>
+    </a>
+  </div>
+</div>
+`;

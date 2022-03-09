@@ -1,22 +1,14 @@
-import CLink from 'components/common/link'
+import CLink, { LinkProps } from 'components/common/link'
 
-type Props = {
-  className?: string
-  title: string
-  text: string
-  href: string
-  children: React.ReactNode
-}
-
-const Link = ({ className = '', title, text, href, children }: Props) => (
+const Link = ({ className = '', children, title, href }: LinkProps) => (
   <div className={className}>
     <CLink
-      className="inline-flex flex-row items-center hover:text-black transition-colors"
+      className={`inline-flex flex-row items-center hover:text-black transition-colors`}
       title={title}
       href={href}
     >
       {children}
-      <span>{text}</span>
+      <span>{`by ${title}`}</span>
     </CLink>
   </div>
 )

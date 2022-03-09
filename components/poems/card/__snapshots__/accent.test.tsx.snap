@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accent スナップショットテスト 1`] = `
+<div>
+  <div
+    class="mb-4 py-0.5 w-10 rounded-full border border-gray-100"
+    style="background-color: rgb(245, 66, 117);"
+  />
+</div>
+`;
