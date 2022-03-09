@@ -1,4 +1,4 @@
-export const idolList = [
+export const sortedIdols = [
   '櫻木真乃',
   '風野灯織',
   '八宮めぐる',
@@ -26,7 +26,7 @@ export const idolList = [
   '緋田美琴'
 ]
 
-export const seriesList = [
+export const clothesSeries = [
   {
     name: 'ワンデイシリーズ',
     regex: /ワンデイ(オフィサー|チーフ|キャプチャー)/

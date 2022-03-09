@@ -1,12 +1,16 @@
-import fs from 'fs'
+import { writeFileSync } from 'fs'
 
 import { Poem } from 'types/poem'
 
-import { idolList, seriesList } from './data'
-import { fetchIdolData } from './util'
+import { clothesSeries, sortedIdols } from './libs/data'
+import { fetchIdolData } from './libs/fetch'
 
-// どのゲームに登場した衣装ポエムなのか判別できそうにないので
-// 暫定的にポエムが1文字以上40文字未満のものを取得
+/**
+ * SPARQLクエリ（衣装ポエムを全件取得）
+ *
+ * NOTE: どのゲームに登場した衣装なのかが判別できないので
+ * 暫定的に衣装説明が1文字以上40文字未満のもののみを取得
+ */
 const query = `
 PREFIX schema: <http://schema.org/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -27,24 +31,16 @@ WHERE {
 order by ?name
 `
 
-async function main() {
+;(async () => {
   const data = await fetchIdolData(query)
 
   const poem: Poem[] = data.map((e): Poem => {
-    const id: string = e.owns.value.match(
-      /https:\/\/sparql\.crssnky\.xyz\/imasrdf\/RDFs\/detail\/(.*)/
-    )[1]
-
+    const id: string = e.owns.value.match(/detail\/(.+)$/)[1]
     const clothesName: string = e.clothesName.value
-    let clothesTitle: string = e.clothesName.value
 
-    // シリーズかチェック
-    seriesList.forEach((v) => {
-      if (v.regex.test(clothesName)) {
-        clothesTitle = v.name
-        return
-      }
-    })
+    // シリーズ衣装ならシリーズ名をタイトル名にする
+    const series = clothesSeries.find((e) => e.regex.test(clothesName))
+    const clothesTitle = series ? series.name : clothesName
 
     return {
       id,
@@ -55,20 +51,15 @@ async function main() {
     }
   })
 
-  const sortedPoemData = poem.sort(
-    (a, b) => idolList.indexOf(a.idolName) - idolList.indexOf(b.idolName)
+  // アイドル名リストに沿ってソート
+  const sortedPoem = poem.sort(
+    (a, b) => sortedIdols.indexOf(a.idolName) - sortedIdols.indexOf(b.idolName)
   )
 
-  // 保存
-  const exp = `import { Poem } from 'types/poem'\n\nexport const poemList: Poem[] = ${JSON.stringify(
-    sortedPoemData,
-    null,
-    '  '
-  )}`
+  const json = JSON.stringify(sortedPoem, null, '  ')
+  const result = `import { Poem } from 'types/poem'\n\nexport const poemList: Poem[] = ${json}`
 
-  fs.writeFileSync('./data/poem-list.ts', exp)
+  writeFileSync('./data/poem-list.ts', result)
 
   console.log('[ success! ]')
-}
-
-main()
+})()

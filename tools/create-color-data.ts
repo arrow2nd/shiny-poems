@@ -1,29 +1,28 @@
-import fs from 'fs'
+import { writeFileSync } from 'fs'
 
 import { Color } from 'types/color'
 
-import { fetchIdolData } from './util'
+import { fetchIdolData } from './libs/fetch'
 
+/** SPARQLクエリ（シャニマスアイドルの個人カラー） */
 const query = `
-PREFIX schema: <http://schema.org/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX imas: <https://sparql.crssnky.xyz/imasrdf/URIs/imas-schema.ttl#>
 PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT distinct ?name ?gname ?color
+SELECT distinct ?name ?color
 WHERE {
   ?d rdf:type imas:Idol;
      imas:Brand ?brand;
      rdfs:label ?name;
-     schema:givenName ?gname;
+     imas:nameKana ?kana;
      imas:Color ?color.
   filter(contains(?brand, 'ShinyColors'))
-  filter(lang(?gname)="en")
 }
-order by ?gname
+order by ?kana
 `
 
-async function main() {
+;(async () => {
   const data = await fetchIdolData(query)
 
   const colorData: Color[] = data.map(
@@ -33,16 +32,10 @@ async function main() {
     })
   )
 
-  // 保存
-  const result = `import { Color } from 'types/color'\n\nexport const colorList: Color[] = ${JSON.stringify(
-    colorData,
-    null,
-    '  '
-  )}`
+  const json = JSON.stringify(colorData, null, '  ')
+  const result = `import { Color } from 'types/color'\n\nexport const colorList: Color[] = ${json}`
 
-  fs.writeFileSync('./data/color-list.ts', result)
+  writeFileSync('./data/color-list.ts', result)
 
   console.log('[ success! ]')
-}
-
-main()
+})()
