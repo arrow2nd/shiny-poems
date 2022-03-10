@@ -4,6 +4,7 @@
  * @returns 文字列配列
  */
 export const splitPoemText = (text: string) => {
+  // 最初の文末で2つに分割
   const splited = text.match(/(.+?[。！？!?])(.+)/)?.map((e) => e.trim())
 
   // 分割できなければそのまま返す
@@ -12,11 +13,11 @@ export const splitPoemText = (text: string) => {
 
 /**
  * Cloudinary用に文字列をエンコード
- * @param str 文字列
+ * @param text 文字列
  * @returns エンコードされた文字列
  */
-export const encodeForCloudinary = (str: string) => {
+export const encodeForCloudinary = (text: string) => {
   return encodeURIComponent(
-    str.replace(/\,/g, '%2C').replace(/\//g, '%2F').replace(/!/g, '%21')
+    text.replace(/\,/g, '%2C').replace(/\//g, '%2F').replace(/!/g, '%21')
   )
 }

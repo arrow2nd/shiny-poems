@@ -19,7 +19,7 @@ const Poems = ({ items }: Props) => {
   const cards = (
     <div className="flex flex-wrap justify-center">
       {items.map((e) => (
-        <Card key={e.text} poem={e} shouldShowButton={true} />
+        <Card key={e.text} poem={e} />
       ))}
     </div>
   )

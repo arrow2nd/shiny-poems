@@ -1,0 +1,468 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card ポエムを正しく表示できるか 1`] = `
+<div>
+  <div
+    class="relative flex items-center w-96 h-60 m-2 p-8 border-2 border-main rounded-md bg-white text-main"
+  >
+    <div>
+      <div
+        class="mb-4 text-lg md:text-xl"
+      >
+        <p>
+          1stシーズンの水着。
+        </p>
+        <p>
+          めぐるちゃんとお揃い柄♪
+        </p>
+      </div>
+      <div
+        class="mb-4 py-0.5 w-10 rounded-full border border-gray-100"
+        style="background-color: rgb(255, 186, 214);"
+      />
+      <div
+        class=""
+      >
+        <p
+          class="mb-1 text-sm md:text-base"
+        >
+          シャイニーサマー
+        </p>
+        <p
+          class="text-xs md:text-sm"
+        >
+          櫻木真乃
+        </p>
+      </div>
+    </div>
+    <div
+      class="absolute right-0 bottom-0 p-8 flex flex-row space-x-4 text-main"
+    >
+      <a
+        class="text-xl hover:text-black transition-colors"
+        href="https://twitter.com/intent/tweet?text=1st%E3%82%B7%E3%83%BC%E3%82%BA%E3%83%B3%E3%81%AE%E6%B0%B4%E7%9D%80%E3%80%82%0A%E3%82%81%E3%81%90%E3%82%8B%E3%81%A1%E3%82%83%E3%82%93%E3%81%A8%E3%81%8A%E6%8F%83%E3%81%84%E6%9F%84%E2%99%AA%0A%23%E3%82%B7%E3%83%A3%E3%83%8B%E3%83%9E%E3%82%B9%20%23%E3%82%B7%E3%83%A3%E3%82%A4%E3%83%8B%E3%83%BC%E3%82%B5%E3%83%9E%E3%83%BC%20%23%E6%AB%BB%E6%9C%A8%E7%9C%9F%E4%B9%83%0Ahttps%3A%2F%2Fshiny-poems.vercel.app%3Fid%3DShinySummer_SakuragiMano"
+        rel="noopener noreferrer"
+        target="_blank"
+        title="ツイートする"
+      >
+        <svg
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+          />
+        </svg>
+      </a>
+      <button
+        class="text-xl hover:text-black transition-colors focus:outline-none"
+        title="コピーする"
+      >
+        <svg
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            height="13"
+            rx="2"
+            ry="2"
+            width="13"
+            x="9"
+            y="9"
+          />
+          <path
+            d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Card ポエムを正しく表示できるか 2`] = `
+<div>
+  <div
+    class="relative flex items-center w-96 h-60 m-2 p-8 border-2 border-main rounded-md bg-white text-main"
+  >
+    <div>
+      <div
+        class="mb-4 text-lg md:text-xl"
+      >
+        <p>
+          Cheers!
+        </p>
+        <p>
+          泡沫の間の輝き
+        </p>
+      </div>
+      <div
+        class="mb-4 py-0.5 w-10 rounded-full border border-gray-100"
+        style="background-color: rgb(255, 186, 214);"
+      />
+      <div
+        class=""
+      >
+        <p
+          class="mb-1 text-sm md:text-base"
+        >
+          ドレスアップパルファム
+        </p>
+        <p
+          class="text-xs md:text-sm"
+        >
+          櫻木真乃
+        </p>
+      </div>
+    </div>
+    <div
+      class="absolute right-0 bottom-0 p-8 flex flex-row space-x-4 text-main"
+    >
+      <a
+        class="text-xl hover:text-black transition-colors"
+        href="https://twitter.com/intent/tweet?text=Cheers!%0A%E6%B3%A1%E6%B2%AB%E3%81%AE%E9%96%93%E3%81%AE%E8%BC%9D%E3%81%8D%0A%23%E3%82%B7%E3%83%A3%E3%83%8B%E3%83%9E%E3%82%B9%20%23%E3%83%89%E3%83%AC%E3%82%B9%E3%82%A2%E3%83%83%E3%83%97%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%A0%20%23%E6%AB%BB%E6%9C%A8%E7%9C%9F%E4%B9%83%0Ahttps%3A%2F%2Fshiny-poems.vercel.app%3Fid%3DDressUpParfum_SakuragiMano"
+        rel="noopener noreferrer"
+        target="_blank"
+        title="ツイートする"
+      >
+        <svg
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+          />
+        </svg>
+      </a>
+      <button
+        class="text-xl hover:text-black transition-colors focus:outline-none"
+        title="コピーする"
+      >
+        <svg
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            height="13"
+            rx="2"
+            ry="2"
+            width="13"
+            x="9"
+            y="9"
+          />
+          <path
+            d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Card ポエムを正しく表示できるか 3`] = `
+<div>
+  <div
+    class="relative flex items-center w-96 h-60 m-2 p-8 border-2 border-main rounded-md bg-white text-main"
+  >
+    <div>
+      <div
+        class="mb-4 text-lg md:text-xl"
+      >
+        <p>
+          いらっしゃいませ、輝ける場所へ
+        </p>
+      </div>
+      <div
+        class="mb-4 py-0.5 w-10 rounded-full border border-gray-100"
+        style="background-color: rgb(255, 186, 214);"
+      />
+      <div
+        class=""
+      >
+        <p
+          class="mb-1 text-sm md:text-base"
+        >
+          バイトゥデイレストラント
+        </p>
+        <p
+          class="text-xs md:text-sm"
+        >
+          櫻木真乃
+        </p>
+      </div>
+    </div>
+    <div
+      class="absolute right-0 bottom-0 p-8 flex flex-row space-x-4 text-main"
+    >
+      <a
+        class="text-xl hover:text-black transition-colors"
+        href="https://twitter.com/intent/tweet?text=%E3%81%84%E3%82%89%E3%81%A3%E3%81%97%E3%82%83%E3%81%84%E3%81%BE%E3%81%9B%E3%80%81%E8%BC%9D%E3%81%91%E3%82%8B%E5%A0%B4%E6%89%80%E3%81%B8%0A%23%E3%82%B7%E3%83%A3%E3%83%8B%E3%83%9E%E3%82%B9%20%23%E3%83%90%E3%82%A4%E3%83%88%E3%82%A5%E3%83%87%E3%82%A4%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%83%88%20%23%E6%AB%BB%E6%9C%A8%E7%9C%9F%E4%B9%83%0Ahttps%3A%2F%2Fshiny-poems.vercel.app%3Fid%3DBaitwudeiRestaurant_SakuragiMano"
+        rel="noopener noreferrer"
+        target="_blank"
+        title="ツイートする"
+      >
+        <svg
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+          />
+        </svg>
+      </a>
+      <button
+        class="text-xl hover:text-black transition-colors focus:outline-none"
+        title="コピーする"
+      >
+        <svg
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            height="13"
+            rx="2"
+            ry="2"
+            width="13"
+            x="9"
+            y="9"
+          />
+          <path
+            d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Card ポエムを正しく表示できるか 4`] = `
+<div>
+  <div
+    class="relative flex items-center w-96 h-60 m-2 p-8 border-2 border-main rounded-md bg-white text-main"
+  >
+    <div>
+      <div
+        class="mb-4 text-lg md:text-xl"
+      >
+        <p>
+          サマーダイブ！
+        </p>
+        <p>
+          とうめいな空と海で遊ぶ
+        </p>
+      </div>
+      <div
+        class="mb-4 py-0.5 w-10 rounded-full border border-gray-100"
+        style="background-color: rgb(255, 186, 214);"
+      />
+      <div
+        class=""
+      >
+        <p
+          class="mb-1 text-sm md:text-base"
+        >
+          ファッショナブルサマー
+        </p>
+        <p
+          class="text-xs md:text-sm"
+        >
+          櫻木真乃
+        </p>
+      </div>
+    </div>
+    <div
+      class="absolute right-0 bottom-0 p-8 flex flex-row space-x-4 text-main"
+    >
+      <a
+        class="text-xl hover:text-black transition-colors"
+        href="https://twitter.com/intent/tweet?text=%E3%82%B5%E3%83%9E%E3%83%BC%E3%83%80%E3%82%A4%E3%83%96%EF%BC%81%0A%E3%81%A8%E3%81%86%E3%82%81%E3%81%84%E3%81%AA%E7%A9%BA%E3%81%A8%E6%B5%B7%E3%81%A7%E9%81%8A%E3%81%B6%0A%23%E3%82%B7%E3%83%A3%E3%83%8B%E3%83%9E%E3%82%B9%20%23%E3%83%95%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A7%E3%83%8A%E3%83%96%E3%83%AB%E3%82%B5%E3%83%9E%E3%83%BC%20%23%E6%AB%BB%E6%9C%A8%E7%9C%9F%E4%B9%83%0Ahttps%3A%2F%2Fshiny-poems.vercel.app%3Fid%3DFashionableSummer_SakuragiMano"
+        rel="noopener noreferrer"
+        target="_blank"
+        title="ツイートする"
+      >
+        <svg
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+          />
+        </svg>
+      </a>
+      <button
+        class="text-xl hover:text-black transition-colors focus:outline-none"
+        title="コピーする"
+      >
+        <svg
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            height="13"
+            rx="2"
+            ry="2"
+            width="13"
+            x="9"
+            y="9"
+          />
+          <path
+            d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Card ポエムを正しく表示できるか 5`] = `
+<div>
+  <div
+    class="relative flex items-center w-96 h-60 m-2 p-8 border-2 border-main rounded-md bg-white text-main"
+  >
+    <div>
+      <div
+        class="mb-4 text-lg md:text-xl"
+      >
+        <p>
+          勤務回想録。
+        </p>
+        <p>
+          敬礼。みなさんの元へ急行しますっ
+        </p>
+      </div>
+      <div
+        class="mb-4 py-0.5 w-10 rounded-full border border-gray-100"
+        style="background-color: rgb(255, 186, 214);"
+      />
+      <div
+        class=""
+      >
+        <p
+          class="mb-1 text-sm md:text-base"
+        >
+          ワンデイオフィサー
+        </p>
+        <p
+          class="text-xs md:text-sm"
+        >
+          櫻木真乃
+        </p>
+      </div>
+    </div>
+    <div
+      class="absolute right-0 bottom-0 p-8 flex flex-row space-x-4 text-main"
+    >
+      <a
+        class="text-xl hover:text-black transition-colors"
+        href="https://twitter.com/intent/tweet?text=%E5%8B%A4%E5%8B%99%E5%9B%9E%E6%83%B3%E9%8C%B2%E3%80%82%0A%E6%95%AC%E7%A4%BC%E3%80%82%E3%81%BF%E3%81%AA%E3%81%95%E3%82%93%E3%81%AE%E5%85%83%E3%81%B8%E6%80%A5%E8%A1%8C%E3%81%97%E3%81%BE%E3%81%99%E3%81%A3%0A%23%E3%82%B7%E3%83%A3%E3%83%8B%E3%83%9E%E3%82%B9%20%23%E3%83%AF%E3%83%B3%E3%83%87%E3%82%A4%E3%82%AA%E3%83%95%E3%82%A3%E3%82%B5%E3%83%BC%20%23%E6%AB%BB%E6%9C%A8%E7%9C%9F%E4%B9%83%0Ahttps%3A%2F%2Fshiny-poems.vercel.app%3Fid%3DOne_Day_Officer"
+        rel="noopener noreferrer"
+        target="_blank"
+        title="ツイートする"
+      >
+        <svg
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+          />
+        </svg>
+      </a>
+      <button
+        class="text-xl hover:text-black transition-colors focus:outline-none"
+        title="コピーする"
+      >
+        <svg
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            height="13"
+            rx="2"
+            ry="2"
+            width="13"
+            x="9"
+            y="9"
+          />
+          <path
+            d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+`;
