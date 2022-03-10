@@ -1,4 +1,4 @@
-import { forwardRef } from 'react'
+import { KeyboardEventHandler, forwardRef, useState } from 'react'
 import { FiSearch } from 'react-icons/fi'
 
 type Props = {
@@ -7,11 +7,14 @@ type Props = {
 }
 
 const Input = (props: Props, ref: React.MutableRefObject<any>) => {
-  const handleKeyDown = (ev: any) => {
-    // Enterが入力された
-    if (ev.which === 13) {
-      ref.current.blur()
+  const [isTyping, setIsTyping] = useState(false)
+
+  const handleKeyDown: KeyboardEventHandler<HTMLInputElement> = (ev) => {
+    // 入力が確定した
+    if (!isTyping && ev.key === 'Enter') {
       props.onSubmit()
+      ev.preventDefault()
+      ev.currentTarget.blur()
     }
   }
 
@@ -23,6 +26,8 @@ const Input = (props: Props, ref: React.MutableRefObject<any>) => {
           type="text"
           placeholder={props.placeholder}
           onKeyDown={handleKeyDown}
+          onCompositionStart={() => setIsTyping(true)}
+          onCompositionEnd={() => setIsTyping(false)}
           ref={ref}
         />
         <button
