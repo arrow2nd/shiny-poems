@@ -1,4 +1,4 @@
-name: UpdateData
+name: update-data
 
 on:
   workflow_dispatch:
