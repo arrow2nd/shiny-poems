@@ -8,12 +8,12 @@ describe('CopyButton', () => {
     window.prompt = jest.fn()
   })
 
-  test('スナップショットテスト', () => {
+  test('クリック前の表示が正しいか', () => {
     const { container } = render(<CopyButton text="asahi" />)
     expect(container).toMatchSnapshot()
   })
 
-  test('クリックするとアイコンが変わるかどうか', () => {
+  test('クリックするとアイコンが変更されるか', () => {
     const { container } = render(<CopyButton text="mei" />)
 
     act(() => {

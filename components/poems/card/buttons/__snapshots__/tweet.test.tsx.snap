@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TweetButton スナップショットテスト 1`] = `
+exports[`TweetButton 渡した文字列が正しくURLに埋め込まれているか 1`] = `
 <div>
   <a
     class="text-xl hover:text-black transition-colors"
@@ -28,7 +28,7 @@ exports[`TweetButton スナップショットテスト 1`] = `
 </div>
 `;
 
-exports[`TweetButton スナップショットテスト 2`] = `
+exports[`TweetButton 渡した文字列が正しくURLに埋め込まれているか 2`] = `
 <div>
   <a
     class="text-xl hover:text-black transition-colors"

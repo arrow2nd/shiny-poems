@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Poems ポエムの一覧表示 1`] = `
+exports[`Poems ポエムの一覧表示が正しいか 1`] = `
 <div>
   <div
     class="mb-16 font-kiwi"
@@ -191,7 +191,7 @@ exports[`Poems ポエムの一覧表示 1`] = `
 </div>
 `;
 
-exports[`Poems 該当ポエムがない場合の表示 1`] = `
+exports[`Poems 該当ポエムがない場合の表示が正しいか 1`] = `
 <div>
   <div
     class="mb-16 font-kiwi"

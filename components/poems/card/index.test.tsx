@@ -43,7 +43,7 @@ describe('Card', () => {
     }
   ]
 
-  test.each(samplePoems)('スナップショットテスト', (poem) => {
+  test.each(samplePoems)('ポエムを正しく表示できるか', (poem) => {
     const { container } = render(<Card poem={poem} />)
     expect(container).toMatchSnapshot()
   })

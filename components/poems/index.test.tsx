@@ -22,12 +22,12 @@ describe('Poems', () => {
     }
   ]
 
-  test('ポエムの一覧表示', () => {
+  test('ポエムの一覧表示が正しいか', () => {
     const { container } = render(<Poems items={samplePoems} />)
     expect(container).toMatchSnapshot()
   })
 
-  test('該当ポエムがない場合の表示', () => {
+  test('該当ポエムがない場合の表示が正しいか', () => {
     const { container } = render(<Poems items={[]} />)
     expect(container).toMatchSnapshot()
   })

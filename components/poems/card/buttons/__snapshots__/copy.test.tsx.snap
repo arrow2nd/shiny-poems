@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CopyButton クリックするとアイコンが変わるかどうか 1`] = `
+exports[`CopyButton クリックするとアイコンが変更されるか 1`] = `
 <div>
   <button
     class="text-xl hover:text-black transition-colors focus:outline-none"
@@ -23,7 +23,7 @@ exports[`CopyButton クリックするとアイコンが変わるかどうか 1`
 </div>
 `;
 
-exports[`CopyButton スナップショットテスト 1`] = `
+exports[`CopyButton クリック前の表示が正しいか 1`] = `
 <div>
   <button
     class="text-xl hover:text-black transition-colors focus:outline-none"
