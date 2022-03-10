@@ -6,7 +6,7 @@ type Props = {
   onSubmit: () => void
 }
 
-const Input = (props: Props, ref: React.MutableRefObject<any>) => {
+const Input = (props: Props, ref: React.MutableRefObject<HTMLInputElement>) => {
   const [isTyping, setIsTyping] = useState(false)
 
   const handleKeyDown: KeyboardEventHandler<HTMLInputElement> = (ev) => {

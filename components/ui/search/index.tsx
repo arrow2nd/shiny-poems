@@ -21,7 +21,7 @@ const Search = ({ onSearch }: Props) => {
     Array.from(new Set(poemList.map((e) => e.clothesTitle))).sort()
   )
 
-  const keywordInput = useRef(null)
+  const keywordInput = useRef<HTMLInputElement>(null)
   const idolSelect = useRef(null)
   const clothesSelect = useRef(null)
 

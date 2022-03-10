@@ -1,4 +1,4 @@
-import { act, render } from '@testing-library/react'
+import { act, fireEvent, render } from '@testing-library/react'
 
 import CopyButton from './copy'
 
@@ -17,9 +17,7 @@ describe('CopyButton', () => {
     const { container } = render(<CopyButton text="mei" />)
 
     act(() => {
-      container.children[0].dispatchEvent(
-        new MouseEvent('click', { bubbles: true })
-      )
+      fireEvent.click(container.children[0])
     })
 
     expect(container).toMatchSnapshot()
