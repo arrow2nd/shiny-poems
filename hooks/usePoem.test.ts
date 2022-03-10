@@ -11,19 +11,19 @@ describe('usePoem', () => {
     ${''}             | ${''}           | ${false} | ${undefined}
     ${'text'}         | ${'@test@'}     | ${false} | ${undefined}
   `(
-    '検索条件: $type / キーワード: $keyword',
+    '検索条件: $type / キーワード: $keyword のときに正しく検索できるか',
     ({ type, keyword, isExist, idRegExp }) => {
       const results = renderHook(() => usePoem(type, keyword)).result
 
       // データが存在するか
-      expect(results.current.length > 0).toEqual(isExist)
+      expect(results.current.length > 0).toBe(isExist)
       if (!isExist) return
 
       // idの形式が正しいか
       for (const poem of results.current) {
         // シリーズ衣装はidの形式が異なるのでスキップ
         if (/シリーズ$/.test(poem.clothesTitle)) continue
-        expect(idRegExp.test(poem.id)).toBeTruthy()
+        expect(poem.id).toMatch(idRegExp)
       }
     }
   )

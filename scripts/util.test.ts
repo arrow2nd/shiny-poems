@@ -20,6 +20,6 @@ describe('encodeForCloudinary', () => {
     ${'緋田美琴'} | ${'%E7%B7%8B%E7%94%B0%E7%BE%8E%E7%90%B4'}
     ${'a,b/c!d'}  | ${'a%252Cb%252Fc%2521d'}
   `('$text をエンコードすると $expected', ({ text, expected }) => {
-    expect(encodeForCloudinary(text)).toEqual(expected)
+    expect(encodeForCloudinary(text)).toBe(expected)
   })
 })
