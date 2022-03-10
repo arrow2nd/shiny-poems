@@ -8,18 +8,15 @@ describe('CopyButton', () => {
     window.prompt = jest.fn()
   })
 
-  test('クリック前の表示が正しいか', () => {
-    const { container } = render(<CopyButton text="asahi" />)
-    expect(container).toMatchSnapshot()
-  })
-
-  test('クリックするとアイコンが変更されるか', () => {
-    const { container } = render(<CopyButton text="mei" />)
+  test('クリックでアイコンが変化するか', () => {
+    const { getByRole } = render(<CopyButton text="mei" />)
+    const button = getByRole('button')
+    const prevInnerHTML = button.innerHTML
 
     act(() => {
-      fireEvent.click(container.children[0])
+      fireEvent.click(button)
     })
 
-    expect(container).toMatchSnapshot()
+    expect(button.innerHTML).not.toBe(prevInnerHTML)
   })
 })

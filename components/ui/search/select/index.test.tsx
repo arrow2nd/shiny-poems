@@ -9,14 +9,14 @@ describe('Select', () => {
     options: ['opt1', 'opt2', 'opt3']
   }
 
-  test('プレースホルダが反映されているか', () => {
+  test('プレースホルダが設定されているか', () => {
     const { container } = render(<Select {...props} onChange={jest.fn()} />)
-    expect(container).toMatchSnapshot()
+    expect(container).toContainHTML('<p>placeholder</p>')
   })
 
-  test('文字列を入力して要素を選択できるか', async () => {
+  test('要素を選択した後にコールバックが呼び出されるか', async () => {
     const mock = jest.fn()
-    const { container, getByRole } = render(
+    const { getByRole, getByText } = render(
       <Select {...props} onChange={mock} />
     )
 
@@ -27,8 +27,8 @@ describe('Select', () => {
         target: { value: '1' }
       })
 
-      // ドロップダウンが開くまで待機
-      await new Promise((r) => setTimeout(r, 100))
+      // ドロップダウンが開くまでラグがあるので待機
+      await new Promise((r) => setTimeout(r, 50))
 
       fireEvent.keyDown(combobox, {
         key: 'Enter',
@@ -37,6 +37,7 @@ describe('Select', () => {
       })
     })
 
-    expect(container).toMatchSnapshot()
+    expect(getByText('opt1')).toBeTruthy()
+    expect(mock).toBeCalled()
   })
 })

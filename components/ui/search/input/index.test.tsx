@@ -5,7 +5,7 @@ import { act } from 'react-dom/test-utils'
 import Input from './index'
 
 describe('Input', () => {
-  test('ボタン押下でコールバックが呼び出されるか', () => {
+  test('検索ボタン押下でコールバックが呼び出されるか', () => {
     const mock = jest.fn()
     const { getByRole } = render(<Input placeholder="test" onSubmit={mock} />)
 
