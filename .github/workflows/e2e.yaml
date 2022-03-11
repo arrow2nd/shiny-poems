@@ -31,6 +31,6 @@ jobs:
 
       - name: Upload screenshots
         uses: actions/upload-artifact@v3
-          with:
-            name: screenshots
-            path: screenshots/
+        with:
+          name: screenshots
+          path: screenshots/
