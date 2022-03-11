@@ -33,10 +33,10 @@ const Card = ({ poem }: Props) => {
       className="relative flex items-center w-96 h-60 m-2 p-8 border-2 border-main rounded-md bg-white text-main"
       key={poem.id}
     >
-      <div data-testid="poem-card">
+      <div>
         <div className="mb-4 text-lg md:text-xl">{poemContents}</div>
         <Accent bgColor={accentColor} />
-        <div className="">
+        <div>
           <p className="mb-1 text-sm md:text-base">{poem.clothesName}</p>
           <p className="text-xs md:text-sm">{poem.idolName}</p>
         </div>
