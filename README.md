@@ -4,6 +4,7 @@
 
 [![update-data](https://github.com/arrow2nd/shiny-poems/actions/workflows/update-data.yaml/badge.svg?branch=main)](https://github.com/arrow2nd/shiny-poems/actions/workflows/update-data.yaml)
 [![test](https://github.com/arrow2nd/shiny-poems/actions/workflows/test.yaml/badge.svg)](https://github.com/arrow2nd/shiny-poems/actions/workflows/test.yaml)
+[![e2e](https://github.com/arrow2nd/shiny-poems/actions/workflows/e2e.yaml/badge.svg)](https://github.com/arrow2nd/shiny-poems/actions/workflows/e2e.yaml)
 [![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=shiny-poems)](https://shiny-poems.vercel.app)
 [![GitHub license](https://img.shields.io/github/license/arrow2nd/shiny-poems)](https://github.com/arrow2nd/shiny-poems/blob/main/LICENSE)
 
