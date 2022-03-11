@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: |
           yarn install --immutable
-          npx playwright install-deps
+          npx playwright install --with-deps
 
       - name: Run E2E test
         run: yarn test:e2e
