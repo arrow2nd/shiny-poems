@@ -6,7 +6,7 @@
     "build": "next build",
     "start": "next start",
     "test": "jest",
-    "test:watch": "jest --watch",
+    "test:e2e": "playwright test",
     "fmt": "prettier --write .",
     "fmt:data": "prettier --write ./data/*",
     "create:poem": "ts-node ./tools/create-poem-data.ts",
@@ -24,6 +24,7 @@
     "react-wavify": "^1.5.7"
   },
   "devDependencies": {
+    "@playwright/test": "^1.19.2",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@testing-library/react-hooks": "^7.0.2",
