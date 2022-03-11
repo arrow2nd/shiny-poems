@@ -10,8 +10,12 @@ const config: PlaywrightTestConfig = {
   },
   projects: [
     {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'], permissions: ['clipboard-read'] }
+      name: 'chrome',
+      use: { ...devices['Desktop Chrome'] }
+    },
+    {
+      name: 'edge',
+      use: { ...devices['Desktop Edge'] }
     },
     {
       name: 'firefox',
@@ -20,6 +24,14 @@ const config: PlaywrightTestConfig = {
     {
       name: 'webkit',
       use: { ...devices['Desktop Safari'] }
+    },
+    {
+      name: 'android',
+      use: { ...devices['Pixel 5'] }
+    },
+    {
+      name: 'iphone',
+      use: { ...devices['iPhone 13'] }
     }
   ]
 }

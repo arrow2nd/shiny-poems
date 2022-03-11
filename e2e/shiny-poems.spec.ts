@@ -1,11 +1,11 @@
 import { expect, test } from '@playwright/test'
 
-test('検索してスクリーンショットを撮影', async ({ page, browserName }) => {
+test('検索してスクリーンショットを撮影', async ({ page }, testInfo) => {
   await page.goto('http://localhost:3000')
 
   // 検索前のスクリーンショット
   await page.screenshot({
-    path: `screenshots/before-${browserName}.png`,
+    path: `screenshots/before-${testInfo.project.name}.png`,
     fullPage: true
   })
 
@@ -18,23 +18,14 @@ test('検索してスクリーンショットを撮影', async ({ page, browserN
   // 検索実行
   await page.click('[data-testid="poem-search-submit"]')
 
-  // コピーボタンをクリック
-  await page.locator('[data-testid="copy-button"]').click()
-
-  // コピーテキストのチェック
-  if (browserName !== 'firefox') {
-    const clipboard = await page.evaluate(async () => {
-      return await navigator.clipboard.readText()
-    })
-
-    expect(clipboard).toMatch(
-      /^ルームウェア。すまじきものは恋\s+#シャニマス\s+#プライベートドレスダウン\s+#杜野凛世\s+https:\/\/shiny-poems\.vercel\.app\?id=PrivateDressDown_MorinoRinze$/
-    )
-  }
+  await expect(page.locator('[data-testid="poem-card-text"] > p')).toHaveText([
+    'ルームウェア。',
+    'すまじきものは恋'
+  ])
 
   // 検索結果画面のスクリーンショット
   await page.screenshot({
-    path: `screenshots/after-${browserName}.png`,
+    path: `screenshots/after-${testInfo.project.name}.png`,
     fullPage: true
   })
 })

@@ -22,9 +22,10 @@ jobs:
           cache: yarn
 
       - name: Install dependencies
-        run: |
-          yarn install --immutable
-          npx playwright install --with-deps
+        run: yarn install --immutable
+
+      - name: Setup playwright
+        run: npx playwright install --with-deps
 
       - name: Run E2E test
         run: yarn test:e2e
