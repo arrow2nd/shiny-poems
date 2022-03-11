@@ -69,6 +69,7 @@ exports[`Poems ポエムの一覧表示が正しいか 1`] = `
           </a>
           <button
             class="text-xl hover:text-black transition-colors focus:outline-none"
+            data-testid="copy-button"
             title="コピーする"
           >
             <svg
@@ -158,6 +159,7 @@ exports[`Poems ポエムの一覧表示が正しいか 1`] = `
           </a>
           <button
             class="text-xl hover:text-black transition-colors focus:outline-none"
+            data-testid="copy-button"
             title="コピーする"
           >
             <svg

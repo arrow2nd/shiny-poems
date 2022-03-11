@@ -9,8 +9,8 @@ describe('CopyButton', () => {
   })
 
   test('クリックでアイコンが変化するか', () => {
-    const { getByRole } = render(<CopyButton text="mei" />)
-    const button = getByRole('button')
+    const { getByTestId } = render(<CopyButton text="mei" />)
+    const button = getByTestId('copy-button')
     const prevInnerHTML = button.innerHTML
 
     act(() => {
