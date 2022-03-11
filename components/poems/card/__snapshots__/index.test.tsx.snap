@@ -8,6 +8,7 @@ exports[`Card ポエムを正しく表示できるか 1`] = `
     <div>
       <div
         class="mb-4 text-lg md:text-xl"
+        data-testid="poem-card-text"
       >
         <p>
           1stシーズンの水着。
@@ -101,6 +102,7 @@ exports[`Card ポエムを正しく表示できるか 2`] = `
     <div>
       <div
         class="mb-4 text-lg md:text-xl"
+        data-testid="poem-card-text"
       >
         <p>
           Cheers!
@@ -194,6 +196,7 @@ exports[`Card ポエムを正しく表示できるか 3`] = `
     <div>
       <div
         class="mb-4 text-lg md:text-xl"
+        data-testid="poem-card-text"
       >
         <p>
           いらっしゃいませ、輝ける場所へ
@@ -284,6 +287,7 @@ exports[`Card ポエムを正しく表示できるか 4`] = `
     <div>
       <div
         class="mb-4 text-lg md:text-xl"
+        data-testid="poem-card-text"
       >
         <p>
           サマーダイブ！
@@ -377,6 +381,7 @@ exports[`Card ポエムを正しく表示できるか 5`] = `
     <div>
       <div
         class="mb-4 text-lg md:text-xl"
+        data-testid="poem-card-text"
       >
         <p>
           勤務回想録。

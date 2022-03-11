@@ -34,7 +34,9 @@ const Card = ({ poem }: Props) => {
       key={poem.id}
     >
       <div>
-        <div className="mb-4 text-lg md:text-xl">{poemContents}</div>
+        <div className="mb-4 text-lg md:text-xl" data-testid="poem-card-text">
+          {poemContents}
+        </div>
         <Accent bgColor={accentColor} />
         <div>
           <p className="mb-1 text-sm md:text-base">{poem.clothesName}</p>
