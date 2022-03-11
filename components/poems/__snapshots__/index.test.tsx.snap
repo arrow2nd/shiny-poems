@@ -11,7 +11,9 @@ exports[`Poems ポエムの一覧表示が正しいか 1`] = `
       <div
         class="relative flex items-center w-96 h-60 m-2 p-8 border-2 border-main rounded-md bg-white text-main"
       >
-        <div>
+        <div
+          data-testid="poem-card"
+        >
           <div
             class="mb-4 text-lg md:text-xl"
           >
@@ -101,7 +103,9 @@ exports[`Poems ポエムの一覧表示が正しいか 1`] = `
       <div
         class="relative flex items-center w-96 h-60 m-2 p-8 border-2 border-main rounded-md bg-white text-main"
       >
-        <div>
+        <div
+          data-testid="poem-card"
+        >
           <div
             class="mb-4 text-lg md:text-xl"
           >
