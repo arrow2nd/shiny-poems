@@ -1,4 +1,6 @@
-import { PlaywrightTestConfig, devices } from '@playwright/test'
+import { LaunchOptions, PlaywrightTestConfig, devices } from '@playwright/test'
+
+const slow: LaunchOptions = { slowMo: 250 }
 
 const config: PlaywrightTestConfig = {
   testDir: './e2e',
@@ -11,27 +13,27 @@ const config: PlaywrightTestConfig = {
   projects: [
     {
       name: 'chrome',
-      use: { ...devices['Desktop Chrome'] }
+      use: { ...devices['Desktop Chrome'], launchOptions: slow }
     },
     {
       name: 'edge',
-      use: { ...devices['Desktop Edge'] }
+      use: { ...devices['Desktop Edge'], launchOptions: slow }
     },
     {
       name: 'firefox',
-      use: { ...devices['Desktop Firefox'] }
+      use: { ...devices['Desktop Firefox'], launchOptions: slow }
     },
     {
       name: 'webkit',
-      use: { ...devices['Desktop Safari'] }
+      use: { ...devices['Desktop Safari'], launchOptions: slow }
     },
     {
       name: 'android',
-      use: { ...devices['Pixel 5'] }
+      use: { ...devices['Pixel 5'], launchOptions: slow }
     },
     {
       name: 'iphone',
-      use: { ...devices['iPhone 13'] }
+      use: { ...devices['iPhone 13'], launchOptions: slow }
     }
   ]
 }
