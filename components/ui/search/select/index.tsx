@@ -57,7 +57,7 @@ const Select = (props: Props, ref: React.MutableRefObject<any>) => {
       options={options}
       styles={styles}
       theme={theme}
-      noOptionsMessage={() => 'みつかりません…'}
+      noOptionsMessage={() => '見つかりません…'}
       onChange={handleChangeSelect}
       ref={ref}
     />

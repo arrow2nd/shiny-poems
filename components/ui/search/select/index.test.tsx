@@ -25,7 +25,7 @@ describe('Select', () => {
       })
     })
 
-    expect(getByText('みつかりません…')).toBeTruthy()
+    expect(getByText('見つかりません…')).toBeTruthy()
   })
 
   test('要素を選択した後にコールバックが呼び出されるか', async () => {
