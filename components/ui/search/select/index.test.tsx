@@ -14,6 +14,20 @@ describe('Select', () => {
     expect(container).toContainHTML('<p>placeholder</p>')
   })
 
+  test('見つからなかった時の表示が出るか', () => {
+    const { getByRole, getByText } = render(
+      <Select {...props} onChange={jest.fn()} />
+    )
+
+    act(() => {
+      fireEvent.change(getByRole('combobox'), {
+        target: { value: 'aaa' }
+      })
+    })
+
+    expect(getByText('見つかりません…')).toBeTruthy()
+  })
+
   test('要素を選択した後にコールバックが呼び出されるか', async () => {
     const mock = jest.fn()
     const { getByRole, getByText } = render(

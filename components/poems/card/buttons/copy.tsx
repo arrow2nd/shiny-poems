@@ -21,6 +21,7 @@ const CopyButton = ({ text }: Props) => {
       <button
         className="text-xl hover:text-black transition-colors focus:outline-none"
         title="コピーする"
+        data-testid="copy-button"
       >
         {isCopied ? <AiFillCheckCircle /> : <FiCopy />}
       </button>

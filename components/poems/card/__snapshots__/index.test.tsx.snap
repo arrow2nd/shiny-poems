@@ -8,6 +8,7 @@ exports[`Card ポエムを正しく表示できるか 1`] = `
     <div>
       <div
         class="mb-4 text-lg md:text-xl"
+        data-testid="poem-card-text"
       >
         <p>
           1stシーズンの水着。
@@ -20,9 +21,7 @@ exports[`Card ポエムを正しく表示できるか 1`] = `
         class="mb-4 py-0.5 w-10 rounded-full border border-gray-100"
         style="background-color: rgb(255, 186, 214);"
       />
-      <div
-        class=""
-      >
+      <div>
         <p
           class="mb-1 text-sm md:text-base"
         >
@@ -63,6 +62,7 @@ exports[`Card ポエムを正しく表示できるか 1`] = `
       </a>
       <button
         class="text-xl hover:text-black transition-colors focus:outline-none"
+        data-testid="copy-button"
         title="コピーする"
       >
         <svg
@@ -102,6 +102,7 @@ exports[`Card ポエムを正しく表示できるか 2`] = `
     <div>
       <div
         class="mb-4 text-lg md:text-xl"
+        data-testid="poem-card-text"
       >
         <p>
           Cheers!
@@ -114,9 +115,7 @@ exports[`Card ポエムを正しく表示できるか 2`] = `
         class="mb-4 py-0.5 w-10 rounded-full border border-gray-100"
         style="background-color: rgb(255, 186, 214);"
       />
-      <div
-        class=""
-      >
+      <div>
         <p
           class="mb-1 text-sm md:text-base"
         >
@@ -157,6 +156,7 @@ exports[`Card ポエムを正しく表示できるか 2`] = `
       </a>
       <button
         class="text-xl hover:text-black transition-colors focus:outline-none"
+        data-testid="copy-button"
         title="コピーする"
       >
         <svg
@@ -196,6 +196,7 @@ exports[`Card ポエムを正しく表示できるか 3`] = `
     <div>
       <div
         class="mb-4 text-lg md:text-xl"
+        data-testid="poem-card-text"
       >
         <p>
           いらっしゃいませ、輝ける場所へ
@@ -205,9 +206,7 @@ exports[`Card ポエムを正しく表示できるか 3`] = `
         class="mb-4 py-0.5 w-10 rounded-full border border-gray-100"
         style="background-color: rgb(255, 186, 214);"
       />
-      <div
-        class=""
-      >
+      <div>
         <p
           class="mb-1 text-sm md:text-base"
         >
@@ -248,6 +247,7 @@ exports[`Card ポエムを正しく表示できるか 3`] = `
       </a>
       <button
         class="text-xl hover:text-black transition-colors focus:outline-none"
+        data-testid="copy-button"
         title="コピーする"
       >
         <svg
@@ -287,6 +287,7 @@ exports[`Card ポエムを正しく表示できるか 4`] = `
     <div>
       <div
         class="mb-4 text-lg md:text-xl"
+        data-testid="poem-card-text"
       >
         <p>
           サマーダイブ！
@@ -299,9 +300,7 @@ exports[`Card ポエムを正しく表示できるか 4`] = `
         class="mb-4 py-0.5 w-10 rounded-full border border-gray-100"
         style="background-color: rgb(255, 186, 214);"
       />
-      <div
-        class=""
-      >
+      <div>
         <p
           class="mb-1 text-sm md:text-base"
         >
@@ -342,6 +341,7 @@ exports[`Card ポエムを正しく表示できるか 4`] = `
       </a>
       <button
         class="text-xl hover:text-black transition-colors focus:outline-none"
+        data-testid="copy-button"
         title="コピーする"
       >
         <svg
@@ -381,6 +381,7 @@ exports[`Card ポエムを正しく表示できるか 5`] = `
     <div>
       <div
         class="mb-4 text-lg md:text-xl"
+        data-testid="poem-card-text"
       >
         <p>
           勤務回想録。
@@ -393,9 +394,7 @@ exports[`Card ポエムを正しく表示できるか 5`] = `
         class="mb-4 py-0.5 w-10 rounded-full border border-gray-100"
         style="background-color: rgb(255, 186, 214);"
       />
-      <div
-        class=""
-      >
+      <div>
         <p
           class="mb-1 text-sm md:text-base"
         >
@@ -436,6 +435,7 @@ exports[`Card ポエムを正しく表示できるか 5`] = `
       </a>
       <button
         class="text-xl hover:text-black transition-colors focus:outline-none"
+        data-testid="copy-button"
         title="コピーする"
       >
         <svg

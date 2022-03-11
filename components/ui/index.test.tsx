@@ -5,7 +5,6 @@ import UI from './index'
 
 describe('UI', () => {
   const sleep = () => new Promise((r) => setTimeout(r, 50))
-
   const keyDownEnter = {
     key: 'Enter',
     code: 'Enter',
@@ -73,5 +72,21 @@ describe('UI', () => {
 
     expect(getByText('跳ねる気持ちを浅縹は知っている')).toBeTruthy()
     expect(getByText('八宮めぐる')).toBeTruthy()
+  })
+
+  test('見つからなかった時の表示が出るか', async () => {
+    const { getByRole, getByText } = render(<UI poemText="" />)
+
+    await act(async () => {
+      const textbox = getByRole('textbox')
+
+      fireEvent.change(textbox, {
+        target: { value: 'test' }
+      })
+
+      fireEvent.keyDown(textbox, keyDownEnter)
+    })
+
+    expect(getByText('ポエムが見つかりません…')).toBeTruthy()
   })
 })

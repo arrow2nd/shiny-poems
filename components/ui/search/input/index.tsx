@@ -28,11 +28,13 @@ const Input = (props: Props, ref: React.MutableRefObject<HTMLInputElement>) => {
           onKeyDown={handleKeyDown}
           onCompositionStart={() => setIsTyping(true)}
           onCompositionEnd={() => setIsTyping(false)}
+          data-testid="poem-search-textbox"
           ref={ref}
         />
         <button
           className="mx-1 p-2 transition-colors focus:outline-none"
           onClick={props.onSubmit}
+          data-testid="poem-search-submit"
         >
           <FiSearch />
         </button>

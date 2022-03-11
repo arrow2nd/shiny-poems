@@ -52,11 +52,13 @@ exports[`Search 見た目が変化していないか 1`] = `
           >
             <input
               class="w-full h-9 ml-2.5 placeholder-sub rounded-md focus:outline-none"
+              data-testid="poem-search-textbox"
               placeholder="ポエムの一部から"
               type="text"
             />
             <button
               class="mx-1 p-2 transition-colors focus:outline-none"
+              data-testid="poem-search-submit"
             >
               <svg
                 fill="none"

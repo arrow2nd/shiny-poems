@@ -17,46 +17,40 @@ describe('Search', () => {
     expect(container).toMatchSnapshot()
   })
 
-  test('検索欄入力後に他の検索欄がクリアされるか', async () => {
-    const mock = jest.fn()
+  test('検索時に他の検索欄がクリアされるか', async () => {
     const { container, getByRole, getAllByRole } = render(
-      <Search onSearch={mock} />
+      <Search onSearch={jest.fn()} />
     )
 
     const textbox = getByRole('textbox')
+    const combobox = getAllByRole('combobox')
 
     // アイドル名のコンボボックスを選択
     await act(async () => {
-      const idolCombobox = getAllByRole('combobox')[0]
-
-      fireEvent.change(idolCombobox, {
+      fireEvent.change(combobox[0], {
         target: { value: 'あさひ' }
       })
 
       await sleep()
 
-      fireEvent.keyDown(idolCombobox, keyDownEnter)
+      fireEvent.keyDown(combobox[0], keyDownEnter)
     })
 
-    expect(mock).toBeCalledTimes(1)
     expect(textbox).not.toHaveValue('もぎたて')
     expect(container).toHaveTextContent('芹沢あさひ')
     expect(container).not.toHaveTextContent('ジャージ')
 
     // 衣装名のコンボボックスを選択
     await act(async () => {
-      const clothesCombobox = getAllByRole('combobox')[1]
-
-      fireEvent.change(clothesCombobox, {
+      fireEvent.change(combobox[1], {
         target: { value: 'ジャージ' }
       })
 
       await sleep()
 
-      fireEvent.keyDown(clothesCombobox, keyDownEnter)
+      fireEvent.keyDown(combobox[1], keyDownEnter)
     })
 
-    expect(mock).toBeCalledTimes(2)
     expect(textbox).not.toHaveValue('もぎたて')
     expect(container).not.toHaveTextContent('芹沢あさひ')
     expect(container).toHaveTextContent('ジャージ')
@@ -70,7 +64,6 @@ describe('Search', () => {
       fireEvent.keyDown(textbox, keyDownEnter)
     })
 
-    expect(mock).toBeCalledTimes(3)
     expect(textbox).toHaveValue('もぎたて')
     expect(container).not.toHaveTextContent('芹沢あさひ')
     expect(container).not.toHaveTextContent('ジャージ')

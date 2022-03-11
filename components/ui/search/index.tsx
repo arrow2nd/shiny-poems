@@ -86,12 +86,14 @@ const Search = ({ onSearch }: Props) => {
             options={idolNames}
             onChange={handleChangeIdolName}
             ref={idolSelect}
+            data-testid="idol-search-select"
           />
           <Select
             placeholder="衣装名から"
             options={clothesTitles}
             onChange={handleChangeclothesTitle}
             ref={clothesSelect}
+            data-testid="clothes-search-select"
           />
         </div>
       </div>
