@@ -9,8 +9,8 @@
     "test:watch": "jest --watch",
     "fmt": "prettier --write .",
     "fmt:data": "prettier --write ./data/*",
-    "update:poem": "ts-node ./tools/create-poem-data.ts",
-    "update:color": "ts-node ./tools/create-color-data.ts"
+    "create:poem": "ts-node ./tools/create-poem-data.ts",
+    "create:color": "ts-node ./tools/create-color-data.ts"
   },
   "dependencies": {
     "cloudinary": "^1.28.1",
