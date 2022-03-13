@@ -40,12 +40,12 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           branch: ${{ env.NEW_BRANCH_NAME }}
-          commit_message: 'add: 新規衣装ポエム'
+          commit_message: 'chore: 新規衣装ポエムを追加'
 
       - name: Create pull request
         uses: repo-sync/pull-request@v2
         with:
           source_branch: ${{ env.NEW_BRANCH_NAME }}
           destination_branch: 'main'
-          pr_title: 'add: 新規衣装ポエム'
+          pr_title: 'chore': 新規衣装ポエムを追加'
           github_token: ${{ secrets.GITHUB_TOKEN }}
