@@ -47,5 +47,5 @@ jobs:
         with:
           source_branch: ${{ env.NEW_BRANCH_NAME }}
           destination_branch: 'main'
-          pr_title: 'chore': 新規衣装ポエムを追加'
+          pr_title: 'chore: 新規衣装ポエムを追加'
           github_token: ${{ secrets.GITHUB_TOKEN }}
