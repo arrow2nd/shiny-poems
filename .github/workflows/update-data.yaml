@@ -40,7 +40,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           branch: ${{ env.NEW_BRANCH_NAME }}
-          commit_message: 'update: poem data'
+          commit_message: 'add: 新規衣装ポエム'
 
       - name: Create pull request
         uses: repo-sync/pull-request@v2
