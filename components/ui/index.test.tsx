@@ -5,11 +5,7 @@ import UI from './index'
 
 describe('UI', () => {
   const sleep = () => new Promise((r) => setTimeout(r, 50))
-  const keyDownEnter = {
-    key: 'Enter',
-    code: 'Enter',
-    charCode: 13
-  }
+  const keyDownEnter = { key: 'Enter', code: 'Enter', charCode: 13 }
 
   test('idパラメータで指定されたポエムが表示できるか', async () => {
     const poem = 'よろこびは輝く星をともに纏う'
@@ -24,10 +20,7 @@ describe('UI', () => {
     await act(async () => {
       const textbox = getByRole('textbox')
 
-      fireEvent.change(textbox, {
-        target: { value: '明日もし羽が生えたら' }
-      })
-
+      fireEvent.change(textbox, { target: { value: '明日もし羽が生えたら' } })
       fireEvent.keyDown(textbox, keyDownEnter)
     })
 
@@ -42,12 +35,8 @@ describe('UI', () => {
     await act(async () => {
       const idolCombobox = getAllByRole('combobox')[0]
 
-      fireEvent.change(idolCombobox, {
-        target: { value: '浅倉透' }
-      })
-
+      fireEvent.change(idolCombobox, { target: { value: '浅倉透' } })
       await sleep()
-
       fireEvent.keyDown(idolCombobox, keyDownEnter)
     })
 
@@ -61,12 +50,8 @@ describe('UI', () => {
     await act(async () => {
       const clothesCombobox = getAllByRole('combobox')[1]
 
-      fireEvent.change(clothesCombobox, {
-        target: { value: 'ほしあかり' }
-      })
-
+      fireEvent.change(clothesCombobox, { target: { value: 'ほしあかり' } })
       await sleep()
-
       fireEvent.keyDown(clothesCombobox, keyDownEnter)
     })
 
@@ -80,10 +65,7 @@ describe('UI', () => {
     await act(async () => {
       const textbox = getByRole('textbox')
 
-      fireEvent.change(textbox, {
-        target: { value: 'test' }
-      })
-
+      fireEvent.change(textbox, { target: { value: 'test' } })
       fireEvent.keyDown(textbox, keyDownEnter)
     })
 

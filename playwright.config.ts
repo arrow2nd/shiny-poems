@@ -24,7 +24,7 @@ const config: PlaywrightTestConfig = {
       use: { ...devices['Desktop Firefox'], launchOptions: slow }
     },
     {
-      name: 'webkit',
+      name: 'safari',
       use: { ...devices['Desktop Safari'], launchOptions: slow }
     },
     {
