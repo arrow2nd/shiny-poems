@@ -5,12 +5,7 @@ import Search from './index'
 
 describe('Search', () => {
   const sleep = () => new Promise((r) => setTimeout(r, 50))
-
-  const keyDownEnter = {
-    key: 'Enter',
-    code: 'Enter',
-    charCode: 13
-  }
+  const keyDownEnter = { key: 'Enter', code: 'Enter', charCode: 13 }
 
   test('見た目が変化していないか', () => {
     const { container } = render(<Search onSearch={jest.fn()} />)
@@ -27,12 +22,8 @@ describe('Search', () => {
 
     // アイドル名のコンボボックスを選択
     await act(async () => {
-      fireEvent.change(combobox[0], {
-        target: { value: 'あさひ' }
-      })
-
+      fireEvent.change(combobox[0], { target: { value: 'あさひ' } })
       await sleep()
-
       fireEvent.keyDown(combobox[0], keyDownEnter)
     })
 
@@ -42,12 +33,8 @@ describe('Search', () => {
 
     // 衣装名のコンボボックスを選択
     await act(async () => {
-      fireEvent.change(combobox[1], {
-        target: { value: 'ジャージ' }
-      })
-
+      fireEvent.change(combobox[1], { target: { value: 'ジャージ' } })
       await sleep()
-
       fireEvent.keyDown(combobox[1], keyDownEnter)
     })
 
@@ -57,10 +44,7 @@ describe('Search', () => {
 
     // 本文検索欄に入力して確定
     act(() => {
-      fireEvent.change(textbox, {
-        target: { value: 'もぎたて' }
-      })
-
+      fireEvent.change(textbox, { target: { value: 'もぎたて' } })
       fireEvent.keyDown(textbox, keyDownEnter)
     })
 

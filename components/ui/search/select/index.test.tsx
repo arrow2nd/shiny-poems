@@ -20,9 +20,7 @@ describe('Select', () => {
     )
 
     act(() => {
-      fireEvent.change(getByRole('combobox'), {
-        target: { value: 'aaa' }
-      })
+      fireEvent.change(getByRole('combobox'), { target: { value: 'aaa' } })
     })
 
     expect(getByText('見つかりません…')).toBeTruthy()
@@ -37,18 +35,12 @@ describe('Select', () => {
     await act(async () => {
       const combobox = getByRole('combobox')
 
-      fireEvent.change(combobox, {
-        target: { value: '1' }
-      })
+      fireEvent.change(combobox, { target: { value: '1' } })
 
       // ドロップダウンが開くまでラグがあるので待機
       await new Promise((r) => setTimeout(r, 50))
 
-      fireEvent.keyDown(combobox, {
-        key: 'Enter',
-        code: 'Enter',
-        charCode: 13
-      })
+      fireEvent.keyDown(combobox, { key: 'Enter', code: 'Enter', charCode: 13 })
     })
 
     expect(getByText('opt1')).toBeTruthy()
