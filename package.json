@@ -13,7 +13,7 @@
     "create:color": "ts-node ./tools/create-color-data.ts"
   },
   "dependencies": {
-    "cloudinary": "^1.28.1",
+    "cloudinary": "^1.29.0",
     "next": "12.1.0",
     "react": "17.0.2",
     "react-copy-to-clipboard": "^5.0.4",
