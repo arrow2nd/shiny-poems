@@ -464,18 +464,18 @@ export const poemList: Poem[] = [
     text: 'リフトオフ。天の川の雫と踊る'
   },
   {
+    id: 'PrivateDressDown_TsukiokaKogane',
+    idolName: '月岡恋鐘',
+    clothesTitle: 'プライベートドレスダウン',
+    clothesName: 'プライベートドレスダウン',
+    text: 'ルームウェア。夢で逢っても焦らない'
+  },
+  {
     id: 'OvercastMonochrome_TsukiokaKogane',
     idolName: '月岡恋鐘',
     clothesTitle: 'オーバーキャストモノクローム',
     clothesName: 'オーバーキャストモノクローム',
     text: 'ワンステップ。纏うは白金、歌えよ黄金'
-  },
-  {
-    id: 'PrivateDressDown_TsukiokaKogane',
-    idolName: '月岡恋鐘',
-    clothesTitle: 'プライベートドレスダウン',
-    clothesName: 'プライベートドレスダウン',
-    text: '夢で逢っても焦らない'
   },
   {
     id: 'ReflectionThemePark_TsukiokaKogane',
@@ -1724,6 +1724,13 @@ export const poemList: Poem[] = [
     text: 'リフトオフ。キラキララ　会いに行くよ'
   },
   {
+    id: 'PrivateDressDown_OsakiTenka',
+    idolName: '大崎甜花',
+    clothesTitle: 'プライベートドレスダウン',
+    clothesName: 'プライベートドレスダウン',
+    text: 'ルームウェア。閉店時の正装'
+  },
+  {
     id: 'OvercastMonochrome_OsakiTenka',
     idolName: '大崎甜花',
     clothesTitle: 'オーバーキャストモノクローム',
@@ -1743,13 +1750,6 @@ export const poemList: Poem[] = [
     clothesTitle: 'ジャージ',
     clothesName: 'ジャージ',
     text: '水色ジャージ。すぐバテるけどやる気はある'
-  },
-  {
-    id: 'PrivateDressDown_OsakiTenka',
-    idolName: '大崎甜花',
-    clothesTitle: 'プライベートドレスダウン',
-    clothesName: 'プライベートドレスダウン',
-    text: '閉店時の正装'
   },
   {
     id: 'ShinySummer_KuwayamaChiyuki',
@@ -1827,6 +1827,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ユナイトバースプラネタリ',
     clothesName: 'ユナイトバースプラネタリ',
     text: 'リフトオフ。飛べるのは、重力があるから'
+  },
+  {
+    id: 'PrivateDressDown_KuwayamaChiyuki',
+    idolName: '桑山千雪',
+    clothesTitle: 'プライベートドレスダウン',
+    clothesName: 'プライベートドレスダウン',
+    text: 'ルームウェア。夢の岸辺に泳ぎつくための——'
   },
   {
     id: 'OvercastMonochrome_KuwayamaChiyuki',
@@ -2471,6 +2478,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ユナイトバースプラネタリ',
     clothesName: 'ユナイトバースプラネタリ',
     text: 'リフトオフ。息を吸って止めて、泳げるかな'
+  },
+  {
+    id: 'PrivateDressDown_FukumaruKoito',
+    idolName: '福丸小糸',
+    clothesTitle: 'プライベートドレスダウン',
+    clothesName: 'プライベートドレスダウン',
+    text: 'ルームウェア。おなかのシャツをいれておやすみ'
   },
   {
     id: 'OvercastMonochrome_FukumaruKoito',
