@@ -28,7 +28,7 @@ CLOUDINARY_URL=<API Environment variable>
 
 ```
 # ビルド & 実行
-yarn build & yarn start
+yarn build && yarn start
 ```
 
 ## Thanks!
