@@ -2,6 +2,13 @@ import { Poem } from 'types/poem'
 
 export const poemList: Poem[] = [
   {
+    id: 'CelestialColors_SakuragiMano',
+    idolName: '櫻木真乃',
+    clothesTitle: 'セレスティアルカラーズ',
+    clothesName: 'セレスティアルカラーズ',
+    text: '#Shiny いくつもの可能性を繋ぎ照らす'
+  },
+  {
     id: 'ShinySummer_SakuragiMano',
     idolName: '櫻木真乃',
     clothesTitle: 'シャイニーサマー',
@@ -135,6 +142,13 @@ export const poemList: Poem[] = [
     text: '水色ジャージ。優しい灯織ちゃん色♪'
   },
   {
+    id: 'CelestialColors_KazanoHiori',
+    idolName: '風野灯織',
+    clothesTitle: 'セレスティアルカラーズ',
+    clothesName: 'セレスティアルカラーズ',
+    text: '#Shiny もっと、もっと遠くへ'
+  },
+  {
     id: 'ShinySummer_KazanoHiori',
     idolName: '風野灯織',
     clothesTitle: 'シャイニーサマー',
@@ -259,6 +273,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ジャージ',
     clothesName: 'ジャージ',
     text: '水色ジャージ。私服よりこっちの方が安心？'
+  },
+  {
+    id: 'CelestialColors_HachimiyaMeguru',
+    idolName: '八宮めぐる',
+    clothesTitle: 'セレスティアルカラーズ',
+    clothesName: 'セレスティアルカラーズ',
+    text: '#Shiny きらきらをたくさん抱えていこう'
   },
   {
     id: 'ShinySummer_HachimiyaMeguru',
@@ -394,6 +415,13 @@ export const poemList: Poem[] = [
     text: '水色ジャージ。灯色を織ればシャボンの香り'
   },
   {
+    id: 'CelestialColors_TsukiokaKogane',
+    idolName: '月岡恋鐘',
+    clothesTitle: 'セレスティアルカラーズ',
+    clothesName: 'セレスティアルカラーズ',
+    text: '#Shiny 繋いだ光、灯点し頃'
+  },
+  {
     id: 'ShinySummer_TsukiokaKogane',
     idolName: '月岡恋鐘',
     clothesTitle: 'シャイニーサマー',
@@ -406,6 +434,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ホリディプリンセス',
     clothesName: 'ホリディプリンセス',
     text: 'Bedtime Story／掬わないで、零れだすから'
+  },
+  {
+    id: 'DressUpParfum_TsukiokaKogane',
+    idolName: '月岡恋鐘',
+    clothesTitle: 'ドレスアップパルファム',
+    clothesName: 'ドレスアップパルファム',
+    text: 'Cheers! 煌めけ、かなめの黄金'
   },
   {
     id: 'FashionableSummer_TsukiokaKogane',
@@ -504,6 +539,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ワンダーランドシリーズ',
     clothesName: 'ワンダーランドホッピン',
     text: '霧・霧・奇・譚。鼓動より早く跳ねて'
+  },
+  {
+    id: 'CelestialColors_TanakaMamimi',
+    idolName: '田中摩美々',
+    clothesTitle: 'セレスティアルカラーズ',
+    clothesName: 'セレスティアルカラーズ',
+    text: '#Shiny パラレル上等'
   },
   {
     id: 'ShinySummer_TanakaMamimi',
@@ -611,6 +653,13 @@ export const poemList: Poem[] = [
     text: '霧・霧・奇・譚。複雑な縞模様は宙に霧散する'
   },
   {
+    id: 'CelestialColors_ShiraseSakuya',
+    idolName: '白瀬咲耶',
+    clothesTitle: 'セレスティアルカラーズ',
+    clothesName: 'セレスティアルカラーズ',
+    text: '#Shiny 違う空の下へだって'
+  },
+  {
     id: 'ShinySummer_ShiraseSakuya',
     idolName: '白瀬咲耶',
     clothesTitle: 'シャイニーサマー',
@@ -714,6 +763,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ワンダーランドシリーズ',
     clothesName: 'ワンダーランドハット',
     text: '霧・霧・奇・譚。さあ席へ、このお茶会は永遠だ'
+  },
+  {
+    id: 'CelestialColors_MitsumineYuika',
+    idolName: '三峰結華',
+    clothesTitle: 'セレスティアルカラーズ',
+    clothesName: 'セレスティアルカラーズ',
+    text: '#Shiny どの世界の私より幸せ'
   },
   {
     id: 'ShinySummer_MitsumineYuika',
@@ -828,6 +884,13 @@ export const poemList: Poem[] = [
     text: '霧・霧・奇・譚。さぁ、傅いてみせて？'
   },
   {
+    id: 'CelestialColors_YukokuKiriko',
+    idolName: '幽谷霧子',
+    clothesTitle: 'セレスティアルカラーズ',
+    clothesName: 'セレスティアルカラーズ',
+    text: '#Shiny おまえが虹と約束した頃'
+  },
+  {
     id: 'ShinySummer_YukokuKiriko',
     idolName: '幽谷霧子',
     clothesTitle: 'シャイニーサマー',
@@ -938,6 +1001,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ワンダーランドシリーズ',
     clothesName: 'ワンダーランドアリス',
     text: '霧・霧・奇・譚。うさあぎうさぎなうさぎうたさぎ'
+  },
+  {
+    id: 'CelestialColors_KomiyaKaho',
+    idolName: '小宮果穂',
+    clothesTitle: 'セレスティアルカラーズ',
+    clothesName: 'セレスティアルカラーズ',
+    text: '#Shiny たくさんの色は、嬉しい'
   },
   {
     id: 'ShinySummer_KomiyaKaho',
@@ -1059,6 +1129,13 @@ export const poemList: Poem[] = [
     text: '水色ジャージ。運動能力特化、お揃い装備！'
   },
   {
+    id: 'CelestialColors_SonodaChiyoko',
+    idolName: '園田智代子',
+    clothesTitle: 'セレスティアルカラーズ',
+    clothesName: 'セレスティアルカラーズ',
+    text: '#Shiny プレートがあるので慎重に着る'
+  },
+  {
     id: 'ShinySummer_SonodaChiyoko',
     idolName: '園田智代子',
     clothesTitle: 'シャイニーサマー',
@@ -1176,6 +1253,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ジャージ',
     clothesName: 'ジャージ',
     text: '水色ジャージ。ウエストがゴムだと安心する'
+  },
+  {
+    id: 'CelestialColors_SaijoJuri',
+    idolName: '西城樹里',
+    clothesTitle: 'セレスティアルカラーズ',
+    clothesName: 'セレスティアルカラーズ',
+    text: '#Shiny 鼓動、乱反射して'
   },
   {
     id: 'ShinySummer_SaijoJuri',
@@ -1297,6 +1381,13 @@ export const poemList: Poem[] = [
     text: '筋書き通りにはいかないもの'
   },
   {
+    id: 'CelestialColors_MorinoRinze',
+    idolName: '杜野凛世',
+    clothesTitle: 'セレスティアルカラーズ',
+    clothesName: 'セレスティアルカラーズ',
+    text: '#Shiny 夢の尾ぞ長き'
+  },
+  {
     id: 'ShinySummer_MorinoRinze',
     idolName: '杜野凛世',
     clothesTitle: 'シャイニーサマー',
@@ -1416,6 +1507,13 @@ export const poemList: Poem[] = [
     text: '純情完売。'
   },
   {
+    id: 'CelestialColors_ArisugawaNatsuha',
+    idolName: '有栖川夏葉',
+    clothesTitle: 'セレスティアルカラーズ',
+    clothesName: 'セレスティアルカラーズ',
+    text: '#Shiny 誓えますか'
+  },
+  {
     id: 'ShinySummer_ArisugawaNatsuha',
     idolName: '有栖川夏葉',
     clothesTitle: 'シャイニーサマー',
@@ -1526,6 +1624,13 @@ export const poemList: Poem[] = [
     clothesTitle: '喫茶くらいまっくす制服',
     clothesName: '喫茶くらいまっくす制服',
     text: '紅茶に檸檬を添えて'
+  },
+  {
+    id: 'CelestialColors_OsakiAmana',
+    idolName: '大崎甘奈',
+    clothesTitle: 'セレスティアルカラーズ',
+    clothesName: 'セレスティアルカラーズ',
+    text: '#Shiny キミとだからここまで来れた'
   },
   {
     id: 'ShinySummer_OsakiAmana',
@@ -1640,6 +1745,13 @@ export const poemList: Poem[] = [
     text: '水色ジャージ。さすがにデコらないよ☆'
   },
   {
+    id: 'CelestialColors_OsakiTenka',
+    idolName: '大崎甜花',
+    clothesTitle: 'セレスティアルカラーズ',
+    clothesName: 'セレスティアルカラーズ',
+    text: '#Shiny With you, you, you'
+  },
+  {
     id: 'ShinySummer_OsakiTenka',
     idolName: '大崎甜花',
     clothesTitle: 'シャイニーサマー',
@@ -1750,6 +1862,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ジャージ',
     clothesName: 'ジャージ',
     text: '水色ジャージ。すぐバテるけどやる気はある'
+  },
+  {
+    id: 'CelestialColors_KuwayamaChiyuki',
+    idolName: '桑山千雪',
+    clothesTitle: 'セレスティアルカラーズ',
+    clothesName: 'セレスティアルカラーズ',
+    text: '#Shiny かかとを鳴らせ、虹の彼方へ'
   },
   {
     id: 'ShinySummer_KuwayamaChiyuki',
@@ -1864,6 +1983,13 @@ export const poemList: Poem[] = [
     text: '水色ジャージ。桑山千雪、頑張ります♪'
   },
   {
+    id: 'CelestialColors_SerizawaAsahi',
+    idolName: '芹沢あさひ',
+    clothesTitle: 'セレスティアルカラーズ',
+    clothesName: 'セレスティアルカラーズ',
+    text: '#Shiny 空にカケラをばらまいて'
+  },
+  {
     id: 'CodeAlpha_SerizawaAsahi',
     idolName: '芹沢あさひ',
     clothesTitle: 'コード：アルファ',
@@ -1969,6 +2095,13 @@ export const poemList: Poem[] = [
     text: '水色ジャージ。袖が余るっす'
   },
   {
+    id: 'CelestialColors_MayuzumiFuyuko',
+    idolName: '黛冬優子',
+    clothesTitle: 'セレスティアルカラーズ',
+    clothesName: 'セレスティアルカラーズ',
+    text: '#Shiny 越えていくに決まってる'
+  },
+  {
     id: 'CodeAlpha_MayuzumiFuyuko',
     idolName: '黛冬優子',
     clothesTitle: 'コード：アルファ',
@@ -2065,6 +2198,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ジャージ',
     clothesName: 'ジャージ',
     text: '水色ジャージ。これは、あの空に挑むための'
+  },
+  {
+    id: 'CelestialColors_IzumiMei',
+    idolName: '和泉愛依',
+    clothesTitle: 'セレスティアルカラーズ',
+    clothesName: 'セレスティアルカラーズ',
+    text: '#Shiny 見ていて、今の、うちとあたし'
   },
   {
     id: 'CodeAlpha_IzumiMei',
@@ -2172,6 +2312,13 @@ export const poemList: Poem[] = [
     text: '水色ジャージ。レッスンってカンジ♪'
   },
   {
+    id: 'CelestialColors_AsakuraToru',
+    idolName: '浅倉透',
+    clothesTitle: 'セレスティアルカラーズ',
+    clothesName: 'セレスティアルカラーズ',
+    text: '#Shiny 心臓は、ここ'
+  },
+  {
     id: 'LoveLaughRabbits_AsakuraToru',
     idolName: '浅倉透',
     clothesTitle: 'ラブラフラビッツ',
@@ -2256,6 +2403,13 @@ export const poemList: Poem[] = [
     text: '水色ジャージ。風を抜きさって'
   },
   {
+    id: 'CelestialColors_HiguchiMadoka',
+    idolName: '樋口円香',
+    clothesTitle: 'セレスティアルカラーズ',
+    clothesName: 'セレスティアルカラーズ',
+    text: '#Shiny 魂を削り出すように'
+  },
+  {
     id: 'LoveLaughRabbits_HiguchiMadoka',
     idolName: '樋口円香',
     clothesTitle: 'ラブラフラビッツ',
@@ -2331,6 +2485,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ジャージ',
     clothesName: 'ジャージ',
     text: '水色ジャージ。汗はかかない'
+  },
+  {
+    id: 'CelestialColors_IchikawaHinana',
+    idolName: '市川雛菜',
+    clothesTitle: 'セレスティアルカラーズ',
+    clothesName: 'セレスティアルカラーズ',
+    text: '#Shiny 海はどこで終わるの？'
   },
   {
     id: 'LoveLaughRabbits_IchikawaHinana',
@@ -2417,6 +2578,13 @@ export const poemList: Poem[] = [
     text: '水色ジャージ。ポケットのお菓子も跳ねる'
   },
   {
+    id: 'CelestialColors_FukumaruKoito',
+    idolName: '福丸小糸',
+    clothesTitle: 'セレスティアルカラーズ',
+    clothesName: 'セレスティアルカラーズ',
+    text: '#Shiny 飛べなくても、わたしは'
+  },
+  {
     id: 'LoveLaughRabbits_FukumaruKoito',
     idolName: '福丸小糸',
     clothesTitle: 'ラブラフラビッツ',
@@ -2501,6 +2669,13 @@ export const poemList: Poem[] = [
     text: '水色ジャージ。いつかの衣装のための'
   },
   {
+    id: 'CelestialColors_NanakusaNichika',
+    idolName: '七草にちか',
+    clothesTitle: 'セレスティアルカラーズ',
+    clothesName: 'セレスティアルカラーズ',
+    text: '#Shiny サイズ違いの心'
+  },
+  {
     id: 'FountainSummer_NanakusaNichika',
     idolName: '七草にちか',
     clothesTitle: 'ファウンテンサマー',
@@ -2548,6 +2723,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ジャージ',
     clothesName: 'ジャージ',
     text: '水色ジャージ。おろしたての匂い'
+  },
+  {
+    id: 'CelestialColors_AketaMikoto',
+    idolName: '緋田美琴',
+    clothesTitle: 'セレスティアルカラーズ',
+    clothesName: 'セレスティアルカラーズ',
+    text: '#Shiny no more'
   },
   {
     id: 'SetupCrazy_AketaMikoto',
