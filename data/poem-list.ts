@@ -730,6 +730,13 @@ export const poemList: Poem[] = [
     text: 'リフトオフ。そらの海へ漕ぎ出す'
   },
   {
+    id: 'PrivateDressDown_ShiraseSakuya',
+    idolName: '白瀬咲耶',
+    clothesTitle: 'プライベートドレスダウン',
+    clothesName: 'プライベートドレスダウン',
+    text: 'ルームウェア。愛すべき自分時間'
+  },
+  {
     id: 'OvercastMonochrome_ShiraseSakuya',
     idolName: '白瀬咲耶',
     clothesTitle: 'オーバーキャストモノクローム',
@@ -2702,6 +2709,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ユナイトバースプラネタリ',
     clothesName: 'ユナイトバースプラネタリ',
     text: 'リフトオフ。かわいいって言ってください！'
+  },
+  {
+    id: 'PrivateDressDown_NanakusaNichika',
+    idolName: '七草にちか',
+    clothesTitle: 'プライベートドレスダウン',
+    clothesName: 'プライベートドレスダウン',
+    text: 'ルームウェア。普通だなって思ったら負け'
   },
   {
     id: 'OvercastMonochrome_NanakusaNichika',
