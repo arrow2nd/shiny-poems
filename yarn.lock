@@ -1685,10 +1685,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^17.0.23":
-  version: 17.0.23
-  resolution: "@types/node@npm:17.0.23"
-  checksum: a3517554737cbb042e76c30d0e5482192ac4d9bea0eeb086e2622d9cabf460a0eb52a696b99fcd18e7fcc93c96db6cc7ae507f6608f256ef0b5c1d8c87a5a470
+"@types/node@npm:^17.0.31":
+  version: 17.0.31
+  resolution: "@types/node@npm:17.0.31"
+  checksum: 704618350f8420d5c47db0f7778398e821b7724369946f5c441a7e6b9343295553936400eb8309f0b07d5e39c240988ab3456b983712ca86265dabc9aee4ad3d
   languageName: node
   linkType: hard
 
@@ -6908,7 +6908,7 @@ __metadata:
     "@testing-library/react": ^12.1.4
     "@testing-library/react-hooks": ^7.0.2
     "@trivago/prettier-plugin-sort-imports": ^3.2.0
-    "@types/node": ^17.0.23
+    "@types/node": ^17.0.31
     "@types/react": ^17.0.43
     "@types/react-copy-to-clipboard": ^5.0.2
     "@types/react-dom": ^17.0.14
