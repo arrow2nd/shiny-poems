@@ -25,8 +25,6 @@ export const generateOgpImageUrl = (
   const poem = poemList.find((e) => e.id === idStr)
   if (!poem) return [defaultOgp, '']
 
-  // アイドル名からイメージカラーを取得
-  const idolColor = colorList.find((e) => e.idolName === poem.idolName)
   const poemText = splitPoemText(poem.text).join('\n')
 
   const ogpImgUrl = cloudinary.v2.url('shiny-poems/ogp-base.png', {
@@ -35,7 +33,6 @@ export const generateOgpImageUrl = (
     transformation: [
       {
         variables: [
-          ['$color', `!rgb:${idolColor.hex}!`],
           ['$poem', `!${encodeForCloudinary(poemText)}!`],
           ['$clothes', `!${encodeForCloudinary(poem.clothesName)}!`],
           ['$idol', `!${encodeForCloudinary(poem.idolName)}!`]
