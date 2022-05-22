@@ -2409,9 +2409,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cloudinary@npm:^1.29.1":
-  version: 1.29.1
-  resolution: "cloudinary@npm:1.29.1"
+"cloudinary@npm:^1.30.0":
+  version: 1.30.0
+  resolution: "cloudinary@npm:1.30.0"
   dependencies:
     cloudinary-core: ^2.10.2
     core-js: 3.6.5
@@ -2421,7 +2421,7 @@ __metadata:
   dependenciesMeta:
     proxy-agent:
       optional: true
-  checksum: 74f611fe35853e84a4e843b1b578cb855533decc3bb7f44a103599044020909868c7235082af7fbaca7749d98814c9725317d991deb1c49d5c2c03d30f019ecc
+  checksum: 3f10a03029964bb1e456228d47b371dfca063573487f407a26ea1409e8fa39d5f7a235334821d3f5e52efb4fd1e6cbec1f07a4ac1d35cb3064225830c96a7de5
   languageName: node
   linkType: hard
 
@@ -6518,7 +6518,7 @@ __metadata:
     "@types/react-select": ^5.0.1
     autoprefixer: ^10.4.7
     axios: ^0.27.2
-    cloudinary: ^1.29.1
+    cloudinary: ^1.30.0
     eslint: ^8.15.0
     eslint-config-next: ^12.1.6
     eslint-config-prettier: ^8.5.0
