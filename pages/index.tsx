@@ -1,8 +1,5 @@
-import {
-  GetServerSidePropsContext,
-  GetServerSidePropsResult,
-  InferGetServerSidePropsType
-} from 'next'
+import InferNextProps from 'infer-next-props-type'
+import { GetServerSidePropsContext, GetServerSidePropsResult } from 'next'
 
 import Home from 'components/home'
 
@@ -10,9 +7,10 @@ import { generateOgpImageUrl } from 'scripts/generate-ogp'
 
 import { ServerSideProps } from 'types/server-side-props'
 
-const ShinyPoems = (
-  props: InferGetServerSidePropsType<typeof getServerSideProps>
-) => <Home {...props} />
+// https://github.com/vercel/next.js/issues/15913#issuecomment-950330472
+const ShinyPoems = (props: InferNextProps<typeof getServerSideProps>) => (
+  <Home {...props} />
+)
 
 export default ShinyPoems
 
