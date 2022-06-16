@@ -254,6 +254,13 @@ export const poemList: Poem[] = [
     text: 'リフトオフ。すべてを内包するアオ'
   },
   {
+    id: 'PrivateDressDown_KazanoHiori',
+    idolName: '風野灯織',
+    clothesTitle: 'プライベートドレスダウン',
+    clothesName: 'プライベートドレスダウン',
+    text: 'ルームウェア。まずは見た目から入りましょう'
+  },
+  {
     id: 'OvercastMonochrome_KazanoHiori',
     idolName: '風野灯織',
     clothesTitle: 'オーバーキャストモノクローム',
@@ -2191,6 +2198,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ユナイトバースプラネタリ',
     clothesName: 'ユナイトバースプラネタリ',
     text: 'リフトオフ。さぁ、願って'
+  },
+  {
+    id: 'PrivateDressDown_MayuzumiFuyuko',
+    idolName: '黛冬優子',
+    clothesTitle: 'プライベートドレスダウン',
+    clothesName: 'プライベートドレスダウン',
+    text: 'ルームウェア。隙なく寛ぎます'
   },
   {
     id: 'OvercastMonochrome_MayuzumiFuyuko',
