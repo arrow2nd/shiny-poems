@@ -569,6 +569,13 @@ export const poemList: Poem[] = [
     text: 'Bedtime Story／キマグレ・プリンセス'
   },
   {
+    id: 'DressUpParfum_TanakaMamimi',
+    idolName: '田中摩美々',
+    clothesTitle: 'ドレスアップパルファム',
+    clothesName: 'ドレスアップパルファム',
+    text: 'Cheers! 今宵、パーティーナイト'
+  },
+  {
     id: 'ReflectionThemePark_TanakaMamimi',
     idolName: '田中摩美々',
     clothesTitle: 'リフレクションテーマパーク',
