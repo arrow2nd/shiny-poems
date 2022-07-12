@@ -1626,6 +1626,13 @@ export const poemList: Poem[] = [
     text: 'リフトオフ。この瞬きが届く頃には'
   },
   {
+    id: 'PrivateDressDown_ArisugawaNatsuha',
+    idolName: '有栖川夏葉',
+    clothesTitle: 'プライベートドレスダウン',
+    clothesName: 'プライベートドレスダウン',
+    text: 'ルームウェア。お嬢様と夢見るシルク'
+  },
+  {
     id: 'OvercastMonochrome_ArisugawaNatsuha',
     idolName: '有栖川夏葉',
     clothesTitle: 'オーバーキャストモノクローム',
@@ -2499,6 +2506,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ユナイトバースプラネタリ',
     clothesName: 'ユナイトバースプラネタリ',
     text: 'リフトオフ。夜空にコンペイト☆キス'
+  },
+  {
+    id: 'PrivateDressDown_HiguchiMadoka',
+    idolName: '樋口円香',
+    clothesTitle: 'プライベートドレスダウン',
+    clothesName: 'プライベートドレスダウン',
+    text: 'ルームウェア。ノーコメント＠プライベート'
   },
   {
     id: 'OvercastMonochrome_HiguchiMadoka',
