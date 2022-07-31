@@ -22,7 +22,7 @@
     "react-github-corner": "^2.5.0",
     "react-icons": "^4.4.0",
     "react-select": "^5.4.0",
-    "react-wavify": "^1.5.8"
+    "react-wavify": "^1.6.1"
   },
   "devDependencies": {
     "@playwright/test": "^1.23.1",
