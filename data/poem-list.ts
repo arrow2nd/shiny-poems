@@ -100,6 +100,13 @@ export const poemList: Poem[] = [
     text: 'マジックアワー。夏にほどけていくとりどりのいろ'
   },
   {
+    id: 'HottestSummer_SakuragiMano',
+    idolName: '櫻木真乃',
+    clothesTitle: 'ホッテストサマー',
+    clothesName: 'ホッテストサマー',
+    text: 'マリンノート＠太陽も羨むキラキラ'
+  },
+  {
     id: 'HolyNightCape_SakuragiMano',
     idolName: '櫻木真乃',
     clothesTitle: 'ホーリーナイトケープ',
@@ -240,6 +247,13 @@ export const poemList: Poem[] = [
     text: 'マジックアワー。うたかたの季節、うたかたの君'
   },
   {
+    id: 'HottestSummer_KazanoHiori',
+    idolName: '風野灯織',
+    clothesTitle: 'ホッテストサマー',
+    clothesName: 'ホッテストサマー',
+    text: 'マリンノート＠ハイテンションプリーズ'
+  },
+  {
     id: 'HolyNightCape_KazanoHiori',
     idolName: '風野灯織',
     clothesTitle: 'ホーリーナイトケープ',
@@ -373,6 +387,13 @@ export const poemList: Poem[] = [
     text: 'マジックアワー。太陽さえ'
   },
   {
+    id: 'HottestSummer_HachimiyaMeguru',
+    idolName: '八宮めぐる',
+    clothesTitle: 'ホッテストサマー',
+    clothesName: 'ホッテストサマー',
+    text: 'マリンノート＠ノリノリワクワクでいこう'
+  },
+  {
     id: 'HolyNightCape_HachimiyaMeguru',
     idolName: '八宮めぐる',
     clothesTitle: 'ホーリーナイトケープ',
@@ -490,6 +511,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'リフレッシュサマー',
     clothesName: 'リフレッシュサマー',
     text: 'マジックアワー。夏色眼鏡で君を染めて'
+  },
+  {
+    id: 'HottestSummer_TsukiokaKogane',
+    idolName: '月岡恋鐘',
+    clothesTitle: 'ホッテストサマー',
+    clothesName: 'ホッテストサマー',
+    text: 'マリンノート＠ひらひら、金魚みたいに'
   },
   {
     id: 'HolyNightCape_TsukiokaKogane',
@@ -625,6 +653,13 @@ export const poemList: Poem[] = [
     text: 'マジックアワー。流れる汗がキレイに見えた'
   },
   {
+    id: 'HottestSummer_TanakaMamimi',
+    idolName: '田中摩美々',
+    clothesTitle: 'ホッテストサマー',
+    clothesName: 'ホッテストサマー',
+    text: 'マリンノート＠小悪魔 or マーメイド'
+  },
+  {
     id: 'HolyNightCape_TanakaMamimi',
     idolName: '田中摩美々',
     clothesTitle: 'ホーリーナイトケープ',
@@ -637,6 +672,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ユナイトバースプラネタリ',
     clothesName: 'ユナイトバースプラネタリ',
     text: 'リフトオフ。宇宙色夢希望風味'
+  },
+  {
+    id: 'PrivateDressDown_TanakaMamimi',
+    idolName: '田中摩美々',
+    clothesTitle: 'プライベートドレスダウン',
+    clothesName: 'プライベートドレスダウン',
+    text: 'ルームウェア。さあナイト・オフ'
   },
   {
     id: 'OvercastMonochrome_TanakaMamimi',
@@ -688,6 +730,13 @@ export const poemList: Poem[] = [
     text: 'Bedtime Story／レースの奥で待っているから'
   },
   {
+    id: 'DressUpParfum_ShiraseSakuya',
+    idolName: '白瀬咲耶',
+    clothesTitle: 'ドレスアップパルファム',
+    clothesName: 'ドレスアップパルファム',
+    text: 'Cheers! 咲くならば爽やかに華やかに'
+  },
+  {
     id: 'FashionableSummer_ShiraseSakuya',
     idolName: '白瀬咲耶',
     clothesTitle: 'ファッショナブルサマー',
@@ -728,6 +777,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'リフレッシュサマー',
     clothesName: 'リフレッシュサマー',
     text: 'マジックアワー。海と落ち合い、ひと夏、デートへ'
+  },
+  {
+    id: 'HottestSummer_ShiraseSakuya',
+    idolName: '白瀬咲耶',
+    clothesTitle: 'ホッテストサマー',
+    clothesName: 'ホッテストサマー',
+    text: 'マリンノート＠青が深くなるところまで'
   },
   {
     id: 'HolyNightCape_ShiraseSakuya',
@@ -856,6 +912,13 @@ export const poemList: Poem[] = [
     text: 'マジックアワー。結って結んで、私じゃない私'
   },
   {
+    id: 'HottestSummer_MitsumineYuika',
+    idolName: '三峰結華',
+    clothesTitle: 'ホッテストサマー',
+    clothesName: 'ホッテストサマー',
+    text: 'マリンノート＠踊れない私と歌えない私なら、'
+  },
+  {
     id: 'HolyNightCape_MitsumineYuika',
     idolName: '三峰結華',
     clothesTitle: 'ホーリーナイトケープ',
@@ -966,6 +1029,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'リフレッシュサマー',
     clothesName: 'リフレッシュサマー',
     text: 'マジックアワー。おいで、音を忘れた翅たち'
+  },
+  {
+    id: 'HottestSummer_YukokuKiriko',
+    idolName: '幽谷霧子',
+    clothesTitle: 'ホッテストサマー',
+    clothesName: 'ホッテストサマー',
+    text: 'マリンノート＠五線譜に捕えられて'
   },
   {
     id: 'HolyNightCape_YukokuKiriko',
@@ -1115,6 +1185,13 @@ export const poemList: Poem[] = [
     text: 'マジックアワー。対夏専用　フル装備'
   },
   {
+    id: 'HottestSummer_KomiyaKaho',
+    idolName: '小宮果穂',
+    clothesTitle: 'ホッテストサマー',
+    clothesName: 'ホッテストサマー',
+    text: 'マリンノート＠ジャスティスカラー　パワーオン'
+  },
+  {
     id: 'HolyNightCape_KomiyaKaho',
     idolName: '小宮果穂',
     clothesTitle: 'ホーリーナイトケープ',
@@ -1232,6 +1309,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'リフレッシュサマー',
     clothesName: 'リフレッシュサマー',
     text: 'マジックアワー。可愛さとはしゃぎやすさの両立'
+  },
+  {
+    id: 'HottestSummer_SonodaChiyoko',
+    idolName: '園田智代子',
+    clothesTitle: 'ホッテストサマー',
+    clothesName: 'ホッテストサマー',
+    text: 'マリンノート＠好きな果物（※他にもある）の柄'
   },
   {
     id: 'HolyNightCape_SonodaChiyoko',
@@ -1360,6 +1444,13 @@ export const poemList: Poem[] = [
     text: 'マジックアワー。夏飛沫、弾ければ'
   },
   {
+    id: 'HottestSummer_SaijoJuri',
+    idolName: '西城樹里',
+    clothesTitle: 'ホッテストサマー',
+    clothesName: 'ホッテストサマー',
+    text: 'マリンノート＠ソーダのようにはじける夏'
+  },
+  {
     id: 'HolyNightCape_SaijoJuri',
     idolName: '西城樹里',
     clothesTitle: 'ホーリーナイトケープ',
@@ -1484,6 +1575,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'リフレッシュサマー',
     clothesName: 'リフレッシュサマー',
     text: 'マジックアワー。前髪よりも短い夏'
+  },
+  {
+    id: 'HottestSummer_MorinoRinze',
+    idolName: '杜野凛世',
+    clothesTitle: 'ホッテストサマー',
+    clothesName: 'ホッテストサマー',
+    text: 'マリンノート＠水平線少女の冒険'
   },
   {
     id: 'HolyNightCape_MorinoRinze',
@@ -1612,6 +1710,13 @@ export const poemList: Poem[] = [
     text: 'マジックアワー。スポーティービキニもマストバイ'
   },
   {
+    id: 'HottestSummer_ArisugawaNatsuha',
+    idolName: '有栖川夏葉',
+    clothesTitle: 'ホッテストサマー',
+    clothesName: 'ホッテストサマー',
+    text: 'マリンノート＠ボタニカルビキニもマストバイ'
+  },
+  {
     id: 'HolyNightCape_ArisugawaNatsuha',
     idolName: '有栖川夏葉',
     clothesTitle: 'ホーリーナイトケープ',
@@ -1729,6 +1834,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'リフレッシュサマー',
     clothesName: 'リフレッシュサマー',
     text: 'マジックアワー。遊ぼう太陽がリボン色になるまで'
+  },
+  {
+    id: 'HottestSummer_OsakiAmana',
+    idolName: '大崎甘奈',
+    clothesTitle: 'ホッテストサマー',
+    clothesName: 'ホッテストサマー',
+    text: 'マリンノート＠カジュアルタイプ、どうかな？'
   },
   {
     id: 'HolyNightCape_OsakiAmana',
@@ -1850,6 +1962,13 @@ export const poemList: Poem[] = [
     text: 'マジックアワー。気持ち、布が多い方'
   },
   {
+    id: 'HottestSummer_OsakiTenka',
+    idolName: '大崎甜花',
+    clothesTitle: 'ホッテストサマー',
+    clothesName: 'ホッテストサマー',
+    text: 'マリンノート＠夏に浮かれてみました'
+  },
+  {
     id: 'HolyNightCape_OsakiTenka',
     idolName: '大崎甜花',
     clothesTitle: 'ホーリーナイトケープ',
@@ -1960,6 +2079,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'リフレッシュサマー',
     clothesName: 'リフレッシュサマー',
     text: 'マジックアワー。海にこぼれるきらめきの色'
+  },
+  {
+    id: 'HottestSummer_KuwayamaChiyuki',
+    idolName: '桑山千雪',
+    clothesTitle: 'ホッテストサマー',
+    clothesName: 'ホッテストサマー',
+    text: 'マリンノート＠胸元に焼きつけて、花の徴'
   },
   {
     id: 'HolyNightCape_KuwayamaChiyuki',
@@ -2088,6 +2214,13 @@ export const poemList: Poem[] = [
     text: 'マジックアワー。夏の君もアクティブ'
   },
   {
+    id: 'HottestSummer_SerizawaAsahi',
+    idolName: '芹沢あさひ',
+    clothesTitle: 'ホッテストサマー',
+    clothesName: 'ホッテストサマー',
+    text: 'マリンノート＠スイカを割って、波を割って'
+  },
+  {
     id: 'HolyNightCape_SerizawaAsahi',
     idolName: '芹沢あさひ',
     clothesTitle: 'ホーリーナイトケープ',
@@ -2198,6 +2331,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'リフレッシュサマー',
     clothesName: 'リフレッシュサマー',
     text: 'マジックアワー。夢見る乙女のフリで夢見る'
+  },
+  {
+    id: 'HottestSummer_MayuzumiFuyuko',
+    idolName: '黛冬優子',
+    clothesTitle: 'ホッテストサマー',
+    clothesName: 'ホッテストサマー',
+    text: 'マリンノート＠甘いだけじゃないの'
   },
   {
     id: 'HolyNightCape_MayuzumiFuyuko',
@@ -2312,6 +2452,13 @@ export const poemList: Poem[] = [
     text: 'マジックアワー。風よ、さらわないで'
   },
   {
+    id: 'HottestSummer_IzumiMei',
+    idolName: '和泉愛依',
+    clothesTitle: 'ホッテストサマー',
+    clothesName: 'ホッテストサマー',
+    text: 'マリンノート＠その白は太陽の輝きより眩しく'
+  },
+  {
     id: 'HolyNightCape_IzumiMei',
     idolName: '和泉愛依',
     clothesTitle: 'ホーリーナイトケープ',
@@ -2401,6 +2548,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'リフレッシュサマー',
     clothesName: 'リフレッシュサマー',
     text: 'マジックアワー。そういうこと'
+  },
+  {
+    id: 'HottestSummer_AsakuraToru',
+    idolName: '浅倉透',
+    clothesTitle: 'ホッテストサマー',
+    clothesName: 'ホッテストサマー',
+    text: 'マリンノート＠応答せよ、夏'
   },
   {
     id: 'HolyNightCape_AsakuraToru',
@@ -2494,6 +2648,13 @@ export const poemList: Poem[] = [
     text: 'マジックアワー。もぎたて♡にーちゅ'
   },
   {
+    id: 'HottestSummer_HiguchiMadoka',
+    idolName: '樋口円香',
+    clothesTitle: 'ホッテストサマー',
+    clothesName: 'ホッテストサマー',
+    text: 'マリンノート＠ナツ・キュン・ササヤクーノ'
+  },
+  {
     id: 'HolyNightCape_HiguchiMadoka',
     idolName: '樋口円香',
     clothesTitle: 'ホーリーナイトケープ',
@@ -2583,6 +2744,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'リフレッシュサマー',
     clothesName: 'リフレッシュサマー',
     text: 'マジックアワー。夏は匂いだけ残してすぐに'
+  },
+  {
+    id: 'HottestSummer_IchikawaHinana',
+    idolName: '市川雛菜',
+    clothesTitle: 'ホッテストサマー',
+    clothesName: 'ホッテストサマー',
+    text: 'マリンノート＠誰よりもはやく夏を泳いで'
   },
   {
     id: 'HolyNightCape_IchikawaHinana',
@@ -2676,6 +2844,13 @@ export const poemList: Poem[] = [
     text: 'マジックアワー。跣に痛いくらいの熱'
   },
   {
+    id: 'HottestSummer_FukumaruKoito',
+    idolName: '福丸小糸',
+    clothesTitle: 'ホッテストサマー',
+    clothesName: 'ホッテストサマー',
+    text: 'マリンノート＠水中で吸って、空に吐いて'
+  },
+  {
     id: 'HolyNightCape_FukumaruKoito',
     idolName: '福丸小糸',
     clothesTitle: 'ホーリーナイトケープ',
@@ -2730,6 +2905,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ミッドナイトモンスター',
     clothesName: 'ミッドナイトモンスター',
     text: 'トリック・オア・トリート！駆ル狩ル刈ルキル'
+  },
+  {
+    id: 'HottestSummer_NanakusaNichika',
+    idolName: '七草にちか',
+    clothesTitle: 'ホッテストサマー',
+    clothesName: 'ホッテストサマー',
+    text: 'マリンノート＠太陽に見つかる前に'
   },
   {
     id: 'HolyNightCape_NanakusaNichika',
@@ -2800,6 +2982,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ミッドナイトモンスター',
     clothesName: 'ミッドナイトモンスター',
     text: 'トリック・オア・トリート！Found you！'
+  },
+  {
+    id: 'HottestSummer_AketaMikoto',
+    idolName: '緋田美琴',
+    clothesTitle: 'ホッテストサマー',
+    clothesName: 'ホッテストサマー',
+    text: 'マリンノート＠drown'
   },
   {
     id: 'HolyNightCape_AketaMikoto',
