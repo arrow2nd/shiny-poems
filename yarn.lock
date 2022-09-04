@@ -2582,19 +2582,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cloudinary@npm:^1.30.1":
-  version: 1.30.1
-  resolution: "cloudinary@npm:1.30.1"
+"cloudinary@npm:^1.31.0":
+  version: 1.31.0
+  resolution: "cloudinary@npm:1.31.0"
   dependencies:
     cloudinary-core: ^2.10.2
-    core-js: 3.6.5
+    core-js: ^3.6.5
     lodash: ^4.17.21
     proxy-agent: ^5.0.0
     q: ^1.5.1
   dependenciesMeta:
     proxy-agent:
       optional: true
-  checksum: 10c2325672b387a621804069359989d9ecb70a21df59da3dafff1aa527dd2c9575dcd22ae459ac2bf5f1bb5e13680f18c6c7e742e0635d48eb6618bba6adef24
+  checksum: 73e71fa082d609b8a85753f8aa173a773c8c4e4309203ea81a684917e1bb1812d352a2b2970600fa3a4eefa085a319ad51e7ac134cfb44288f6065ad30ded956
   languageName: node
   linkType: hard
 
@@ -2701,10 +2701,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:3.6.5":
-  version: 3.6.5
-  resolution: "core-js@npm:3.6.5"
-  checksum: b7fcf92f888bfe40f3f005e3f729e66aa49a3a9a797e8fb4d09d429c6abcd505781b2c03836858f0dc0159249d4b7a035fc763052c9c34adbc93b6f8a6a86305
+"core-js@npm:^3.6.5":
+  version: 3.25.0
+  resolution: "core-js@npm:3.25.0"
+  checksum: 5a72740bf5babaf2e6203da4c0e831a0b97c3fe6f21b4c1aa8601d3a927660a22128dd8f0e86ce84778c4e5372ab0fc03c7944afa7e215c7fb13b2c79d5d5504
   languageName: node
   linkType: hard
 
@@ -6796,7 +6796,7 @@ __metadata:
     "@types/react-select": ^5.0.1
     autoprefixer: ^10.4.8
     axios: ^0.27.2
-    cloudinary: ^1.30.1
+    cloudinary: ^1.31.0
     eslint: ^8.23.0
     eslint-config-next: ^12.2.0
     eslint-config-prettier: ^8.5.0
