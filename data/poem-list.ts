@@ -1773,6 +1773,13 @@ export const poemList: Poem[] = [
     text: '1stシーズンの水着。もちろんおそろだよ☆'
   },
   {
+    id: 'RespectiveWorkStyle_OsakiAmana',
+    idolName: '大崎甘奈',
+    clothesTitle: 'リスペクティブワークスタイル',
+    clothesName: 'リスペクティブワークスタイル',
+    text: 'WORKING：楽しい時間をお届けします☆'
+  },
+  {
     id: 'SakuraNoSpring_OsakiAmana',
     idolName: '大崎甘奈',
     clothesTitle: 'サクラノスプリング',
@@ -2893,6 +2900,13 @@ export const poemList: Poem[] = [
     text: '#Shiny サイズ違いの心'
   },
   {
+    id: 'KougyokuUsagiNoSou_NanakusaNichika',
+    idolName: '七草にちか',
+    clothesTitle: '紅玉兎ノ装',
+    clothesName: '紅玉兎ノ装',
+    text: 'とおかんや。白波の薄紅に染まるまで'
+  },
+  {
     id: 'FountainSummer_NanakusaNichika',
     idolName: '七草にちか',
     clothesTitle: 'ファウンテンサマー',
@@ -2968,6 +2982,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'セットアップクレイジー',
     clothesName: 'セットアップクレイジー',
     text: 'checkmate!'
+  },
+  {
+    id: 'KougyokuUsagiNoSou_AketaMikoto',
+    idolName: '緋田美琴',
+    clothesTitle: '紅玉兎ノ装',
+    clothesName: '紅玉兎ノ装',
+    text: 'とおかんや。under the mask'
   },
   {
     id: 'FountainSummer_AketaMikoto',
