@@ -6425,14 +6425,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-wavify@npm:^1.6.1":
-  version: 1.6.1
-  resolution: "react-wavify@npm:1.6.1"
+"react-wavify@npm:^1.6.2":
+  version: 1.6.2
+  resolution: "react-wavify@npm:1.6.2"
   dependencies:
     prop-types: ^15.8.1
   peerDependencies:
     react: ^0.13.0 || ^0.14.0 || >=15
-  checksum: 2029867bb56681bd12bf3c67d146c806d0fbd6d6c6be02bfb98f21b4adb8c683ca2e0b1bef4f2432b5720e9cf25df3312ab119350febcd370fc8fe88533b2b77
+  checksum: c1a31ec914dd9374cff90ef83fd959c15de7d96f096e466c43e63dd97ee52c90065be6f43c40d936907d6e1992ebfd0787289808495796e50c7240797283eea7
   languageName: node
   linkType: hard
 
@@ -6811,7 +6811,7 @@ __metadata:
     react-github-corner: ^2.5.0
     react-icons: ^4.4.0
     react-select: ^5.4.0
-    react-wavify: ^1.6.1
+    react-wavify: ^1.6.2
     tailwindcss: ^3.1.8
     ts-node: ^10.9.1
     typescript: ^4.8.2
