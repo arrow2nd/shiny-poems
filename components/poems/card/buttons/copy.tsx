@@ -1,5 +1,5 @@
 import { useReducer } from 'react'
-import { CopyToClipboard } from 'react-copy-to-clipboard'
+import CopyToClipboard from 'react-copy-to-clipboard'
 import { AiFillCheckCircle } from 'react-icons/ai'
 import { FiCopy } from 'react-icons/fi'
 
