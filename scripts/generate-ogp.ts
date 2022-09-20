@@ -1,7 +1,6 @@
 import cloudinary from 'cloudinary'
 import { ParsedUrlQuery } from 'node:querystring'
 
-import { colorList } from 'data/color-list'
 import { poemList } from 'data/poem-list'
 
 import { encodeForCloudinary, splitPoemText } from './util'
