@@ -7,7 +7,7 @@ class MyDocument extends Document {
         <Head>
           <link rel="preconnect" href="https://fonts.bunny.net" />
           <link
-            href="https://fonts.bunny.net/css?family=kiwi-maru:300"
+            href="https://fonts.bunny.net/css?family=kiwi-maru:400"
             rel="stylesheet"
           />
         </Head>
