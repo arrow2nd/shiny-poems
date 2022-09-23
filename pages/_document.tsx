@@ -5,8 +5,11 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-<link rel="preconnect" href="https://fonts.bunny.net"/>
-<link href="https://fonts.bunny.net/css?family=kiwi-maru:300" rel="stylesheet" />
+          <link rel="preconnect" href="https://fonts.bunny.net" />
+          <link
+            href="https://fonts.bunny.net/css?family=kiwi-maru:300"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />
