@@ -10,6 +10,11 @@ class MyDocument extends Document {
             href="https://fonts.bunny.net/css?family=kiwi-maru:400"
             rel="stylesheet"
           />
+          <script
+            defer
+            src="https://static.cloudflareinsights.com/beacon.min.js"
+            data-cf-beacon='{"token": "05635d43b87d4e82a58cbbcb8ff3b1b5"}'
+          />
         </Head>
         <body>
           <Main />
