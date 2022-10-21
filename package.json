@@ -20,7 +20,7 @@
     "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "18.2.0",
     "react-github-corner": "^2.5.0",
-    "react-icons": "^4.4.0",
+    "react-icons": "^4.6.0",
     "react-select": "^5.4.0",
     "react-wavify": "^1.6.2"
   },
