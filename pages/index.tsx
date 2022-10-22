@@ -20,9 +20,7 @@ export const getServerSideProps = ({
   }
 }
 
-// NOTE: InferNextProps<typeof getServerSideProps> が正しく推論されない
-// LINK: https://github.com/vercel/next.js/issues/15913#issuecomment-950330472
-const ShinyPoems = (props: InferNextProps<any>) => {
+const ShinyPoems = (props: InferNextProps<typeof getServerSideProps>) => {
   return <Home {...props} />
 }
 
