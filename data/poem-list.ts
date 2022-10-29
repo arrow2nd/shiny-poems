@@ -457,6 +457,13 @@ export const poemList: Poem[] = [
     text: '1stシーズンの水着。否、水着ではない。感情なのだ'
   },
   {
+    id: 'OrcaDeServant_TsukiokaKogane',
+    idolName: '月岡恋鐘',
+    clothesTitle: 'オルカドサーヴァント',
+    clothesName: 'オルカドサーヴァント',
+    text: 'BOO！トリック・アンド・トリート？'
+  },
+  {
     id: 'HolidayPrincess_TsukiokaKogane',
     idolName: '月岡恋鐘',
     clothesTitle: 'ホリディプリンセス',
@@ -588,6 +595,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'シャイニーサマー',
     clothesName: 'シャイニーサマー',
     text: '1stシーズンの水着。パーカーでハズし感を演出'
+  },
+  {
+    id: 'OrcaDeServant_TanakaMamimi',
+    idolName: '田中摩美々',
+    clothesTitle: 'オルカドサーヴァント',
+    clothesName: 'オルカドサーヴァント',
+    text: 'BOO！トリック／トリック／トリック'
   },
   {
     id: 'HolidayPrincess_TanakaMamimi',
@@ -723,6 +737,13 @@ export const poemList: Poem[] = [
     text: '1stシーズンの水着。夏の日差しに負けない輝き'
   },
   {
+    id: 'OrcaDeServant_ShiraseSakuya',
+    idolName: '白瀬咲耶',
+    clothesTitle: 'オルカドサーヴァント',
+    clothesName: 'オルカドサーヴァント',
+    text: 'BOO！望むままに、永遠の夜を'
+  },
+  {
     id: 'HolidayPrincess_ShiraseSakuya',
     idolName: '白瀬咲耶',
     clothesTitle: 'ホリディプリンセス',
@@ -856,11 +877,25 @@ export const poemList: Poem[] = [
     text: '1stシーズンの水着。水鉄砲は添えるだけ'
   },
   {
+    id: 'OrcaDeServant_MitsumineYuika',
+    idolName: '三峰結華',
+    clothesTitle: 'オルカドサーヴァント',
+    clothesName: 'オルカドサーヴァント',
+    text: 'BOO！お菓子で許してあげると思う？'
+  },
+  {
     id: 'HolidayPrincess_MitsumineYuika',
     idolName: '三峰結華',
     clothesTitle: 'ホリディプリンセス',
     clothesName: 'ホリディプリンセス',
     text: 'Bedtime Story／私をお姫様にして'
+  },
+  {
+    id: 'DressUpParfum_MitsumineYuika',
+    idolName: '三峰結華',
+    clothesTitle: 'ドレスアップパルファム',
+    clothesName: 'ドレスアップパルファム',
+    text: 'Cheers! 私のためのおめかし'
   },
   {
     id: 'ReflectionThemePark_MitsumineYuika',
@@ -982,11 +1017,25 @@ export const poemList: Poem[] = [
     text: '1stシーズンの水着。雲にも空にも染まらずに'
   },
   {
+    id: 'OrcaDeServant_YukokuKiriko',
+    idolName: '幽谷霧子',
+    clothesTitle: 'オルカドサーヴァント',
+    clothesName: 'オルカドサーヴァント',
+    text: 'BOO！６６６^ ^'
+  },
+  {
     id: 'HolidayPrincess_YukokuKiriko',
     idolName: '幽谷霧子',
     clothesTitle: 'ホリディプリンセス',
     clothesName: 'ホリディプリンセス',
     text: 'Bedtime Story／プールの底のお日さまみたいに'
+  },
+  {
+    id: 'RespectiveWorkStyle_YukokuKiriko',
+    idolName: '幽谷霧子',
+    clothesTitle: 'リスペクティブワークスタイル',
+    clothesName: 'リスペクティブワークスタイル',
+    text: 'WORKING：執刀！幽谷先生'
   },
   {
     id: 'FashionableSummer_YukokuKiriko',
