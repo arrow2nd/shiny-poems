@@ -31,7 +31,7 @@ jobs:
         run: git switch -c ${{ env.NEW_BRANCH_NAME }}
 
       - name: Recreate poem data
-        run: yarn create:poem
+        run: yarn update:poem
 
       - name: Run formatter
         run: yarn fmt:data
