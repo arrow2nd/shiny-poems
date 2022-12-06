@@ -9,8 +9,8 @@
     "test:e2e": "playwright test",
     "fmt": "prettier --write .",
     "fmt:data": "prettier --write ./data/*",
-    "create:poem": "ts-node ./tools/create-poem-data.ts",
-    "create:color": "ts-node ./tools/create-color-data.ts"
+    "update:poem": "ts-node ./tools/update-poem-data.ts",
+    "update:color": "ts-node ./tools/update-color-data.ts"
   },
   "dependencies": {
     "cloudinary": "^1.32.0",
@@ -28,13 +28,13 @@
     "@playwright/test": "^1.28.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
-    "@trivago/prettier-plugin-sort-imports": "^3.4.0",
+    "@trivago/prettier-plugin-sort-imports": "^4.0.0",
     "@types/node": "^18.11.9",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.9",
     "@types/react-select": "^5.0.1",
     "autoprefixer": "^10.4.13",
-    "axios": "^1.2.0",
+    "axios": "^1.2.1",
     "eslint": "^8.27.0",
     "eslint-config-next": "^13.0.5",
     "eslint-config-prettier": "^8.5.0",
