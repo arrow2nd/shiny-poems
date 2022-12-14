@@ -21,7 +21,7 @@
     "react-dom": "18.2.0",
     "react-github-corner": "^2.5.0",
     "react-icons": "^4.7.1",
-    "react-select": "^5.6.1",
+    "react-select": "^5.7.0",
     "react-wavify": "^1.6.3"
   },
   "devDependencies": {
