@@ -100,13 +100,13 @@ exports[`Search 見た目が変化していないか 1`] = `
             class="css-1f43avz-a11yText-A11yText"
           />
           <div
-            class=" css-1ycg57x-control"
+            class=" css-1ut082n-control"
           >
             <div
-              class=" css-319lph-ValueContainer"
+              class=" css-1fdsijx-ValueContainer"
             >
               <div
-                class=" css-1yaegve-placeholder"
+                class=" css-sw50mf-placeholder"
                 id="react-select-アイドル名から-placeholder"
               >
                 <p>
@@ -114,7 +114,7 @@ exports[`Search 見た目が変化していないか 1`] = `
                 </p>
               </div>
               <div
-                class=" css-17k8k4u-Input"
+                class=" css-1xymv16-Input"
                 data-value=""
               >
                 <input
@@ -140,11 +140,11 @@ exports[`Search 見た目が変化していないか 1`] = `
               class=" css-1hb7zxy-IndicatorsContainer"
             >
               <span
-                class=" css-p70wra-indicatorSeparator"
+                class=" css-1mjydmo-indicatorSeparator"
               />
               <div
                 aria-hidden="true"
-                class=" css-lp1szy-indicatorContainer"
+                class=" css-rh1per-indicatorContainer"
               >
                 <svg
                   aria-hidden="true"
@@ -176,13 +176,13 @@ exports[`Search 見た目が変化していないか 1`] = `
             class="css-1f43avz-a11yText-A11yText"
           />
           <div
-            class=" css-1ycg57x-control"
+            class=" css-1ut082n-control"
           >
             <div
-              class=" css-319lph-ValueContainer"
+              class=" css-1fdsijx-ValueContainer"
             >
               <div
-                class=" css-1yaegve-placeholder"
+                class=" css-sw50mf-placeholder"
                 id="react-select-衣装名から-placeholder"
               >
                 <p>
@@ -190,7 +190,7 @@ exports[`Search 見た目が変化していないか 1`] = `
                 </p>
               </div>
               <div
-                class=" css-17k8k4u-Input"
+                class=" css-1xymv16-Input"
                 data-value=""
               >
                 <input
@@ -216,11 +216,11 @@ exports[`Search 見た目が変化していないか 1`] = `
               class=" css-1hb7zxy-IndicatorsContainer"
             >
               <span
-                class=" css-p70wra-indicatorSeparator"
+                class=" css-1mjydmo-indicatorSeparator"
               />
               <div
                 aria-hidden="true"
-                class=" css-lp1szy-indicatorContainer"
+                class=" css-rh1per-indicatorContainer"
               >
                 <svg
                   aria-hidden="true"
