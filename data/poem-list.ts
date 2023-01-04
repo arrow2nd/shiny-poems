@@ -142,6 +142,13 @@ export const poemList: Poem[] = [
     text: '勤務回想録。敬礼。みなさんの元へ急行しますっ'
   },
   {
+    id: 'HaruMatsuriko_SakuragiMano',
+    idolName: '櫻木真乃',
+    clothesTitle: '春、祀り子',
+    clothesName: '春、祀り子',
+    text: '木の芽時。みっつなかよく春をうたう'
+  },
+  {
     id: 'Jogging_Suits_SakuragiMano',
     idolName: '櫻木真乃',
     clothesTitle: 'ジャージ',
@@ -287,6 +294,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ワンデイシリーズ',
     clothesName: 'ワンデイチーフ',
     text: '勤務回想録。敬礼。スピード厳守してください'
+  },
+  {
+    id: 'HaruMatsuriko_KazanoHiori',
+    idolName: '風野灯織',
+    clothesTitle: '春、祀り子',
+    clothesName: '春、祀り子',
+    text: '木の芽時。着付け確認しました'
   },
   {
     id: 'Jogging_Suits_KazanoHiori',
@@ -436,6 +450,13 @@ export const poemList: Poem[] = [
     text: '星ときみと、未来を唄う'
   },
   {
+    id: 'HaruMatsuriko_HachimiyaMeguru',
+    idolName: '八宮めぐる',
+    clothesTitle: '春、祀り子',
+    clothesName: '春、祀り子',
+    text: '木の芽時。いつだって大吉'
+  },
+  {
     id: 'Jogging_Suits_HachimiyaMeguru',
     idolName: '八宮めぐる',
     clothesTitle: 'ジャージ',
@@ -476,6 +497,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ドレスアップパルファム',
     clothesName: 'ドレスアップパルファム',
     text: 'Cheers! 煌めけ、かなめの黄金'
+  },
+  {
+    id: 'YourSideMagia_TsukiokaKogane',
+    idolName: '月岡恋鐘',
+    clothesTitle: 'ユアサイドマジーア',
+    clothesName: 'ユアサイドマジーア',
+    text: 'MAGIA——春風、桃色に染めて'
   },
   {
     id: 'FashionableSummer_TsukiokaKogane',
@@ -618,6 +646,13 @@ export const poemList: Poem[] = [
     text: 'Cheers! 今宵、パーティーナイト'
   },
   {
+    id: 'YourSideMagia_TanakaMamimi',
+    idolName: '田中摩美々',
+    clothesTitle: 'ユアサイドマジーア',
+    clothesName: 'ユアサイドマジーア',
+    text: 'MAGIA——イタズラは紫色で'
+  },
+  {
     id: 'ReflectionThemePark_TanakaMamimi',
     idolName: '田中摩美々',
     clothesTitle: 'リフレクションテーマパーク',
@@ -756,6 +791,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ドレスアップパルファム',
     clothesName: 'ドレスアップパルファム',
     text: 'Cheers! 咲くならば爽やかに華やかに'
+  },
+  {
+    id: 'YourSideMagia_ShiraseSakuya',
+    idolName: '白瀬咲耶',
+    clothesTitle: 'ユアサイドマジーア',
+    clothesName: 'ユアサイドマジーア',
+    text: 'MAGIA——碧色は乙女を想う'
   },
   {
     id: 'FashionableSummer_ShiraseSakuya',
@@ -898,6 +940,13 @@ export const poemList: Poem[] = [
     text: 'Cheers! 私のためのおめかし'
   },
   {
+    id: 'YourSideMagia_MitsumineYuika',
+    idolName: '三峰結華',
+    clothesTitle: 'ユアサイドマジーア',
+    clothesName: 'ユアサイドマジーア',
+    text: 'MAGIA——魔法ごと翻弄する青磁色'
+  },
+  {
     id: 'ReflectionThemePark_MitsumineYuika',
     idolName: '三峰結華',
     clothesTitle: 'リフレクションテーマパーク',
@@ -1029,6 +1078,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ホリディプリンセス',
     clothesName: 'ホリディプリンセス',
     text: 'Bedtime Story／プールの底のお日さまみたいに'
+  },
+  {
+    id: 'YourSideMagia_YukokuKiriko',
+    idolName: '幽谷霧子',
+    clothesTitle: 'ユアサイドマジーア',
+    clothesName: 'ユアサイドマジーア',
+    text: 'MAGIA——水縹の楽句'
   },
   {
     id: 'RespectiveWorkStyle_YukokuKiriko',
@@ -1164,6 +1220,13 @@ export const poemList: Poem[] = [
     text: '5ピース★この音が君に届いていますように'
   },
   {
+    id: 'DefeatOfEncounter_KomiyaKaho',
+    idolName: '小宮果穂',
+    clothesTitle: 'デフィートオブエンカウンター',
+    clothesName: 'デフィートオブエンカウンター',
+    text: 'MISSION：銀河にまたたく正義の光！'
+  },
+  {
     id: 'EleganceOfWhite_KomiyaKaho',
     idolName: '小宮果穂',
     clothesTitle: 'エレガンスオブホワイト',
@@ -1295,6 +1358,20 @@ export const poemList: Poem[] = [
     clothesTitle: 'ブレイブソウルサラウンド',
     clothesName: 'ブレイブソウルサラウンド',
     text: '5ピース★後輩ちゃんはくるくるな髪にうきうき'
+  },
+  {
+    id: 'DefeatOfEncounter_SonodaChiyoko',
+    idolName: '園田智代子',
+    clothesTitle: 'デフィートオブエンカウンター',
+    clothesName: 'デフィートオブエンカウンター',
+    text: 'MISSION：食べてる時の襲撃はよくない！'
+  },
+  {
+    id: 'RespectiveWorkStyle_SonodaChiyoko',
+    idolName: '園田智代子',
+    clothesTitle: 'リスペクティブワークスタイル',
+    clothesName: 'リスペクティブワークスタイル',
+    text: 'WORKING：チーズがとろとろなうちにお届け'
   },
   {
     id: 'EleganceOfWhite_SonodaChiyoko',
@@ -1430,6 +1507,13 @@ export const poemList: Poem[] = [
     text: '5ピース★ドクロ・イナズマ・ロック'
   },
   {
+    id: 'DefeatOfEncounter_SaijoJuri',
+    idolName: '西城樹里',
+    clothesTitle: 'デフィートオブエンカウンター',
+    clothesName: 'デフィートオブエンカウンター',
+    text: 'MISSION：太陽系の切り込み隊長'
+  },
+  {
     id: 'EleganceOfWhite_SaijoJuri',
     idolName: '西城樹里',
     clothesTitle: 'エレガンスオブホワイト',
@@ -1561,6 +1645,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'ブレイブソウルサラウンド',
     clothesName: 'ブレイブソウルサラウンド',
     text: '5ピース★意味はない、リズムもいらない'
+  },
+  {
+    id: 'DefeatOfEncounter_MorinoRinze',
+    idolName: '杜野凛世',
+    clothesTitle: 'デフィートオブエンカウンター',
+    clothesName: 'デフィートオブエンカウンター',
+    text: 'MISSION：冷静沈着作戦参謀'
   },
   {
     id: 'EleganceOfWhite_MorinoRinze',
@@ -1696,6 +1787,13 @@ export const poemList: Poem[] = [
     text: '5ピース★イエローネイル握って'
   },
   {
+    id: 'DefeatOfEncounter_ArisugawaNatsuha',
+    idolName: '有栖川夏葉',
+    clothesTitle: 'デフィートオブエンカウンター',
+    clothesName: 'デフィートオブエンカウンター',
+    text: 'MISSION：パーフェクトオペレーター'
+  },
+  {
     id: 'EleganceOfWhite_ArisugawaNatsuha',
     idolName: '有栖川夏葉',
     clothesTitle: 'エレガンスオブホワイト',
@@ -1829,6 +1927,13 @@ export const poemList: Poem[] = [
     text: 'WORKING：楽しい時間をお届けします☆'
   },
   {
+    id: 'CheckingKyun_OsakiAmana',
+    idolName: '大崎甘奈',
+    clothesTitle: 'チェッキンキューン',
+    clothesName: 'チェッキンキューン',
+    text: 'with us＠『キューン』だよっ☆'
+  },
+  {
     id: 'SakuraNoSpring_OsakiAmana',
     idolName: '大崎甘奈',
     clothesTitle: 'サクラノスプリング',
@@ -1953,6 +2058,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'シャイニーサマー',
     clothesName: 'シャイニーサマー',
     text: '1stシーズンの水着。サングラスをよく落とす'
+  },
+  {
+    id: 'CheckingKyun_OsakiTenka',
+    idolName: '大崎甜花',
+    clothesTitle: 'チェッキンキューン',
+    clothesName: 'チェッキンキューン',
+    text: 'with us＠いいたぬきさん'
   },
   {
     id: 'SakuraNoSpring_OsakiTenka',
@@ -2081,6 +2193,13 @@ export const poemList: Poem[] = [
     text: '1stシーズンの水着。華やかなパレオに胸キュン♡'
   },
   {
+    id: 'CheckingKyun_KuwayamaChiyuki',
+    idolName: '桑山千雪',
+    clothesTitle: 'チェッキンキューン',
+    clothesName: 'チェッキンキューン',
+    text: 'with us＠遊んでくれるかな……？'
+  },
+  {
     id: 'SakuraNoSpring_KuwayamaChiyuki',
     idolName: '桑山千雪',
     clothesTitle: 'サクラノスプリング',
@@ -2207,6 +2326,13 @@ export const poemList: Poem[] = [
     text: 'CHASE：はじまりの白'
   },
   {
+    id: 'OrderNonSweet_SerizawaAsahi',
+    idolName: '芹沢あさひ',
+    clothesTitle: 'オーダー・ノンスウィート',
+    clothesName: 'オーダー・ノンスウィート',
+    text: 'Chaser／指令。あの光を追うのだ'
+  },
+  {
     id: 'AmourOfWhite_SerizawaAsahi',
     idolName: '芹沢あさひ',
     clothesTitle: 'アムールオブホワイト',
@@ -2324,6 +2450,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'コード：アルファ',
     clothesName: 'コード：アルファ',
     text: 'CHASE：上へ、先へ'
+  },
+  {
+    id: 'OrderNonSweet_MayuzumiFuyuko',
+    idolName: '黛冬優子',
+    clothesTitle: 'オーダー・ノンスウィート',
+    clothesName: 'オーダー・ノンスウィート',
+    text: 'Chaser／……覚悟はできてる？'
   },
   {
     id: 'AmourOfWhite_MayuzumiFuyuko',
@@ -2445,6 +2578,13 @@ export const poemList: Poem[] = [
     text: 'CHASE：目指すは頂上の光'
   },
   {
+    id: 'OrderNonSweet_IzumiMei',
+    idolName: '和泉愛依',
+    clothesTitle: 'オーダー・ノンスウィート',
+    clothesName: 'オーダー・ノンスウィート',
+    text: 'Chaser／かんぶ？っぽいって弟に言われた'
+  },
+  {
     id: 'AmourOfWhite_IzumiMei',
     idolName: '和泉愛依',
     clothesTitle: 'アムールオブホワイト',
@@ -2564,6 +2704,13 @@ export const poemList: Poem[] = [
     text: ':) 見るなー。100円'
   },
   {
+    id: 'PaintingOar_AsakuraToru',
+    idolName: '浅倉透',
+    clothesTitle: 'ペインティングオール',
+    clothesName: 'ペインティングオール',
+    text: ';) ステッカー式日常'
+  },
+  {
     id: 'FancyFreeNursing_AsakuraToru',
     idolName: '浅倉透',
     clothesTitle: 'ファンシーフリーナーシング',
@@ -2660,6 +2807,20 @@ export const poemList: Poem[] = [
     clothesTitle: 'ラブラフラビッツ',
     clothesName: 'ラブラフラビッツ',
     text: ':) ゆらゆらファニィ×ファニィ'
+  },
+  {
+    id: 'PaintingOar_HiguchiMadoka',
+    idolName: '樋口円香',
+    clothesTitle: 'ペインティングオール',
+    clothesName: 'ペインティングオール',
+    text: ';) ヌリタクリ・ハリタクル'
+  },
+  {
+    id: 'RespectiveWorkStyle_HiguchiMadoka',
+    idolName: '樋口円香',
+    clothesTitle: 'リスペクティブワークスタイル',
+    clothesName: 'リスペクティブワークスタイル',
+    text: 'WORKING：事務員なめんなよ※H.N.参考'
   },
   {
     id: 'FancyFreeNursing_HiguchiMadoka',
@@ -2760,6 +2921,13 @@ export const poemList: Poem[] = [
     text: ':) かわいいってしあわせ！'
   },
   {
+    id: 'PaintingOar_IchikawaHinana',
+    idolName: '市川雛菜',
+    clothesTitle: 'ペインティングオール',
+    clothesName: 'ペインティングオール',
+    text: ';) しあわせ色で塗って'
+  },
+  {
     id: 'FancyFreeNursing_IchikawaHinana',
     idolName: '市川雛菜',
     clothesTitle: 'ファンシーフリーナーシング',
@@ -2858,6 +3026,13 @@ export const poemList: Poem[] = [
     text: ':) 甘いよ手づくりピンク'
   },
   {
+    id: 'PaintingOar_FukumaruKoito',
+    idolName: '福丸小糸',
+    clothesTitle: 'ペインティングオール',
+    clothesName: 'ペインティングオール',
+    text: ';) 翼も描けるかも'
+  },
+  {
     id: 'FancyFreeNursing_FukumaruKoito',
     idolName: '福丸小糸',
     clothesTitle: 'ファンシーフリーナーシング',
@@ -2949,11 +3124,25 @@ export const poemList: Poem[] = [
     text: '#Shiny サイズ違いの心'
   },
   {
+    id: 'HorreurTreat_NanakusaNichika',
+    idolName: '七草にちか',
+    clothesTitle: 'オルールトリィト',
+    clothesName: 'オルールトリィト',
+    text: 'HORROR…夜が来る'
+  },
+  {
     id: 'KougyokuUsagiNoSou_NanakusaNichika',
     idolName: '七草にちか',
     clothesTitle: '紅玉兎ノ装',
     clothesName: '紅玉兎ノ装',
     text: 'とおかんや。白波の薄紅に染まるまで'
+  },
+  {
+    id: 'SunsetSkyPassage_NanakusaNichika',
+    idolName: '七草にちか',
+    clothesTitle: 'サンセットスカイパッセージ',
+    clothesName: 'サンセットスカイパッセージ',
+    text: 'スタッカート。跳べない音符のために'
   },
   {
     id: 'FountainSummer_NanakusaNichika',
@@ -3026,6 +3215,13 @@ export const poemList: Poem[] = [
     text: '#Shiny no more'
   },
   {
+    id: 'HorreurTreat_AketaMikoto',
+    idolName: '緋田美琴',
+    clothesTitle: 'オルールトリィト',
+    clothesName: 'オルールトリィト',
+    text: 'HORROR…satiety'
+  },
+  {
     id: 'SetupCrazy_AketaMikoto',
     idolName: '緋田美琴',
     clothesTitle: 'セットアップクレイジー',
@@ -3038,6 +3234,13 @@ export const poemList: Poem[] = [
     clothesTitle: '紅玉兎ノ装',
     clothesName: '紅玉兎ノ装',
     text: 'とおかんや。under the mask'
+  },
+  {
+    id: 'SunsetSkyPassage_AketaMikoto',
+    idolName: '緋田美琴',
+    clothesTitle: 'サンセットスカイパッセージ',
+    clothesName: 'サンセットスカイパッセージ',
+    text: 'スタッカート。RGB'
   },
   {
     id: 'FountainSummer_AketaMikoto',
