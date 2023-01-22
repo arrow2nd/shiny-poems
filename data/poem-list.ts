@@ -506,6 +506,13 @@ export const poemList: Poem[] = [
     text: 'MAGIA——春風、桃色に染めて'
   },
   {
+    id: 'RespectiveWorkStyle_TsukiokaKogane',
+    idolName: '月岡恋鐘',
+    clothesTitle: 'リスペクティブワークスタイル',
+    clothesName: 'リスペクティブワークスタイル',
+    text: 'WORKING：今日も元気なおはようを'
+  },
+  {
     id: 'FashionableSummer_TsukiokaKogane',
     idolName: '月岡恋鐘',
     clothesTitle: 'ファッショナブルサマー',
@@ -2431,6 +2438,13 @@ export const poemList: Poem[] = [
     text: 'ワンステップ。この空の上には、何が？'
   },
   {
+    id: 'NewYearHaregi_SerizawaAsahi',
+    idolName: '芹沢あさひ',
+    clothesTitle: 'ニューイヤーハレギ',
+    clothesName: 'ニューイヤーハレギ',
+    text: '春山如笑。めでたきもの、あさのひかり'
+  },
+  {
     id: 'Jogging_Suits_SerizawaAsahi',
     idolName: '芹沢あさひ',
     clothesTitle: 'ジャージ',
@@ -2557,6 +2571,13 @@ export const poemList: Poem[] = [
     text: 'ワンステップ。挑もうか'
   },
   {
+    id: 'NewYearHaregi_MayuzumiFuyuko',
+    idolName: '黛冬優子',
+    clothesTitle: 'ニューイヤーハレギ',
+    clothesName: 'ニューイヤーハレギ',
+    text: '春山如笑。艶・モード'
+  },
+  {
     id: 'Jogging_Suits_MayuzumiFuyuko',
     idolName: '黛冬優子',
     clothesTitle: 'ジャージ',
@@ -2681,6 +2702,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'オーバーキャストモノクローム',
     clothesName: 'オーバーキャストモノクローム',
     text: 'ワンステップ。どんな空でも、やってみる'
+  },
+  {
+    id: 'NewYearHaregi_IzumiMei',
+    idolName: '和泉愛依',
+    clothesTitle: 'ニューイヤーハレギ',
+    clothesName: 'ニューイヤーハレギ',
+    text: '春山如笑。ピシッ！とする♪'
   },
   {
     id: 'Jogging_Suits_IzumiMei',
