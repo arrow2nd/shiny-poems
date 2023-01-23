@@ -7,7 +7,7 @@ type Props = {
 }
 
 const SEO = ({ ogpImageUrl }: Props) => {
-  const { title, desc, url, twitterUsername } = Site
+  const { title, desc, url } = Site
 
   return (
     <Head>
@@ -18,7 +18,6 @@ const SEO = ({ ogpImageUrl }: Props) => {
       <meta property="og:description" content={desc} />
       <meta property="og:image" content={ogpImageUrl} />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:creator" content={twitterUsername} />
       <meta name="twitter:url" content={url} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={desc} />
