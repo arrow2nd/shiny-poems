@@ -23,6 +23,13 @@ export const poemList: Poem[] = [
     text: 'Cheers! 泡沫の間の輝き'
   },
   {
+    id: 'RespectiveWorkStyle_SakuragiMano',
+    idolName: '櫻木真乃',
+    clothesTitle: 'リスペクティブワークスタイル',
+    clothesName: 'リスペクティブワークスタイル',
+    text: 'WORKING：お散歩時間も秘書にお任せあれ'
+  },
+  {
     id: 'BaitwudeiRestaurant_SakuragiMano',
     idolName: '櫻木真乃',
     clothesTitle: 'バイトゥデイレストラント',
@@ -1227,6 +1234,13 @@ export const poemList: Poem[] = [
     text: '5ピース★この音が君に届いていますように'
   },
   {
+    id: 'DressUpParfum_KomiyaKaho',
+    idolName: '小宮果穂',
+    clothesTitle: 'ドレスアップパルファム',
+    clothesName: 'ドレスアップパルファム',
+    text: 'Cheers! おめかしハナマル！'
+  },
+  {
     id: 'DefeatOfEncounter_KomiyaKaho',
     idolName: '小宮果穂',
     clothesTitle: 'デフィートオブエンカウンター',
@@ -1239,6 +1253,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'エレガンスオブホワイト',
     clothesName: 'エレガンスオブホワイト',
     text: 'White heart! まだ白く　まだ青く'
+  },
+  {
+    id: 'DolceCioccolata_KomiyaKaho',
+    idolName: '小宮果穂',
+    clothesTitle: 'ドルチェチョッコラータ',
+    clothesName: 'ドルチェチョッコラータ',
+    text: 'sweet jewel＊小宮果穂モデル'
   },
   {
     id: 'UnusualHour_KomiyaKaho',
@@ -1388,6 +1409,13 @@ export const poemList: Poem[] = [
     text: 'White heart! 『かっこいい』を所望します！'
   },
   {
+    id: 'DolceCioccolata_SonodaChiyoko',
+    idolName: '園田智代子',
+    clothesTitle: 'ドルチェチョッコラータ',
+    clothesName: 'ドルチェチョッコラータ',
+    text: 'sweet jewel＊真骨頂（うれしい放クラセット）'
+  },
+  {
     id: 'UnusualHour_SonodaChiyoko',
     idolName: '園田智代子',
     clothesTitle: 'アンユージュアルアワー',
@@ -1526,6 +1554,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'エレガンスオブホワイト',
     clothesName: 'エレガンスオブホワイト',
     text: 'White heart! いつ何時も、誠意を込めて'
+  },
+  {
+    id: 'DolceCioccolata_SaijoJuri',
+    idolName: '西城樹里',
+    clothesTitle: 'ドルチェチョッコラータ',
+    clothesName: 'ドルチェチョッコラータ',
+    text: 'sweet jewel＊ほろ苦いくらいがちょうどいい'
   },
   {
     id: 'UnusualHour_SaijoJuri',
@@ -1668,6 +1703,13 @@ export const poemList: Poem[] = [
     text: 'White heart! キミゴコロ諜報部、主査'
   },
   {
+    id: 'DolceCioccolata_MorinoRinze',
+    idolName: '杜野凛世',
+    clothesTitle: 'ドルチェチョッコラータ',
+    clothesName: 'ドルチェチョッコラータ',
+    text: 'sweet jewel＊真紅のハートを胸に'
+  },
+  {
     id: 'UnusualHour_MorinoRinze',
     idolName: '杜野凛世',
     clothesTitle: 'アンユージュアルアワー',
@@ -1806,6 +1848,13 @@ export const poemList: Poem[] = [
     clothesTitle: 'エレガンスオブホワイト',
     clothesName: 'エレガンスオブホワイト',
     text: 'White heart! 青色チェックで包装'
+  },
+  {
+    id: 'DolceCioccolata_ArisugawaNatsuha',
+    idolName: '有栖川夏葉',
+    clothesTitle: 'ドルチェチョッコラータ',
+    clothesName: 'ドルチェチョッコラータ',
+    text: 'sweet jewel＊華麗・ド・ショコラ'
   },
   {
     id: 'UnusualHour_ArisugawaNatsuha',
