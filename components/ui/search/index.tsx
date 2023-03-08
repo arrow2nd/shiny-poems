@@ -1,74 +1,74 @@
-import { useRef, useState } from 'react'
+import { useRef, useState } from "react";
 
-import { poemList } from 'data/poem-list'
+import { poemList } from "data/poem-list";
 
-import Input from './input'
-import Label from './label'
-import Select from './select'
+import Input from "./input";
+import Label from "./label";
+import Select from "./select";
 
 type Props = {
-  onSearch: (type: string, label: string) => void
-}
+  onSearch: (type: string, label: string) => void;
+};
 
 const Search = ({ onSearch }: Props) => {
   // 選択要素に使用するアイドル名
   const [idolNames] = useState(
     Array.from(new Set(poemList.map((e) => e.idolName)))
-  )
+  );
 
   // 選択要素に使用する衣装名
   const [clothesTitles] = useState(
     Array.from(new Set(poemList.map((e) => e.clothesTitle))).sort()
-  )
+  );
 
-  const keywordInput = useRef<HTMLInputElement>(null)
-  const idolSelect = useRef(null)
-  const clothesSelect = useRef(null)
+  const keywordInput = useRef<HTMLInputElement>(null);
+  const idolSelect = useRef(null);
+  const clothesSelect = useRef(null);
 
   // キーワード欄をクリア
   const clearKeywordInput = () => {
     if (keywordInput.current.value) {
-      keywordInput.current.value = ''
+      keywordInput.current.value = "";
     }
-  }
+  };
 
   // アイドル名の選択をクリア
   const clearIdolSelect = () => {
     if (idolSelect.current.state.selectValue) {
-      idolSelect.current.clearValue()
+      idolSelect.current.clearValue();
     }
-  }
+  };
 
   // 衣装名の選択をクリア
   const clearClothesSelect = () => {
     if (clothesSelect.current.state.selectValue) {
-      clothesSelect.current.clearValue()
+      clothesSelect.current.clearValue();
     }
-  }
+  };
 
   const handleSubmit = () => {
-    const keyword = keywordInput.current.value
-    if (!keyword) return
+    const keyword = keywordInput.current.value;
+    if (!keyword) return;
 
-    clearIdolSelect()
-    clearClothesSelect()
+    clearIdolSelect();
+    clearClothesSelect();
 
-    onSearch('text', keyword)
-  }
+    onSearch("text", keyword);
+  };
 
   const handleChangeIdolName = (label: string) => {
-    clearKeywordInput()
-    clearClothesSelect()
+    clearKeywordInput();
+    clearClothesSelect();
 
-    onSearch('idolName', label)
-  }
+    onSearch("idolName", label);
+  };
 
   const handleChangeclothesTitle = (label: string) => {
-    clearKeywordInput()
-    clearIdolSelect()
+    clearKeywordInput();
+    clearIdolSelect();
 
-    onSearch('clothesTitle', label)
-  }
+    onSearch("clothesTitle", label);
+  };
 
   return (
     <div className="flex justify-center mb-16">
@@ -98,7 +98,7 @@ const Search = ({ onSearch }: Props) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Search
+export default Search;

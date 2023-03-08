@@ -1,9 +1,9 @@
-import cloudinary from 'cloudinary'
-import { ParsedUrlQuery } from 'node:querystring'
+import cloudinary from "cloudinary";
+import { ParsedUrlQuery } from "node:querystring";
 
-import { poemList } from 'data/poem-list'
+import { poemList } from "data/poem-list";
 
-import { encodeForCloudinary, splitPoemText } from './util'
+import { encodeForCloudinary, splitPoemText } from "./util";
 
 /**
  * OGP画像のURLを生成
@@ -13,35 +13,35 @@ import { encodeForCloudinary, splitPoemText } from './util'
 export const generateOgpImageUrl = (
   query: ParsedUrlQuery
 ): [string, string] => {
-  const defaultOgp = 'https://shiny-poems.vercel.app/ogp-default.png'
+  const defaultOgp = "https://shiny-poems.vercel.app/ogp-default.png";
 
   // クエリからidを取得
-  const id = query.id || ''
-  const idStr = Array.isArray(id) ? '' : id
-  if (!idStr) return [defaultOgp, '']
+  const id = query.id || "";
+  const idStr = Array.isArray(id) ? "" : id;
+  if (!idStr) return [defaultOgp, ""];
 
   // idからポエムを取得
-  const poem = poemList.find((e) => e.id === idStr)
-  if (!poem) return [defaultOgp, '']
+  const poem = poemList.find((e) => e.id === idStr);
+  if (!poem) return [defaultOgp, ""];
 
-  const poemText = splitPoemText(poem.text).join('\n')
+  const poemText = splitPoemText(poem.text).join("\n");
 
-  const ogpImgUrl = cloudinary.v2.url('shiny-poems/ogp-base.png', {
+  const ogpImgUrl = cloudinary.v2.url("shiny-poems/ogp-base.png", {
     secure: true,
     sign_url: true,
     transformation: [
       {
         variables: [
-          ['$poem', `!${encodeForCloudinary(poemText)}!`],
-          ['$clothes', `!${encodeForCloudinary(poem.clothesName)}!`],
-          ['$idol', `!${encodeForCloudinary(poem.idolName)}!`]
+          ["$poem", `!${encodeForCloudinary(poemText)}!`],
+          ["$clothes", `!${encodeForCloudinary(poem.clothesName)}!`],
+          ["$idol", `!${encodeForCloudinary(poem.idolName)}!`]
         ]
       },
       {
-        transformation: ['poem-ogp']
+        transformation: ["poem-ogp"]
       }
     ]
-  })
+  });
 
-  return [ogpImgUrl, poem.text]
-}
+  return [ogpImgUrl, poem.text];
+};

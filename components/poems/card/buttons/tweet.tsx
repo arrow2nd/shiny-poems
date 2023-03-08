@@ -1,12 +1,12 @@
-import { FiTwitter } from 'react-icons/fi'
+import { FiTwitter } from "react-icons/fi";
 
 type Props = {
-  text: string
-}
+  text: string;
+};
 
 const TweetButton = ({ text }: Props) => {
-  const encodedText = encodeURIComponent(text)
-  const tweetUrl = `https://twitter.com/intent/tweet?text=${encodedText}`
+  const encodedText = encodeURIComponent(text);
+  const tweetUrl = `https://twitter.com/intent/tweet?text=${encodedText}`;
 
   return (
     <a
@@ -18,7 +18,7 @@ const TweetButton = ({ text }: Props) => {
     >
       <FiTwitter />
     </a>
-  )
-}
+  );
+};
 
-export default TweetButton
+export default TweetButton;

@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     # 日本時間の深夜0時
-    - cron: '0 15 * * *'
+    - cron: "0 15 * * *"
 
 jobs:
   update:
@@ -14,12 +14,12 @@ jobs:
         run: echo "NEW_BRANCH_NAME=add-new-poem-$(date '+%s')" >> $GITHUB_ENV
 
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Install Node.js, npm and Yarn
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: "18"
           cache: yarn
 
       - name: Install dependencies
@@ -40,12 +40,12 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           branch: ${{ env.NEW_BRANCH_NAME }}
-          commit_message: 'chore: 新規衣装ポエムを追加'
+          commit_message: "chore(data): データを更新"
 
       - name: Create pull request
         uses: repo-sync/pull-request@v2
         with:
           source_branch: ${{ env.NEW_BRANCH_NAME }}
-          destination_branch: 'main'
-          pr_title: 'chore: 新規衣装ポエムを追加'
+          destination_branch: "main"
+          pr_title: "chore(data): データを更新"
           github_token: ${{ secrets.GITHUB_TOKEN }}

@@ -1,8 +1,8 @@
-import { writeFileSync } from 'fs'
+import { writeFileSync } from "fs";
 
-import { Color } from 'types/color'
+import { Color } from "types/color";
 
-import { fetchIdolData } from './libs/fetch'
+import { fetchIdolData } from "./libs/fetch";
 
 /** SPARQLクエリ（シャニマスアイドルの個人カラー） */
 const query = `
@@ -20,22 +20,22 @@ WHERE {
   filter(contains(?brand, 'ShinyColors'))
 }
 order by ?kana
-`
+`;
 
-;(async () => {
-  const data = await fetchIdolData(query)
+(async () => {
+  const data = await fetchIdolData(query);
 
   const colorData: Color[] = data.map(
     (e): Color => ({
       idolName: e.name.value,
       hex: e.color.value
     })
-  )
+  );
 
-  const json = JSON.stringify(colorData, null, '  ')
-  const result = `import { Color } from 'types/color'\n\nexport const colorList: Color[] = ${json}`
+  const json = JSON.stringify(colorData, null, "  ");
+  const result = `import { Color } from 'types/color'\n\nexport const colorList: Color[] = ${json}`;
 
-  writeFileSync('./data/color-list.ts', result)
+  writeFileSync("./data/color-list.ts", result);
 
-  console.log('[ success! ]')
-})()
+  console.log("[ success! ]");
+})();

@@ -1,26 +1,26 @@
-import { act, fireEvent, render, waitFor } from '@testing-library/react'
+import { act, fireEvent, render, waitFor } from "@testing-library/react";
 
-import CopyButton from './copy'
+import CopyButton from "./copy";
 
-describe('CopyButton', () => {
-  const mock = jest.fn()
+describe("CopyButton", () => {
+  const mock = jest.fn();
 
   beforeAll(() => {
     Object.assign(navigator, {
       clipboard: {
         writeText: mock
       }
-    })
-  })
+    });
+  });
 
-  test('クリックで値がコピーされるか', async () => {
-    const { getByTestId } = render(<CopyButton text="mei" />)
-    const button = getByTestId('copy-button')
+  test("クリックで値がコピーされるか", async () => {
+    const { getByTestId } = render(<CopyButton text="mei" />);
+    const button = getByTestId("copy-button");
 
     act(() => {
-      fireEvent.click(button)
-    })
+      fireEvent.click(button);
+    });
 
-    await waitFor(() => expect(mock).toBeCalled())
-  })
-})
+    await waitFor(() => expect(mock).toBeCalled());
+  });
+});

@@ -1,6 +1,6 @@
-import { FiDatabase } from 'react-icons/fi'
+import { FiDatabase } from "react-icons/fi";
 
-import Link from './link'
+import Link from "./link";
 
 const Links = () => (
   <div className="mb-8 text-sm text-white">
@@ -8,6 +8,6 @@ const Links = () => (
       <FiDatabase className="mr-2 text-2xl" />
     </Link>
   </div>
-)
+);
 
-export default Links
+export default Links;

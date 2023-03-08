@@ -1,32 +1,32 @@
-import Accent from 'components/poems/card/accent'
+import Accent from "components/poems/card/accent";
 
-import { splitPoemText } from 'scripts/util'
+import { splitPoemText } from "scripts/util";
 
-import { colorList } from 'data/color-list'
+import { colorList } from "data/color-list";
 
-import { Poem } from 'types/poem'
+import { Poem } from "types/poem";
 
-import Buttons from './buttons'
+import Buttons from "./buttons";
 
 type Props = {
-  poem: Poem
-}
+  poem: Poem;
+};
 
 const Card = ({ poem }: Props) => {
-  const splitedPoem = splitPoemText(poem.text)
-  const poemContents = splitedPoem.map((e) => <p key={e}>{e.trim()}</p>)
+  const splitedPoem = splitPoemText(poem.text);
+  const poemContents = splitedPoem.map((e) => <p key={e}>{e.trim()}</p>);
 
   // テキスト
   const linkText = [
     `#シャニマス #${poem.clothesName} #${poem.idolName}`,
     `https://shiny-poems.vercel.app?id=${poem.id}`
-  ]
-  const tweetText = [...splitedPoem, ...linkText].join('\n')
-  const copyText = [poem.text, ...linkText].join(' ')
+  ];
+  const tweetText = [...splitedPoem, ...linkText].join("\n");
+  const copyText = [poem.text, ...linkText].join(" ");
 
   // 色
-  const idolColor = colorList.find((e) => e.idolName === poem.idolName)
-  const accentColor = idolColor ? idolColor.hex : '78aeff'
+  const idolColor = colorList.find((e) => e.idolName === poem.idolName);
+  const accentColor = idolColor ? idolColor.hex : "78aeff";
 
   return (
     <div
@@ -45,7 +45,7 @@ const Card = ({ poem }: Props) => {
       </div>
       <Buttons {...{ tweetText, copyText }} />
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;

@@ -1,21 +1,21 @@
-import { useReducer } from 'react'
-import { AiFillCheckCircle } from 'react-icons/ai'
-import { FiCopy } from 'react-icons/fi'
+import { useReducer } from "react";
+import { AiFillCheckCircle } from "react-icons/ai";
+import { FiCopy } from "react-icons/fi";
 
 type Props = {
-  text: string
-}
+  text: string;
+};
 
 const CopyButton = ({ text }: Props) => {
-  const [isCopied, toggleCopied] = useReducer((prev) => !prev, false)
+  const [isCopied, toggleCopied] = useReducer((prev) => !prev, false);
 
   const copyToClipboard = async () => {
-    if (isCopied) return
-    await navigator.clipboard.writeText(text)
+    if (isCopied) return;
+    await navigator.clipboard.writeText(text);
 
-    toggleCopied()
-    setTimeout(() => toggleCopied(), 1500)
-  }
+    toggleCopied();
+    setTimeout(() => toggleCopied(), 1500);
+  };
 
   return (
     <button
@@ -26,7 +26,7 @@ const CopyButton = ({ text }: Props) => {
     >
       {isCopied ? <AiFillCheckCircle /> : <FiCopy />}
     </button>
-  )
-}
+  );
+};
 
-export default CopyButton
+export default CopyButton;

@@ -1,22 +1,22 @@
-import { KeyboardEventHandler, forwardRef, useState } from 'react'
-import { FiSearch } from 'react-icons/fi'
+import { KeyboardEventHandler, forwardRef, useState } from "react";
+import { FiSearch } from "react-icons/fi";
 
 type Props = {
-  placeholder: string
-  onSubmit: () => void
-}
+  placeholder: string;
+  onSubmit: () => void;
+};
 
 const Input = (props: Props, ref: React.MutableRefObject<HTMLInputElement>) => {
-  const [isTyping, setIsTyping] = useState(false)
+  const [isTyping, setIsTyping] = useState(false);
 
   const handleKeyDown: KeyboardEventHandler<HTMLInputElement> = (ev) => {
     // 入力が確定した
-    if (!isTyping && ev.key === 'Enter') {
-      props.onSubmit()
-      ev.preventDefault()
-      ev.currentTarget.blur()
+    if (!isTyping && ev.key === "Enter") {
+      props.onSubmit();
+      ev.preventDefault();
+      ev.currentTarget.blur();
     }
-  }
+  };
 
   return (
     <div className="w-full lg:w-72 m-2">
@@ -40,7 +40,7 @@ const Input = (props: Props, ref: React.MutableRefObject<HTMLInputElement>) => {
         </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default forwardRef(Input)
+export default forwardRef(Input);
