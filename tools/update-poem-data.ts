@@ -1,6 +1,6 @@
 import { writeFileSync } from "fs";
 
-import { Poem } from "types/poem";
+import type { Poem } from "types/poem";
 
 import { clothesSeries, sortedIdols } from "./libs/data";
 import { fetchIdolData } from "./libs/fetch";
@@ -31,6 +31,18 @@ WHERE {
 order by ?name
 `;
 
+function getJSTDate(): string {
+  const diffJstMin = 9 * 60;
+  const jstTimeStamp =
+    Date.now() + (new Date().getTimezoneOffset() + diffJstMin) * 60 * 1000;
+
+  const jst = new Date(jstTimeStamp);
+  const month = (jst.getMonth() + 1).toString().padStart(2, "0");
+  const date = jst.getDate().toString().padStart(2, "0");
+
+  return `${jst.getFullYear()}/${month}/${date} (JST)`;
+}
+
 (async () => {
   const data = await fetchIdolData(query);
 
@@ -57,7 +69,9 @@ order by ?name
   );
 
   const json = JSON.stringify(sortedPoem, null, "  ");
-  const result = `import { Poem } from 'types/poem'\n\nexport const poemList: Poem[] = ${json}`;
+  const result = `import { Poem } from "types/poem";
+export const updatedAtUTC = "${getJSTDate()}";
+export const poemList: Poem[] = ${json}`;
 
   writeFileSync("./data/poem-list.ts", result);
 

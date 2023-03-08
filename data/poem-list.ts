@@ -1,5 +1,6 @@
 import { Poem } from "types/poem";
 
+export const updatedAtUTC = "2023/03/08 (JST)";
 export const poemList: Poem[] = [
   {
     id: "CelestialColors_SakuragiMano",

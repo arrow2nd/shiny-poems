@@ -1,5 +1,7 @@
 import Wave from "react-wavify";
 
+import { updatedAtUTC } from "data/poem-list";
+
 import Links from "./links";
 
 const Footer = () => (
@@ -14,10 +16,11 @@ const Footer = () => (
         speed: 0.155
       }}
     />
-    <div className="flex flex-col items-center justify-center text-center px-8 pb-20 tracking-wider bg-main">
+    <div className="flex flex-col items-center justify-center px-8 pb-20 tracking-wider text-sm text-center text-white bg-main">
       <Links />
       <span className="w-8 mb-8 border-b-2 border-dashed border-white" />
-      <span className="text-white text-sm">
+      <span className="mb-2">Last updated : {updatedAtUTC}</span>
+      <span>
         The rights to all content related to THE IDOLM@STER belong to BANDAI
         NAMCO Entertainment Inc.
       </span>
