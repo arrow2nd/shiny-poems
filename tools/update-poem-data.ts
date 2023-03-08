@@ -1,9 +1,9 @@
-import { writeFileSync } from 'fs'
+import { writeFileSync } from "fs";
 
-import { Poem } from 'types/poem'
+import { Poem } from "types/poem";
 
-import { clothesSeries, sortedIdols } from './libs/data'
-import { fetchIdolData } from './libs/fetch'
+import { clothesSeries, sortedIdols } from "./libs/data";
+import { fetchIdolData } from "./libs/fetch";
 
 /**
  * SPARQLクエリ（衣装ポエムを全件取得）
@@ -29,18 +29,18 @@ WHERE {
   filter(strlen(?clothesDesc) > 0 && strlen(?clothesDesc) < 40).
 }
 order by ?name
-`
+`;
 
-;(async () => {
-  const data = await fetchIdolData(query)
+(async () => {
+  const data = await fetchIdolData(query);
 
   const poem: Poem[] = data.map((e): Poem => {
-    const id: string = e.owns.value.match(/detail\/(.+)$/)[1]
-    const clothesName: string = e.clothesName.value
+    const id: string = e.owns.value.match(/detail\/(.+)$/)[1];
+    const clothesName: string = e.clothesName.value;
 
     // シリーズ衣装ならシリーズ名をタイトル名にする
-    const series = clothesSeries.find((e) => e.regex.test(clothesName))
-    const clothesTitle = series ? series.name : clothesName
+    const series = clothesSeries.find((e) => e.regex.test(clothesName));
+    const clothesTitle = series ? series.name : clothesName;
 
     return {
       id,
@@ -48,18 +48,18 @@ order by ?name
       clothesTitle,
       clothesName,
       text: e.clothesDesc.value
-    }
-  })
+    };
+  });
 
   // アイドル名リストに沿ってソート
   const sortedPoem = poem.sort(
     (a, b) => sortedIdols.indexOf(a.idolName) - sortedIdols.indexOf(b.idolName)
-  )
+  );
 
-  const json = JSON.stringify(sortedPoem, null, '  ')
-  const result = `import { Poem } from 'types/poem'\n\nexport const poemList: Poem[] = ${json}`
+  const json = JSON.stringify(sortedPoem, null, "  ");
+  const result = `import { Poem } from 'types/poem'\n\nexport const poemList: Poem[] = ${json}`;
 
-  writeFileSync('./data/poem-list.ts', result)
+  writeFileSync("./data/poem-list.ts", result);
 
-  console.log('[ success! ]')
-})()
+  console.log("[ success! ]");
+})();

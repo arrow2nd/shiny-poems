@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import LogoImg from 'public/logo.png'
-import GithubCorner from 'react-github-corner'
+import Image from "next/image";
+import LogoImg from "public/logo.png";
+import GithubCorner from "react-github-corner";
 
 const Header = () => (
   <header className="flex justify-center items-center py-20 w-full">
@@ -21,6 +21,6 @@ const Header = () => (
       direction="right"
     />
   </header>
-)
+);
 
-export default Header
+export default Header;

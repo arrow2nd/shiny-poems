@@ -1,6 +1,6 @@
-import CLink, { LinkProps } from 'components/common/link'
+import CLink, { LinkProps } from "components/common/link";
 
-const Link = ({ className = '', children, title, href }: LinkProps) => (
+const Link = ({ className = "", children, title, href }: LinkProps) => (
   <div className={className}>
     <CLink
       className={`inline-flex flex-row items-center hover:text-black transition-colors`}
@@ -11,6 +11,6 @@ const Link = ({ className = '', children, title, href }: LinkProps) => (
       <span>{`by ${title}`}</span>
     </CLink>
   </div>
-)
+);
 
-export default Link
+export default Link;

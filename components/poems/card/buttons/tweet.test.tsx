@@ -1,18 +1,18 @@
-import { render } from '@testing-library/react'
+import { render } from "@testing-library/react";
 
-import TweetButton from './tweet'
+import TweetButton from "./tweet";
 
-describe('TweetButton', () => {
+describe("TweetButton", () => {
   test.each`
     text        | expected
-    ${'asahi'}  | ${'asahi'}
-    ${'あさひ'} | ${'%E3%81%82%E3%81%95%E3%81%B2'}
-  `('渡した文字列が正しくURLに埋め込まれているか', ({ text, expected }) => {
-    const { getByRole } = render(<TweetButton text={text} />)
+    ${"asahi"}  | ${"asahi"}
+    ${"あさひ"} | ${"%E3%81%82%E3%81%95%E3%81%B2"}
+  `("渡した文字列が正しくURLに埋め込まれているか", ({ text, expected }) => {
+    const { getByRole } = render(<TweetButton text={text} />);
 
-    expect(getByRole('link')).toHaveAttribute(
-      'href',
+    expect(getByRole("link")).toHaveAttribute(
+      "href",
       expect.stringMatching(`${expected}$`)
-    )
-  })
-})
+    );
+  });
+});

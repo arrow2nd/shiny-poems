@@ -1,6 +1,6 @@
-import Wave from 'react-wavify'
+import Wave from "react-wavify";
 
-import Links from './links'
+import Links from "./links";
 
 const Footer = () => (
   <footer className="w-full">
@@ -23,6 +23,6 @@ const Footer = () => (
       </span>
     </div>
   </footer>
-)
+);
 
-export default Footer
+export default Footer;

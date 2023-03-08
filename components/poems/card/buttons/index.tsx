@@ -1,10 +1,10 @@
-import CopyButton from './copy'
-import TweetButton from './tweet'
+import CopyButton from "./copy";
+import TweetButton from "./tweet";
 
 type Props = {
-  tweetText: string
-  copyText: string
-}
+  tweetText: string;
+  copyText: string;
+};
 
 const Buttons = ({ tweetText, copyText }: Props): JSX.Element => (
   <div
@@ -13,6 +13,6 @@ const Buttons = ({ tweetText, copyText }: Props): JSX.Element => (
     <TweetButton text={tweetText} />
     <CopyButton text={copyText} />
   </div>
-)
+);
 
-export default Buttons
+export default Buttons;
