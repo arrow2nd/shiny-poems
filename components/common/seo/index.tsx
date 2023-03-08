@@ -1,13 +1,13 @@
 import Head from "next/head";
 
-import { Site } from "data/site";
+import { SiteInfo } from "data/site";
 
 type Props = {
   ogpImageUrl: string;
 };
 
 const SEO = ({ ogpImageUrl }: Props) => {
-  const { title, desc, url } = Site;
+  const { title, desc, url } = SiteInfo;
 
   return (
     <Head>
