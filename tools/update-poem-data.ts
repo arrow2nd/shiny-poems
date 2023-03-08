@@ -2,6 +2,7 @@ import { writeFileSync } from "fs";
 
 import type { Poem } from "types/poem";
 
+import { poemList } from "../data/poem-list";
 import { clothesSeries, sortedIdols } from "./libs/data";
 import { fetchIdolData } from "./libs/fetch";
 
@@ -68,12 +69,19 @@ function getJSTDate(): string {
     (a, b) => sortedIdols.indexOf(a.idolName) - sortedIdols.indexOf(b.idolName)
   );
 
-  const json = JSON.stringify(sortedPoem, null, "  ");
+  const oldData = JSON.stringify(poemList, null, "\t");
+  const newData = JSON.stringify(sortedPoem, null, "\t");
+
+  if (newData === oldData) {
+    console.log("[ no update ]");
+    return;
+  }
+
   const result = `import { Poem } from "types/poem";
 export const updatedAtUTC = "${getJSTDate()}";
-export const poemList: Poem[] = ${json}`;
+export const poemList: Poem[] = ${newData}`;
 
   writeFileSync("./data/poem-list.ts", result);
 
-  console.log("[ success! ]");
+  console.log("[ update success! ]");
 })();
