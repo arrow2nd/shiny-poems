@@ -16,14 +16,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Install Node.js, npm and Yarn
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7
+
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: "18"
-          cache: yarn
+          cache: "pnpm"
 
       - name: Install dependencies
-        run: yarn install --immutable
+        run: pnpm install
 
       - name: Create new branch
         env:
@@ -31,10 +36,10 @@ jobs:
         run: git switch -c ${{ env.NEW_BRANCH_NAME }}
 
       - name: Recreate poem data
-        run: yarn update:poem
+        run: pnpm update:poem
 
       - name: Run formatter
-        run: yarn fmt:data
+        run: pnpm fmt:data
 
       - name: Commit the changes
         uses: stefanzweifel/git-auto-commit-action@v4
