@@ -5,6 +5,7 @@
 [![update](https://github.com/arrow2nd/shiny-poems/actions/workflows/update.yaml/badge.svg?branch=main)](https://github.com/arrow2nd/shiny-poems/actions/workflows/update.yaml)
 [![test](https://github.com/arrow2nd/shiny-poems/actions/workflows/test.yaml/badge.svg)](https://github.com/arrow2nd/shiny-poems/actions/workflows/test.yaml)
 [![e2e](https://github.com/arrow2nd/shiny-poems/actions/workflows/e2e.yaml/badge.svg)](https://github.com/arrow2nd/shiny-poems/actions/workflows/e2e.yaml)
+[![CodeQL](https://github.com/arrow2nd/shiny-poems/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/arrow2nd/shiny-poems/actions/workflows/github-code-scanning/codeql)
 [![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=shiny-poems)](https://shiny-poems.vercel.app)
 [![Powered by im@sparql](https://img.shields.io/badge/powered%20by-im%40sparql-F34F6D)](https://sparql.crssnky.xyz/imas/)
 
