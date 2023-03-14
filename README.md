@@ -5,7 +5,6 @@
 [![update](https://github.com/arrow2nd/shiny-poems/actions/workflows/update.yaml/badge.svg?branch=main)](https://github.com/arrow2nd/shiny-poems/actions/workflows/update.yaml)
 [![test](https://github.com/arrow2nd/shiny-poems/actions/workflows/test.yaml/badge.svg)](https://github.com/arrow2nd/shiny-poems/actions/workflows/test.yaml)
 [![e2e](https://github.com/arrow2nd/shiny-poems/actions/workflows/e2e.yaml/badge.svg)](https://github.com/arrow2nd/shiny-poems/actions/workflows/e2e.yaml)
-[![Depfu](https://badges.depfu.com/badges/81319e043b4dd2c4c4bae34a26529948/status.svg)](https://depfu.com)
 [![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=shiny-poems)](https://shiny-poems.vercel.app)
 [![Powered by im@sparql](https://img.shields.io/badge/powered%20by-im%40sparql-F34F6D)](https://sparql.crssnky.xyz/imas/)
 
@@ -16,7 +15,7 @@
 - 衣装ポエムの検索
 - ポエムをツイートで共有
 
-## 実行
+## Develop
 
 > **Warning**
 >
@@ -32,9 +31,9 @@ CLOUDINARY_URL=<API Environment variable>
 その後、以下のコマンドで実行
 
 ```
-yarn dev
+pnpm dev
 # or
-yarn build && yarn start
+pnpm build && pnpm start
 ```
 
 ## Thanks!
