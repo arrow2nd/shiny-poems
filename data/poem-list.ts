@@ -1,6 +1,6 @@
 import { Poem } from "types/poem";
 
-export const updatedAtUTC = "2023/03/08 (JST)";
+export const updatedAtUTC = "2023/03/27 (JST)";
 export const poemList: Poem[] = [
   {
     id: "CelestialColors_SakuragiMano",
@@ -1389,6 +1389,13 @@ export const poemList: Poem[] = [
     text: "5ピース★後輩ちゃんはくるくるな髪にうきうき"
   },
   {
+    id: "DressUpParfum_SonodaChiyoko",
+    idolName: "園田智代子",
+    clothesTitle: "ドレスアップパルファム",
+    clothesName: "ドレスアップパルファム",
+    text: "Cheers! 華やかチョコレートです！"
+  },
+  {
     id: "DefeatOfEncounter_SonodaChiyoko",
     idolName: "園田智代子",
     clothesTitle: "デフィートオブエンカウンター",
@@ -1844,6 +1851,13 @@ export const poemList: Poem[] = [
     text: "MISSION：パーフェクトオペレーター"
   },
   {
+    id: "RespectiveWorkStyle_ArisugawaNatsuha",
+    idolName: "有栖川夏葉",
+    clothesTitle: "リスペクティブワークスタイル",
+    clothesName: "リスペクティブワークスタイル",
+    text: "WORKING：はつらつファーマー"
+  },
+  {
     id: "EleganceOfWhite_ArisugawaNatsuha",
     idolName: "有栖川夏葉",
     clothesTitle: "エレガンスオブホワイト",
@@ -1984,6 +1998,13 @@ export const poemList: Poem[] = [
     text: "WORKING：楽しい時間をお届けします☆"
   },
   {
+    id: "KaburyiOfWhite_OsakiAmana",
+    idolName: "大崎甘奈",
+    clothesTitle: "カブリィオブホワイト",
+    clothesName: "カブリィオブホワイト",
+    text: "wish!wink!white! まな☆くま☆くま☆まな"
+  },
+  {
     id: "CheckingKyun_OsakiAmana",
     idolName: "大崎甘奈",
     clothesTitle: "チェッキンキューン",
@@ -2117,6 +2138,13 @@ export const poemList: Poem[] = [
     text: "1stシーズンの水着。サングラスをよく落とす"
   },
   {
+    id: "KaburyiOfWhite_OsakiTenka",
+    idolName: "大崎甜花",
+    clothesTitle: "カブリィオブホワイト",
+    clothesName: "カブリィオブホワイト",
+    text: "wish!wink!white! くまさんが食べます"
+  },
+  {
     id: "CheckingKyun_OsakiTenka",
     idolName: "大崎甜花",
     clothesTitle: "チェッキンキューン",
@@ -2248,6 +2276,13 @@ export const poemList: Poem[] = [
     clothesTitle: "シャイニーサマー",
     clothesName: "シャイニーサマー",
     text: "1stシーズンの水着。華やかなパレオに胸キュン♡"
+  },
+  {
+    id: "KaburyiOfWhite_KuwayamaChiyuki",
+    idolName: "桑山千雪",
+    clothesTitle: "カブリィオブホワイト",
+    clothesName: "カブリィオブホワイト",
+    text: "wish!wink!white! そろそろ、目覚めの春"
   },
   {
     id: "CheckingKyun_KuwayamaChiyuki",
