@@ -23,7 +23,8 @@ export const sortedIdols = [
   "市川雛菜",
   "福丸小糸",
   "七草にちか",
-  "緋田美琴"
+  "緋田美琴",
+  "斑鳩ルカ"
 ];
 
 export const clothesSeries = [
