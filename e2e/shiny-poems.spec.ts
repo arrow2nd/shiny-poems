@@ -1,30 +1,70 @@
 import { expect, test } from "@playwright/test";
 
-test("検索して画面を記録", async ({ contextOptions, browser }, { project }) => {
-  const saveDir = `e2e/results/${project.name}`;
-  const context = await browser.newContext({
-    ...contextOptions,
-    recordVideo: { dir: saveDir }
-  });
+test.describe.configure({ mode: "parallel" });
 
-  const page = await context.newPage();
+test.beforeEach(async ({ page }) => {
   await page.goto("http://localhost:3000");
+});
 
-  // テキストボックスに入力
-  await page.click('[data-testid="poem-search-textbox"]');
-  await page
-    .locator('[data-testid="poem-search-textbox"]')
-    .fill("すまじきものは恋");
+test("ポエムの一部から検索", async ({ page }) => {
+  // 検索ボックスに入力
+  const textbox = page.getByTestId("poem-search-textbox");
+  await textbox.focus();
+  await textbox.fill("すまじきものは恋");
 
   // 検索実行
-  await page.click('[data-testid="poem-search-submit"]');
-  await expect(page.locator('[data-testid="poem-card-text"] > p')).toHaveText([
-    "ルームウェア。",
-    "すまじきものは恋"
-  ]);
+  await page.getByTestId("poem-search-submit").click();
 
-  // ページ全体のスクリーンショット
-  await page.screenshot({ path: `${saveDir}/full-page.png`, fullPage: true });
+  // 検索結果が表示されているか
+  const poemText = page.locator('[data-testid="poem-card-text"] > p');
+  await expect(poemText).toHaveText(["ルームウェア。", "すまじきものは恋"]);
 
-  await context.close();
+  // 検索結果がひとつの場合の画面をチェック
+  await expect(page).toHaveScreenshot("search-result-single.png");
+});
+
+test("アイドル名から検索", async ({ page }) => {
+  // 検索ボックスに入力
+  const inputBox = page.locator('[id="react-select-アイドル名から-input"]');
+  await inputBox.focus();
+  await inputBox.fill("芹沢あさひ");
+
+  // 検索実行
+  await inputBox.press("Enter");
+
+  // あさひの衣装が表示されているか
+  const poemCardIdol = page.getByTestId("poem-card-idol").first();
+  await expect(poemCardIdol).toHaveText("芹沢あさひ");
+});
+
+test("衣装名から検索", async ({ page }) => {
+  // 検索ボックスに入力
+  const inputBox = page.locator('[id="react-select-衣装名から-input"]');
+  await inputBox.focus();
+  await inputBox.fill("ほしあかり");
+
+  // 検索実行
+  await inputBox.press("Enter");
+
+  // 衣装「ほしあかり」が表示されているか
+  const poemCardIdol = page.getByTestId("poem-card-clothe").first();
+  await expect(poemCardIdol).toHaveText("ほしあかり");
+
+  // 検索結果が複数の場合の画面をチェック
+  await expect(page).toHaveScreenshot("search-result-multi.png");
+});
+
+test("ロゴクリックでリセット", async ({ page }) => {
+  // 検索実行
+  const textbox = page.getByTestId("poem-search-textbox");
+  await textbox.focus();
+  await textbox.fill("にーちゅ");
+  await page.getByTestId("poem-search-submit").click();
+
+  // ロゴをクリック
+  await page.getByTestId("logo").click();
+
+  // ポエムがない場合の表示になっているか
+  const poemCardNothing = page.getByTestId("poem-card-nothing");
+  await expect(poemCardNothing).toHaveText("ポエムが見つかりません…");
 });

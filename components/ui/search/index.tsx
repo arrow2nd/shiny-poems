@@ -6,9 +6,7 @@ import Input from "./input";
 import Label from "./label";
 import Select from "./select";
 
-type Props = {
-  onSearch: (type: string, label: string) => void;
-};
+type Props = { onSearch: (type: string, label: string) => void };
 
 const Search = ({ onSearch }: Props) => {
   // 選択要素に使用するアイドル名
@@ -86,14 +84,12 @@ const Search = ({ onSearch }: Props) => {
             options={idolNames}
             onChange={handleChangeIdolName}
             ref={idolSelect}
-            data-testid="idol-search-select"
           />
           <Select
             placeholder="衣装名から"
             options={clothesTitles}
             onChange={handleChangeclothesTitle}
             ref={clothesSelect}
-            data-testid="clothes-search-select"
           />
         </div>
       </div>

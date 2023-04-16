@@ -39,8 +39,15 @@ const Card = ({ poem }: Props) => {
         </div>
         <Accent bgColor={accentColor} />
         <div>
-          <p className="mb-1 text-sm md:text-base">{poem.clothesName}</p>
-          <p className="text-xs md:text-sm">{poem.idolName}</p>
+          <p
+            className="mb-1 text-sm md:text-base"
+            data-testid="poem-card-clothe"
+          >
+            {poem.clothesName}
+          </p>
+          <p className="text-xs md:text-sm" data-testid="poem-card-idol">
+            {poem.idolName}
+          </p>
         </div>
       </div>
       <Buttons {...{ tweetText, copyText }} />
