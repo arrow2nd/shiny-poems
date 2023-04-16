@@ -33,10 +33,11 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run E2E test
-        run: pnpm test:e2e
+        run: HOME=/root pnpm test:e2e
 
-      - name: Upload screenshots
+      - name: Upload report
         uses: actions/upload-artifact@v3
         with:
-          name: results
-          path: e2e/results
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30
