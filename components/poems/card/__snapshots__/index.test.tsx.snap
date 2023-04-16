@@ -24,11 +24,13 @@ exports[`Card ポエムを正しく表示できるか 1`] = `
       <div>
         <p
           class="mb-1 text-sm md:text-base"
+          data-testid="poem-card-clothe"
         >
           シャイニーサマー
         </p>
         <p
           class="text-xs md:text-sm"
+          data-testid="poem-card-idol"
         >
           櫻木真乃
         </p>
@@ -118,11 +120,13 @@ exports[`Card ポエムを正しく表示できるか 2`] = `
       <div>
         <p
           class="mb-1 text-sm md:text-base"
+          data-testid="poem-card-clothe"
         >
           ドレスアップパルファム
         </p>
         <p
           class="text-xs md:text-sm"
+          data-testid="poem-card-idol"
         >
           櫻木真乃
         </p>
@@ -209,11 +213,13 @@ exports[`Card ポエムを正しく表示できるか 3`] = `
       <div>
         <p
           class="mb-1 text-sm md:text-base"
+          data-testid="poem-card-clothe"
         >
           バイトゥデイレストラント
         </p>
         <p
           class="text-xs md:text-sm"
+          data-testid="poem-card-idol"
         >
           櫻木真乃
         </p>
@@ -303,11 +309,13 @@ exports[`Card ポエムを正しく表示できるか 4`] = `
       <div>
         <p
           class="mb-1 text-sm md:text-base"
+          data-testid="poem-card-clothe"
         >
           ファッショナブルサマー
         </p>
         <p
           class="text-xs md:text-sm"
+          data-testid="poem-card-idol"
         >
           櫻木真乃
         </p>
@@ -397,11 +405,13 @@ exports[`Card ポエムを正しく表示できるか 5`] = `
       <div>
         <p
           class="mb-1 text-sm md:text-base"
+          data-testid="poem-card-clothe"
         >
           ワンデイオフィサー
         </p>
         <p
           class="text-xs md:text-sm"
+          data-testid="poem-card-idol"
         >
           櫻木真乃
         </p>
