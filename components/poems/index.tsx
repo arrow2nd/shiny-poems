@@ -12,7 +12,9 @@ const Poems = ({ items }: Props) => {
   const nothing = (
     <div className="flex flex-row justify-center items-center py-8 text-main text-lg md:text-xl">
       <BsEmojiExpressionless />
-      <span className="ml-2">ポエムが見つかりません…</span>
+      <span className="ml-2" data-testid="poem-card-nothing">
+        ポエムが見つかりません…
+      </span>
     </div>
   );
 

@@ -5,7 +5,9 @@
 
 # testing
 /coverage
-/e2e/results/
+/playwright-report
+/test-results
+**/*.ts-snapshots
 
 # next.js
 /.next/

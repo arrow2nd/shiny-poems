@@ -30,11 +30,13 @@ exports[`Poems ポエムの一覧表示が正しいか 1`] = `
           <div>
             <p
               class="mb-1 text-sm md:text-base"
+              data-testid="poem-card-clothe"
             >
               ファッショナブルサマー
             </p>
             <p
               class="text-xs md:text-sm"
+              data-testid="poem-card-idol"
             >
               幽谷霧子
             </p>
@@ -119,11 +121,13 @@ exports[`Poems ポエムの一覧表示が正しいか 1`] = `
           <div>
             <p
               class="mb-1 text-sm md:text-base"
+              data-testid="poem-card-clothe"
             >
               サンセットスカイパッセージ
             </p>
             <p
               class="text-xs md:text-sm"
+              data-testid="poem-card-idol"
             >
               幽谷霧子
             </p>
@@ -217,6 +221,7 @@ exports[`Poems 該当ポエムがない場合の表示が正しいか 1`] = `
       </svg>
       <span
         class="ml-2"
+        data-testid="poem-card-nothing"
       >
         ポエムが見つかりません…
       </span>
