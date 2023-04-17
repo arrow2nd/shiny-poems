@@ -7,7 +7,7 @@
 /coverage
 /playwright-report
 /test-results
-/*.ts-snapshots
+**/*.ts-snapshots
 
 # next.js
 /.next/
