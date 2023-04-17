@@ -1,9 +1,11 @@
 import { expect, test } from "@playwright/test";
 
+import { baseUrl } from "./utils";
+
 test.describe.configure({ mode: "parallel" });
 
 test.beforeEach(async ({ page }) => {
-  await page.goto("http://localhost:3000");
+  await page.goto(baseUrl);
 });
 
 test("ポエムの一部から検索", async ({ page }) => {
