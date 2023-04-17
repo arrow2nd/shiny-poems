@@ -40,8 +40,8 @@ jobs:
           max_timeout: 60
 
       - name: Run E2E test
-        run: pnpm test:e2e:update
-          pnpm test:e2e
+        run: pnpm run test:e2e:update
+          pnpm run test:e2e
         env:
           PREVIEW_URL: ${{ steps.shinypoems.outputs.url }}
 
