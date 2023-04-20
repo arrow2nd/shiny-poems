@@ -13,6 +13,7 @@ const Header = () => (
         placeholder="blur"
       />
     </a>
+    {/*
     <GithubCorner
       href="https://github.com/arrow2nd/shiny-poems"
       bannerColor="#4C7ABE"
@@ -20,6 +21,7 @@ const Header = () => (
       size={80}
       direction="right"
     />
+    */}
   </header>
 );
 

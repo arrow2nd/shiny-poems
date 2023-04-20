@@ -1,28 +1,37 @@
 import cloudinary from "cloudinary";
-import { ParsedUrlQuery } from "node:querystring";
 
 import { poemList } from "data/poem-list";
 
+import { Poem } from "types/poem";
+
 import { encodeForCloudinary, splitPoemText } from "./util";
+
+export type Query = { [key: string]: string | string[] | undefined };
+
+/**
+ * IDからポエムの本文を取得
+ * @param query クエリパラメータ
+ * @returns ポエム本文
+ */
+export const getPoem = (query: Query): Poem | undefined => {
+  const id = query.id || "";
+  const idStr = Array.isArray(id) ? "" : id;
+  if (!idStr) return undefined;
+
+  return poemList.find((e) => e.id === idStr);
+};
 
 /**
  * OGP画像のURLを生成
- * @param query URLクエリ
- * @returns [OGP画像のURL, ポエムテキスト]
+ * @param query クエリパラメータ
+ * @returns URL
  */
-export const generateOgpImageUrl = (
-  query: ParsedUrlQuery
-): [string, string] => {
+export const generateOgpImageUrl = (query: Query): string => {
   const defaultOgp = "https://shiny-poems.vercel.app/ogp-default.png";
 
-  // クエリからidを取得
-  const id = query.id || "";
-  const idStr = Array.isArray(id) ? "" : id;
-  if (!idStr) return [defaultOgp, ""];
-
   // idからポエムを取得
-  const poem = poemList.find((e) => e.id === idStr);
-  if (!poem) return [defaultOgp, ""];
+  const poem = getPoem(query);
+  if (!poem) return defaultOgp;
 
   const poemText = splitPoemText(poem.text).join("\n");
 
@@ -43,5 +52,5 @@ export const generateOgpImageUrl = (
     ]
   });
 
-  return [ogpImgUrl, poem.text];
+  return ogpImgUrl;
 };

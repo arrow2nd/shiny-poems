@@ -1,5 +1,5 @@
 export type Site = {
   title: string;
-  desc: string;
+  description: string;
   url: string;
 };
