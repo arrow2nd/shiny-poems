@@ -18,7 +18,7 @@
   "dependencies": {
     "cloudinary": "^1.35.0",
     "infer-next-props-type": "^0.1.0",
-    "next": "13.3.0",
+    "next": "13.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-github-corner": "^2.5.0",
