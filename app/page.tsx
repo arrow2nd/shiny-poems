@@ -5,7 +5,7 @@ import Footer from "components/home/footer";
 import Header from "components/home/header";
 import UI from "components/ui";
 
-import { generateOgpImageUrl, getPoem } from "scripts/query";
+import { generateOgpImageUrl, getPoem } from "libs/query";
 
 import { SiteInfo } from "data/site";
 
