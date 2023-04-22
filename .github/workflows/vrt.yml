@@ -1,4 +1,4 @@
-name: e2e
+name: vrt
 
 on:
   push:
@@ -32,9 +32,17 @@ jobs:
       - name: Setup playwright
         run: npx playwright install --with-deps
 
-      - name: Run E2E test
+      - name: Waiting for Vercel Preview
+        uses: patrickedqvist/wait-for-vercel-preview@v1.3.1
+        id: shinypoems
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          max_timeout: 60
+
+      - name: Run VRT
         run: |
-          pnpm run test:e2e
+          pnpm run test:vrt:update
+          pnpm run test:vrt
         env:
           PREVIEW_URL: ${{ steps.shinypoems.outputs.url }}
 
@@ -42,6 +50,6 @@ jobs:
         uses: actions/upload-artifact@v3
         if: always()
         with:
-          name: playwright-report-e2e
+          name: playwright-report-vrt
           path: playwright-report/
           retention-days: 30
