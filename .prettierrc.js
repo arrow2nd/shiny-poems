@@ -11,7 +11,7 @@ module.exports = {
     "<THIRD_PARTY_MODULES>",
     "^components/(.*)$",
     "^hooks/(.*)$",
-    "^scripts/(.*)$",
+    "^libs/(.*)$",
     "^data/(.*)$",
     "^types/(.*)$",
     "^styles/(.*)$",
