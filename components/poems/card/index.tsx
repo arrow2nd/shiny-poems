@@ -1,6 +1,6 @@
 import Accent from "components/poems/card/accent";
 
-import { splitPoemText } from "scripts/util";
+import { splitPoemText } from "libs/util";
 
 import { colorList } from "data/color-list";
 
