@@ -1,3 +1,5 @@
+"use client";
+
 import Wave from "react-wavify";
 
 import { updatedAtUTC } from "data/poem-list";
@@ -6,7 +8,6 @@ import Links from "./links";
 
 const Footer = () => (
   <footer className="w-full">
-    {/*
     <Wave
       className="relative h-24 top-0.5 align-bottom"
       fill="#4C7ABE"
@@ -17,7 +18,6 @@ const Footer = () => (
         speed: 0.155
       }}
     />
-    */}
     <div className="flex flex-col items-center justify-center px-8 pb-20 tracking-wider text-sm text-center text-white bg-main">
       <Links />
       <span className="w-8 mb-8 border-b-2 border-dashed border-white" />
