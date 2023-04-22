@@ -11,7 +11,7 @@ import { SiteInfo } from "data/site";
 
 const kiwiMaru = Kiwi_Maru({
   weight: ["400"],
-  preload: false,
+  subsets: ["latin"],
   variable: "--font-kiwimaru"
 });
 
