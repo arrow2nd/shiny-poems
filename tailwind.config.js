@@ -1,3 +1,4 @@
+/** @type {import('tailwindcss').Config} \*/
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -5,8 +6,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      default: ["Arial", "sans-serif"],
-      kiwi: ["Kiwi Maru", "sans-serif"]
+      kiwi: ["var(--font-kiwimaru)", "sans-serif"]
     },
     extend: {
       colors: {

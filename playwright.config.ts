@@ -1,7 +1,6 @@
 import { PlaywrightTestConfig, devices } from "@playwright/test";
 
 const config: PlaywrightTestConfig = {
-  testDir: "./e2e",
   webServer: {
     command: "pnpm build && pnpm start",
     port: 3000,
@@ -9,53 +8,45 @@ const config: PlaywrightTestConfig = {
     reuseExistingServer: !process.env.CI
   },
   reporter: "html",
+  use: {
+    trace: "retain-on-failure",
+    launchOptions: { slowMo: 250 }
+  },
   projects: [
     {
       name: "chrome",
       use: {
-        ...devices["Desktop Chrome"],
-        launchOptions: { slowMo: 250 },
-        video: "retain-on-failure"
+        ...devices["Desktop Chrome"]
       }
     },
     {
       name: "edge",
       use: {
-        ...devices["Desktop Edge"],
-        launchOptions: { slowMo: 250 },
-        video: "retain-on-failure"
+        ...devices["Desktop Edge"]
       }
     },
     {
       name: "firefox",
       use: {
-        ...devices["Desktop Firefox"],
-        launchOptions: { slowMo: 250 },
-        video: "retain-on-failure"
+        ...devices["Desktop Firefox"]
       }
     },
     {
       name: "safari",
       use: {
-        ...devices["Desktop Safari"],
-        launchOptions: { slowMo: 250 },
-        video: "retain-on-failure"
+        ...devices["Desktop Safari"]
       }
     },
     {
       name: "android",
       use: {
-        ...devices["Pixel 5"],
-        launchOptions: { slowMo: 250 },
-        video: "retain-on-failure"
+        ...devices["Pixel 5"]
       }
     },
     {
       name: "iphone",
       use: {
-        ...devices["iPhone 13"],
-        launchOptions: { slowMo: 250 },
-        video: "retain-on-failure"
+        ...devices["iPhone 13"]
       }
     }
   ]

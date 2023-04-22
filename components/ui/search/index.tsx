@@ -20,32 +20,32 @@ const Search = ({ onSearch }: Props) => {
   );
 
   const keywordInput = useRef<HTMLInputElement>(null);
-  const idolSelect = useRef(null);
-  const clothesSelect = useRef(null);
+  const idolSelect = useRef<any>(null);
+  const clothesSelect = useRef<any>(null);
 
   // キーワード欄をクリア
   const clearKeywordInput = () => {
-    if (keywordInput.current.value) {
+    if (keywordInput.current?.value) {
       keywordInput.current.value = "";
     }
   };
 
   // アイドル名の選択をクリア
   const clearIdolSelect = () => {
-    if (idolSelect.current.state.selectValue) {
+    if (idolSelect.current?.state.selectValue) {
       idolSelect.current.clearValue();
     }
   };
 
   // 衣装名の選択をクリア
   const clearClothesSelect = () => {
-    if (clothesSelect.current.state.selectValue) {
+    if (clothesSelect.current?.state.selectValue) {
       clothesSelect.current.clearValue();
     }
   };
 
   const handleSubmit = () => {
-    const keyword = keywordInput.current.value;
+    const keyword = keywordInput.current?.value;
     if (!keyword) return;
 
     clearIdolSelect();

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import LogoImg from "public/logo.png";
-import GithubCorner from "react-github-corner";
+
+import GitHubCorner from "./github-corner";
 
 const Header = () => (
   <header className="flex justify-center items-center py-20 w-full">
@@ -13,12 +14,11 @@ const Header = () => (
         placeholder="blur"
       />
     </a>
-    <GithubCorner
+    <GitHubCorner
       href="https://github.com/arrow2nd/shiny-poems"
       bannerColor="#4C7ABE"
       octoColor="#fff"
       size={80}
-      direction="right"
     />
   </header>
 );
