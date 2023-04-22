@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  e2e:
+  vrt:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

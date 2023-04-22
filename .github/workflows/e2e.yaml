@@ -32,6 +32,13 @@ jobs:
       - name: Setup playwright
         run: npx playwright install --with-deps
 
+      - name: Waiting for Vercel Preview
+        uses: patrickedqvist/wait-for-vercel-preview@v1.3.1
+        id: shinypoems
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          max_timeout: 60
+
       - name: Run E2E test
         run: |
           pnpm run test:e2e
