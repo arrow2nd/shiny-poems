@@ -4,16 +4,19 @@ import Footer from "components/home/footer";
 import Header from "components/home/header";
 import UI from "components/ui";
 
-import { Query, generateOgpImageUrl, getPoem } from "scripts/query";
+import { generateOgpImageUrl, getPoem } from "scripts/query";
 
 import { SiteInfo } from "data/site";
 
+type Props = {
+  params: { id: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+};
+
 export async function generateMetadata({
   searchParams
-}: {
-  searchParams: Query;
-}): Promise<Metadata> {
-  const imageUrl = generateOgpImageUrl(searchParams);
+}: Props): Promise<Metadata> {
+  const imageUrl = generateOgpImageUrl(searchParams.id);
   const { title, description, url } = SiteInfo;
 
   return {
@@ -36,8 +39,8 @@ export async function generateMetadata({
   };
 }
 
-export default function Page({ searchParams }: { searchParams: Query }) {
-  const poem = getPoem(searchParams);
+export default function Page({ searchParams }: Props) {
+  const poem = getPoem(searchParams.id);
 
   return (
     <div className="flex flex-col min-h-screen bg-neutral-white font-default">
