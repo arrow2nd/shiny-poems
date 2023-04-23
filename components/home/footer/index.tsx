@@ -25,8 +25,8 @@ const Footer = () => (
         Last updated : {updatedAtUTC}
       </span>
       <span>
-        The rights to all content related to THE IDOLM@STER belong to BANDAI
-        NAMCO Entertainment Inc.
+        The rights to all content related to THE IDOLM@STER™ belong to Bandai
+        Namco Entertainment Inc.
       </span>
     </div>
   </footer>
