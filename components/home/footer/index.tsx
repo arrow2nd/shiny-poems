@@ -18,7 +18,7 @@ const Footer = () => (
         speed: 0.155
       }}
     />
-    <div className="flex flex-col items-center justify-center px-8 pb-20 tracking-wider text-sm text-center text-white bg-main">
+    <div className="flex flex-col items-center justify-center px-8 pt-0.5 pb-20 tracking-wider text-sm text-center text-white bg-main">
       <Links />
       <span className="w-8 mb-8 border-b-2 border-dashed border-white" />
       <span className="mb-2" data-testid="last-updated">
