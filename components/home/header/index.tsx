@@ -11,7 +11,7 @@ const Header = () => (
         alt="logo"
         width={618}
         height={140}
-        placeholder="blur"
+        placeholder="empty"
       />
     </a>
     <GitHubCorner

@@ -1,16 +1,21 @@
-import { PlaywrightTestConfig, devices } from "@playwright/test";
+import { defineConfig, devices } from "@playwright/test";
 
-const config: PlaywrightTestConfig = {
-  webServer: {
-    command: "pnpm build && pnpm start",
-    port: 3000,
-    timeout: 120 * 1000,
-    reuseExistingServer: !process.env.CI
-  },
+export default defineConfig({
   reporter: "html",
+  workers: 4,
+  timeout: 30 * 1000,
+  retries: 2,
+  fullyParallel: true,
+  expect: {
+    timeout: 10000,
+    toMatchSnapshot: {
+      threshold: 0.2,
+      maxDiffPixelRatio: 0.001
+    }
+  },
   use: {
-    trace: "retain-on-failure",
-    launchOptions: { slowMo: 250 }
+    trace: "retain-on-failure"
+    // launchOptions: { slowMo: 200 }
   },
   projects: [
     {
@@ -50,6 +55,4 @@ const config: PlaywrightTestConfig = {
       }
     }
   ]
-};
-
-export default config;
+});

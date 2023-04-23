@@ -6,9 +6,6 @@ import {
   testSearchPoemFromText
 } from "../utils";
 
-// ファイル内のテストを並列に実行
-test.describe.configure({ mode: "parallel" });
-
 test.beforeEach(async ({ page }) => {
   await page.goto(baseUrl);
 });

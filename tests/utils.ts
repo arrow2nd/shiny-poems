@@ -15,11 +15,10 @@ export const baseUrl = process.env.PROD
 export async function testSearchPoemFromText(page: Page): Promise<void> {
   // 検索ボックスに入力
   const textbox = page.getByTestId("poem-search-textbox");
-  await textbox.focus();
   await textbox.fill("すまじきものは恋");
 
   // 検索実行
-  await page.getByTestId("poem-search-submit").click();
+  await textbox.press("Enter");
 
   // 検索結果が表示されているか
   const poemText = page.locator('[data-testid="poem-card-text"] > p');
@@ -33,7 +32,6 @@ export async function testSearchPoemFromText(page: Page): Promise<void> {
 export async function testSearchFromClotheName(page: Page): Promise<void> {
   // 検索ボックスに入力
   const inputBox = page.locator('[id="react-select-衣装名から-input"]');
-  await inputBox.focus();
   await inputBox.fill("ほしあかり");
 
   // 検索実行
