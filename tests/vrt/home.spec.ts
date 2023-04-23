@@ -6,9 +6,6 @@ import {
   testSearchPoemFromText
 } from "../utils";
 
-// ファイル内のテストを並列に実行
-test.describe.configure({ mode: "parallel" });
-
 function getMaskLocations(page: Page): Locator[] {
   const wave = page.locator("footer > div > svg");
   const lastUpdated = page.getByTestId("last-updated");
@@ -16,7 +13,9 @@ function getMaskLocations(page: Page): Locator[] {
 }
 
 test.beforeEach(async ({ page }) => {
-  await page.goto(baseUrl);
+  await page.goto(baseUrl, {
+    waitUntil: "networkidle"
+  });
 });
 
 test("検索結果がひとつの場合", async ({ page }) => {
