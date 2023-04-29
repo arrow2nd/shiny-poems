@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "commitMessagePrefix"： ":arrow_up: ",
+  "commitMessagePrefix": ":arrow_up: ",
   "unicodeEmoji": true,
   "extends": ["config:base"]
 }
