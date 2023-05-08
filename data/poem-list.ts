@@ -1,6 +1,6 @@
 import { Poem } from "types/poem";
 
-export const updatedAtUTC = "2023/03/27 (JST)";
+export const updatedAtUTC = "2023/05/09 (JST)";
 export const poemList: Poem[] = [
   {
     id: "CelestialColors_SakuragiMano",
@@ -99,6 +99,13 @@ export const poemList: Poem[] = [
     clothesTitle: "イノセントセーラー",
     clothesName: "イノセントセーラー",
     text: "ビー・アンビシャス。軽やかなハニーレモンソーダ"
+  },
+  {
+    id: "FlowingBhel_SakuragiMano",
+    idolName: "櫻木真乃",
+    clothesTitle: "フローウィングベル",
+    clothesName: "フローウィングベル",
+    text: "ブランクペイジ。それはきらめきの向こうへ駆けて"
   },
   {
     id: "RefreshSummer_SakuragiMano",
@@ -255,6 +262,13 @@ export const poemList: Poem[] = [
     text: "ビー・アンビシャス。あの日の静かな湊を忘れないで"
   },
   {
+    id: "FlowingBhel_KazanoHiori",
+    idolName: "風野灯織",
+    clothesTitle: "フローウィングベル",
+    clothesName: "フローウィングベル",
+    text: "ブランクペイジ。何があっても、何度でも。"
+  },
+  {
     id: "RefreshSummer_KazanoHiori",
     idolName: "風野灯織",
     clothesTitle: "リフレッシュサマー",
@@ -400,6 +414,13 @@ export const poemList: Poem[] = [
     clothesTitle: "イノセントセーラー",
     clothesName: "イノセントセーラー",
     text: "ビー・アンビシャス。しろたえの君、夏空に星を"
+  },
+  {
+    id: "FlowingBhel_HachimiyaMeguru",
+    idolName: "八宮めぐる",
+    clothesTitle: "フローウィングベル",
+    clothesName: "フローウィングベル",
+    text: "ブランクペイジ。一緒ならどこへでもゆけるの"
   },
   {
     id: "RefreshSummer_HachimiyaMeguru",
@@ -556,6 +577,13 @@ export const poemList: Poem[] = [
     text: "ビー・アンビシャス。夏の君が乱反射して"
   },
   {
+    id: "FlowingBhel_TsukiokaKogane",
+    idolName: "月岡恋鐘",
+    clothesTitle: "フローウィングベル",
+    clothesName: "フローウィングベル",
+    text: "ブランクペイジ。ふわり、ひらり、いざゆかん！"
+  },
+  {
     id: "RefreshSummer_TsukiokaKogane",
     idolName: "月岡恋鐘",
     clothesTitle: "リフレッシュサマー",
@@ -668,6 +696,13 @@ export const poemList: Poem[] = [
     text: "MAGIA——イタズラは紫色で"
   },
   {
+    id: "RespectiveWorkStyle_TanakaMamimi",
+    idolName: "田中摩美々",
+    clothesTitle: "リスペクティブワークスタイル",
+    clothesName: "リスペクティブワークスタイル",
+    text: "WORKING：ビューティーはお任せで"
+  },
+  {
     id: "ReflectionThemePark_TanakaMamimi",
     idolName: "田中摩美々",
     clothesTitle: "リフレクションテーマパーク",
@@ -708,6 +743,13 @@ export const poemList: Poem[] = [
     clothesTitle: "イノセントセーラー",
     clothesName: "イノセントセーラー",
     text: "ビー・アンビシャス。言葉は夏雲にかくした"
+  },
+  {
+    id: "FlowingBhel_TanakaMamimi",
+    idolName: "田中摩美々",
+    clothesTitle: "フローウィングベル",
+    clothesName: "フローウィングベル",
+    text: "ブランクペイジ。ナイスホワイト"
   },
   {
     id: "RefreshSummer_TanakaMamimi",
@@ -848,6 +890,13 @@ export const poemList: Poem[] = [
     clothesTitle: "イノセントセーラー",
     clothesName: "イノセントセーラー",
     text: "ビー・アンビシャス。この声だけが白に滲む"
+  },
+  {
+    id: "FlowingBhel_ShiraseSakuya",
+    idolName: "白瀬咲耶",
+    clothesTitle: "フローウィングベル",
+    clothesName: "フローウィングベル",
+    text: "ブランクペイジ。ともに掴む可能性"
   },
   {
     id: "RefreshSummer_ShiraseSakuya",
@@ -1004,6 +1053,13 @@ export const poemList: Poem[] = [
     text: "ビー・アンビシャス。どうぞ攫って、夏のよそゆき"
   },
   {
+    id: "FlowingBhel_MitsumineYuika",
+    idolName: "三峰結華",
+    clothesTitle: "フローウィングベル",
+    clothesName: "フローウィングベル",
+    text: "ブランクペイジ。どんな色でもほしいままに"
+  },
+  {
     id: "RefreshSummer_MitsumineYuika",
     idolName: "三峰結華",
     clothesTitle: "リフレッシュサマー",
@@ -1142,6 +1198,13 @@ export const poemList: Poem[] = [
     clothesTitle: "イノセントセーラー",
     clothesName: "イノセントセーラー",
     text: "ビー・アンビシャス。イエッサー、君の命じるままに"
+  },
+  {
+    id: "FlowingBhel_YukokuKiriko",
+    idolName: "幽谷霧子",
+    clothesTitle: "フローウィングベル",
+    clothesName: "フローウィングベル",
+    text: "ブランクペイジ。きみが愛するとき"
   },
   {
     id: "RefreshSummer_YukokuKiriko",
@@ -1319,6 +1382,13 @@ export const poemList: Poem[] = [
     text: "ビー・アンビシャス。夏の手を取ってまた会いにゆくよ"
   },
   {
+    id: "FlowingBhel_KomiyaKaho",
+    idolName: "小宮果穂",
+    clothesTitle: "フローウィングベル",
+    clothesName: "フローウィングベル",
+    text: "ブランクペイジ。これははじまりの色"
+  },
+  {
     id: "RefreshSummer_KomiyaKaho",
     idolName: "小宮果穂",
     clothesTitle: "リフレッシュサマー",
@@ -1473,6 +1543,13 @@ export const poemList: Poem[] = [
     text: "ビー・アンビシャス。この夏はおそろい水兵さんで！"
   },
   {
+    id: "FlowingBhel_SonodaChiyoko",
+    idolName: "園田智代子",
+    clothesTitle: "フローウィングベル",
+    clothesName: "フローウィングベル",
+    text: "ブランクペイジ。チョコとかこぼしたら大事故"
+  },
+  {
     id: "RefreshSummer_SonodaChiyoko",
     idolName: "園田智代子",
     clothesTitle: "リフレッシュサマー",
@@ -1550,6 +1627,13 @@ export const poemList: Poem[] = [
     text: "5ピース★ドクロ・イナズマ・ロック"
   },
   {
+    id: "DressUpParfum_SaijoJuri",
+    idolName: "西城樹里",
+    clothesTitle: "ドレスアップパルファム",
+    clothesName: "ドレスアップパルファム",
+    text: "Cheers! 見ていいのは2秒以内"
+  },
+  {
     id: "DefeatOfEncounter_SaijoJuri",
     idolName: "西城樹里",
     clothesTitle: "デフィートオブエンカウンター",
@@ -1618,6 +1702,13 @@ export const poemList: Poem[] = [
     clothesTitle: "イノセントセーラー",
     clothesName: "イノセントセーラー",
     text: "ビー・アンビシャス。待ち合わせはランウェイの先で"
+  },
+  {
+    id: "FlowingBhel_SaijoJuri",
+    idolName: "西城樹里",
+    clothesTitle: "フローウィングベル",
+    clothesName: "フローウィングベル",
+    text: "ブランクペイジ。折り重なる幾重もの"
   },
   {
     id: "RefreshSummer_SaijoJuri",
@@ -1697,6 +1788,13 @@ export const poemList: Poem[] = [
     text: "5ピース★意味はない、リズムもいらない"
   },
   {
+    id: "DressUpParfum_MorinoRinze",
+    idolName: "杜野凛世",
+    clothesTitle: "ドレスアップパルファム",
+    clothesName: "ドレスアップパルファム",
+    text: "Cheers! 月夜で染めた衣裳に"
+  },
+  {
     id: "DefeatOfEncounter_MorinoRinze",
     idolName: "杜野凛世",
     clothesTitle: "デフィートオブエンカウンター",
@@ -1765,6 +1863,13 @@ export const poemList: Poem[] = [
     clothesTitle: "イノセントセーラー",
     clothesName: "イノセントセーラー",
     text: "ビー・アンビシャス。錨ヲ上ゲヨ、少女前進ス"
+  },
+  {
+    id: "FlowingBhel_MorinoRinze",
+    idolName: "杜野凛世",
+    clothesTitle: "フローウィングベル",
+    clothesName: "フローウィングベル",
+    text: "ブランクペイジ。駆けよ天の階"
   },
   {
     id: "RefreshSummer_MorinoRinze",
@@ -1921,6 +2026,13 @@ export const poemList: Poem[] = [
     text: "ビー・アンビシャス。あの海に向かって叫べ！"
   },
   {
+    id: "FlowingBhel_ArisugawaNatsuha",
+    idolName: "有栖川夏葉",
+    clothesTitle: "フローウィングベル",
+    clothesName: "フローウィングベル",
+    text: "ブランクペイジ。雪の彼方の、その先へ"
+  },
+  {
     id: "RefreshSummer_ArisugawaNatsuha",
     idolName: "有栖川夏葉",
     clothesTitle: "リフレッシュサマー",
@@ -2068,6 +2180,13 @@ export const poemList: Poem[] = [
     text: "ビー・アンビシャス。純白のハートを君に向けて"
   },
   {
+    id: "FlowingBhel_OsakiAmana",
+    idolName: "大崎甘奈",
+    clothesTitle: "フローウィングベル",
+    clothesName: "フローウィングベル",
+    text: "ブランクペイジ。貴方がくれたこの羽でどこまでも"
+  },
+  {
     id: "RefreshSummer_OsakiAmana",
     idolName: "大崎甘奈",
     clothesTitle: "リフレッシュサマー",
@@ -2208,6 +2327,13 @@ export const poemList: Poem[] = [
     text: "ビー・アンビシャス。（注）風で帽子をよく飛ばす"
   },
   {
+    id: "FlowingBhel_OsakiTenka",
+    idolName: "大崎甜花",
+    clothesTitle: "フローウィングベル",
+    clothesName: "フローウィングベル",
+    text: "ブランクペイジ。何度でもまっしろな心で"
+  },
+  {
     id: "RefreshSummer_OsakiTenka",
     idolName: "大崎甜花",
     clothesTitle: "リフレッシュサマー",
@@ -2341,6 +2467,13 @@ export const poemList: Poem[] = [
     text: "ビー・アンビシャス。追憶とはああその襟のこと"
   },
   {
+    id: "FlowingBhel_KuwayamaChiyuki",
+    idolName: "桑山千雪",
+    clothesTitle: "フローウィングベル",
+    clothesName: "フローウィングベル",
+    text: "ブランクペイジ。純白の強さを知るものよ"
+  },
+  {
     id: "RefreshSummer_KuwayamaChiyuki",
     idolName: "桑山千雪",
     clothesTitle: "リフレッシュサマー",
@@ -2425,6 +2558,13 @@ export const poemList: Poem[] = [
     text: "Chaser／指令。あの光を追うのだ"
   },
   {
+    id: "RespectiveWorkStyle_SerizawaAsahi",
+    idolName: "芹沢あさひ",
+    clothesTitle: "リスペクティブワークスタイル",
+    clothesName: "リスペクティブワークスタイル",
+    text: "WORKING：わたしの前に謎なんてない"
+  },
+  {
     id: "AmourOfWhite_SerizawaAsahi",
     idolName: "芹沢あさひ",
     clothesTitle: "アムールオブホワイト",
@@ -2472,6 +2612,13 @@ export const poemList: Poem[] = [
     clothesTitle: "イノセントセーラー",
     clothesName: "イノセントセーラー",
     text: "ビー・アンビシャス。さぁ、未体験の船出へ！"
+  },
+  {
+    id: "FlowingBhel_SerizawaAsahi",
+    idolName: "芹沢あさひ",
+    clothesTitle: "フローウィングベル",
+    clothesName: "フローウィングベル",
+    text: "ブランクペイジ。重力すら振り切って"
   },
   {
     id: "Merry_Merry_Delivery",
@@ -2607,6 +2754,13 @@ export const poemList: Poem[] = [
     text: "ビー・アンビシャス。純潔に咲け、紅の華"
   },
   {
+    id: "FlowingBhel_MayuzumiFuyuko",
+    idolName: "黛冬優子",
+    clothesTitle: "フローウィングベル",
+    clothesName: "フローウィングベル",
+    text: "ブランクペイジ。この翼に届かぬ空はない"
+  },
+  {
     id: "Merry_Merry_Tree",
     idolName: "黛冬優子",
     clothesTitle: "メリーメリーシリーズ",
@@ -2740,6 +2894,13 @@ export const poemList: Poem[] = [
     text: "ビー・アンビシャス。こういうの、ちょー新鮮！"
   },
   {
+    id: "FlowingBhel_IzumiMei",
+    idolName: "和泉愛依",
+    clothesTitle: "フローウィングベル",
+    clothesName: "フローウィングベル",
+    text: "ブランクペイジ。これは何度でも挑み続ける為の翼"
+  },
+  {
     id: "Merry_Merry_Carry",
     idolName: "和泉愛依",
     clothesTitle: "メリーメリーシリーズ",
@@ -2859,6 +3020,13 @@ export const poemList: Poem[] = [
     text: "フルーツパーラー。メロン党、起立。"
   },
   {
+    id: "FlowingBhel_AsakuraToru",
+    idolName: "浅倉透",
+    clothesTitle: "フローウィングベル",
+    clothesName: "フローウィングベル",
+    text: "ブランクペイジ。海になる前の"
+  },
+  {
     id: "RefreshSummer_AsakuraToru",
     idolName: "浅倉透",
     clothesTitle: "リフレッシュサマー",
@@ -2971,6 +3139,13 @@ export const poemList: Poem[] = [
     text: "フルーツパーラー。乙女と浪漫とイチゴクリーム"
   },
   {
+    id: "FlowingBhel_HiguchiMadoka",
+    idolName: "樋口円香",
+    clothesTitle: "フローウィングベル",
+    clothesName: "フローウィングベル",
+    text: "ブランクペイジ。光は混ざると"
+  },
+  {
     id: "RefreshSummer_HiguchiMadoka",
     idolName: "樋口円香",
     clothesTitle: "リフレッシュサマー",
@@ -3074,6 +3249,13 @@ export const poemList: Poem[] = [
     clothesTitle: "アソヲトパッフェ",
     clothesName: "アソヲトパッフェ",
     text: "フルーツパーラー。パーフェクトアイスクリーム"
+  },
+  {
+    id: "FlowingBhel_IchikawaHinana",
+    idolName: "市川雛菜",
+    clothesTitle: "フローウィングベル",
+    clothesName: "フローウィングベル",
+    text: "ブランクペイジ。飛んでけ、しあわせいっぱいの羽"
   },
   {
     id: "RefreshSummer_IchikawaHinana",
@@ -3181,6 +3363,13 @@ export const poemList: Poem[] = [
     text: "フルーツパーラー。特別な日のめしあがれ"
   },
   {
+    id: "FlowingBhel_FukumaruKoito",
+    idolName: "福丸小糸",
+    clothesTitle: "フローウィングベル",
+    clothesName: "フローウィングベル",
+    text: "ブランクペイジ。白い小鳥は青空を見上げる"
+  },
+  {
     id: "RefreshSummer_FukumaruKoito",
     idolName: "福丸小糸",
     clothesTitle: "リフレッシュサマー",
@@ -3270,6 +3459,13 @@ export const poemList: Poem[] = [
     clothesTitle: "ミッドナイトモンスター",
     clothesName: "ミッドナイトモンスター",
     text: "トリック・オア・トリート！駆ル狩ル刈ルキル"
+  },
+  {
+    id: "FlowingBhel_NanakusaNichika",
+    idolName: "七草にちか",
+    clothesTitle: "フローウィングベル",
+    clothesName: "フローウィングベル",
+    text: "ブランクペイジ。おかえり"
   },
   {
     id: "HottestSummer_NanakusaNichika",
@@ -3370,6 +3566,13 @@ export const poemList: Poem[] = [
     text: "トリック・オア・トリート！Found you！"
   },
   {
+    id: "FlowingBhel_AketaMikoto",
+    idolName: "緋田美琴",
+    clothesTitle: "フローウィングベル",
+    clothesName: "フローウィングベル",
+    text: "ブランクペイジ。歌い続ける、私を求めて"
+  },
+  {
     id: "HottestSummer_AketaMikoto",
     idolName: "緋田美琴",
     clothesTitle: "ホッテストサマー",
@@ -3410,5 +3613,12 @@ export const poemList: Poem[] = [
     clothesTitle: "ジャージ",
     clothesName: "ジャージ",
     text: "水色ジャージ。as usual"
+  },
+  {
+    id: "FlowingBhel_IkarugaLuca",
+    idolName: "斑鳩ルカ",
+    clothesTitle: "フローウィングベル",
+    clothesName: "フローウィングベル",
+    text: "ブランクペイジ。翼なんか　いらねぇ"
   }
 ];
