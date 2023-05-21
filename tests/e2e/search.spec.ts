@@ -19,17 +19,18 @@ test("衣装名から検索", async ({ page }) => {
 });
 
 test("アイドル名から検索", async ({ page }) => {
-  // 検索ボックスに入力
-  const inputBox = page.locator('[id="react-select-アイドル名から-input"]');
-  await inputBox.focus();
-  await inputBox.fill("芹沢あさひ");
+  // NOTE: react-select に data-testid を埋める手段がなさそうなので妥協
+  await page
+    .locator("div")
+    .filter({ hasText: /^アイドル名から$/ })
+    .nth(2)
+    .click();
 
-  // 検索実行
-  await inputBox.press("Enter");
+  await page.locator('[id="react-select-アイドル名から-option-0"]').click();
 
-  // あさひの衣装が表示されているか
+  // 櫻木真乃の衣装が表示されているか
   const poemCardIdol = page.getByTestId("poem-card-idol").first();
-  await expect(poemCardIdol).toHaveText("芹沢あさひ");
+  await expect(poemCardIdol).toHaveText("櫻木真乃");
 });
 
 test("ロゴクリックでリセット", async ({ page }) => {

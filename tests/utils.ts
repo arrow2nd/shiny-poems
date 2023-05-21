@@ -18,7 +18,8 @@ export async function testSearchPoemFromText(page: Page): Promise<void> {
   await textbox.fill("すまじきものは恋");
 
   // 検索実行
-  await textbox.press("Enter");
+  const submitButton = page.getByTestId("poem-search-submit");
+  await submitButton.click();
 
   // 検索結果が表示されているか
   const poemText = page.locator('[data-testid="poem-card-text"] > p');
@@ -30,12 +31,14 @@ export async function testSearchPoemFromText(page: Page): Promise<void> {
  * @param page ページ
  */
 export async function testSearchFromClotheName(page: Page): Promise<void> {
-  // 検索ボックスに入力
-  const inputBox = page.locator('[id="react-select-衣装名から-input"]');
-  await inputBox.fill("ほしあかり");
+  // NOTE: react-select に data-testid を埋める手段がなさそうなので妥協
+  await page
+    .locator("div")
+    .filter({ hasText: /^衣装名から$/ })
+    .nth(2)
+    .click();
 
-  // 検索実行
-  await inputBox.press("Enter");
+  await page.locator('[id="react-select-衣装名から-option-0"]').click();
 
   // 衣装「ほしあかり」が表示されているか
   const poemCardIdol = page.getByTestId("poem-card-clothe").first();

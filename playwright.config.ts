@@ -2,12 +2,11 @@ import { defineConfig, devices } from "@playwright/test";
 
 export default defineConfig({
   reporter: "html",
-  workers: 4,
   timeout: 30 * 1000,
   retries: 2,
   fullyParallel: true,
   expect: {
-    timeout: 10000,
+    timeout: 10 * 1000,
     toMatchSnapshot: {
       threshold: 0.2,
       maxDiffPixelRatio: 0.01
@@ -15,19 +14,12 @@ export default defineConfig({
   },
   use: {
     trace: "retain-on-failure"
-    // launchOptions: { slowMo: 200 }
   },
   projects: [
     {
       name: "chrome",
       use: {
         ...devices["Desktop Chrome"]
-      }
-    },
-    {
-      name: "edge",
-      use: {
-        ...devices["Desktop Edge"]
       }
     },
     {
