@@ -28,7 +28,7 @@ jobs:
           cache: "pnpm"
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
 
       - name: Create new branch
         env:
@@ -46,6 +46,7 @@ jobs:
         with:
           branch: ${{ env.NEW_BRANCH_NAME }}
           commit_message: "🍱 データを更新"
+          file_pattern: "/data/*.ts"
 
       - name: Create pull request
         uses: repo-sync/pull-request@v2
