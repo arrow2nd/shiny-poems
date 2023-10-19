@@ -57,7 +57,7 @@ export default function Page({ searchParams }: Props) {
       className={`flex flex-col min-h-screen bg-neutral-white ${kiwiMaru.variable}`}
     >
       <Header />
-      <UI poemText={poem?.text ?? ""} />
+      <UI poems={poem ? [poem] : []} />
       <Footer />
     </div>
   );
