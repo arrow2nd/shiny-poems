@@ -1,4 +1,3 @@
-import { Kiwi_Maru } from "next/font/google";
 import { Metadata } from "next/types";
 
 import Footer from "components/common/footer";
@@ -9,15 +8,12 @@ import { generateOgpImageUrl, getPoem } from "libs/query";
 
 import { SiteInfo } from "data/site";
 
-const kiwiMaru = Kiwi_Maru({
-  weight: ["400"],
-  subsets: ["latin"],
-  variable: "--font-kiwimaru"
-});
+import { kiwiMaru } from "./font";
 
 type Props = {
-  params: { id: string };
-  searchParams: { [key: string]: string | string[] | undefined };
+  searchParams: {
+    id?: string;
+  };
 };
 
 export const dynamic = "force-dynamic";
@@ -53,12 +49,10 @@ export default function Page({ searchParams }: Props) {
   const poem = getPoem(searchParams.id);
 
   return (
-    <div
-      className={`flex flex-col min-h-screen bg-neutral-white ${kiwiMaru.variable}`}
-    >
+    <main className={kiwiMaru.variable}>
       <Header />
       <UI poems={poem ? [poem] : []} />
       <Footer />
-    </div>
+    </main>
   );
 }
