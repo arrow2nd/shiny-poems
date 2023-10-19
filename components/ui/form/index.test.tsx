@@ -1,20 +1,20 @@
 import { fireEvent, render } from "@testing-library/react";
 import { act } from "react-dom/test-utils";
 
-import Search from "./index";
+import Form from "./index";
 
 describe("Search", () => {
   const sleep = () => new Promise((r) => setTimeout(r, 50));
   const keyDownEnter = { key: "Enter", code: "Enter", charCode: 13 };
 
   test("見た目が変化していないか", () => {
-    const { container } = render(<Search onSearch={jest.fn()} />);
+    const { container } = render(<Form onSearch={jest.fn()} />);
     expect(container).toMatchSnapshot();
   });
 
   test("検索時に他の検索欄がクリアされるか", async () => {
     const { container, getByRole, getAllByRole } = render(
-      <Search onSearch={jest.fn()} />
+      <Form onSearch={jest.fn()} />
     );
 
     const textbox = getByRole("textbox");
