@@ -1,12 +1,18 @@
 "use client";
 
+import { SearchParams } from "libs/poems";
+
 import { poemList } from "data/poem-list";
 
 import Input from "./input";
 import Label from "./label";
 import Select from "./select";
 
-const Form = () => {
+type Props = {
+  params?: SearchParams;
+};
+
+const Form = ({ params }: Props) => {
   // 選択要素に使用するアイドル名
   const idolNames = Array.from(new Set(poemList.map((e) => e.idolName)));
 
@@ -21,7 +27,12 @@ const Form = () => {
       <div className="w-full lg:w-auto max-w-lg lg:max-w-none">
         <Label />
         <form className="flex flex-wrap" action="/search">
-          <Input name="poem" placeholder="ポエムの一部から" />
+          <input name="type" value="text" hidden />
+          <Input
+            name="query"
+            placeholder="ポエムの一部から"
+            defaultValue={params?.query}
+          />
           <Select
             placeholder="アイドルから"
             options={idolNames}

@@ -1,4 +1,8 @@
+import React from "react";
+
 import Poems from "components/poems";
+
+import { SearchParams } from "libs/poems";
 
 import { Poem } from "types/poem";
 
@@ -7,12 +11,13 @@ import Line from "./line";
 
 type Props = {
   poems: Poem[];
+  searchParams?: SearchParams;
 };
 
-const UI = ({ poems }: Props): JSX.Element => {
+const UI = ({ poems, searchParams }: Props): JSX.Element => {
   return (
     <div className="flex-grow mx-6 md:mx-12">
-      <Form />
+      <Form params={searchParams} />
       <Line />
       <Poems items={poems} />
     </div>
