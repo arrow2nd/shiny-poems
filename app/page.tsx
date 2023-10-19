@@ -1,8 +1,8 @@
 import { Kiwi_Maru } from "next/font/google";
 import { Metadata } from "next/types";
 
-import Footer from "components/home/footer";
-import Header from "components/home/header";
+import Footer from "components/common/footer";
+import Header from "components/common/header";
 import UI from "components/ui";
 
 import { generateOgpImageUrl, getPoem } from "libs/query";
