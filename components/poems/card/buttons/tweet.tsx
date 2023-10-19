@@ -1,3 +1,5 @@
+"use client";
+
 import { FiTwitter } from "react-icons/fi";
 
 type Props = {

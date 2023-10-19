@@ -1,7 +1,3 @@
-"use client";
-
-import { useEffect, useState } from "react";
-
 import Poems from "components/poems";
 
 import { Poem } from "types/poem";

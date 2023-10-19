@@ -1,3 +1,5 @@
+"use client";
+
 import { poemList } from "data/poem-list";
 
 import Input from "./input";
@@ -23,7 +25,7 @@ const Form = () => {
           <Select
             placeholder="アイドルから"
             options={idolNames}
-            onChange={() => {}}
+            onChange={() => {}} // TODO: formで使いたい
           />
           <Select
             placeholder="衣装から"

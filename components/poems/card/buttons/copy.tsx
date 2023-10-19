@@ -1,3 +1,5 @@
+"use client";
+
 import { useReducer } from "react";
 import { AiFillCheckCircle } from "react-icons/ai";
 import { FiCopy } from "react-icons/fi";

@@ -1,3 +1,5 @@
+"use client";
+
 import React, { forwardRef, useMemo } from "react";
 import ReactSelect, { StylesConfig, ThemeConfig } from "react-select";
 
