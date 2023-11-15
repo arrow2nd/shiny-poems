@@ -8,12 +8,12 @@ import { generateOgpImageUrl, getPoem } from "libs/query";
 
 import { SiteInfo } from "data/site";
 
+import { Poem } from "types/poem";
+
 import { kiwiMaru } from "./font";
 
 type Props = {
-  searchParams: {
-    id?: string;
-  };
+  searchParams: { id?: string };
 };
 
 export const dynamic = "force-dynamic";

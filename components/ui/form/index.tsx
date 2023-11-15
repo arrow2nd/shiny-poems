@@ -1,7 +1,5 @@
 "use client";
 
-import { SearchParams } from "libs/poems";
-
 import { poemList } from "data/poem-list";
 
 import Input from "./input";
@@ -9,10 +7,10 @@ import Label from "./label";
 import Select from "./select";
 
 type Props = {
-  params?: SearchParams;
+  dispatch: (payload: FormData) => void;
 };
 
-const Form = ({ params }: Props) => {
+const Form = ({ dispatch }: Props) => {
   // 選択要素に使用するアイドル名
   const idolNames = Array.from(new Set(poemList.map((e) => e.idolName)));
 
@@ -26,23 +24,11 @@ const Form = ({ params }: Props) => {
       {/* 画面幅が lg 以下なら縦並びにする */}
       <div className="w-full lg:w-auto max-w-lg lg:max-w-none">
         <Label />
-        <form className="flex flex-wrap" action="/search">
-          <input name="type" value="text" hidden />
-          <Input
-            name="query"
-            placeholder="ポエムの一部から"
-            defaultValue={params?.query}
-          />
-          <Select
-            placeholder="アイドルから"
-            options={idolNames}
-            onChange={() => {}} // TODO: formで使いたい
-          />
-          <Select
-            placeholder="衣装から"
-            options={clothesTitles}
-            onChange={() => {}}
-          />
+        <form className="flex flex-wrap" action={dispatch}>
+          <input name="type" value="text" readOnly hidden />
+          <Input name="query" placeholder="ポエムの一部から" />
+          {/** <Select placeholder="アイドルから" options={idolNames} /> */}
+          {/** <Select placeholder="衣装から" options={clothesTitles} /> */}
         </form>
       </div>
     </div>

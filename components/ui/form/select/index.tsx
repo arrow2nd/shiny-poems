@@ -6,7 +6,6 @@ import ReactSelect, { StylesConfig, ThemeConfig } from "react-select";
 type Props = {
   placeholder: string;
   options: string[];
-  onChange: (label: string) => void;
 };
 
 const Select = (props: Props, ref: React.MutableRefObject<any>) => {
@@ -15,11 +14,11 @@ const Select = (props: Props, ref: React.MutableRefObject<any>) => {
     [props.options]
   );
 
-  const handleChangeSelect = (value: { value: number; label: string }) => {
-    if (value) {
-      props.onChange(value.label);
-    }
-  };
+  // const handleChangeSelect = (value: { value: number; label: string }) => {
+  //   if (value) {
+  //     props.onChange(value.label);
+  //   }
+  // };
 
   const styles: StylesConfig = {
     control: (provided) => ({
@@ -60,7 +59,7 @@ const Select = (props: Props, ref: React.MutableRefObject<any>) => {
       styles={styles}
       theme={theme}
       noOptionsMessage={() => "見つかりません…"}
-      onChange={handleChangeSelect}
+      // onChange={handleChangeSelect}
       ref={ref}
     />
   );
