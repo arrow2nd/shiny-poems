@@ -16,6 +16,12 @@ module.exports = {
       },
       fontSize: {
         none: 0
+      },
+      backgroundImage: {
+        "arrow-down": "url('/chevron-down.svg')"
+      },
+      backgroundPosition: {
+        "right-center": "right 0.5rem center"
       }
     }
   },

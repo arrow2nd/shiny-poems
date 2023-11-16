@@ -7,7 +7,7 @@ export default function Select(props: HTMLProps<HTMLSelectElement>) {
 
   return (
     <select
-      className={`p-2 w-full lg:w-72 m-2 bg-white border-main border-2 rounded-md appearance-none ${
+      className={`p-2 w-full lg:w-72 m-2 bg-white border-main border-2 rounded-md appearance-none bg-arrow-down bg-right-center bg-no-repeat ${
         isSelected ? "text-main" : "text-sub"
       }`}
       {...props}
