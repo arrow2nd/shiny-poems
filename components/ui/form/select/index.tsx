@@ -1,20 +1,52 @@
-import React, { HTMLProps, useState } from "react";
+import React, {
+  HTMLProps,
+  MutableRefObject,
+  forwardRef,
+  useImperativeHandle,
+  useRef,
+  useState
+} from "react";
 
 const placeholderValue = "empty";
 
-export default function Select(props: HTMLProps<HTMLSelectElement>) {
-  const [isSelected, setSelected] = useState(false);
+export type SelectElement = {
+  clear(): void;
+} & HTMLSelectElement;
+
+const Select = (
+  props: HTMLProps<HTMLSelectElement>,
+  ref: MutableRefObject<SelectElement>
+) => {
+  const [showPlaceholder, setShowPlaceholder] = useState(true);
+  const selectRef = useRef<HTMLSelectElement>(null);
+
+  useImperativeHandle(ref, () => ({
+    ...selectRef.current!,
+    clear() {
+      setShowPlaceholder(true);
+
+      if (selectRef.current) {
+        selectRef.current.selectedIndex = 0;
+        selectRef.current.value = placeholderValue;
+      }
+    }
+  }));
 
   return (
     <select
       className={`p-2 w-full lg:w-72 m-2 bg-white border-main border-2 rounded-md appearance-none bg-arrow-down bg-right-center bg-no-repeat ${
-        isSelected ? "text-main" : "text-sub"
+        showPlaceholder ? "text-sub" : "text-main"
       }`}
       {...props}
-      defaultValue={placeholderValue}
+      ref={selectRef}
+      value={showPlaceholder ? placeholderValue : undefined}
       onChange={(event) => {
-        if (!isSelected && event.currentTarget.value !== placeholderValue) {
-          setSelected(true);
+        if (showPlaceholder && event.currentTarget.value !== placeholderValue) {
+          setShowPlaceholder(false);
+        }
+
+        if (props.onChange) {
+          props.onChange(event);
         }
       }}
     >
@@ -26,4 +58,6 @@ export default function Select(props: HTMLProps<HTMLSelectElement>) {
       {props.children}
     </select>
   );
-}
+};
+
+export default forwardRef(Select);
