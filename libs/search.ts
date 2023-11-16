@@ -10,34 +10,37 @@ type State = {
 
 /**
  * ポエムを検索
- * @param type 検索タイプ
- * @param query クエリ
- * @returns ポエム
+ * @param state 現在の状態
+ * @param formData フォームから送信されたデータ
+ * @returns 検索結果
  */
 export async function searchPoems(state: State, formData: FormData) {
-  const type = formData.get("type");
-  const query = formData.get("query");
+  const query = formData.get("query")?.toString();
+  const idol = formData.get("idol")?.toString();
+  const clothe = formData.get("clothe")?.toString();
 
   // 検索条件なし
-  if (!type || !query || (type === "text" && query === "")) {
-    return state;
-  }
-
-  if (!["idolName", "clothesTitle", "text"].includes(type.toString())) {
+  if (!query && !idol && !clothe) {
     return state;
   }
 
   // キーワードに一致するものを探す
-  const poems = poemList.filter((e: Poem) =>
-    e[type.toString()].includes(query)
-  );
+  const poems = poemList.filter((e: Poem) => {
+    if (query) {
+      return e["text"].includes(query);
+    } else if (idol) {
+      return e["idolName"].includes(idol);
+    } else if (clothe) {
+      return e["clothesTitle"].includes(clothe);
+    }
+
+    return false;
+  });
 
   // アイドル名での検索なら衣装名昇順でソート
-  if (type === "idolName") {
+  if (idol) {
     poems.sort((a, b) => (a.clothesName > b.clothesName ? 1 : -1));
   }
-
-  console.log(type, query, poems);
 
   return { poems };
 }
