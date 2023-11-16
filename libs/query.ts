@@ -22,6 +22,19 @@ export const getPoem = cache((id: RawPoemId): Poem | undefined => {
   return idStr ? poemList.find((e) => e.id === idStr) : undefined;
 });
 
+export type SelectOptions = {
+  idols: string[];
+  clothes: string[];
+};
+
+/**
+ * 選択のオプション
+ */
+export const selectOptions: SelectOptions = {
+  idols: [...new Set(poemList.map((e) => e.idolName))],
+  clothes: [...new Set(poemList.map((e) => e.clothesTitle))].sort()
+};
+
 /**
  * OGP画像のURLを生成
  * @param id ポエムID

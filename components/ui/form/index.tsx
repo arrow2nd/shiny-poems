@@ -1,33 +1,21 @@
 "use client";
 
-import {
-  FormEventHandler,
-  KeyboardEvent,
-  KeyboardEventHandler,
-  useRef
-} from "react";
+import { FormEventHandler, KeyboardEventHandler, useRef } from "react";
 
-import { poemList } from "data/poem-list";
+import { SelectOptions } from "libs/query";
 
 import Input from "./input";
 import Label from "./label";
 import Select, { SelectElement } from "./select";
 
 type Props = {
+  selectOptions: SelectOptions;
   dispatch: (payload: FormData) => void;
 };
 
-const Form = ({ dispatch }: Props) => {
+const Form = ({ selectOptions, dispatch }: Props) => {
   const idolSelectRef = useRef<SelectElement>(null);
   const clotheSelectRef = useRef<SelectElement>(null);
-
-  // 選択要素に使用するアイドル名
-  const idolNames = Array.from(new Set(poemList.map((e) => e.idolName)));
-
-  // 選択要素に使用する衣装名
-  const clothesTitles = Array.from(
-    new Set(poemList.map((e) => e.clothesTitle))
-  ).sort();
 
   const handleQueryKeyDown: KeyboardEventHandler<HTMLInputElement> = (e) => {
     // 変換中 OR Enter 以外ならクリアしない
@@ -76,7 +64,7 @@ const Form = ({ dispatch }: Props) => {
             onChange={handleIdolChange}
             ref={idolSelectRef}
           >
-            {idolNames.map((e) => (
+            {selectOptions.idols.map((e) => (
               <option key={e} value={e}>
                 {e}
               </option>
@@ -88,7 +76,7 @@ const Form = ({ dispatch }: Props) => {
             onChange={handleClotheChange}
             ref={clotheSelectRef}
           >
-            {clothesTitles.map((e) => (
+            {selectOptions.clothes.map((e) => (
               <option key={e} value={e}>
                 {e}
               </option>
