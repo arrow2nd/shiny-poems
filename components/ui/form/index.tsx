@@ -27,8 +27,20 @@ const Form = ({ dispatch }: Props) => {
         <form className="flex flex-wrap" action={dispatch}>
           <input name="type" value="text" readOnly hidden />
           <Input name="query" placeholder="ポエムの一部から" />
-          {/** <Select placeholder="アイドルから" options={idolNames} /> */}
-          {/** <Select placeholder="衣装から" options={clothesTitles} /> */}
+          <Select placeholder="アイドルから">
+            {idolNames.map((e) => (
+              <option key={e} value={e}>
+                {e}
+              </option>
+            ))}
+          </Select>
+          <Select placeholder="衣装から">
+            {clothesTitles.map((e) => (
+              <option key={e} value={e}>
+                {e}
+              </option>
+            ))}
+          </Select>
         </form>
       </div>
     </div>
