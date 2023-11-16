@@ -1,6 +1,11 @@
 "use client";
 
-import { FormEventHandler, useRef } from "react";
+import {
+  FormEventHandler,
+  KeyboardEvent,
+  KeyboardEventHandler,
+  useRef
+} from "react";
 
 import { poemList } from "data/poem-list";
 
@@ -24,7 +29,12 @@ const Form = ({ dispatch }: Props) => {
     new Set(poemList.map((e) => e.clothesTitle))
   ).sort();
 
-  const handleQueryFocus: FormEventHandler<HTMLInputElement> = (_) => {
+  const handleQueryKeyDown: KeyboardEventHandler<HTMLInputElement> = (e) => {
+    // 変換中 OR Enter 以外ならクリアしない
+    if (e.nativeEvent.isComposing || e.key !== "Enter") {
+      return;
+    }
+
     idolSelectRef.current?.clear();
     clotheSelectRef.current?.clear();
   };
@@ -58,7 +68,7 @@ const Form = ({ dispatch }: Props) => {
           <Input
             name="query"
             placeholder="ポエムの一部から"
-            onFocus={handleQueryFocus}
+            onKeyDown={handleQueryKeyDown}
           />
           <Select
             name="idol"
