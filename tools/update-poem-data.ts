@@ -3,7 +3,7 @@ import { writeFileSync } from "fs";
 import type { Poem } from "types/poem";
 
 import { poemList } from "../data/poem-list";
-import { clothesSeries, sortedIdols } from "./libs/data";
+import { clothesSeries, units } from "./libs/data";
 import { fetchIdolData } from "./libs/fetch";
 
 /**
@@ -65,6 +65,7 @@ function getJSTDate(): string {
   });
 
   // アイドル名リストに沿ってソート
+  const sortedIdols = units.flatMap((u) => u.members);
   const sortedPoem = poem.sort(
     (a, b) => sortedIdols.indexOf(a.idolName) - sortedIdols.indexOf(b.idolName)
   );
