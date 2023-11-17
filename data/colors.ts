@@ -1,6 +1,6 @@
 import { Color } from "types/color";
 
-export const colorList: Color[] = [
+export const colors: Color[] = [
   {
     idolName: "緋田美琴",
     hex: "760E10"

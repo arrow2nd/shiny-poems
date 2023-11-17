@@ -33,7 +33,7 @@ order by ?kana
   );
 
   const json = JSON.stringify(colorData, null, "  ");
-  const result = `import { Color } from 'types/color'\n\nexport const colorList: Color[] = ${json}`;
+  const result = `import { Color } from 'types/color'\n\nexport const colors: Color[] = ${json}`;
 
   writeFileSync("./data/color-list.ts", result);
 

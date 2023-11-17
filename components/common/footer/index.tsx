@@ -2,7 +2,7 @@
 
 import Wave from "react-wavify";
 
-import { updatedAtUTC } from "data/poem-list";
+import { updatedAtUTC } from "data/poems";
 
 import Links from "./links";
 

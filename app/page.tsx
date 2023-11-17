@@ -4,9 +4,13 @@ import Footer from "components/common/footer";
 import Header from "components/common/header";
 import UI from "components/ui";
 
-import { generateOgpImageUrl, getPoem, selectOptions } from "libs/query";
+import { generateOgpImageUrl, getPoem } from "libs/query";
 
+import { clothes } from "data/clothes";
 import { SiteInfo } from "data/site";
+import { units } from "data/units";
+
+import { SelectOptions } from "types/select-options";
 
 import { kiwiMaru } from "./font";
 
@@ -49,7 +53,7 @@ export default function Page({ searchParams }: Props) {
   return (
     <main className={kiwiMaru.variable}>
       <Header />
-      <UI selectOptions={selectOptions} poems={poem ? [poem] : []} />
+      <UI selectOptions={{ units, clothes }} poems={poem ? [poem] : []} />
       <Footer />
     </main>
   );

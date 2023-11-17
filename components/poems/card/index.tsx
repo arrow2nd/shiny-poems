@@ -2,7 +2,7 @@ import Accent from "components/poems/card/accent";
 
 import { splitPoemText } from "libs/util";
 
-import { colorList } from "data/color-list";
+import { colors } from "data/colors";
 
 import { Poem } from "types/poem";
 
@@ -25,7 +25,7 @@ const Card = ({ poem }: Props) => {
   const copyText = [poem.text, ...linkText].join(" ");
 
   // 色
-  const idolColor = colorList.find((e) => e.idolName === poem.idolName);
+  const idolColor = colors.find((e) => e.idolName === poem.idolName);
   const accentColor = idolColor ? idolColor.hex : "78aeff";
 
   return (

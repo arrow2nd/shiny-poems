@@ -1,7 +1,7 @@
 import cloudinary from "cloudinary";
 import { cache } from "react";
 
-import { poemList } from "data/poem-list";
+import { poems } from "data/poems";
 
 import { Poem } from "types/poem";
 
@@ -19,21 +19,8 @@ type RawPoemId = string | string[] | undefined;
  */
 export const getPoem = cache((id: RawPoemId): Poem | undefined => {
   const idStr = Array.isArray(id) ? "" : id;
-  return idStr ? poemList.find((e) => e.id === idStr) : undefined;
+  return idStr ? poems.find((e) => e.id === idStr) : undefined;
 });
-
-export type SelectOptions = {
-  idols: string[];
-  clothes: string[];
-};
-
-/**
- * 選択のオプション
- */
-export const selectOptions: SelectOptions = {
-  idols: [...new Set(poemList.map((e) => e.idolName))],
-  clothes: [...new Set(poemList.map((e) => e.clothesTitle))].sort()
-};
 
 /**
  * OGP画像のURLを生成

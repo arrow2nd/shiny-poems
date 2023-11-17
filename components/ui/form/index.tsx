@@ -2,7 +2,7 @@
 
 import { FormEventHandler, KeyboardEventHandler, useRef } from "react";
 
-import { SelectOptions } from "libs/query";
+import { SelectOptions } from "types/select-options";
 
 import Input from "./input";
 import Label from "./label";
@@ -62,10 +62,14 @@ const Form = ({ selectOptions, dispatch }: Props) => {
             onChange={handleIdolChange}
             ref={idolSelectRef}
           >
-            {selectOptions.idols.map((e) => (
-              <option key={e} value={e}>
-                {e}
-              </option>
+            {selectOptions.units.map(({ name, members }) => (
+              <optgroup key={name} label={name}>
+                {members.map((m) => (
+                  <option key={m} value={m}>
+                    {m}
+                  </option>
+                ))}
+              </optgroup>
             ))}
           </Select>
           <Select

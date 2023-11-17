@@ -4,10 +4,10 @@ import { useFormState } from "react-dom";
 
 import Poems from "components/poems";
 
-import { SelectOptions } from "libs/query";
 import { searchPoems } from "libs/search";
 
 import { Poem } from "types/poem";
+import { SelectOptions } from "types/select-options";
 
 import Form from "./form";
 import Line from "./line";

@@ -1,7 +1,7 @@
 import { Poem } from "types/poem";
 
 export const updatedAtUTC = "2023/11/17 (JST)";
-export const poemList: Poem[] = [
+export const poems: Poem[] = [
   {
     id: "CelestialColors_SakuragiMano",
     idolName: "櫻木真乃",
@@ -3664,4 +3664,3 @@ export const poemList: Poem[] = [
     text: "ブランクペイジ。翼なんか　いらねぇ"
   }
 ];
-

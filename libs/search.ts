@@ -1,6 +1,6 @@
 "use server";
 
-import { poemList } from "data/poem-list";
+import { poems } from "data/poems";
 
 import { Poem } from "types/poem";
 
@@ -25,7 +25,7 @@ export async function searchPoems(state: State, formData: FormData) {
   }
 
   // キーワードに一致するものを探す
-  const poems = poemList.filter((e: Poem) => {
+  const results = poems.filter((e: Poem) => {
     if (query) {
       return e["text"].includes(query);
     } else if (idol) {
@@ -39,8 +39,8 @@ export async function searchPoems(state: State, formData: FormData) {
 
   // アイドル名での検索なら衣装名昇順でソート
   if (idol) {
-    poems.sort((a, b) => (a.clothesName > b.clothesName ? 1 : -1));
+    results.sort((a, b) => (a.clothesName > b.clothesName ? 1 : -1));
   }
 
-  return { poems };
+  return { poems: results };
 }
