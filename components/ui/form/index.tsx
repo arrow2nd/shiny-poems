@@ -18,13 +18,11 @@ const Form = ({ selectOptions, dispatch }: Props) => {
   const clotheSelectRef = useRef<SelectElement>(null);
 
   const handleQueryKeyDown: KeyboardEventHandler<HTMLInputElement> = (e) => {
-    // 変換中 OR Enter 以外ならクリアしない
-    if (e.nativeEvent.isComposing || e.key !== "Enter") {
-      return;
+    // 変換中ではない & Enter ならクリア
+    if (!e.nativeEvent.isComposing && e.key === "Enter") {
+      idolSelectRef.current?.clear();
+      clotheSelectRef.current?.clear();
     }
-
-    idolSelectRef.current?.clear();
-    clotheSelectRef.current?.clear();
   };
 
   const handleIdolChange: FormEventHandler<HTMLSelectElement> = ({
