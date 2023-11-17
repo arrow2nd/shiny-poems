@@ -10,8 +10,6 @@ import { clothes } from "data/clothes";
 import { SiteInfo } from "data/site";
 import { units } from "data/units";
 
-import { SelectOptions } from "types/select-options";
-
 import { kiwiMaru } from "./font";
 
 type Props = {
