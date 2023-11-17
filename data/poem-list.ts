@@ -1,6 +1,6 @@
 import { Poem } from "types/poem";
 
-export const updatedAtUTC = "2023/05/09 (JST)";
+export const updatedAtUTC = "2023/11/17 (JST)";
 export const poemList: Poem[] = [
   {
     id: "CelestialColors_SakuragiMano",
@@ -190,6 +190,13 @@ export const poemList: Poem[] = [
     clothesTitle: "ドレスアップパルファム",
     clothesName: "ドレスアップパルファム",
     text: "Cheers! 掌にきらめき"
+  },
+  {
+    id: "RespectiveWorkStyle_KazanoHiori",
+    idolName: "風野灯織",
+    clothesTitle: "リスペクティブワークスタイル",
+    clothesName: "リスペクティブワークスタイル",
+    text: "WORKING：滞在中、最高の時間を提供します"
   },
   {
     id: "RingingPreppyGirl_KazanoHiori",
@@ -1312,6 +1319,13 @@ export const poemList: Poem[] = [
     text: "MISSION：銀河にまたたく正義の光！"
   },
   {
+    id: "RespectiveWorkStyle_KomiyaKaho",
+    idolName: "小宮果穂",
+    clothesTitle: "リスペクティブワークスタイル",
+    clothesName: "リスペクティブワークスタイル",
+    text: "WORKING：フロアもキッチンもちょうせん！"
+  },
+  {
     id: "EleganceOfWhite_KomiyaKaho",
     idolName: "小宮果穂",
     clothesTitle: "エレガンスオブホワイト",
@@ -1949,6 +1963,13 @@ export const poemList: Poem[] = [
     text: "5ピース★イエローネイル握って"
   },
   {
+    id: "DressUpParfum_ArisugawaNatsuha",
+    idolName: "有栖川夏葉",
+    clothesTitle: "ドレスアップパルファム",
+    clothesName: "ドレスアップパルファム",
+    text: "Cheers! シャンパンの泡よりも煌めいて"
+  },
+  {
     id: "DefeatOfEncounter_ArisugawaNatsuha",
     idolName: "有栖川夏葉",
     clothesTitle: "デフィートオブエンカウンター",
@@ -2103,6 +2124,13 @@ export const poemList: Poem[] = [
     text: "1stシーズンの水着。もちろんおそろだよ☆"
   },
   {
+    id: "DressUpParfum_OsakiAmana",
+    idolName: "大崎甘奈",
+    clothesTitle: "ドレスアップパルファム",
+    clothesName: "ドレスアップパルファム",
+    text: "Cheers! いっしょにふわふわ"
+  },
+  {
     id: "RespectiveWorkStyle_OsakiAmana",
     idolName: "大崎甘奈",
     clothesTitle: "リスペクティブワークスタイル",
@@ -2255,6 +2283,13 @@ export const poemList: Poem[] = [
     clothesTitle: "シャイニーサマー",
     clothesName: "シャイニーサマー",
     text: "1stシーズンの水着。サングラスをよく落とす"
+  },
+  {
+    id: "DressUpParfum_OsakiTenka",
+    idolName: "大崎甜花",
+    clothesTitle: "ドレスアップパルファム",
+    clothesName: "ドレスアップパルファム",
+    text: "Cheers! ふたりできらきら"
   },
   {
     id: "KaburyiOfWhite_OsakiTenka",
@@ -3216,6 +3251,13 @@ export const poemList: Poem[] = [
     text: ";) しあわせ色で塗って"
   },
   {
+    id: "RespectiveWorkStyle_IchikawaHinana",
+    idolName: "市川雛菜",
+    clothesTitle: "リスペクティブワークスタイル",
+    clothesName: "リスペクティブワークスタイル",
+    text: "WORKING：ふわふわかわいいと一緒♡"
+  },
+  {
     id: "FancyFreeNursing_IchikawaHinana",
     idolName: "市川雛菜",
     clothesTitle: "ファンシーフリーナーシング",
@@ -3622,3 +3664,4 @@ export const poemList: Poem[] = [
     text: "ブランクペイジ。翼なんか　いらねぇ"
   }
 ];
+
