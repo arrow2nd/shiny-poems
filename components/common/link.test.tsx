@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 
-import Link from "./index";
+import Link from "./link";
 
 describe("Link", () => {
   const props = {
