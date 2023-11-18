@@ -6,7 +6,7 @@ const Input = (props: ComponentPropsWithRef<"input">): JSX.Element => {
     <div className="relative inline-flex w-full items-center text-main lg:w-72">
       <input
         {...props}
-        className="m-2 w-full rounded-md border-2 border-main  p-2 placeholder-sub focus:ring-4"
+        className="m-2 w-full rounded-md border-2 border-main p-2 pr-8 placeholder-sub focus:ring-4"
         type="text"
         data-testid="poem-textbox"
       />
