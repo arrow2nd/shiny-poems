@@ -1,50 +1,30 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from "react";
+import { useFormState } from "react-dom";
 
 import Poems from "components/poems";
 
-import { usePoem } from "hooks/usePoem";
+import { searchPoems } from "libs/search";
 
+import { Poem } from "types/poem";
+import { SelectOptions } from "types/select-options";
+
+import Form from "./form";
 import Line from "./line";
-import Search from "./search";
 
 type Props = {
-  poemText: string;
+  selectOptions: SelectOptions;
+  poems: Poem[];
 };
 
-const UI = ({ poemText }: Props) => {
-  const [type, setType] = useState("");
-  const [keyword, setKeyword] = useState("");
-  const poems = usePoem(type, keyword);
-
-  const setSearchKeyword = (type: string, keyword: string) => {
-    setType(type);
-    setKeyword(keyword);
-  };
-
-  const handleSearch = (type: string, keyword: string) => {
-    // 40文字以上なら切り取る
-    if (keyword.length >= 40) {
-      keyword = keyword.slice(0, 40);
-    }
-
-    // 検索キーワードをセット
-    setSearchKeyword(type, keyword);
-  };
-
-  // idで指定されたポエムがあれば検索する
-  useEffect(() => {
-    if (poemText !== "") {
-      setSearchKeyword("text", poemText);
-    }
-  }, [poemText]);
+const UI = ({ selectOptions, poems }: Props): JSX.Element => {
+  const [state, dispatch] = useFormState(searchPoems, { poems });
 
   return (
-    <div className="flex-grow mx-6 md:mx-12">
-      <Search onSearch={handleSearch} />
+    <div className="mx-6 flex-grow md:mx-12">
+      <Form selectOptions={selectOptions} dispatch={dispatch} />
       <Line />
-      <Poems items={poems} />
+      <Poems items={state.poems} />
     </div>
   );
 };

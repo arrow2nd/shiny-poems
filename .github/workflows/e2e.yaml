@@ -18,26 +18,26 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: 7
+          version: 8
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "18"
+          node-version: "20"
           cache: "pnpm"
 
       - name: Install dependencies
         run: pnpm install --no-frozen-lockfile
 
       - name: Setup playwright
-        run: npx playwright install --with-deps
+        run: pnpm exec playwright install --with-deps
 
       - name: Waiting for Vercel Preview
         uses: patrickedqvist/wait-for-vercel-preview@v1.3.1
         id: shinypoems
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          max_timeout: 60
+          max_timeout: 180
 
       - name: Run E2E test
         run: |

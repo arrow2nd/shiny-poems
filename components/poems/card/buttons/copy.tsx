@@ -1,3 +1,5 @@
+"use client";
+
 import { useReducer } from "react";
 import { AiFillCheckCircle } from "react-icons/ai";
 import { FiCopy } from "react-icons/fi";
@@ -19,7 +21,7 @@ const CopyButton = ({ text }: Props) => {
 
   return (
     <button
-      className="text-xl hover:text-black transition-colors focus:outline-none"
+      className="text-xl transition-colors hover:text-black"
       title="コピーする"
       data-testid="copy-button"
       onClick={() => copyToClipboard()}

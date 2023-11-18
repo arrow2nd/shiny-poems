@@ -1,3 +1,5 @@
+"use client";
+
 import { FiTwitter } from "react-icons/fi";
 
 type Props = {
@@ -10,7 +12,7 @@ const TweetButton = ({ text }: Props) => {
 
   return (
     <a
-      className="text-xl hover:text-black transition-colors"
+      className="text-xl transition-colors hover:text-black"
       title="ツイートする"
       href={tweetUrl}
       target="_blank"

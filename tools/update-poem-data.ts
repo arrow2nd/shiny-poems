@@ -1,9 +1,11 @@
 import { writeFileSync } from "fs";
 
+import { poems } from "data/poems";
+import { units } from "data/units";
+
 import type { Poem } from "types/poem";
 
-import { poemList } from "../data/poem-list";
-import { clothesSeries, sortedIdols } from "./libs/data";
+import { clothesSeries } from "./libs/data";
 import { fetchIdolData } from "./libs/fetch";
 
 /**
@@ -65,11 +67,12 @@ function getJSTDate(): string {
   });
 
   // アイドル名リストに沿ってソート
+  const sortedIdols = units.flatMap((u) => u.members);
   const sortedPoem = poem.sort(
     (a, b) => sortedIdols.indexOf(a.idolName) - sortedIdols.indexOf(b.idolName)
   );
 
-  const oldData = JSON.stringify(poemList, null, "\t");
+  const oldData = JSON.stringify(poems, null, "\t");
   const newData = JSON.stringify(sortedPoem, null, "\t");
 
   if (newData === oldData) {
@@ -79,9 +82,9 @@ function getJSTDate(): string {
 
   const result = `import { Poem } from "types/poem";
 export const updatedAtUTC = "${getJSTDate()}";
-export const poemList: Poem[] = ${newData}`;
+export const poems: Poem[] = ${newData}`;
 
-  writeFileSync("./data/poem-list.ts", result);
+  writeFileSync("./data/poems.ts", result);
 
   console.log("[ update success! ]");
 })();

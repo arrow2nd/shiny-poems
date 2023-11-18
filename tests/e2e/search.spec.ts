@@ -1,49 +1,49 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "../fixtures";
 
-import {
-  baseUrl,
-  testSearchFromClotheName,
-  testSearchPoemFromText
-} from "../utils";
-
-test.beforeEach(async ({ page }) => {
-  await page.goto(baseUrl);
+test.beforeEach(async ({ shinyPoems: { page } }) => {
+  await page.goto("/");
 });
 
-test("ポエムの一部から検索", async ({ page }) => {
-  await testSearchPoemFromText(page);
+test("ポエムの一部から検索", async ({ shinyPoems }) => {
+  await shinyPoems.searchByQuery("すまじきものは恋");
+
+  const poemText = shinyPoems.page
+    .getByTestId("poem-card-text")
+    .getByRole("paragraph");
+
+  await expect(poemText, "一致するポエムが表示されている").toHaveText([
+    "ルームウェア。",
+    "すまじきものは恋"
+  ]);
 });
 
-test("衣装名から検索", async ({ page }) => {
-  await testSearchFromClotheName(page);
+test("アイドル名から検索", async ({ shinyPoems }) => {
+  await shinyPoems.searchByIdol("櫻木真乃");
+
+  const poemCardIdol = shinyPoems.page.getByTestId("poem-card-idol").first();
+  await expect(
+    poemCardIdol,
+    "表示されているポエムのアイドル名が正しい"
+  ).toHaveText("櫻木真乃");
 });
 
-test("アイドル名から検索", async ({ page }) => {
-  // NOTE: react-select に data-testid を埋める手段がなさそうなので妥協
-  await page
-    .locator("div")
-    .filter({ hasText: /^アイドル名から$/ })
-    .nth(2)
-    .click();
+test("衣装名から検索", async ({ shinyPoems }) => {
+  await shinyPoems.searchByClothe("ほしあかり");
 
-  await page.locator('[id="react-select-アイドル名から-option-0"]').click();
-
-  // 櫻木真乃の衣装が表示されているか
-  const poemCardIdol = page.getByTestId("poem-card-idol").first();
-  await expect(poemCardIdol).toHaveText("櫻木真乃");
+  const poemCardIdol = shinyPoems.page.getByTestId("poem-card-clothe").first();
+  await expect(poemCardIdol, "表示されているポエムの衣装名が正しい").toHaveText(
+    "ほしあかり"
+  );
 });
 
-test("ロゴクリックでリセット", async ({ page }) => {
-  // 検索実行
-  const textbox = page.getByTestId("poem-search-textbox");
-  await textbox.focus();
-  await textbox.fill("にーちゅ");
-  await page.getByTestId("poem-search-submit").click();
+test("ロゴクリックでリセット", async ({ shinyPoems }) => {
+  await shinyPoems.searchByQuery("にーちゅ");
 
   // ロゴをクリック
-  await page.getByTestId("logo").click();
+  await shinyPoems.page.getByTestId("logo").click();
 
-  // ポエムがない場合の表示になっているか
-  const poemCardNothing = page.getByTestId("poem-card-nothing");
-  await expect(poemCardNothing).toHaveText("ポエムが見つかりません…");
+  const poemCardNothing = shinyPoems.page.getByTestId("poem-card-nothing");
+  await expect(poemCardNothing, "ポエムがない状態になっている").toHaveText(
+    "ポエムが見つかりません…"
+  );
 });

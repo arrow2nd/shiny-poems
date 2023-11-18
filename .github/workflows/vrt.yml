@@ -18,12 +18,12 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: 7
+          version: 8
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "18"
+          node-version: "20"
           cache: "pnpm"
 
       - name: Install dependencies
@@ -37,12 +37,12 @@ jobs:
         id: shinypoems
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          max_timeout: 60
+          max_timeout: 180
 
       - name: Run VRT
         run: |
-          pnpm run test:vrt:update
-          pnpm run test:vrt
+          pnpm run vrt:update
+          pnpm run vrt
         env:
           PREVIEW_URL: ${{ steps.shinypoems.outputs.url }}
 
