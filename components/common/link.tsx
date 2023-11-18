@@ -1,11 +1,6 @@
-export type LinkProps = {
-  className?: string;
-  children?: React.ReactNode;
-  title: string;
-  href: string;
-};
+import { HTMLProps } from "react";
 
-const Link = (props: LinkProps) => (
+const Link = (props: HTMLProps<HTMLAnchorElement>) => (
   <a {...props} target="_blank" rel="noopener noreferrer">
     {props.children || props.title}
   </a>
