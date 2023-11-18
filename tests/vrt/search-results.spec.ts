@@ -1,5 +1,5 @@
 import { expect, test } from "../fixtures";
-import { getWaveMask } from "./mask"
+import { getWaveMask } from "./mask";
 
 test.beforeEach(async ({ shinyPoems: { page } }) => {
   await page.goto("/");

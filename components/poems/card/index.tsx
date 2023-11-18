@@ -30,7 +30,7 @@ const Card = ({ poem }: Props) => {
 
   return (
     <div
-      className="relative flex items-center w-96 h-60 m-2 p-8 border-2 border-main rounded-md bg-white text-main"
+      className="relative m-2 flex h-60 w-96 items-center rounded-md border-2 border-main bg-white p-8 text-main"
       key={poem.id}
     >
       <div>

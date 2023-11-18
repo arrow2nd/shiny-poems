@@ -5,10 +5,10 @@ export default function input(
   props: ComponentPropsWithRef<"input">
 ): JSX.Element {
   return (
-    <div className="w-full lg:w-72 m-2 flex items-center rounded-md border-2 border-main text-main bg-white">
+    <div className="m-2 flex w-full items-center rounded-md border-2 border-main bg-white text-main lg:w-72">
       <input
         {...props}
-        className="w-full h-9 ml-2.5 placeholder-sub rounded-md focus:outline-none"
+        className="ml-2.5 h-9 w-full rounded-md placeholder-sub focus:outline-none"
         type="text"
         data-testid="poem-textbox"
       />

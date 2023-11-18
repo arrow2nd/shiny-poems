@@ -21,7 +21,7 @@ const CopyButton = ({ text }: Props) => {
 
   return (
     <button
-      className="text-xl hover:text-black transition-colors focus:outline-none"
+      className="text-xl transition-colors hover:text-black focus:outline-none"
       title="コピーする"
       data-testid="copy-button"
       onClick={() => copyToClipboard()}

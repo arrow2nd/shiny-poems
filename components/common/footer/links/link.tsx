@@ -10,7 +10,7 @@ const Link = ({
 }: HTMLProps<HTMLAnchorElement>) => (
   <div className={className}>
     <CommonLink
-      className={`inline-flex flex-row items-center hover:text-black transition-colors`}
+      className={`inline-flex flex-row items-center transition-colors hover:text-black`}
       title={title}
       href={href}
     >

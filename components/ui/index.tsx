@@ -21,7 +21,7 @@ const UI = ({ selectOptions, poems }: Props): JSX.Element => {
   const [state, dispatch] = useFormState(searchPoems, { poems });
 
   return (
-    <div className="flex-grow mx-6 md:mx-12">
+    <div className="mx-6 flex-grow md:mx-12">
       <Form selectOptions={selectOptions} dispatch={dispatch} />
       <Line />
       <Poems items={state.poems} />

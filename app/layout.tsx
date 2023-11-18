@@ -9,7 +9,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className="flex flex-col min-h-screen bg-neutral-white">
+      <body className="flex min-h-screen flex-col bg-neutral-white">
         {children}
       </body>
     </html>

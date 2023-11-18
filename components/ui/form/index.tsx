@@ -48,9 +48,9 @@ const Form = ({ selectOptions, dispatch }: FormProps) => {
   };
 
   return (
-    <div className="flex justify-center mb-16">
+    <div className="mb-16 flex justify-center">
       {/* 画面幅が lg 以下なら縦並びにする */}
-      <div className="w-full lg:w-auto max-w-lg lg:max-w-none">
+      <div className="w-full max-w-lg lg:w-auto lg:max-w-none">
         <Label />
         <form
           className="flex flex-wrap"

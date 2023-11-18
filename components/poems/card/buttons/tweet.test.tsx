@@ -14,4 +14,3 @@ test.each`
     expect.stringMatching(`${expected}$`)
   );
 });
-
