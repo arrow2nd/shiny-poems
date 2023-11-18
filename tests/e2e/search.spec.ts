@@ -37,13 +37,13 @@ test("衣装名から検索", async ({ shinyPoems }) => {
 });
 
 test("ロゴクリックでリセット", async ({ shinyPoems }) => {
-  // 検索
   await shinyPoems.searchByQuery("にーちゅ");
 
   // ロゴをクリック
   await shinyPoems.page.getByTestId("logo").click();
 
-  // ポエムがない場合の表示になっているか
   const poemCardNothing = shinyPoems.page.getByTestId("poem-card-nothing");
-  await expect(poemCardNothing).toHaveText("ポエムが見つかりません…");
+  await expect(poemCardNothing, "ポエムがない状態になっている").toHaveText(
+    "ポエムが見つかりません…"
+  );
 });
