@@ -17,9 +17,11 @@ const Form = ({ selectOptions, dispatch }: FormProps) => {
   const idolSelectRef = useRef<SelectElement>(null);
   const clotheSelectRef = useRef<SelectElement>(null);
 
-  const handleQueryKeyDown: KeyboardEventHandler<HTMLInputElement> = (e) => {
-    // 変換中ではない & Enter ならクリア
-    if (!e.nativeEvent.isComposing && e.key === "Enter") {
+  const handleSubmit: FormEventHandler<HTMLFormElement> = ({
+    currentTarget
+  }) => {
+    // ポエムの一部からの検索なら他の選択状態をクリア
+    if (currentTarget.query?.value) {
       idolSelectRef.current?.clear();
       clotheSelectRef.current?.clear();
     }
@@ -50,12 +52,12 @@ const Form = ({ selectOptions, dispatch }: FormProps) => {
       {/* 画面幅が lg 以下なら縦並びにする */}
       <div className="w-full lg:w-auto max-w-lg lg:max-w-none">
         <Label />
-        <form className="flex flex-wrap" action={dispatch}>
-          <Input
-            name="query"
-            placeholder="ポエムの一部から"
-            onKeyDown={handleQueryKeyDown}
-          />
+        <form
+          className="flex flex-wrap"
+          action={dispatch}
+          onSubmit={handleSubmit}
+        >
+          <Input name="query" placeholder="ポエムの一部から" />
           <Select
             name="idol"
             placeholder="アイドルから"

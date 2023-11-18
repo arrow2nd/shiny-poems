@@ -15,6 +15,7 @@ export default function input(
       <button
         className="mx-1 p-2 transition-colors focus:outline-none"
         data-testid="poem-submit-button"
+        type="submit"
       >
         <FiSearch />
       </button>
