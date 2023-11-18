@@ -34,7 +34,7 @@ const Select = (
 
   return (
     <select
-      className={`m-2 w-full appearance-none rounded-md border-2 border-main bg-white bg-arrow-down bg-right-center bg-no-repeat p-2 focus:border-black lg:w-72 ${
+      className={`m-2 w-full appearance-none rounded-md border-2 border-main bg-white bg-arrow-down bg-right-center bg-no-repeat p-2 focus:ring-4 lg:w-72 ${
         showPlaceholder ? "text-sub" : "text-main"
       }`}
       {...props}
