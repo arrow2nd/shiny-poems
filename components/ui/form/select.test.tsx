@@ -1,7 +1,7 @@
 import { fireEvent, render } from "@testing-library/react";
 import { act } from "react-dom/test-utils";
 
-import Select from "./index";
+import Select from "./select";
 
 describe("Select", () => {
   const props = {
