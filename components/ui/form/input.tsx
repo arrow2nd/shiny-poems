@@ -10,11 +10,11 @@ export default function input(
         {...props}
         className="w-full h-9 ml-2.5 placeholder-sub rounded-md focus:outline-none"
         type="text"
-        data-testid="poem-search-textbox"
+        data-testid="poem-textbox"
       />
       <button
         className="mx-1 p-2 transition-colors focus:outline-none"
-        data-testid="poem-search-submit"
+        data-testid="poem-submit-button"
       >
         <FiSearch />
       </button>

@@ -61,6 +61,7 @@ const Form = ({ selectOptions, dispatch }: FormProps) => {
             placeholder="アイドルから"
             onChange={handleIdolChange}
             ref={idolSelectRef}
+            data-testid="idol-combobox"
           >
             {selectOptions.units.map(({ name, members }) => (
               <optgroup key={name} label={name}>
@@ -77,6 +78,7 @@ const Form = ({ selectOptions, dispatch }: FormProps) => {
             placeholder="衣装から"
             onChange={handleClotheChange}
             ref={clotheSelectRef}
+            data-testid="clothe-combobox"
           >
             {selectOptions.clothes.map((e) => (
               <option key={e} value={e}>
