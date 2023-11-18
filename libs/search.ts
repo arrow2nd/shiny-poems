@@ -4,7 +4,7 @@ import { poems } from "data/poems";
 
 import { Poem } from "types/poem";
 
-type State = {
+export type State = {
   poems: Poem[];
 };
 
