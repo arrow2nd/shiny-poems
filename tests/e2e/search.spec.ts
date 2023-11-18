@@ -1,44 +1,50 @@
 import { expect, test } from "@playwright/test";
 
-import {
-  baseUrl,
-  testSearchFromClotheName,
-  testSearchPoemFromText
-} from "../utils";
-
 test.beforeEach(async ({ page }) => {
-  await page.goto(baseUrl);
+  await page.goto("/");
 });
 
 test("ポエムの一部から検索", async ({ page }) => {
-  await testSearchPoemFromText(page);
-});
+  // 検索ボックスに入力
+  const textbox = page.getByTestId("poem-textbox");
+  await textbox.fill("すまじきものは恋");
 
-test("衣装名から検索", async ({ page }) => {
-  await testSearchFromClotheName(page);
+  // 検索実行
+  const submitButton = page.getByTestId("poem-submit-button");
+  await submitButton.click();
+
+  const poemText = page.getByTestId("poem-card-text").getByRole("paragraph");
+  await expect(poemText, "一致するポエムが表示されている").toHaveText([
+    "ルームウェア。",
+    "すまじきものは恋"
+  ]);
 });
 
 test("アイドル名から検索", async ({ page }) => {
-  // NOTE: react-select に data-testid を埋める手段がなさそうなので妥協
-  await page
-    .locator("div")
-    .filter({ hasText: /^アイドル名から$/ })
-    .nth(2)
-    .click();
+  const combobox = page.getByTestId("idol-combobox");
+  await combobox.selectOption("櫻木真乃");
 
-  await page.locator('[id="react-select-アイドル名から-option-0"]').click();
-
-  // 櫻木真乃の衣装が表示されているか
   const poemCardIdol = page.getByTestId("poem-card-idol").first();
-  await expect(poemCardIdol).toHaveText("櫻木真乃");
+  await expect(
+    poemCardIdol,
+    "表示されているポエムのアイドル名が正しい"
+  ).toHaveText("櫻木真乃");
+});
+
+test("衣装名から検索", async ({ page }) => {
+  const combobox = page.getByTestId("clothe-combobox");
+  await combobox.selectOption("ほしあかり");
+
+  const poemCardIdol = page.getByTestId("poem-card-clothe").first();
+  await expect(poemCardIdol, "表示されているポエムの衣装名が正しい").toHaveText(
+    "ほしあかり"
+  );
 });
 
 test("ロゴクリックでリセット", async ({ page }) => {
-  // 検索実行
-  const textbox = page.getByTestId("poem-search-textbox");
-  await textbox.focus();
-  await textbox.fill("にーちゅ");
-  await page.getByTestId("poem-search-submit").click();
+  // 検索
+  await page.getByTestId("poem-textbox").fill("にーちゅ");
+  await page.getByTestId("poem-submit-button").click();
 
   // ロゴをクリック
   await page.getByTestId("logo").click();
