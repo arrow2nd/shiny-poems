@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 
-import Accent from "./index";
+import Accent from "./accent";
 
 describe("Accent", () => {
   test("指定したカラーコードが設定されているか", () => {

@@ -1,11 +1,10 @@
-import Accent from "components/poems/card/accent";
-
 import { splitPoemText } from "libs/util";
 
 import { colors } from "data/colors";
 
 import { Poem } from "types/poem";
 
+import Accent from "./accent";
 import Buttons from "./buttons";
 
 type Props = {
@@ -13,18 +12,17 @@ type Props = {
 };
 
 const Card = ({ poem }: Props) => {
-  const splitedPoem = splitPoemText(poem.text);
-  const poemContents = splitedPoem.map((e) => <p key={e}>{e.trim()}</p>);
+  const splittedPoem = splitPoemText(poem.text);
+  const poemContents = splittedPoem.map((e) => <p key={e}>{e.trim()}</p>);
 
-  // テキスト
   const linkText = [
     `#シャニマス #${poem.clothesName} #${poem.idolName}`,
     `https://shiny-poems.vercel.app?id=${poem.id}`
   ];
-  const tweetText = [...splitedPoem, ...linkText].join("\n");
+
+  const tweetText = [...splittedPoem, ...linkText].join("\n");
   const copyText = [poem.text, ...linkText].join(" ");
 
-  // 色
   const idolColor = colors.find((e) => e.idolName === poem.idolName);
   const accentColor = idolColor ? idolColor.hex : "78aeff";
 
