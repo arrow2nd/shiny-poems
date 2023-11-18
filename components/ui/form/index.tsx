@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEventHandler, KeyboardEventHandler, useRef } from "react";
+import { FormEventHandler, useRef } from "react";
 
 import { SelectOptions } from "types/select-options";
 
