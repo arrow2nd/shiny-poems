@@ -5,7 +5,7 @@ test.beforeEach(async ({ shinyPoems: { page } }) => {
 });
 
 test("ポエムの一部から検索", async ({ shinyPoems }) => {
-  await shinyPoems.searchWithPoem("すまじきものは恋");
+  await shinyPoems.searchByQuery("すまじきものは恋");
 
   const poemText = shinyPoems.page
     .getByTestId("poem-card-text")
@@ -18,7 +18,7 @@ test("ポエムの一部から検索", async ({ shinyPoems }) => {
 });
 
 test("アイドル名から検索", async ({ shinyPoems }) => {
-  await shinyPoems.searchWithIdol("櫻木真乃");
+  await shinyPoems.searchByIdol("櫻木真乃");
 
   const poemCardIdol = shinyPoems.page.getByTestId("poem-card-idol").first();
   await expect(
@@ -28,7 +28,7 @@ test("アイドル名から検索", async ({ shinyPoems }) => {
 });
 
 test("衣装名から検索", async ({ shinyPoems }) => {
-  await shinyPoems.searchWithClothe("ほしあかり");
+  await shinyPoems.searchByClothe("ほしあかり");
 
   const poemCardIdol = shinyPoems.page.getByTestId("poem-card-clothe").first();
   await expect(poemCardIdol, "表示されているポエムの衣装名が正しい").toHaveText(
@@ -38,7 +38,7 @@ test("衣装名から検索", async ({ shinyPoems }) => {
 
 test("ロゴクリックでリセット", async ({ shinyPoems }) => {
   // 検索
-  await shinyPoems.searchWithPoem("にーちゅ");
+  await shinyPoems.searchByQuery("にーちゅ");
 
   // ロゴをクリック
   await shinyPoems.page.getByTestId("logo").click();

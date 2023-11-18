@@ -7,7 +7,7 @@ class ShinyPoems {
     this.page = page;
   }
 
-  async searchWithPoem(q: string) {
+  async searchByQuery(q: string) {
     const textbox = this.page.getByTestId("poem-textbox");
     await textbox.fill(q);
 
@@ -15,12 +15,12 @@ class ShinyPoems {
     await submitButton.click();
   }
 
-  async searchWithIdol(idol: string) {
+  async searchByIdol(idol: string) {
     const combobox = this.page.getByTestId("idol-combobox");
     await combobox.selectOption(idol);
   }
 
-  async searchWithClothe(clothe: string) {
+  async searchByClothe(clothe: string) {
     const combobox = this.page.getByTestId("clothe-combobox");
     await combobox.selectOption(clothe);
   }
