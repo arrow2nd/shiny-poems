@@ -20,8 +20,10 @@ const Card = ({ poem }: Props) => {
     `https://shiny-poems.vercel.app?id=${poem.id}`
   ];
 
-  const tweetText = [...splittedPoem, ...linkText].join("\n");
-  const copyText = [poem.text, ...linkText].join(" ");
+  const texts = {
+    tweetText: [...splittedPoem, ...linkText].join("\n"),
+    copyText: [poem.text, ...linkText].join(" ")
+  };
 
   const idolColor = colors.find((e) => e.idolName === poem.idolName);
   const accentColor = idolColor ? idolColor.hex : "78aeff";
@@ -48,7 +50,7 @@ const Card = ({ poem }: Props) => {
           </p>
         </div>
       </div>
-      <Buttons {...{ tweetText, copyText }} />
+      <Buttons {...texts} />
     </div>
   );
 };
