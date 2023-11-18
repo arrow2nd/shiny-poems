@@ -4,7 +4,7 @@ import { Poem } from "types/poem";
 
 import Poems from "./index";
 
-describe("Poems", () => {
+describe("Poem", () => {
   const samplePoems: Poem[] = [
     {
       id: "FashionableSummer_YukokuKiriko",
@@ -22,13 +22,18 @@ describe("Poems", () => {
     }
   ];
 
-  test("ポエムの一覧表示が正しいか", () => {
-    const { container } = render(<Poems items={samplePoems} />);
-    expect(container).toMatchSnapshot();
+  test("ポエムが表示されている", () => {
+    const { getByText } = render(<Poems items={samplePoems} />);
+
+    expect(getByText("サマーダイブ！")).toBeDefined();
+    expect(getByText("波がさらった五線譜のように")).toBeDefined();
+
+    expect(getByText("スタッカート。")).toBeDefined();
+    expect(getByText("まなうらにほら、赤橙黄緑霧藍紫")).toBeDefined();
   });
 
-  test("該当ポエムがない場合の表示が正しいか", () => {
-    const { container } = render(<Poems items={[]} />);
-    expect(container).toMatchSnapshot();
+  test("該当ポエムがない場合の表示が正しい", () => {
+    const { getByText } = render(<Poems items={[]} />);
+    expect(getByText("ポエムが見つかりません…")).toBeDefined();
   });
 });

@@ -2,12 +2,10 @@ import { render } from "@testing-library/react";
 
 import Accent from "./accent";
 
-describe("Accent", () => {
-  test("指定したカラーコードが設定されているか", () => {
-    const { container } = render(<Accent bgColor="F54275" />);
+test("指定したカラーコードが設定されているか", () => {
+  const { container } = render(<Accent bgColor="F54275" />);
 
-    expect(container.children[0]).toHaveStyle(
-      `background-color: rgb(245, 66, 117);`
-    );
-  });
+  expect(container.children[0]).toHaveStyle(
+    `background-color: rgb(245, 66, 117);`
+  );
 });

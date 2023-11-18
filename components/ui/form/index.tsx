@@ -8,12 +8,12 @@ import Input from "./input";
 import Label from "./label";
 import Select, { SelectElement } from "./select";
 
-type Props = {
+export type FormProps = {
   selectOptions: SelectOptions;
   dispatch: (payload: FormData) => void;
 };
 
-const Form = ({ selectOptions, dispatch }: Props) => {
+const Form = ({ selectOptions, dispatch }: FormProps) => {
   const idolSelectRef = useRef<SelectElement>(null);
   const clotheSelectRef = useRef<SelectElement>(null);
 

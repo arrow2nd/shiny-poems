@@ -1,6 +1,13 @@
-import CommonLink, { LinkProps } from "components/common/link";
+import { HTMLProps } from "react";
 
-const Link = ({ className = "", children, title, href }: LinkProps) => (
+import CommonLink from "components/common/link";
+
+const Link = ({
+  className = "",
+  children,
+  title,
+  href
+}: HTMLProps<HTMLAnchorElement>) => (
   <div className={className}>
     <CommonLink
       className={`inline-flex flex-row items-center hover:text-black transition-colors`}

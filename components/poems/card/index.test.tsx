@@ -4,47 +4,61 @@ import { Poem } from "types/poem";
 
 import Card from "./index";
 
-describe("Card", () => {
-  const samplePoems: Poem[] = [
-    {
+const testCases: { title: string; poem: Poem }[] = [
+  {
+    title: "改行されるパターン (句点)",
+    poem: {
       id: "ShinySummer_SakuragiMano",
       idolName: "櫻木真乃",
       clothesTitle: "シャイニーサマー",
       clothesName: "シャイニーサマー",
       text: "1stシーズンの水着。めぐるちゃんとお揃い柄♪"
-    },
-    {
-      id: "DressUpParfum_SakuragiMano",
-      idolName: "櫻木真乃",
-      clothesTitle: "ドレスアップパルファム",
-      clothesName: "ドレスアップパルファム",
-      text: "Cheers! 泡沫の間の輝き"
-    },
-    {
-      id: "BaitwudeiRestaurant_SakuragiMano",
-      idolName: "櫻木真乃",
-      clothesTitle: "バイトゥデイレストラント",
-      clothesName: "バイトゥデイレストラント",
-      text: "いらっしゃいませ、輝ける場所へ"
-    },
-    {
-      id: "FashionableSummer_SakuragiMano",
-      idolName: "櫻木真乃",
-      clothesTitle: "ファッショナブルサマー",
-      clothesName: "ファッショナブルサマー",
-      text: "サマーダイブ！とうめいな空と海で遊ぶ"
-    },
-    {
+    }
+  },
+  {
+    title: "1つ目の句点で改行されるパターン",
+    poem: {
       id: "One_Day_Officer",
       idolName: "櫻木真乃",
       clothesTitle: "ワンデイシリーズ",
       clothesName: "ワンデイオフィサー",
       text: "勤務回想録。敬礼。みなさんの元へ急行しますっ"
     }
-  ];
+  },
+  {
+    title: "改行されるパターン (スペース)",
+    poem: {
+      id: "DressUpParfum_SakuragiMano",
+      idolName: "櫻木真乃",
+      clothesTitle: "ドレスアップパルファム",
+      clothesName: "ドレスアップパルファム",
+      text: "Cheers! 泡沫の間の輝き"
+    }
+  },
+  {
+    title: "改行されないパターン (読点)",
+    poem: {
+      id: "BaitwudeiRestaurant_SakuragiMano",
+      idolName: "櫻木真乃",
+      clothesTitle: "バイトゥデイレストラント",
+      clothesName: "バイトゥデイレストラント",
+      text: "いらっしゃいませ、輝ける場所へ"
+    }
+  },
+  {
+    title: "改行されないパターン (スペースなし)",
+    poem: {
+      id: "FashionableSummer_SakuragiMano",
+      idolName: "櫻木真乃",
+      clothesTitle: "ファッショナブルサマー",
+      clothesName: "ファッショナブルサマー",
+      text: "サマーダイブ！とうめいな空と海で遊ぶ"
+    }
+  }
+];
 
-  test.each(samplePoems)("ポエムを正しく表示できるか", (poem) => {
-    const { container } = render(<Card poem={poem} />);
-    expect(container).toMatchSnapshot();
-  });
+test.each(testCases)("$title", ({ poem }) => {
+  const { container } = render(<Card poem={poem} />);
+  expect(container).toMatchSnapshot();
 });
+

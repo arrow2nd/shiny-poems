@@ -1,53 +1,48 @@
-import { fireEvent, render } from "@testing-library/react";
-import { act } from "react-dom/test-utils";
+import { render } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 
 import Select from "./select";
 
 describe("Select", () => {
-  const props = {
-    placeholder: "placeholder",
-    options: ["opt1", "opt2", "opt3"]
-  };
-
-  test("プレースホルダが設定されているか", () => {
-    const { container } = render(<Select {...props} onChange={jest.fn()} />);
-    expect(container).toContainHTML("<p>placeholder</p>");
-  });
-
-  test("見つからなかった時の表示が出るか", () => {
-    const { getByRole, getByText } = render(
-      <Select {...props} onChange={jest.fn()} />
+  test("初期状態でプレースホルダが設定されている", () => {
+    const { getByRole } = render(
+      <Select placeholder="プレースホルダ">
+        <option value="1">test_1</option>
+      </Select>
     );
 
-    act(() => {
-      fireEvent.change(getByRole("combobox"), { target: { value: "aaa" } });
-    });
-
-    expect(getByText("見つかりません…")).toBeTruthy();
+    expect(getByRole("combobox")).toHaveValue("empty");
   });
 
-  test("要素を選択した後にコールバックが呼び出されるか", async () => {
+  test("オプションを選択すると値が設定される", async () => {
+    const { getByRole } = render(
+      <Select placeholder="プレースホルダ">
+        <option value="1">test_1</option>
+      </Select>
+    );
+
+    const select = getByRole("combobox");
+
+    const user = userEvent.setup();
+    await user.selectOptions(select, "test_1");
+
+    expect(select).toHaveValue("1");
+  });
+
+  test("値が変わった時にコールバックが呼ばれる", async () => {
     const mock = jest.fn();
-    const { getByRole, getByText } = render(
-      <Select {...props} onChange={mock} />
+
+    const { getByRole } = render(
+      <Select placeholder="プレースホルダ" onChange={mock}>
+        <option value="1">test_1</option>
+      </Select>
     );
 
-    await act(async () => {
-      const combobox = getByRole("combobox");
+    const select = getByRole("combobox");
 
-      fireEvent.change(combobox, { target: { value: "1" } });
+    const user = userEvent.setup();
+    await user.selectOptions(select, "test_1");
 
-      // ドロップダウンが開くまでラグがあるので待機
-      await new Promise((r) => setTimeout(r, 50));
-
-      fireEvent.keyDown(combobox, {
-        key: "Enter",
-        code: "Enter",
-        charCode: 13
-      });
-    });
-
-    expect(getByText("opt1")).toBeTruthy();
-    expect(mock).toBeCalled();
+    expect(mock).toHaveBeenCalled();
   });
 });

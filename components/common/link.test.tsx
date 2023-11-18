@@ -8,27 +8,13 @@ describe("Link", () => {
     href: "http://example.com/"
   };
 
-  test("title, hrefが正しく設定できているか", () => {
-    const { getByRole } = render(<Link {...props} />);
-    const link = getByRole("link");
-
-    expect(link).toHaveAttribute("title", props.title);
-    expect(link).toHaveAttribute("href", props.href);
+  test("子要素を表示できる", () => {
+    const { getByText } = render(<Link {...props}>test</Link>);
+    expect(getByText("test")).toBeDefined();
   });
 
-  test("子要素を表示できるか", () => {
-    const { getByRole } = render(
-      <Link {...props}>
-        <p>test</p>
-      </Link>
-    );
-    const link = getByRole("link");
-
-    expect(link).toContainHTML("<p>test</p>");
-  });
-
-  test("子要素が省略された場合にtitle文字列を表示できるか", () => {
+  test("子要素が省略された場合にtitleが表示される", () => {
     const { getByText } = render(<Link {...props} />);
-    expect(getByText(props.title)).toBeTruthy();
+    expect(getByText(props.title)).toBeDefined();
   });
 });
