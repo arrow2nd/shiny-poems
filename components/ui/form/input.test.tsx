@@ -2,7 +2,7 @@ import { fireEvent, render } from "@testing-library/react";
 import { createRef } from "react";
 import { act } from "react-dom/test-utils";
 
-import Input from "./index";
+import Input from "./input";
 
 describe("Input", () => {
   test("検索ボタン押下でコールバックが呼び出されるか", () => {
