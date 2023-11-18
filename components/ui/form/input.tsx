@@ -3,10 +3,10 @@ import { FiSearch } from "react-icons/fi";
 
 const Input = (props: ComponentPropsWithRef<"input">): JSX.Element => {
   return (
-    <div className="relative flex w-full items-center text-main">
+    <div className="relative inline-flex w-full items-center text-main lg:w-72">
       <input
         {...props}
-        className="m-2 w-full rounded-md border-2 border-main  p-2 placeholder-sub focus:ring-4 lg:w-72"
+        className="m-2 w-full rounded-md border-2 border-main  p-2 placeholder-sub focus:ring-4"
         type="text"
         data-testid="poem-textbox"
       />
