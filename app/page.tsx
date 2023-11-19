@@ -4,7 +4,7 @@ import Footer from "components/common/footer";
 import Header from "components/common/header";
 import UI from "components/ui";
 
-import { getPoem } from "libs/query";
+import { getPoem } from "libs/utils";
 
 import { clothes } from "data/clothes";
 import { SiteInfo } from "data/site";

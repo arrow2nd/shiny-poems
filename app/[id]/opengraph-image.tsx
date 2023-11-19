@@ -1,7 +1,6 @@
 import { ImageResponse } from "next/og";
 
-import { getPoem } from "libs/query";
-import { splitPoemText } from "libs/util";
+import { getPoem, splitPoemText } from "libs/utils";
 
 import { SiteInfo } from "data/site";
 

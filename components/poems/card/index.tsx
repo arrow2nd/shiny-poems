@@ -1,4 +1,4 @@
-import { splitPoemText } from "libs/util";
+import { splitPoemText } from "libs/utils";
 
 import { colors } from "data/colors";
 import { SiteInfo } from "data/site";

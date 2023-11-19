@@ -1,4 +1,4 @@
-import { encodeForCloudinary, splitPoemText } from "./util";
+import { splitPoemText } from "./util";
 
 describe("splitPoemText", () => {
   test.each`
@@ -37,15 +37,4 @@ describe("splitPoemText", () => {
       expect(splitPoemText(poemText)).toEqual(expected);
     }
   );
-});
-
-describe("encodeForCloudinary", () => {
-  test.each`
-    text          | expected
-    ${"abcd"}     | ${"abcd"}
-    ${"緋田美琴"} | ${"%E7%B7%8B%E7%94%B0%E7%BE%8E%E7%90%B4"}
-    ${"a,b/c!d"}  | ${"a%252Cb%252Fc%2521d"}
-  `("正しくエンコードできるか（text: $text）", ({ text, expected }) => {
-    expect(encodeForCloudinary(text)).toBe(expected);
-  });
 });
