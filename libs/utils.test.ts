@@ -1,4 +1,4 @@
-import { splitPoemText } from "./util";
+import { splitPoemText } from "./utils";
 
 describe("splitPoemText", () => {
   test.each`
