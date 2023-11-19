@@ -1,4 +1,22 @@
-import { splitPoemText } from "./utils";
+import { getPoem, splitPoemText } from "./utils";
+
+describe("getPoem", () => {
+  test("取得できる", () => {
+    const poem = getPoem("OvercastMonochrome_FukumaruKoito");
+    expect(poem).toEqual({
+      id: "OvercastMonochrome_FukumaruKoito",
+      idolName: "福丸小糸",
+      clothesTitle: "オーバーキャストモノクローム",
+      clothesName: "オーバーキャストモノクローム",
+      text: "ワンステップ。いつか、いつかは"
+    });
+  });
+
+  test("存在しないIDの場合undefinedが返る", () => {
+    const poem = getPoem("test");
+    expect(poem).toBeUndefined();
+  });
+});
 
 describe("splitPoemText", () => {
   test.each`
