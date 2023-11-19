@@ -8,7 +8,7 @@
 [![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=shiny-poems)](https://shiny-poems.vercel.app)
 [![Powered by im@sparql](https://img.shields.io/badge/powered%20by-im%40sparql-F34F6D)](https://sparql.crssnky.xyz/imas/)
 
-![スクリーンショット](https://user-images.githubusercontent.com/44780846/156342031-80268349-68b2-438b-91e6-08c3f8f3265a.png)
+![Shiny Poems](https://github.com/arrow2nd/shiny-poems/assets/44780846/e0e1b21f-be8a-4c21-951e-0069ae81bae9)
 
 ## できること
 
