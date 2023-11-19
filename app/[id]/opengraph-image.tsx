@@ -62,8 +62,7 @@ export default async function Image({ params }: { params: { id: string } }) {
             padding: "0 64px",
             fontSize: 64,
             display: "flex",
-            flexDirection: "column",
-            whiteSpace: "nowrap"
+            flexDirection: "column"
           }}
         >
           {lines.map((l) => (
