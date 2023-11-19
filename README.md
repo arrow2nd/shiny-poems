@@ -19,19 +19,6 @@
 
 ## Develop
 
-> **Warning**
->
-> OGP 画像の生成には独自に定義した Cloudinary の Named Transformations を利用しています。
-> 定義内容についてはリポジトリに含まれていません。
-
-Cloudinary から API Environment variable を取得し、以下の内容で`.env.local`を作成
-
-```
-CLOUDINARY_URL=<API Environment variable>
-```
-
-その後、以下のコマンドで実行
-
 ```
 pnpm dev
 # or
