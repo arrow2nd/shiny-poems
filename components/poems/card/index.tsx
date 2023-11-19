@@ -1,6 +1,7 @@
 import { splitPoemText } from "libs/util";
 
 import { colors } from "data/colors";
+import { SiteInfo } from "data/site";
 
 import { Poem } from "types/poem";
 
@@ -17,7 +18,7 @@ const Card = ({ poem }: Props) => {
 
   const linkText = [
     `#シャニマス #${poem.clothesName} #${poem.idolName}`,
-    `https://shiny-poems.vercel.app?id=${poem.id}`
+    `${SiteInfo.url}?id=${poem.id}`
   ];
 
   const texts = {

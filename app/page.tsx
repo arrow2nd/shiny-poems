@@ -4,7 +4,7 @@ import Footer from "components/common/footer";
 import Header from "components/common/header";
 import UI from "components/ui";
 
-import { generateOgpImageUrl, getPoem } from "libs/query";
+import { getPoem } from "libs/query";
 
 import { clothes } from "data/clothes";
 import { SiteInfo } from "data/site";
@@ -21,7 +21,10 @@ export const dynamic = "force-dynamic";
 export async function generateMetadata({
   searchParams
 }: Props): Promise<Metadata> {
-  const imageUrl = generateOgpImageUrl(searchParams.id);
+  const imageUrl = searchParams?.id
+    ? `/${searchParams.id}/opengraph-image`
+    : "/og-image-default.png";
+
   const { title, description, url } = SiteInfo;
 
   return {
