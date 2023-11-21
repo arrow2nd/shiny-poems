@@ -40,12 +40,14 @@ export default defineConfig({
     },
     {
       name: "android",
+      grepInvert: /@desktop/,
       use: {
         ...devices["Pixel 5"]
       }
     },
     {
       name: "iphone",
+      grepInvert: /@desktop/,
       use: {
         ...devices["iPhone 13"]
       }

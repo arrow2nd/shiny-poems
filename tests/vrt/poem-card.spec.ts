@@ -46,7 +46,7 @@ const poems: Poem[] = [
   }
 ];
 
-test("カードのレイアウトが変化していない", async ({ shinyPoems }) => {
+test("カードのレイアウトが変化していない @desktop", async ({ shinyPoems }) => {
   const { page } = shinyPoems;
 
   // 検索結果を上書き
