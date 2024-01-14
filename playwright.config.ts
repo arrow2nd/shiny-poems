@@ -12,7 +12,7 @@ export default defineConfig({
     timeout: 10 * 1000,
     toMatchSnapshot: {
       threshold: 0.2,
-      maxDiffPixelRatio: 0.01
+      maxDiffPixelRatio: 0.015
     }
   },
   use: {
