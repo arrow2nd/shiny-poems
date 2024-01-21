@@ -1,6 +1,6 @@
 import { Poem } from "types/poem";
 
-export const updatedAtUTC = "2023/11/17 (JST)";
+export const updatedAtUTC = "2024/01/21 (JST)";
 export const poems: Poem[] = [
   {
     id: "CelestialColors_SakuragiMano",
@@ -22,6 +22,13 @@ export const poems: Poem[] = [
     clothesTitle: "ドレスアップパルファム",
     clothesName: "ドレスアップパルファム",
     text: "Cheers! 泡沫の間の輝き"
+  },
+  {
+    id: "Delight_Summer_SakuragiMano",
+    idolName: "櫻木真乃",
+    clothesTitle: "ディライトサマー",
+    clothesName: "ディライトサマー",
+    text: "Have fun!　ストロベリーバニラをコーンで"
   },
   {
     id: "RespectiveWorkStyle_SakuragiMano",
@@ -91,7 +98,7 @@ export const poems: Poem[] = [
     idolName: "櫻木真乃",
     clothesTitle: "ミッドナイトモンスター",
     clothesName: "ミッドナイトモンスター",
-    text: "トリック・オア・トリート！内に秘めたyummuy red♡"
+    text: "トリック・オア・トリート！内に秘めたyummy red♡"
   },
   {
     id: "InnocentSailor_SakuragiMano",
@@ -190,6 +197,13 @@ export const poems: Poem[] = [
     clothesTitle: "ドレスアップパルファム",
     clothesName: "ドレスアップパルファム",
     text: "Cheers! 掌にきらめき"
+  },
+  {
+    id: "Delight_Summer_KazanoHiori",
+    idolName: "風野灯織",
+    clothesTitle: "ディライトサマー",
+    clothesName: "ディライトサマー",
+    text: "Have fun!　歯磨き粉とは言わせません"
   },
   {
     id: "RespectiveWorkStyle_KazanoHiori",
@@ -358,6 +372,20 @@ export const poems: Poem[] = [
     clothesTitle: "ドレスアップパルファム",
     clothesName: "ドレスアップパルファム",
     text: "Cheers! キラキラ　キラキラ　ゆらめく"
+  },
+  {
+    id: "Delight_Summer_HachimiyaMeguru",
+    idolName: "八宮めぐる",
+    clothesTitle: "ディライトサマー",
+    clothesName: "ディライトサマー",
+    text: "Have fun!　どっちにも合うでしょう？"
+  },
+  {
+    id: "RespectiveWorkStyle_HachimiyaMeguru",
+    idolName: "八宮めぐる",
+    clothesTitle: "リスペクティブワークスタイル",
+    clothesName: "リスペクティブワークスタイル",
+    text: "WORKING：左オーライです！"
   },
   {
     id: "RingingPreppyGirl_HachimiyaMeguru",
@@ -535,6 +563,13 @@ export const poems: Poem[] = [
     text: "Cheers! 煌めけ、かなめの黄金"
   },
   {
+    id: "Delight_Summer_TsukiokaKogane",
+    idolName: "月岡恋鐘",
+    clothesTitle: "ディライトサマー",
+    clothesName: "ディライトサマー",
+    text: "Have fun!　耐水性の夏、はじめ"
+  },
+  {
     id: "YourSideMagia_TsukiokaKogane",
     idolName: "月岡恋鐘",
     clothesTitle: "ユアサイドマジーア",
@@ -694,6 +729,13 @@ export const poems: Poem[] = [
     clothesTitle: "ドレスアップパルファム",
     clothesName: "ドレスアップパルファム",
     text: "Cheers! 今宵、パーティーナイト"
+  },
+  {
+    id: "Delight_Summer_TanakaMamimi",
+    idolName: "田中摩美々",
+    clothesTitle: "ディライトサマー",
+    clothesName: "ディライトサマー",
+    text: "Have fun!　悪い子先生の水泳教室"
   },
   {
     id: "YourSideMagia_TanakaMamimi",
@@ -857,6 +899,13 @@ export const poems: Poem[] = [
     text: "Cheers! 咲くならば爽やかに華やかに"
   },
   {
+    id: "Delight_Summer_ShiraseSakuya",
+    idolName: "白瀬咲耶",
+    clothesTitle: "ディライトサマー",
+    clothesName: "ディライトサマー",
+    text: "Have fun!　波に任せて"
+  },
+  {
     id: "YourSideMagia_ShiraseSakuya",
     idolName: "白瀬咲耶",
     clothesTitle: "ユアサイドマジーア",
@@ -1011,6 +1060,13 @@ export const poems: Poem[] = [
     text: "Cheers! 私のためのおめかし"
   },
   {
+    id: "Delight_Summer_MitsumineYuika",
+    idolName: "三峰結華",
+    clothesTitle: "ディライトサマー",
+    clothesName: "ディライトサマー",
+    text: "Have fun!　――で、遊びます？"
+  },
+  {
     id: "YourSideMagia_MitsumineYuika",
     idolName: "三峰結華",
     clothesTitle: "ユアサイドマジーア",
@@ -1156,6 +1212,13 @@ export const poems: Poem[] = [
     clothesTitle: "ホリディプリンセス",
     clothesName: "ホリディプリンセス",
     text: "Bedtime Story／プールの底のお日さまみたいに"
+  },
+  {
+    id: "Delight_Summer_YukokuKiriko",
+    idolName: "幽谷霧子",
+    clothesTitle: "ディライトサマー",
+    clothesName: "ディライトサマー",
+    text: "Have fun!　いうことはよく聞いて"
   },
   {
     id: "YourSideMagia_YukokuKiriko",
@@ -1310,6 +1373,13 @@ export const poems: Poem[] = [
     clothesTitle: "ドレスアップパルファム",
     clothesName: "ドレスアップパルファム",
     text: "Cheers! おめかしハナマル！"
+  },
+  {
+    id: "Delight_Summer_KomiyaKaho",
+    idolName: "小宮果穂",
+    clothesTitle: "ディライトサマー",
+    clothesName: "ディライトサマー",
+    text: "Have fun!　放クラ・フルーツモード！"
   },
   {
     id: "DefeatOfEncounter_KomiyaKaho",
@@ -1480,6 +1550,13 @@ export const poems: Poem[] = [
     text: "Cheers! 華やかチョコレートです！"
   },
   {
+    id: "Delight_Summer_SonodaChiyoko",
+    idolName: "園田智代子",
+    clothesTitle: "ディライトサマー",
+    clothesName: "ディライトサマー",
+    text: "Have fun!　おでこが見えるのはレア"
+  },
+  {
     id: "DefeatOfEncounter_SonodaChiyoko",
     idolName: "園田智代子",
     clothesTitle: "デフィートオブエンカウンター",
@@ -1648,6 +1725,13 @@ export const poems: Poem[] = [
     text: "Cheers! 見ていいのは2秒以内"
   },
   {
+    id: "Delight_Summer_SaijoJuri",
+    idolName: "西城樹里",
+    clothesTitle: "ディライトサマー",
+    clothesName: "ディライトサマー",
+    text: "Have fun!　この夏最アツパイナッポー"
+  },
+  {
     id: "DefeatOfEncounter_SaijoJuri",
     idolName: "西城樹里",
     clothesTitle: "デフィートオブエンカウンター",
@@ -1807,6 +1891,13 @@ export const poems: Poem[] = [
     clothesTitle: "ドレスアップパルファム",
     clothesName: "ドレスアップパルファム",
     text: "Cheers! 月夜で染めた衣裳に"
+  },
+  {
+    id: "Delight_Summer_MorinoRinze",
+    idolName: "杜野凛世",
+    clothesTitle: "ディライトサマー",
+    clothesName: "ディライトサマー",
+    text: "Have fun!　群青に包まれり"
   },
   {
     id: "DefeatOfEncounter_MorinoRinze",
@@ -1970,6 +2061,13 @@ export const poems: Poem[] = [
     text: "Cheers! シャンパンの泡よりも煌めいて"
   },
   {
+    id: "Delight_Summer_ArisugawaNatsuha",
+    idolName: "有栖川夏葉",
+    clothesTitle: "ディライトサマー",
+    clothesName: "ディライトサマー",
+    text: "Have fun!　爽やかレモンもマストバイ"
+  },
+  {
     id: "DefeatOfEncounter_ArisugawaNatsuha",
     idolName: "有栖川夏葉",
     clothesTitle: "デフィートオブエンカウンター",
@@ -2129,6 +2227,13 @@ export const poems: Poem[] = [
     clothesTitle: "ドレスアップパルファム",
     clothesName: "ドレスアップパルファム",
     text: "Cheers! いっしょにふわふわ"
+  },
+  {
+    id: "Delight_Summer_OsakiAmana",
+    idolName: "大崎甘奈",
+    clothesTitle: "ディライトサマー",
+    clothesName: "ディライトサマー",
+    text: "Have fun!　ポイントはイルカさん☆"
   },
   {
     id: "RespectiveWorkStyle_OsakiAmana",
@@ -2292,6 +2397,13 @@ export const poems: Poem[] = [
     text: "Cheers! ふたりできらきら"
   },
   {
+    id: "Delight_Summer_OsakiTenka",
+    idolName: "大崎甜花",
+    clothesTitle: "ディライトサマー",
+    clothesName: "ディライトサマー",
+    text: "Have fun!　シュガーミルク・リトルホエール"
+  },
+  {
     id: "KaburyiOfWhite_OsakiTenka",
     idolName: "大崎甜花",
     clothesTitle: "カブリィオブホワイト",
@@ -2437,6 +2549,20 @@ export const poems: Poem[] = [
     clothesTitle: "シャイニーサマー",
     clothesName: "シャイニーサマー",
     text: "1stシーズンの水着。華やかなパレオに胸キュン♡"
+  },
+  {
+    id: "DressUpParfum_KuwayamaChiyuki",
+    idolName: "桑山千雪",
+    clothesTitle: "ドレスアップパルファム",
+    clothesName: "ドレスアップパルファム",
+    text: "Cheers! ふわり、シフォンの魔法"
+  },
+  {
+    id: "Delight_Summer_KuwayamaChiyuki",
+    idolName: "桑山千雪",
+    clothesTitle: "ディライトサマー",
+    clothesName: "ディライトサマー",
+    text: "Have fun!　帽子の下、鯨の唄を口遊め"
   },
   {
     id: "KaburyiOfWhite_KuwayamaChiyuki",
@@ -2593,6 +2719,13 @@ export const poems: Poem[] = [
     text: "Chaser／指令。あの光を追うのだ"
   },
   {
+    id: "Delight_Summer_SerizawaAsahi",
+    idolName: "芹沢あさひ",
+    clothesTitle: "ディライトサマー",
+    clothesName: "ディライトサマー",
+    text: "Have fun!　ふわふわり、つかまえられる？"
+  },
+  {
     id: "RespectiveWorkStyle_SerizawaAsahi",
     idolName: "芹沢あさひ",
     clothesTitle: "リスペクティブワークスタイル",
@@ -2740,6 +2873,20 @@ export const poems: Poem[] = [
     text: "Chaser／……覚悟はできてる？"
   },
   {
+    id: "DressUpParfum_MayuzumiFuyuko",
+    idolName: "黛冬優子",
+    clothesTitle: "ドレスアップパルファム",
+    clothesName: "ドレスアップパルファム",
+    text: "Cheers! 秘せずとも花"
+  },
+  {
+    id: "Delight_Summer_MayuzumiFuyuko",
+    idolName: "黛冬優子",
+    clothesTitle: "ディライトサマー",
+    clothesName: "ディライトサマー",
+    text: "Have fun!　ゆらり汗、ゆられて浮遊"
+  },
+  {
     id: "AmourOfWhite_MayuzumiFuyuko",
     idolName: "黛冬優子",
     clothesTitle: "アムールオブホワイト",
@@ -2878,6 +3025,27 @@ export const poems: Poem[] = [
     clothesTitle: "オーダー・ノンスウィート",
     clothesName: "オーダー・ノンスウィート",
     text: "Chaser／かんぶ？っぽいって弟に言われた"
+  },
+  {
+    id: "DressUpParfum_IzumiMei",
+    idolName: "和泉愛依",
+    clothesTitle: "ドレスアップパルファム",
+    clothesName: "ドレスアップパルファム",
+    text: "Cheers! ハンパなく豪華なカンジ！"
+  },
+  {
+    id: "Delight_Summer_IzumiMei",
+    idolName: "和泉愛依",
+    clothesTitle: "ディライトサマー",
+    clothesName: "ディライトサマー",
+    text: "Have fun!　ひらひらと、水を纏うように"
+  },
+  {
+    id: "RespectiveWorkStyle_IzumiMei",
+    idolName: "和泉愛依",
+    clothesTitle: "リスペクティブワークスタイル",
+    clothesName: "リスペクティブワークスタイル",
+    text: "WORKING：大盛り！いつでもサービス♪"
   },
   {
     id: "AmourOfWhite_IzumiMei",
@@ -3020,6 +3188,13 @@ export const poems: Poem[] = [
     text: ";) ステッカー式日常"
   },
   {
+    id: "Delight_Summer_AsakuraToru",
+    idolName: "浅倉透",
+    clothesTitle: "ディライトサマー",
+    clothesName: "ディライトサマー",
+    text: "Have fun!　桃源郷ってやつ"
+  },
+  {
     id: "FancyFreeNursing_AsakuraToru",
     idolName: "浅倉透",
     clothesTitle: "ファンシーフリーナーシング",
@@ -3130,6 +3305,13 @@ export const poems: Poem[] = [
     clothesTitle: "ペインティングオール",
     clothesName: "ペインティングオール",
     text: ";) ヌリタクリ・ハリタクル"
+  },
+  {
+    id: "Delight_Summer_HiguchiMadoka",
+    idolName: "樋口円香",
+    clothesTitle: "ディライトサマー",
+    clothesName: "ディライトサマー",
+    text: "Have fun!　そよぐ、薫り、潮に溶ける"
   },
   {
     id: "RespectiveWorkStyle_HiguchiMadoka",
@@ -3251,6 +3433,13 @@ export const poems: Poem[] = [
     text: ";) しあわせ色で塗って"
   },
   {
+    id: "Delight_Summer_IchikawaHinana",
+    idolName: "市川雛菜",
+    clothesTitle: "ディライトサマー",
+    clothesName: "ディライトサマー",
+    text: "Have fun!　今だけのメロディを浴びて"
+  },
+  {
     id: "RespectiveWorkStyle_IchikawaHinana",
     idolName: "市川雛菜",
     clothesTitle: "リスペクティブワークスタイル",
@@ -3370,6 +3559,13 @@ export const poems: Poem[] = [
     text: ";) 翼も描けるかも"
   },
   {
+    id: "Delight_Summer_FukumaruKoito",
+    idolName: "福丸小糸",
+    clothesTitle: "ディライトサマー",
+    clothesName: "ディライトサマー",
+    text: "Have fun!　太陽の下、青空に負けないで"
+  },
+  {
     id: "FancyFreeNursing_FukumaruKoito",
     idolName: "福丸小糸",
     clothesTitle: "ファンシーフリーナーシング",
@@ -3475,6 +3671,13 @@ export const poems: Poem[] = [
     text: "HORROR…夜が来る"
   },
   {
+    id: "Delight_Summer_NanakusaNichika",
+    idolName: "七草にちか",
+    clothesTitle: "ディライトサマー",
+    clothesName: "ディライトサマー",
+    text: "Have fun!　辿りつく、いつか"
+  },
+  {
     id: "KougyokuUsagiNoSou_NanakusaNichika",
     idolName: "七草にちか",
     clothesTitle: "紅玉兎ノ装",
@@ -3573,6 +3776,20 @@ export const poems: Poem[] = [
     text: "HORROR…satiety"
   },
   {
+    id: "Delight_Summer_AketaMikoto",
+    idolName: "緋田美琴",
+    clothesTitle: "ディライトサマー",
+    clothesName: "ディライトサマー",
+    text: "Have fun!　砂にステップを刻む"
+  },
+  {
+    id: "RespectiveWorkStyle_AketaMikoto",
+    idolName: "緋田美琴",
+    clothesTitle: "リスペクティブワークスタイル",
+    clothesName: "リスペクティブワークスタイル",
+    text: "WORKING：私が作ったカクテル、飲む？"
+  },
+  {
     id: "SetupCrazy_AketaMikoto",
     idolName: "緋田美琴",
     clothesTitle: "セットアップクレイジー",
@@ -3655,6 +3872,20 @@ export const poems: Poem[] = [
     clothesTitle: "ジャージ",
     clothesName: "ジャージ",
     text: "水色ジャージ。as usual"
+  },
+  {
+    id: "Delight_Summer_IkarugaLuca",
+    idolName: "斑鳩ルカ",
+    clothesTitle: "ディライトサマー",
+    clothesName: "ディライトサマー",
+    text: "Have fun!　波の音じゃ、足りない"
+  },
+  {
+    id: "MidnightMonster_IkarugaLuca",
+    idolName: "斑鳩ルカ",
+    clothesTitle: "ミッドナイトモンスター",
+    clothesName: "ミッドナイトモンスター",
+    text: "トリック・オア・トリート！　闇への忠誠（不本意）"
   },
   {
     id: "FlowingBhel_IkarugaLuca",
