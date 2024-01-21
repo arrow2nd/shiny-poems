@@ -10,7 +10,7 @@ export default defineConfig({
   fullyParallel: true,
   expect: {
     timeout: 10 * 1000,
-    toMatchSnapshot: {
+    toHaveScreenshot: {
       threshold: 0.2,
       maxDiffPixelRatio: 0.015
     }
