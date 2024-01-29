@@ -4,8 +4,6 @@ import { getPoem, splitPoemText } from "libs/utils";
 
 import { SiteInfo } from "data/site";
 
-import { Poem } from "types/poem";
-
 export const runtime = "edge";
 
 export const alt = SiteInfo.description;
@@ -24,10 +22,29 @@ export default async function Image({ params }: { params: { id: string } }) {
     });
   }
 
-  const kiwiMaru = await fetchFont(poem);
+  const [kiwiMaru, inconsolata] = await Promise.all([
+    fetchFont(poem.clothesName + poem.idolName + poem.text, "Kiwi Maru"),
+    fetchFont(poem.text, "Inconsolata")
+  ]);
+
+  // Inconsolata は取得に失敗しても問題ない (記号のフォールバック用) ので無視
   if (!kiwiMaru) {
-    return new Response("Failed to fetch font", {
+    return new Response("failed to fetch font", {
       status: 500
+    });
+  }
+
+  const fonts = [
+    {
+      name: "Kiwi Maru",
+      data: kiwiMaru
+    }
+  ];
+
+  if (inconsolata) {
+    fonts.push({
+      name: "Inconsolata",
+      data: inconsolata
     });
   }
 
@@ -77,13 +94,7 @@ export default async function Image({ params }: { params: { id: string } }) {
     ),
     {
       ...size,
-      fonts: [
-        {
-          name: "Kiwi Maru",
-          data: kiwiMaru,
-          style: "normal"
-        }
-      ]
+      fonts
     }
   );
 }
@@ -91,21 +102,20 @@ export default async function Image({ params }: { params: { id: string } }) {
 /**
  * Google Fonts からポエムの表示に必要なフォントを取得する
  * 参考: https://github.com/vercel/satori/blob/29fe2e4a9676a1ba41c361ec1a547d6de329b039/playground/pages/api/font.ts#L86
- * @param poem ポエム
+ * @param text テキスト
+ * @param family フォントファミリー
  * @returns フォントデータ
  */
-async function fetchFont({
-  clothesName,
-  idolName,
-  text
-}: Poem): Promise<ArrayBuffer | null> {
-  // Kiwi Maru
-  const API = `https://fonts.googleapis.com/css2?family=Kiwi+Maru&text=${encodeURIComponent(
-    clothesName + idolName + text
-  )}`;
+async function fetchFont(
+  text: string,
+  family: string
+): Promise<ArrayBuffer | null> {
+  const endpoint = new URL("https://fonts.googleapis.com/css2");
+  endpoint.searchParams.append("family", family);
+  endpoint.searchParams.append("text", text);
 
   const css = await (
-    await fetch(API, {
+    await fetch(endpoint.toString(), {
       headers: {
         // Make sure it returns TTF.
         "User-Agent":
@@ -121,6 +131,9 @@ async function fetchFont({
   if (!resource) return null;
 
   const res = await fetch(resource[1]);
+  if (!res.ok) {
+    return null;
+  }
 
   return res.arrayBuffer();
 }
