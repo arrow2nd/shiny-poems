@@ -15,7 +15,11 @@ export const colors: Color[] = [
   },
   {
     idolName: "斑鳩ルカ",
-    hex: "1E140E"
+    hex: "24130D"
+  },
+  {
+    idolName: "郁田はるき",
+    hex: "EAD7A4"
   },
   {
     idolName: "和泉愛依",
@@ -56,6 +60,10 @@ export const colors: Color[] = [
   {
     idolName: "白瀬咲耶",
     hex: "006047"
+  },
+  {
+    idolName: "鈴木羽那",
+    hex: "E0B5D3"
   },
   {
     idolName: "芹沢あさひ",

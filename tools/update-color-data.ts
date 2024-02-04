@@ -1,7 +1,5 @@
 import { writeFileSync } from "fs";
-
 import { Color } from "types/color";
-
 import { fetchIdolData } from "./libs/fetch";
 
 /** SPARQLクエリ（シャニマスアイドルの個人カラー） */
@@ -35,7 +33,7 @@ order by ?kana
   const json = JSON.stringify(colorData, null, "  ");
   const result = `import { Color } from 'types/color'\n\nexport const colors: Color[] = ${json}`;
 
-  writeFileSync("./data/color-list.ts", result);
+  writeFileSync("./data/colors.ts", result);
 
   console.log("[ success! ]");
 })();

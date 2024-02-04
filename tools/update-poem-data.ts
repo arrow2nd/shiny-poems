@@ -1,7 +1,5 @@
 import { writeFileSync } from "fs";
-
 import type { Poem } from "types/poem";
-
 import { poems } from "../data/poems";
 import { units } from "../data/units";
 import { clothesSeries } from "./libs/data";

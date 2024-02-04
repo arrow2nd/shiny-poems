@@ -1,5 +1,4 @@
 import { Poem } from "types/poem";
-
 import { expect, test } from "../fixtures";
 import { getWaveMask } from "./mask";
 

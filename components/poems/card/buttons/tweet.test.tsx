@@ -1,5 +1,4 @@
 import { render } from "@testing-library/react";
-
 import TweetButton from "./tweet";
 
 test.each`

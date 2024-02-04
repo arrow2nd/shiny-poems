@@ -1,5 +1,4 @@
 import { FiCode, FiDatabase } from "react-icons/fi";
-
 import Link from "./link";
 
 const Links = () => (

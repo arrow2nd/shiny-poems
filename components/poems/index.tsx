@@ -1,7 +1,5 @@
 import { BsEmojiExpressionless } from "react-icons/bs";
-
 import { Poem } from "types/poem";
-
 import Card from "./card";
 
 type Props = {
