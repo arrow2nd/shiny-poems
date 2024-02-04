@@ -114,4 +114,3 @@ export const colors: Color[] = [
     hex: "D9F2FF"
   }
 ];
-

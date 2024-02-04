@@ -1,10 +1,7 @@
 import { splitPoemText } from "libs/utils";
-
 import { colors } from "data/colors";
 import { SiteInfo } from "data/site";
-
 import { Poem } from "types/poem";
-
 import Accent from "./accent";
 import Buttons from "./buttons";
 

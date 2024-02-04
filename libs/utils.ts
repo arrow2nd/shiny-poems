@@ -1,7 +1,5 @@
 import { cache } from "react";
-
 import { poems } from "data/poems";
-
 import { Poem } from "types/poem";
 
 /**

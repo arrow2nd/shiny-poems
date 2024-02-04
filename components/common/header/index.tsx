@@ -1,6 +1,5 @@
 import Image from "next/image";
 import LogoImg from "public/logo.png";
-
 import GitHubCorner from "./github-corner";
 
 const Header = () => (

@@ -1,6 +1,5 @@
 import { render } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-
 import Select from "./select";
 
 describe("Select", () => {

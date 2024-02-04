@@ -1,7 +1,6 @@
 "use server";
 
 import { poems } from "data/poems";
-
 import { Poem } from "types/poem";
 
 export type State = {

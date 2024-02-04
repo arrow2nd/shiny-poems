@@ -1,9 +1,7 @@
 "use client";
 
 import Wave from "react-wavify";
-
 import { updatedAtUTC } from "data/poems";
-
 import Links from "./links";
 
 const Footer = () => (

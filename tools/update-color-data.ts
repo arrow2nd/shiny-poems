@@ -1,7 +1,5 @@
 import { writeFileSync } from "fs";
-
 import { Color } from "types/color";
-
 import { fetchIdolData } from "./libs/fetch";
 
 /** SPARQLクエリ（シャニマスアイドルの個人カラー） */

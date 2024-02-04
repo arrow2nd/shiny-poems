@@ -1,7 +1,5 @@
 import { render } from "@testing-library/react";
-
 import { Poem } from "types/poem";
-
 import Card from "./index";
 
 const poem: Poem = {

@@ -1,7 +1,5 @@
 import { ImageResponse } from "next/og";
-
 import { getPoem, splitPoemText } from "libs/utils";
-
 import { SiteInfo } from "data/site";
 
 export const runtime = "edge";

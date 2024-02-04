@@ -1,9 +1,7 @@
 "use client";
 
 import { FormEventHandler, useRef } from "react";
-
 import { SelectOptions } from "types/select-options";
-
 import Input from "./input";
 import Label from "./label";
 import Select, { SelectElement } from "./select";
