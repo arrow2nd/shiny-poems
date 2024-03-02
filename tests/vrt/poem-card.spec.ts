@@ -65,6 +65,11 @@ test("カードのレイアウトが変化していない @desktop", async ({ sh
   await page.goto("/");
   await shinyPoems.searchByQuery("test");
 
+  await shinyPoems.page
+    .getByTestId("poem-card-text")
+    .first()
+    .waitFor({ state: "visible" });
+
   await expect(page).toHaveScreenshot({
     fullPage: true,
     mask: getWaveMask(page)

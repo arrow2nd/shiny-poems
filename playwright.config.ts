@@ -1,12 +1,12 @@
 import { defineConfig, devices } from "@playwright/test";
 
-const prodUrl = "https://shiny-poems-git-main-arrow2nd.vercel.app";
+const prodUrl = "https://shiny-poems.vercel.app";
 const localUrl = "http://localhost:3000";
 
 export default defineConfig({
   reporter: "html",
   timeout: 30 * 1000,
-  retries: 2,
+  retries: 1,
   fullyParallel: true,
   expect: {
     timeout: 10 * 1000,
@@ -16,9 +16,17 @@ export default defineConfig({
     }
   },
   use: {
-    baseURL: process.env.PROD ? prodUrl : process.env.PREVIEW_URL || localUrl,
+    baseURL: process.env.PROD ? prodUrl : localUrl,
     trace: "retain-on-failure"
   },
+  webServer: process.env.PROD
+    ? undefined
+    : {
+        command: "pnpm build && pnpm start",
+        port: 3000,
+        timeout: 120 * 1000,
+        reuseExistingServer: !process.env.CI
+      },
   projects: [
     {
       name: "chrome",
