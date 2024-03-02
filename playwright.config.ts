@@ -6,7 +6,7 @@ const localUrl = "http://localhost:3000";
 export default defineConfig({
   reporter: "html",
   timeout: 30 * 1000,
-  retries: 2,
+  retries: 1,
   fullyParallel: true,
   expect: {
     timeout: 10 * 1000,
@@ -19,12 +19,14 @@ export default defineConfig({
     baseURL: process.env.PROD ? prodUrl : localUrl,
     trace: "retain-on-failure"
   },
-  webServer: {
-    command: "pnpm build && pnpm start",
-    port: 3000,
-    timeout: 120 * 1000,
-    reuseExistingServer: !process.env.PROD && !process.env.CI
-  },
+  webServer: process.env.PROD
+    ? undefined
+    : {
+        command: "pnpm build && pnpm start",
+        port: 3000,
+        timeout: 120 * 1000,
+        reuseExistingServer: !process.env.CI
+      },
   projects: [
     {
       name: "chrome",
