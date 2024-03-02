@@ -23,7 +23,7 @@ export default defineConfig({
     command: "pnpm build && pnpm start",
     port: 3000,
     timeout: 120 * 1000,
-    reuseExistingServer: !process.env.CI
+    reuseExistingServer: !process.env.PROD && !process.env.CI
   },
   projects: [
     {
