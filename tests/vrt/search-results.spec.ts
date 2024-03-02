@@ -23,7 +23,7 @@ test("検索結果がひとつ", async ({ shinyPoems }) => {
   await shinyPoems.searchByQuery("Shiny いくつもの可能性を繋ぎ照らす");
 
   await shinyPoems.page
-    .getByTestId("poem-card-nothing")
+    .getByTestId("poem-card-text")
     .waitFor({ state: "visible" });
 
   await expect(page).toHaveScreenshot({
@@ -37,7 +37,7 @@ test("検索結果が複数", async ({ shinyPoems }) => {
   await shinyPoems.searchByClothe("ほしあかり");
 
   await shinyPoems.page
-    .getByTestId("poem-card-nothing")
+    .getByTestId("poem-card-text")
     .waitFor({ state: "visible" });
 
   await expect(page).toHaveScreenshot({
