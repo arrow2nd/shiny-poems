@@ -1,6 +1,6 @@
 import { defineConfig, devices } from "@playwright/test";
 
-const prodUrl = "https://shiny-poems-git-main-arrow2nd.vercel.app";
+const prodUrl = "https://shiny-poems.vercel.app";
 const localUrl = "http://localhost:3000";
 
 export default defineConfig({
@@ -16,8 +16,14 @@ export default defineConfig({
     }
   },
   use: {
-    baseURL: process.env.PROD ? prodUrl : process.env.PREVIEW_URL || localUrl,
+    baseURL: process.env.PROD ? prodUrl : localUrl,
     trace: "retain-on-failure"
+  },
+  webServer: {
+    command: "pnpm build && pnpm start",
+    port: 3000,
+    timeout: 120 * 1000,
+    reuseExistingServer: !process.env.CI
   },
   projects: [
     {
