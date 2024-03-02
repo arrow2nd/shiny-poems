@@ -38,6 +38,7 @@ test("検索結果が複数", async ({ shinyPoems }) => {
 
   await shinyPoems.page
     .getByTestId("poem-card-text")
+    .first()
     .waitFor({ state: "visible" });
 
   await expect(page).toHaveScreenshot({
