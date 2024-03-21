@@ -26,6 +26,7 @@ export default async function Image({ params }: { params: { id: string } }) {
   ]);
 
   // Inconsolata は取得に失敗しても問題ない (記号のフォールバック用) ので無視
+  // kiwiMaru のみ取得できているか確認
   if (!kiwiMaru) {
     return new Response("failed to fetch font", {
       status: 500
@@ -56,6 +57,7 @@ export default async function Image({ params }: { params: { id: string } }) {
           color: "#4C7ABE",
           width: "100%",
           height: "100%",
+          padding: "0 64px",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -73,13 +75,14 @@ export default async function Image({ params }: { params: { id: string } }) {
             paddingRight: "40px"
           }}
         >
-          <div style={{ fontSize: 32 }}>{poem.clothesName}</div>
-          <div style={{ fontSize: 26 }}>{poem.idolName}</div>
+          <div style={{ fontSize: "32px" }}>{poem.clothesName}</div>
+          <div style={{ fontSize: "26px" }}>{poem.idolName}</div>
         </div>
+
         <div
           style={{
-            padding: "0 64px",
-            fontSize: 64,
+            // 1行のポエムが自動で改行されると左に寄った見た目になるので、フォントサイズを小さめにして余裕を持たせる
+            fontSize: lines.length === 1 ? "48px" : "64px",
             display: "flex",
             flexDirection: "column"
           }}

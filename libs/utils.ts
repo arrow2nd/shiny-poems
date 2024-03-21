@@ -24,10 +24,10 @@ export const getPoem = cache((id: RawPoemId): Poem | undefined => {
  */
 export const splitPoemText = (text: string) => {
   // 最初の文末で2つに分割
-  const splitted = text
+  const results = text
     .match(/(.+?(?:[。！？]|[!?]\s)+)(.+)/)
     ?.map((e) => e.trim());
 
   // 分割できなければそのまま返す
-  return splitted ? [splitted[1], splitted[2]] : [text];
+  return results ? [results[1], results[2]] : [text];
 };
