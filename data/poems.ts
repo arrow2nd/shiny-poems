@@ -1,6 +1,6 @@
 import { Poem } from "types/poem";
 
-export const updatedAtUTC = "2024/01/29 (JST)";
+export const updatedAtUTC = "2024/05/01 (JST)";
 export const poems: Poem[] = [
   {
     id: "CelestialColors_SakuragiMano",
@@ -1114,6 +1114,13 @@ export const poems: Poem[] = [
     clothesTitle: "ユアサイドマジーア",
     clothesName: "ユアサイドマジーア",
     text: "MAGIA——魔法ごと翻弄する青磁色"
+  },
+  {
+    id: "RespectiveWorkStyle_MitsumineYuika",
+    idolName: "三峰結華",
+    clothesTitle: "リスペクティブワークスタイル",
+    clothesName: "リスペクティブワークスタイル",
+    text: "WORKING：『いらっしゃいませ』の未来"
   },
   {
     id: "ReflectionThemePark_MitsumineYuika",
@@ -3006,6 +3013,13 @@ export const poems: Poem[] = [
     text: "Have fun!　ゆらり汗、ゆられて浮遊"
   },
   {
+    id: "RespectiveWorkStyle_MayuzumiFuyuko",
+    idolName: "黛冬優子",
+    clothesTitle: "リスペクティブワークスタイル",
+    clothesName: "リスペクティブワークスタイル",
+    text: "WORKING：ふゆ先生と遊びましょ"
+  },
+  {
     id: "AmourOfWhite_MayuzumiFuyuko",
     idolName: "黛冬優子",
     clothesTitle: "アムールオブホワイト",
@@ -3377,6 +3391,34 @@ export const poems: Poem[] = [
     text: "フルーツパーラー。メロン党、起立。"
   },
   {
+    id: "TeddyFollowWhite_IchikawaHinana",
+    idolName: "浅倉透",
+    clothesTitle: "テディフォローホワイト",
+    clothesName: "テディフォローホワイト",
+    text: "フワーフワーベアー♡ ふわふわキャンディーはどこ？"
+  },
+  {
+    id: "TeddyFollowWhite_HiguchiMadoka",
+    idolName: "浅倉透",
+    clothesTitle: "テディフォローホワイト",
+    clothesName: "テディフォローホワイト",
+    text: "フワーフワーベアー♡ ガウガウ・メルティスノー"
+  },
+  {
+    id: "TeddyFollowWhite_AsakuraToru",
+    idolName: "浅倉透",
+    clothesTitle: "テディフォローホワイト",
+    clothesName: "テディフォローホワイト",
+    text: "フワーフワーベアー♡ クマ式、飴獲得大作戦"
+  },
+  {
+    id: "TeddyFollowWhite_FukumaruKoito",
+    idolName: "浅倉透",
+    clothesTitle: "テディフォローホワイト",
+    clothesName: "テディフォローホワイト",
+    text: "フワーフワーベアー♡ 真っ白な気持ちに信頼を描いて"
+  },
+  {
     id: "FlowingBhel_AsakuraToru",
     idolName: "浅倉透",
     clothesTitle: "フローウィングベル",
@@ -3452,6 +3494,13 @@ export const poems: Poem[] = [
     clothesTitle: "ペインティングオール",
     clothesName: "ペインティングオール",
     text: ";) ヌリタクリ・ハリタクル"
+  },
+  {
+    id: "DressUpParfum_HiguchiMadoka",
+    idolName: "樋口円香",
+    clothesTitle: "ドレスアップパルファム",
+    clothesName: "ドレスアップパルファム",
+    text: "Cheers! シャンデリア・ミラージュ"
   },
   {
     id: "Delight_Summer_HiguchiMadoka",
@@ -3718,6 +3767,13 @@ export const poems: Poem[] = [
     clothesTitle: "ペインティングオール",
     clothesName: "ペインティングオール",
     text: ";) 翼も描けるかも"
+  },
+  {
+    id: "DressUpParfum_FukumaruKoito",
+    idolName: "福丸小糸",
+    clothesTitle: "ドレスアップパルファム",
+    clothesName: "ドレスアップパルファム",
+    text: "Cheers! まだバタ足だけど、少しずつ"
   },
   {
     id: "Delight_Summer_FukumaruKoito",
@@ -4070,6 +4126,13 @@ export const poems: Poem[] = [
     text: "High Girls　頂点"
   },
   {
+    id: "FlowingBhel_Suzuki_Hana",
+    idolName: "鈴木羽那",
+    clothesTitle: "フローウィングベル",
+    clothesName: "フローウィングベル",
+    text: "ブランクペイジ。鈴木羽那領域"
+  },
+  {
     id: "HolyNightCape_SuzukiHana",
     idolName: "鈴木羽那",
     clothesTitle: "ホーリーナイトケープ",
@@ -4117,6 +4180,13 @@ export const poems: Poem[] = [
     clothesTitle: "オールオブショーオフ",
     clothesName: "オールオブショーオフ",
     text: "High Girls　ハートに爪を立てちゃうかも"
+  },
+  {
+    id: "FlowingBhel_Ikuta_Haruki",
+    idolName: "郁田はるき",
+    clothesTitle: "フローウィングベル",
+    clothesName: "フローウィングベル",
+    text: "ブランクペイジ。なんにでもなれると願って"
   },
   {
     id: "HolyNightCape_IkutaHaruki",
