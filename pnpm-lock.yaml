@@ -78,7 +78,7 @@ devDependencies:
     version: 3.3.2
   prettier-plugin-tailwindcss:
     specifier: ^0.6.0
-    version: 0.6.3(@trivago/prettier-plugin-sort-imports@4.3.0)(prettier@3.3.2)
+    version: 0.6.4(@trivago/prettier-plugin-sort-imports@4.3.0)(prettier@3.3.2)
   tailwindcss:
     specifier: ^3.4.1
     version: 3.4.4(ts-node@10.9.2)
@@ -4620,8 +4620,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-tailwindcss@0.6.3(@trivago/prettier-plugin-sort-imports@4.3.0)(prettier@3.3.2):
-    resolution: {integrity: sha512-GeJ9bqXN4APAP0V5T2a1J/o6a50MWevEUCPWxijpdXFDQkBCoAfz4pQfv+YMXSqZ5GXLMDYio0mUOfrYL7gf4w==}
+  /prettier-plugin-tailwindcss@0.6.4(@trivago/prettier-plugin-sort-imports@4.3.0)(prettier@3.3.2):
+    resolution: {integrity: sha512-3vhbIvlKyAWPaw9bUr2cw6M1BGx2Oy9CCLJyv+nxEiBGCTcL69WcAz2IFMGqx8IXSzQCInGSo2ujAByg9poHLQ==}
     engines: {node: '>=14.21.3'}
     peerDependencies:
       '@ianvs/prettier-plugin-sort-imports': '*'
