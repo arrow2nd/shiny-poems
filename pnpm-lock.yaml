@@ -36,7 +36,7 @@ devDependencies:
     version: 14.5.2(@testing-library/dom@10.3.1)
   '@trivago/prettier-plugin-sort-imports':
     specifier: ^4.3.0
-    version: 4.3.0(prettier@3.3.2)
+    version: 4.3.0(prettier@3.3.3)
   '@types/jest':
     specifier: ^29.5.12
     version: 29.5.12
@@ -75,10 +75,10 @@ devDependencies:
     version: 8.4.39
   prettier:
     specifier: ^3.2.5
-    version: 3.3.2
+    version: 3.3.3
   prettier-plugin-tailwindcss:
     specifier: ^0.6.0
-    version: 0.6.5(@trivago/prettier-plugin-sort-imports@4.3.0)(prettier@3.3.2)
+    version: 0.6.5(@trivago/prettier-plugin-sort-imports@4.3.0)(prettier@3.3.3)
   tailwindcss:
     specifier: ^3.4.1
     version: 3.4.4(ts-node@10.9.2)
@@ -1252,7 +1252,7 @@ packages:
     engines: {node: '>= 10'}
     dev: true
 
-  /@trivago/prettier-plugin-sort-imports@4.3.0(prettier@3.3.2):
+  /@trivago/prettier-plugin-sort-imports@4.3.0(prettier@3.3.3):
     resolution: {integrity: sha512-r3n0onD3BTOVUNPhR4lhVK4/pABGpbA7bW3eumZnYdKaHkf1qEC+Mag6DPbGNuuh0eG8AaYj+YqmVHSiGslaTQ==}
     peerDependencies:
       '@vue/compiler-sfc': 3.x
@@ -1267,7 +1267,7 @@ packages:
       '@babel/types': 7.17.0
       javascript-natural-sort: 0.7.1
       lodash: 4.17.21
-      prettier: 3.3.2
+      prettier: 3.3.3
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -4696,7 +4696,7 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-tailwindcss@0.6.5(@trivago/prettier-plugin-sort-imports@4.3.0)(prettier@3.3.2):
+  /prettier-plugin-tailwindcss@0.6.5(@trivago/prettier-plugin-sort-imports@4.3.0)(prettier@3.3.3):
     resolution: {integrity: sha512-axfeOArc/RiGHjOIy9HytehlC0ZLeMaqY09mm8YCkMzznKiDkwFzOpBvtuhuv3xG5qB73+Mj7OCe2j/L1ryfuQ==}
     engines: {node: '>=14.21.3'}
     peerDependencies:
@@ -4748,12 +4748,12 @@ packages:
       prettier-plugin-svelte:
         optional: true
     dependencies:
-      '@trivago/prettier-plugin-sort-imports': 4.3.0(prettier@3.3.2)
-      prettier: 3.3.2
+      '@trivago/prettier-plugin-sort-imports': 4.3.0(prettier@3.3.3)
+      prettier: 3.3.3
     dev: true
 
-  /prettier@3.3.2:
-    resolution: {integrity: sha512-rAVeHYMcv8ATV5d508CFdn+8/pHPpXeIid1DdrPwXnaAdH7cqjVbpJaT5eq4yRAFU/lsbwYwSF/n5iNrdJHPQA==}
+  /prettier@3.3.3:
+    resolution: {integrity: sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
