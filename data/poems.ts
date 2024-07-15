@@ -1,6 +1,6 @@
 import { Poem } from "types/poem";
 
-export const updatedAtUTC = "2024/05/01 (JST)";
+export const updatedAtUTC = "2024/07/16 (JST)";
 export const poems: Poem[] = [
   {
     id: "CelestialColors_SakuragiMano",
@@ -36,6 +36,13 @@ export const poems: Poem[] = [
     clothesTitle: "リスペクティブワークスタイル",
     clothesName: "リスペクティブワークスタイル",
     text: "WORKING：お散歩時間も秘書にお任せあれ"
+  },
+  {
+    id: "RefulgentPlumage_SakuragiMano",
+    idolName: "櫻木真乃",
+    clothesTitle: "リフレジェントプルマージュ",
+    clothesName: "リフレジェントプルマージュ",
+    text: "join us! 夜空に高く、星よりもきらめいて"
   },
   {
     id: "BaitwudeiRestaurant_SakuragiMano",
@@ -220,6 +227,13 @@ export const poems: Poem[] = [
     text: "WORKING：滞在中、最高の時間を提供します"
   },
   {
+    id: "RefulgentPlumage_KazanoHiori",
+    idolName: "風野灯織",
+    clothesTitle: "リフレジェントプルマージュ",
+    clothesName: "リフレジェントプルマージュ",
+    text: "join us! プリズムのヒカリを纏って"
+  },
+  {
     id: "RingingPreppyGirl_KazanoHiori",
     idolName: "風野灯織",
     clothesTitle: "リンギングプレッピーガール",
@@ -400,6 +414,13 @@ export const poems: Poem[] = [
     clothesTitle: "リスペクティブワークスタイル",
     clothesName: "リスペクティブワークスタイル",
     text: "WORKING：左オーライです！"
+  },
+  {
+    id: "RefulgentPlumage_HachimiyaMeguru",
+    idolName: "八宮めぐる",
+    clothesTitle: "リフレジェントプルマージュ",
+    clothesName: "リフレジェントプルマージュ",
+    text: "join us! ヒカリと共に……"
   },
   {
     id: "RingingPreppyGirl_HachimiyaMeguru",
@@ -605,6 +626,13 @@ export const poems: Poem[] = [
     text: "WORKING：今日も元気なおはようを"
   },
   {
+    id: "RefulgentPlumage_TsukiokaKogane",
+    idolName: "月岡恋鐘",
+    clothesTitle: "リフレジェントプルマージュ",
+    clothesName: "リフレジェントプルマージュ",
+    text: "join us! 一際眩しく"
+  },
+  {
     id: "FashionableSummer_TsukiokaKogane",
     idolName: "月岡恋鐘",
     clothesTitle: "ファッショナブルサマー",
@@ -780,6 +808,13 @@ export const poems: Poem[] = [
     text: "WORKING：ビューティーはお任せで"
   },
   {
+    id: "RefulgentPlumage_TanakaMamimi",
+    idolName: "田中摩美々",
+    clothesTitle: "リフレジェントプルマージュ",
+    clothesName: "リフレジェントプルマージュ",
+    text: "join us! カラフル　ときどき　めんどー"
+  },
+  {
     id: "ReflectionThemePark_TanakaMamimi",
     idolName: "田中摩美々",
     clothesTitle: "リフレクションテーマパーク",
@@ -946,6 +981,13 @@ export const poems: Poem[] = [
     clothesTitle: "ユアサイドマジーア",
     clothesName: "ユアサイドマジーア",
     text: "MAGIA——碧色は乙女を想う"
+  },
+  {
+    id: "RefulgentPlumage_ShiraseSakuya",
+    idolName: "白瀬咲耶",
+    clothesTitle: "リフレジェントプルマージュ",
+    clothesName: "リフレジェントプルマージュ",
+    text: "join us! ファンファーレが聴こえる"
   },
   {
     id: "FashionableSummer_ShiraseSakuya",
@@ -1123,6 +1165,13 @@ export const poems: Poem[] = [
     text: "WORKING：『いらっしゃいませ』の未来"
   },
   {
+    id: "RefulgentPlumage_MitsumineYuika",
+    idolName: "三峰結華",
+    clothesTitle: "リフレジェントプルマージュ",
+    clothesName: "リフレジェントプルマージュ",
+    text: "join us! それなら、すべての色で"
+  },
+  {
     id: "ReflectionThemePark_MitsumineYuika",
     idolName: "三峰結華",
     clothesTitle: "リフレクションテーマパーク",
@@ -1289,6 +1338,13 @@ export const poems: Poem[] = [
     clothesTitle: "リスペクティブワークスタイル",
     clothesName: "リスペクティブワークスタイル",
     text: "WORKING：執刀！幽谷先生"
+  },
+  {
+    id: "RefulgentPlumage_YukokuKiriko",
+    idolName: "幽谷霧子",
+    clothesTitle: "リフレジェントプルマージュ",
+    clothesName: "リフレジェントプルマージュ",
+    text: "join us! 渡り鳥たちの見る夢は"
   },
   {
     id: "FashionableSummer_YukokuKiriko",
@@ -1473,6 +1529,13 @@ export const poems: Poem[] = [
     text: "White heart! まだ白く　まだ青く"
   },
   {
+    id: "RefulgentPlumage_KomiyaKaho",
+    idolName: "小宮果穂",
+    clothesTitle: "リフレジェントプルマージュ",
+    clothesName: "リフレジェントプルマージュ",
+    text: "join us! どんな色にだってなれるんだ"
+  },
+  {
     id: "DolceCioccolata_KomiyaKaho",
     idolName: "小宮果穂",
     clothesTitle: "ドルチェチョッコラータ",
@@ -1655,6 +1718,13 @@ export const poems: Poem[] = [
     text: "White heart! 『かっこいい』を所望します！"
   },
   {
+    id: "RefulgentPlumage_SonodaChiyoko",
+    idolName: "園田智代子",
+    clothesTitle: "リフレジェントプルマージュ",
+    clothesName: "リフレジェントプルマージュ",
+    text: "join us! 絶妙なファサァッ……感が好き"
+  },
+  {
     id: "DolceCioccolata_SonodaChiyoko",
     idolName: "園田智代子",
     clothesTitle: "ドルチェチョッコラータ",
@@ -1823,11 +1893,25 @@ export const poems: Poem[] = [
     text: "MISSION：太陽系の切り込み隊長"
   },
   {
+    id: "RespectiveWorkStyle_SaijoJuri",
+    idolName: "西城樹里",
+    clothesTitle: "リスペクティブワークスタイル",
+    clothesName: "リスペクティブワークスタイル",
+    text: "WORKING：お通しと笑顔は最速で！"
+  },
+  {
     id: "EleganceOfWhite_SaijoJuri",
     idolName: "西城樹里",
     clothesTitle: "エレガンスオブホワイト",
     clothesName: "エレガンスオブホワイト",
     text: "White heart! いつ何時も、誠意を込めて"
+  },
+  {
+    id: "RefulgentPlumage_SaijoJuri",
+    idolName: "西城樹里",
+    clothesTitle: "リフレジェントプルマージュ",
+    clothesName: "リフレジェントプルマージュ",
+    text: "join us! 日々という贈り物を胸に"
   },
   {
     id: "DolceCioccolata_SaijoJuri",
@@ -2003,6 +2087,13 @@ export const poems: Poem[] = [
     clothesTitle: "エレガンスオブホワイト",
     clothesName: "エレガンスオブホワイト",
     text: "White heart! キミゴコロ諜報部、主査"
+  },
+  {
+    id: "RefulgentPlumage_MorinoRinze",
+    idolName: "杜野凛世",
+    clothesTitle: "リフレジェントプルマージュ",
+    clothesName: "リフレジェントプルマージュ",
+    text: "join us! 想ひ、溢れいづる"
   },
   {
     id: "DolceCioccolata_MorinoRinze",
@@ -2187,6 +2278,13 @@ export const poems: Poem[] = [
     text: "White heart! 青色チェックで包装"
   },
   {
+    id: "RefulgentPlumage_ArisugawaNatsuha",
+    idolName: "有栖川夏葉",
+    clothesTitle: "リフレジェントプルマージュ",
+    clothesName: "リフレジェントプルマージュ",
+    text: "join us! THE SPARKLERS"
+  },
+  {
     id: "DolceCioccolata_ArisugawaNatsuha",
     idolName: "有栖川夏葉",
     clothesTitle: "ドルチェチョッコラータ",
@@ -2339,6 +2437,13 @@ export const poems: Poem[] = [
     clothesTitle: "リスペクティブワークスタイル",
     clothesName: "リスペクティブワークスタイル",
     text: "WORKING：楽しい時間をお届けします☆"
+  },
+  {
+    id: "RefulgentPlumage_OsakiAmana",
+    idolName: "大崎甘奈",
+    clothesTitle: "リフレジェントプルマージュ",
+    clothesName: "リフレジェントプルマージュ",
+    text: "join us! この彩で、貴方を染めたい"
   },
   {
     id: "KaburyiOfWhite_OsakiAmana",
@@ -2509,6 +2614,20 @@ export const poems: Poem[] = [
     text: "Have fun!　シュガーミルク・リトルホエール"
   },
   {
+    id: "RespectiveWorkStyle_OsakiTenka",
+    idolName: "大崎甜花",
+    clothesTitle: "リスペクティブワークスタイル",
+    clothesName: "リスペクティブワークスタイル",
+    text: "WORKING：おうちのすぐそこ"
+  },
+  {
+    id: "RefulgentPlumage_OsakiTenka",
+    idolName: "大崎甜花",
+    clothesTitle: "リフレジェントプルマージュ",
+    clothesName: "リフレジェントプルマージュ",
+    text: "join us! はぜて咲く、大輪の華"
+  },
+  {
     id: "KaburyiOfWhite_OsakiTenka",
     idolName: "大崎甜花",
     clothesTitle: "カブリィオブホワイト",
@@ -2675,6 +2794,13 @@ export const poems: Poem[] = [
     clothesTitle: "ディライトサマー",
     clothesName: "ディライトサマー",
     text: "Have fun!　帽子の下、鯨の唄を口遊め"
+  },
+  {
+    id: "RefulgentPlumage_KuwayamaChiyuki",
+    idolName: "桑山千雪",
+    clothesTitle: "リフレジェントプルマージュ",
+    clothesName: "リフレジェントプルマージュ",
+    text: "join us! 煌彩と共に、凛と立ち"
   },
   {
     id: "KaburyiOfWhite_KuwayamaChiyuki",
@@ -2859,6 +2985,13 @@ export const poems: Poem[] = [
     text: "What's white?　紐解いてみせる"
   },
   {
+    id: "RefulgentPlumage_SerizawaAsahi",
+    idolName: "芹沢あさひ",
+    clothesTitle: "リフレジェントプルマージュ",
+    clothesName: "リフレジェントプルマージュ",
+    text: "join us! 光は、君の羽ばたく方に"
+  },
+  {
     id: "DefaultNeonimize_SerizawaAsahi",
     idolName: "芹沢あさひ",
     clothesTitle: "デフォルトネーマナイズ",
@@ -3025,6 +3158,13 @@ export const poems: Poem[] = [
     clothesTitle: "アムールオブホワイト",
     clothesName: "アムールオブホワイト",
     text: "What's white?　すべての恋を跪かせる"
+  },
+  {
+    id: "RefulgentPlumage_MayuzumiFuyuko",
+    idolName: "黛冬優子",
+    clothesTitle: "リフレジェントプルマージュ",
+    clothesName: "リフレジェントプルマージュ",
+    text: "join us! 廻れ、世界"
   },
   {
     id: "DefaultNeonimize_MayuzumiFuyuko",
@@ -3195,6 +3335,13 @@ export const poems: Poem[] = [
     text: "What's white?　愛に溺れさせてあげる♪"
   },
   {
+    id: "RefulgentPlumage_IzumiMei",
+    idolName: "和泉愛依",
+    clothesTitle: "リフレジェントプルマージュ",
+    clothesName: "リフレジェントプルマージュ",
+    text: "join us! 景色を染めるのは、常に自分"
+  },
+  {
     id: "DefaultNeonimize_IzumiMei",
     idolName: "和泉愛依",
     clothesTitle: "デフォルトネーマナイズ",
@@ -3347,6 +3494,20 @@ export const poems: Poem[] = [
     clothesTitle: "ディライトサマー",
     clothesName: "ディライトサマー",
     text: "Have fun!　桃源郷ってやつ"
+  },
+  {
+    id: "RespectiveWorkStyle_AsakuraToru",
+    idolName: "浅倉透",
+    clothesTitle: "リスペクティブワークスタイル",
+    clothesName: "リスペクティブワークスタイル",
+    text: "WORKING：火星からは以上です"
+  },
+  {
+    id: "RefulgentPlumage_AsakuraToru",
+    idolName: "浅倉透",
+    clothesTitle: "リフレジェントプルマージュ",
+    clothesName: "リフレジェントプルマージュ",
+    text: "join us! トオル、デラックスエディション"
   },
   {
     id: "ShiroKuroFonce_AsakuraToru",
@@ -3517,6 +3678,13 @@ export const poems: Poem[] = [
     text: "WORKING：事務員なめんなよ※H.N.参考"
   },
   {
+    id: "RefulgentPlumage_HiguchiMadoka",
+    idolName: "樋口円香",
+    clothesTitle: "リフレジェントプルマージュ",
+    clothesName: "リフレジェントプルマージュ",
+    text: "join us! 誰かに届いた、私の歌は"
+  },
+  {
     id: "ShiroKuroFonce_HiguchiMadoka",
     idolName: "樋口円香",
     clothesTitle: "シロクロフォンセ",
@@ -3636,6 +3804,13 @@ export const poems: Poem[] = [
     text: ";) しあわせ色で塗って"
   },
   {
+    id: "DressUpParfum_IchikawaHinana",
+    idolName: "市川雛菜",
+    clothesTitle: "ドレスアップパルファム",
+    clothesName: "ドレスアップパルファム",
+    text: "Cheers! ずっとずっと満開のまま"
+  },
+  {
     id: "Delight_Summer_IchikawaHinana",
     idolName: "市川雛菜",
     clothesTitle: "ディライトサマー",
@@ -3648,6 +3823,13 @@ export const poems: Poem[] = [
     clothesTitle: "リスペクティブワークスタイル",
     clothesName: "リスペクティブワークスタイル",
     text: "WORKING：ふわふわかわいいと一緒♡"
+  },
+  {
+    id: "RefulgentPlumage_IchikawaHinana",
+    idolName: "市川雛菜",
+    clothesTitle: "リフレジェントプルマージュ",
+    clothesName: "リフレジェントプルマージュ",
+    text: "join us! さぁ、彩の向こうへ"
   },
   {
     id: "ShiroKuroFonce_IchikawaHinana",
@@ -3790,6 +3972,13 @@ export const poems: Poem[] = [
     text: "WORKING：じ、人命救助、第一です……！"
   },
   {
+    id: "RefulgentPlumage_FukumaruKoito",
+    idolName: "福丸小糸",
+    clothesTitle: "リフレジェントプルマージュ",
+    clothesName: "リフレジェントプルマージュ",
+    text: "join us! 置いていかれないように、高く"
+  },
+  {
     id: "ShiroKuroFonce_FukumaruKoito",
     idolName: "福丸小糸",
     clothesTitle: "シロクロフォンセ",
@@ -3895,6 +4084,13 @@ export const poems: Poem[] = [
     text: "#Shiny サイズ違いの心"
   },
   {
+    id: "DressUpParfum_NanakusaNichika",
+    idolName: "七草にちか",
+    clothesTitle: "ドレスアップパルファム",
+    clothesName: "ドレスアップパルファム",
+    text: "Cheers! 祝福は、まだ早い"
+  },
+  {
     id: "HorreurTreat_NanakusaNichika",
     idolName: "七草にちか",
     clothesTitle: "オルールトリィト",
@@ -3907,6 +4103,13 @@ export const poems: Poem[] = [
     clothesTitle: "ディライトサマー",
     clothesName: "ディライトサマー",
     text: "Have fun!　辿りつく、いつか"
+  },
+  {
+    id: "RefulgentPlumage_NanakusaNichika",
+    idolName: "七草にちか",
+    clothesTitle: "リフレジェントプルマージュ",
+    clothesName: "リフレジェントプルマージュ",
+    text: "join us! 鮮やか、いたくてまぶしい"
   },
   {
     id: "KougyokuUsagiNoSou_NanakusaNichika",
@@ -4007,6 +4210,13 @@ export const poems: Poem[] = [
     text: "#Shiny no more"
   },
   {
+    id: "DressUpParfum_AketaMikoto",
+    idolName: "緋田美琴",
+    clothesTitle: "ドレスアップパルファム",
+    clothesName: "ドレスアップパルファム",
+    text: "Cheers! brand new way"
+  },
+  {
     id: "HorreurTreat_AketaMikoto",
     idolName: "緋田美琴",
     clothesTitle: "オルールトリィト",
@@ -4033,6 +4243,13 @@ export const poems: Poem[] = [
     clothesTitle: "セットアップクレイジー",
     clothesName: "セットアップクレイジー",
     text: "checkmate!"
+  },
+  {
+    id: "RefulgentPlumage_AketaMikoto",
+    idolName: "緋田美琴",
+    clothesTitle: "リフレジェントプルマージュ",
+    clothesName: "リフレジェントプルマージュ",
+    text: "join us! 一瞬の華では終わらない"
   },
   {
     id: "KougyokuUsagiNoSou_AketaMikoto",
@@ -4126,6 +4343,13 @@ export const poems: Poem[] = [
     text: "High Girls　頂点"
   },
   {
+    id: "RefulgentPlumage_SuzukiHana",
+    idolName: "鈴木羽那",
+    clothesTitle: "リフレジェントプルマージュ",
+    clothesName: "リフレジェントプルマージュ",
+    text: "join us! 極彩"
+  },
+  {
     id: "FlowingBhel_Suzuki_Hana",
     idolName: "鈴木羽那",
     clothesTitle: "フローウィングベル",
@@ -4154,6 +4378,13 @@ export const poems: Poem[] = [
     text: "High Girls　舐めてるヤツは、かっ飛ばす"
   },
   {
+    id: "RefulgentPlumage_IkarugaLuca",
+    idolName: "斑鳩ルカ",
+    clothesTitle: "リフレジェントプルマージュ",
+    clothesName: "リフレジェントプルマージュ",
+    text: "join us! OUT OF TUNE"
+  },
+  {
     id: "MidnightMonster_IkarugaLuca",
     idolName: "斑鳩ルカ",
     clothesTitle: "ミッドナイトモンスター",
@@ -4180,6 +4411,13 @@ export const poems: Poem[] = [
     clothesTitle: "オールオブショーオフ",
     clothesName: "オールオブショーオフ",
     text: "High Girls　ハートに爪を立てちゃうかも"
+  },
+  {
+    id: "RefulgentPlumage_IkutaHaruki",
+    idolName: "郁田はるき",
+    clothesTitle: "リフレジェントプルマージュ",
+    clothesName: "リフレジェントプルマージュ",
+    text: "join us! この上なく無垢な"
   },
   {
     id: "FlowingBhel_Ikuta_Haruki",
