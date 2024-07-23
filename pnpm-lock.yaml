@@ -16,7 +16,7 @@ dependencies:
     version: 5.2.1(react@18.3.1)
   react-wavify:
     specifier: ^1.10.0
-    version: 1.11.0(react@18.3.1)
+    version: 1.11.1(react@18.3.1)
   sharp:
     specifier: ^0.33.2
     version: 0.33.4
@@ -4818,8 +4818,8 @@ packages:
     resolution: {integrity: sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==}
     dev: true
 
-  /react-wavify@1.11.0(react@18.3.1):
-    resolution: {integrity: sha512-TsoG4hVcl69rwmlrUDCh4J4ssRRWlK9jy5zE1c1M8ug04JURVNlrTPeEQNHWmirRxabt7BbXaWvRXsYHJqx1PA==}
+  /react-wavify@1.11.1(react@18.3.1):
+    resolution: {integrity: sha512-9MWGSwdVBri2XsegpysGyxWAeqIKdikwj+6Dg2Ssi3xFoY5HUVDiPbEZ62ZP30DefKE5IzWKNdFjyIEJfVikhw==}
     peerDependencies:
       react: ^0.13.0 || ^0.14.0 || >=15
     dependencies:
