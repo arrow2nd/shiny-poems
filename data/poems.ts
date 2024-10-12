@@ -1,6 +1,6 @@
 import { Poem } from "types/poem";
 
-export const updatedAtUTC = "2024/07/16 (JST)";
+export const updatedAtUTC = "2024/10/13 (JST)";
 export const poems: Poem[] = [
   {
     id: "CelestialColors_SakuragiMano",
@@ -169,6 +169,13 @@ export const poems: Poem[] = [
     clothesTitle: "オーバーキャストモノクローム",
     clothesName: "オーバーキャストモノクローム",
     text: "ワンステップ。公園の鳩さんカラーでお気に入り"
+  },
+  {
+    id: "FriskySummer_SakuragiMano",
+    idolName: "櫻木真乃",
+    clothesTitle: "フリスキーサマー",
+    clothesName: "フリスキーサマー",
+    text: "ヴァケーション！サン・オレンジをさらって"
   },
   {
     id: "One_Day_Officer",
@@ -360,6 +367,13 @@ export const poems: Poem[] = [
     text: "ワンステップ。蒼はどこまでも広く在り続ける"
   },
   {
+    id: "FriskySummer_KazanoHiori",
+    idolName: "風野灯織",
+    clothesTitle: "フリスキーサマー",
+    clothesName: "フリスキーサマー",
+    text: "ヴァケーション！涼を納れる"
+  },
+  {
     id: "One_Day_Chief",
     idolName: "風野灯織",
     clothesTitle: "ワンデイシリーズ",
@@ -542,6 +556,13 @@ export const poems: Poem[] = [
     text: "ワンステップ。それは雲を裂くヒカリ"
   },
   {
+    id: "FriskySummer_HachimiyaMeguru",
+    idolName: "八宮めぐる",
+    clothesTitle: "フリスキーサマー",
+    clothesName: "フリスキーサマー",
+    text: "ヴァケーション！感情論的、健康的"
+  },
+  {
     id: "One_Day_Capturer",
     idolName: "八宮めぐる",
     clothesTitle: "ワンデイシリーズ",
@@ -715,6 +736,13 @@ export const poems: Poem[] = [
     clothesTitle: "オーバーキャストモノクローム",
     clothesName: "オーバーキャストモノクローム",
     text: "ワンステップ。纏うは白金、歌えよ黄金"
+  },
+  {
+    id: "FriskySummer_TsukiokaKogane",
+    idolName: "月岡恋鐘",
+    clothesTitle: "フリスキーサマー",
+    clothesName: "フリスキーサマー",
+    text: "ヴァケーション！気分はブルーハワイ"
   },
   {
     id: "ReflectionThemePark_TsukiokaKogane",
@@ -906,6 +934,13 @@ export const poems: Poem[] = [
     text: "ワンステップ。この翼が、たぶん大切だから"
   },
   {
+    id: "FriskySummer_TanakaMamimi",
+    idolName: "田中摩美々",
+    clothesTitle: "フリスキーサマー",
+    clothesName: "フリスキーサマー",
+    text: "ヴァケーション！夜海を舞う"
+  },
+  {
     id: "PlatinoWhiteGold_TanakaMamimi",
     idolName: "田中摩美々",
     clothesTitle: "プラティノホワイトゴールド",
@@ -981,6 +1016,20 @@ export const poems: Poem[] = [
     clothesTitle: "ユアサイドマジーア",
     clothesName: "ユアサイドマジーア",
     text: "MAGIA——碧色は乙女を想う"
+  },
+  {
+    id: "RespectiveWorkStyle_ShiraseSakuya",
+    idolName: "白瀬咲耶",
+    clothesTitle: "リスペクティブワークスタイル",
+    clothesName: "リスペクティブワークスタイル",
+    text: "WORKING：幼き日の憧れ"
+  },
+  {
+    id: "RespectiveWorkStyle_NanakusaNichika",
+    idolName: "白瀬咲耶",
+    clothesTitle: "リスペクティブワークスタイル",
+    clothesName: "リスペクティブワークスタイル",
+    text: "WORKING：満タン＆GO!"
   },
   {
     id: "RefulgentPlumage_ShiraseSakuya",
@@ -1072,6 +1121,13 @@ export const poems: Poem[] = [
     clothesTitle: "オーバーキャストモノクローム",
     clothesName: "オーバーキャストモノクローム",
     text: "ワンステップ。この空の下にいる"
+  },
+  {
+    id: "FriskySummer_ShiraseSakuya",
+    idolName: "白瀬咲耶",
+    clothesTitle: "フリスキーサマー",
+    clothesName: "フリスキーサマー",
+    text: "ヴァケーション！キミと夜空を泳ぎたい"
   },
   {
     id: "ReflectionThemePark_ShiraseSakuya",
@@ -1263,6 +1319,13 @@ export const poems: Poem[] = [
     text: "ワンステップ。これは幸せを降らせるための鈍色"
   },
   {
+    id: "FriskySummer_MitsumineYuika",
+    idolName: "三峰結華",
+    clothesTitle: "フリスキーサマー",
+    clothesName: "フリスキーサマー",
+    text: "ヴァケーション！冒険か、迷宮かヴァケーション！"
+  },
+  {
     id: "PlatinoWhiteGold_MitsumineYuika",
     idolName: "三峰結華",
     clothesTitle: "プラティノホワイトゴールド",
@@ -1429,6 +1492,13 @@ export const poems: Poem[] = [
     clothesTitle: "オーバーキャストモノクローム",
     clothesName: "オーバーキャストモノクローム",
     text: "ワンステップ。小鳥よ小鳥、世界はきみの庭"
+  },
+  {
+    id: "FriskySummer_YukokuKiriko",
+    idolName: "幽谷霧子",
+    clothesTitle: "フリスキーサマー",
+    clothesName: "フリスキーサマー",
+    text: "ヴァケーション！藍より深い、海の小夜曲"
   },
   {
     id: "ReflectionThemePark_YukokuKiriko",
@@ -1648,6 +1718,13 @@ export const poems: Poem[] = [
     text: "ワンステップ。飛び出せ、その向こうへ"
   },
   {
+    id: "FriskySummer_KomiyaKaho",
+    idolName: "小宮果穂",
+    clothesTitle: "フリスキーサマー",
+    clothesName: "フリスキーサマー",
+    text: "ヴァケーション！全力で遊ぶ準備　よし！"
+  },
+  {
     id: "Jogging_Suits_KomiyaKaho",
     idolName: "小宮果穂",
     clothesTitle: "ジャージ",
@@ -1828,6 +1905,13 @@ export const poems: Poem[] = [
     clothesTitle: "オーバーキャストモノクローム",
     clothesName: "オーバーキャストモノクローム",
     text: "ワンステップ。お腹のボタン、飛びませんように"
+  },
+  {
+    id: "FriskySummer_SonodaChiyoko",
+    idolName: "園田智代子",
+    clothesTitle: "フリスキーサマー",
+    clothesName: "フリスキーサマー",
+    text: "ヴァケーション！あみあみ型に焼けないようにする"
   },
   {
     id: "KissaClimaxSeifuku_SonodaChiyoko",
@@ -2019,6 +2103,13 @@ export const poems: Poem[] = [
     text: "ワンステップ。何処へでも、何処までもこの翼で"
   },
   {
+    id: "FriskySummer_SaijoJuri",
+    idolName: "西城樹里",
+    clothesTitle: "フリスキーサマー",
+    clothesName: "フリスキーサマー",
+    text: "ヴァケーション！気まぐれサニーデイ"
+  },
+  {
     id: "Jogging_Suits_SaijoJuri",
     idolName: "西城樹里",
     clothesTitle: "ジャージ",
@@ -2199,6 +2290,13 @@ export const poems: Poem[] = [
     clothesTitle: "オーバーキャストモノクローム",
     clothesName: "オーバーキャストモノクローム",
     text: "ワンステップ。翅翼に微熱あり"
+  },
+  {
+    id: "FriskySummer_MorinoRinze",
+    idolName: "杜野凛世",
+    clothesTitle: "フリスキーサマー",
+    clothesName: "フリスキーサマー",
+    text: "ヴァケーション！絶対みまも凛世"
   },
   {
     id: "Jogging_Suits_MorinoRinze",
@@ -2390,6 +2488,13 @@ export const poems: Poem[] = [
     text: "ワンステップ。雲の上、虹の向こう、夢の先まで"
   },
   {
+    id: "FriskySummer_ArisugawaNatsuha",
+    idolName: "有栖川夏葉",
+    clothesTitle: "フリスキーサマー",
+    clothesName: "フリスキーサマー",
+    text: "ヴァケーション！お揃いストリートもマストバイ"
+  },
+  {
     id: "Jogging_Suits_ArisugawaNatsuha",
     idolName: "有栖川夏葉",
     clothesTitle: "ジャージ",
@@ -2563,6 +2668,13 @@ export const poems: Poem[] = [
     clothesTitle: "オーバーキャストモノクローム",
     clothesName: "オーバーキャストモノクローム",
     text: "ワンステップ。一緒に見たい、空の上"
+  },
+  {
+    id: "FriskySummer_OsakiAmana",
+    idolName: "大崎甘奈",
+    clothesTitle: "フリスキーサマー",
+    clothesName: "フリスキーサマー",
+    text: "ヴァケーション！♥は全部でいくつかな？"
   },
   {
     id: "YurizuisenNoShinobi_OsakiAmana",
@@ -2747,6 +2859,13 @@ export const poems: Poem[] = [
     text: "ワンステップ。やがて晴れると知ったから"
   },
   {
+    id: "FriskySummer_OsakiTenka",
+    idolName: "大崎甜花",
+    clothesTitle: "フリスキーサマー",
+    clothesName: "フリスキーサマー",
+    text: "ヴァケーション！ユア♥デビ"
+  },
+  {
     id: "YurizuisenNoShinobi_OsakiTenka",
     idolName: "大崎甜花",
     clothesTitle: "ユリズイセンノシノビ",
@@ -2794,6 +2913,13 @@ export const poems: Poem[] = [
     clothesTitle: "ディライトサマー",
     clothesName: "ディライトサマー",
     text: "Have fun!　帽子の下、鯨の唄を口遊め"
+  },
+  {
+    id: "RespectiveWorkStyle_KuwayamaChiyuki",
+    idolName: "桑山千雪",
+    clothesTitle: "リスペクティブワークスタイル",
+    clothesName: "リスペクティブワークスタイル",
+    text: "WORKING：ホームランと乾杯♪"
   },
   {
     id: "RefulgentPlumage_KuwayamaChiyuki",
@@ -2913,6 +3039,13 @@ export const poems: Poem[] = [
     clothesTitle: "オーバーキャストモノクローム",
     clothesName: "オーバーキャストモノクローム",
     text: "ワンステップ。新しい夢に会いに行こう"
+  },
+  {
+    id: "FriskySummer_KuwayamaChiyuki",
+    idolName: "桑山千雪",
+    clothesTitle: "フリスキーサマー",
+    clothesName: "フリスキーサマー",
+    text: "ヴァケーション！♥撃ち抜いちゃうの"
   },
   {
     id: "YurizuisenNoShinobi_KuwayamaChiyuki",
@@ -3097,6 +3230,13 @@ export const poems: Poem[] = [
     text: "ワンステップ。この空の上には、何が？"
   },
   {
+    id: "FriskySummer_SerizawaAsahi",
+    idolName: "芹沢あさひ",
+    clothesTitle: "フリスキーサマー",
+    clothesName: "フリスキーサマー",
+    text: "ヴァケーション！到来！　ありったけサマー！"
+  },
+  {
     id: "NewYearHaregi_SerizawaAsahi",
     idolName: "芹沢あさひ",
     clothesTitle: "ニューイヤーハレギ",
@@ -3272,6 +3412,13 @@ export const poems: Poem[] = [
     text: "ワンステップ。挑もうか"
   },
   {
+    id: "FriskySummer_MayuzumiFuyuko",
+    idolName: "黛冬優子",
+    clothesTitle: "フリスキーサマー",
+    clothesName: "フリスキーサマー",
+    text: "ヴァケーション！不滅"
+  },
+  {
     id: "NewYearHaregi_MayuzumiFuyuko",
     idolName: "黛冬優子",
     clothesTitle: "ニューイヤーハレギ",
@@ -3445,6 +3592,13 @@ export const poems: Poem[] = [
     clothesTitle: "オーバーキャストモノクローム",
     clothesName: "オーバーキャストモノクローム",
     text: "ワンステップ。どんな空でも、やってみる"
+  },
+  {
+    id: "FriskySummer_IzumiMei",
+    idolName: "和泉愛依",
+    clothesTitle: "フリスキーサマー",
+    clothesName: "フリスキーサマー",
+    text: "ヴァケーション！ひらひらアクティブモード！"
   },
   {
     id: "NewYearHaregi_IzumiMei",
@@ -3629,6 +3783,13 @@ export const poems: Poem[] = [
     text: "ワンステップ。進んで戻って、ちょい進む"
   },
   {
+    id: "FriskySummer_AsakuraToru",
+    idolName: "浅倉透",
+    clothesTitle: "フリスキーサマー",
+    clothesName: "フリスキーサマー",
+    text: "ヴァケーション！夏音痴健在"
+  },
+  {
     id: "Jogging_Suits_AsakuraToru",
     idolName: "浅倉透",
     clothesTitle: "ジャージ",
@@ -3774,6 +3935,13 @@ export const poems: Poem[] = [
     clothesTitle: "オーバーキャストモノクローム",
     clothesName: "オーバーキャストモノクローム",
     text: "ワンステップ。水彩の筆を拭った名残"
+  },
+  {
+    id: "FriskySummer_HiguchiMadoka",
+    idolName: "樋口円香",
+    clothesTitle: "フリスキーサマー",
+    clothesName: "フリスキーサマー",
+    text: "ヴァケーション！水になるだけ"
   },
   {
     id: "Jogging_Suits_HiguchiMadoka",
@@ -3923,6 +4091,13 @@ export const poems: Poem[] = [
     text: "ワンステップ。曇ってたら見えないでしょ？"
   },
   {
+    id: "FriskySummer_IchikawaHinana",
+    idolName: "市川雛菜",
+    clothesTitle: "フリスキーサマー",
+    clothesName: "フリスキーサマー",
+    text: "ヴァケーション！ときめきコーラルパープル"
+  },
+  {
     id: "Jogging_Suits_IchikawaHinana",
     idolName: "市川雛菜",
     clothesTitle: "ジャージ",
@@ -4070,6 +4245,13 @@ export const poems: Poem[] = [
     text: "ワンステップ。いつか、いつかは"
   },
   {
+    id: "FriskySummer_FukumaruKoito",
+    idolName: "福丸小糸",
+    clothesTitle: "フリスキーサマー",
+    clothesName: "フリスキーサマー",
+    text: "ヴァケーション！あねったいブルー"
+  },
+  {
     id: "Jogging_Suits_FukumaruKoito",
     idolName: "福丸小糸",
     clothesTitle: "ジャージ",
@@ -4187,6 +4369,13 @@ export const poems: Poem[] = [
     clothesTitle: "オーバーキャストモノクローム",
     clothesName: "オーバーキャストモノクローム",
     text: "ワンステップ。めちゃめちゃ灰色"
+  },
+  {
+    id: "FriskySummer_NanakusaNichika",
+    idolName: "七草にちか",
+    clothesTitle: "フリスキーサマー",
+    clothesName: "フリスキーサマー",
+    text: "ヴァケーション！さぁ、夕凪チークを"
   },
   {
     id: "SetupCrazy_NanakusaNichika",
@@ -4329,11 +4518,25 @@ export const poems: Poem[] = [
     text: "ワンステップ。Cloudy, fine later"
   },
   {
+    id: "FriskySummer_AketaMikoto",
+    idolName: "緋田美琴",
+    clothesTitle: "フリスキーサマー",
+    clothesName: "フリスキーサマー",
+    text: "ヴァケーション！Sandcastle"
+  },
+  {
     id: "Jogging_Suits_AketaMikoto",
     idolName: "緋田美琴",
     clothesTitle: "ジャージ",
     clothesName: "ジャージ",
     text: "水色ジャージ。as usual"
+  },
+  {
+    id: "DressUpParfum_SuzukiHana",
+    idolName: "鈴木羽那",
+    clothesTitle: "ドレスアップパルファム",
+    clothesName: "ドレスアップパルファム",
+    text: "Cheers! 今夜の主役"
   },
   {
     id: "AllOfShowOff_SuzukiHana",
@@ -4362,6 +4565,20 @@ export const poems: Poem[] = [
     clothesTitle: "ホーリーナイトケープ",
     clothesName: "ホーリーナイトケープ",
     text: "メリークリスマス！ホーリーホーリーホーリーナイト"
+  },
+  {
+    id: "FriskySummer_SuzukiHana",
+    idolName: "鈴木羽那",
+    clothesTitle: "フリスキーサマー",
+    clothesName: "フリスキーサマー",
+    text: "ヴァケーション！白と黒と夏"
+  },
+  {
+    id: "DressUpParfum_IkurugaLuca",
+    idolName: "斑鳩ルカ",
+    clothesTitle: "ドレスアップパルファム",
+    clothesName: "ドレスアップパルファム",
+    text: "Cheers! 夜色に咲く"
   },
   {
     id: "Delight_Summer_IkarugaLuca",
@@ -4406,6 +4623,20 @@ export const poems: Poem[] = [
     text: "メリークリスマス！うんざりホリデー"
   },
   {
+    id: "FriskySummer_IkarugaLuca",
+    idolName: "斑鳩ルカ",
+    clothesTitle: "フリスキーサマー",
+    clothesName: "フリスキーサマー",
+    text: "ヴァケーション！ウラオモテオセロちゃん"
+  },
+  {
+    id: "DressUpParfum_IkutaHaruki",
+    idolName: "郁田はるき",
+    clothesTitle: "ドレスアップパルファム",
+    clothesName: "ドレスアップパルファム",
+    text: "Cheers! カラフルなドラジェに"
+  },
+  {
     id: "AllOfShowOff_IkutaHaruki",
     idolName: "郁田はるき",
     clothesTitle: "オールオブショーオフ",
@@ -4432,5 +4663,12 @@ export const poems: Poem[] = [
     clothesTitle: "ホーリーナイトケープ",
     clothesName: "ホーリーナイトケープ",
     text: "メリークリスマス！あなたがわたしのサンタさん？"
+  },
+  {
+    id: "FriskySummer_IkutaHaruki",
+    idolName: "郁田はるき",
+    clothesTitle: "フリスキーサマー",
+    clothesName: "フリスキーサマー",
+    text: "ヴァケーション！夏の陰影を灼きつけて"
   }
 ];
