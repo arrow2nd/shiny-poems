@@ -13,7 +13,7 @@ export const size = {
 export const contentType = "image/png";
 
 export default async function Image({ params }: { params: { id: string } }) {
-  const poem = getPoem(params.id);
+  const poem = getPoem(params.id).at(0);
   if (!poem) {
     return new Response("Failed to generate the image", {
       status: 500
