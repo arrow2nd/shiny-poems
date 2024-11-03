@@ -1,6 +1,6 @@
 "use client";
 
-import { useFormState } from "react-dom";
+import { type JSX, useActionState } from "react";
 import Poems from "components/poems";
 import { searchPoems } from "libs/search";
 import { Poem } from "types/poem";
@@ -14,7 +14,7 @@ type Props = {
 };
 
 const UI = ({ selectOptions, poems }: Props): JSX.Element => {
-  const [state, dispatch] = useFormState(searchPoems, { poems });
+  const [state, dispatch] = useActionState(searchPoems, { poems });
 
   return (
     <div className="mx-6 flex-grow md:mx-12">

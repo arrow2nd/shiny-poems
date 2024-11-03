@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import { FiSearch } from "react-icons/fi";
 
 const Label = (): JSX.Element => (

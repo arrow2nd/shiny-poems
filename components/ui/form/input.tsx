@@ -1,4 +1,4 @@
-import { ComponentPropsWithRef } from "react";
+import { ComponentPropsWithRef, type JSX } from "react";
 import { FiSearch } from "react-icons/fi";
 
 const Input = (props: ComponentPropsWithRef<"input">): JSX.Element => {

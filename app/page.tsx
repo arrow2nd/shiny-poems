@@ -9,14 +9,13 @@ import { units } from "data/units";
 import { kiwiMaru } from "./font";
 
 type Props = {
-  searchParams: { id?: string };
+  searchParams: Promise<{ id?: string }>;
 };
 
 export const dynamic = "force-dynamic";
 
-export async function generateMetadata({
-  searchParams
-}: Props): Promise<Metadata> {
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const searchParams = await props.searchParams;
   const imageUrl = searchParams?.id
     ? `/${searchParams.id}/opengraph-image`
     : "/og-image-default.png";
@@ -44,7 +43,8 @@ export async function generateMetadata({
   };
 }
 
-export default function Page({ searchParams }: Props) {
+export default async function Page(props: Props) {
+  const searchParams = await props.searchParams;
   const poem = getPoem(searchParams.id);
 
   return (

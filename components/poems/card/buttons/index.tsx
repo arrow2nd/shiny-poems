@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import CopyButton from "./copy";
 import TweetButton from "./tweet";
 
