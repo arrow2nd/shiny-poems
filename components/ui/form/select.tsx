@@ -24,6 +24,7 @@ const ReactSelect = dynamic(() => import("react-select"), {
       className="m-2 flex h-10 w-full items-center rounded-md border-2 border-main bg-white p-2 text-main lg:w-72"
       type="text"
       disabled
+      data-testid="combobox-loading"
     />
   )
 });

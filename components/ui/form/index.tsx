@@ -48,14 +48,12 @@ const Form = ({ query, idolOptions, clotheOptions }: FormProps) => {
             options={idolOptions}
             value={type === "idol" && q ? { label: q, value: q } : undefined}
             onChange={handleChangeIdolSelect}
-            data-testid="idol-combobox"
           />
           <Select
             placeholder="衣装から"
             options={clotheOptions}
             value={type === "clothe" && q ? { label: q, value: q } : undefined}
             onChange={handleChangeClotheSelect}
-            data-testid="clothe-combobox"
           />
         </div>
       </div>

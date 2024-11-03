@@ -7,34 +7,45 @@ class ShinyPoems {
     this.page = page;
   }
 
+  async waitForComboboxLoading() {
+    const allCombobox = await this.page.getByTestId("combobox-loading").all();
+
+    await Promise.all(
+      allCombobox.map(async (combobox) => {
+        await combobox.waitFor({ state: "hidden" });
+      })
+    );
+  }
+
   async searchByQuery(q: string) {
-    const textbox = this.page.getByTestId(testid.queryTextbox);
+    const textbox = this.page.getByTestId("poem-textbox");
     await textbox.fill(q);
 
-    const submitButton = this.page.getByTestId(testid.submitButton);
+    const submitButton = this.page.getByTestId("poem-submit-button");
     await submitButton.click();
   }
 
   async searchByIdol(idol: string) {
-    const combobox = this.page.getByTestId(testid.idolCombobox);
-    await combobox.selectOption(idol);
+    await this.waitForComboboxLoading();
+
+    const combobox = this.page.locator("#react-select-アイドルから-input");
+    await combobox.fill(idol);
+    await combobox.press("Enter");
   }
 
   async searchByClothe(clothe: string) {
-    const combobox = this.page.getByTestId(testid.clotheCombobox);
-    await combobox.selectOption(clothe);
+    await this.waitForComboboxLoading();
+
+    const combobox = this.page.locator("#react-select-衣装から-input");
+    await combobox.fill(clothe);
+    await combobox.press("Enter");
   }
 }
 
-export const testid = {
-  queryTextbox: "poem-textbox",
-  submitButton: "poem-submit-button",
-  idolCombobox: "idol-combobox",
-  clotheCombobox: "clothe-combobox"
-};
-
 export const test = base.extend<{ shinyPoems: ShinyPoems }>({
   shinyPoems: async ({ page }, use) => {
+    // NOTE: ESLintが怒るけど、これはReact.useと勘違いしてるだけなので無視
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     await use(new ShinyPoems(page));
   }
 });
