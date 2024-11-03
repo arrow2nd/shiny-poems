@@ -2,7 +2,7 @@ import { getPoem, splitPoemText } from "./utils";
 
 describe("getPoem", () => {
   test("取得できる", () => {
-    const poem = getPoem("OvercastMonochrome_FukumaruKoito");
+    const poem = getPoem("OvercastMonochrome_FukumaruKoito").at(0);
     expect(poem).toEqual({
       id: "OvercastMonochrome_FukumaruKoito",
       idolName: "福丸小糸",
@@ -13,7 +13,7 @@ describe("getPoem", () => {
   });
 
   test("存在しないIDの場合undefinedが返る", () => {
-    const poem = getPoem("test");
+    const poem = getPoem("test").at(0);
     expect(poem).toBeUndefined();
   });
 });
