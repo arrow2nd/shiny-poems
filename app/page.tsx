@@ -13,29 +13,27 @@ type Props = {
 };
 
 export async function generateMetadata(props: Props): Promise<Metadata> {
-  const searchParams = await props.searchParams;
+  const { id, q } = await props.searchParams;
+  const imageUrl = id ? `/${id}/opengraph-image` : "/og-image-default.png";
 
-  const imageUrl = searchParams?.id
-    ? `/${searchParams.id}/opengraph-image`
-    : "/og-image-default.png";
-
-  const { title, description, url } = SiteInfo;
+  const { name, title, description, url } = SiteInfo;
+  const siteTitle = q ? `「${q}」の検索結果 | ${name}` : title;
 
   return {
-    title,
+    title: siteTitle,
     description,
     metadataBase: new URL(url),
     openGraph: {
-      title,
+      title: siteTitle,
       description,
       url,
-      siteName: title,
+      siteName: name,
       type: "website",
       images: [{ url: imageUrl }]
     },
     twitter: {
       card: "summary_large_image",
-      title,
+      title: siteTitle,
       description,
       images: [{ url: imageUrl }]
     }
