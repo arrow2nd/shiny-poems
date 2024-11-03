@@ -18,8 +18,8 @@
   },
   "dependencies": {
     "next": "15.0.2",
-    "react": "19.0.0-rc-02c0e824-20241028",
-    "react-dom": "19.0.0-rc-02c0e824-20241028",
+    "react": "19.0.0-rc-fb9a90fa48-20240614",
+    "react-dom": "19.0.0-rc-fb9a90fa48-20240614",
     "react-icons": "^5.0.1",
     "react-wavify": "^1.10.0",
     "sharp": "^0.33.2"
