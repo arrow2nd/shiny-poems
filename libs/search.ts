@@ -1,7 +1,6 @@
-"use server";
-
 import { poems } from "data/poems";
 import { Poem } from "types/poem";
+import { Query } from "types/query";
 
 export type State = {
   poems: Poem[];
@@ -9,37 +8,39 @@ export type State = {
 
 /**
  * ポエムを検索
- * @param state 現在の状態
- * @param formData フォームから送信されたデータ
+ * @param query 検索条件
  * @returns 検索結果
  */
-export async function searchPoems(state: State, formData: FormData) {
-  const query = formData.get("query")?.toString();
-  const idol = formData.get("idol")?.toString();
-  const clothe = formData.get("clothe")?.toString();
+export async function searchPoems(query: Query): Promise<Poem[]> {
+  const { type, q } = query;
 
   // 検索条件なし
-  if (!query && !idol && !clothe) {
-    return state;
+  if (!query && !q) {
+    return [];
   }
 
   // キーワードに一致するものを探す
   const results = poems.filter((e: Poem) => {
-    if (query) {
-      return e["text"].includes(query);
-    } else if (idol) {
-      return e["idolName"].includes(idol);
-    } else if (clothe) {
-      return e["clothesTitle"].includes(clothe);
+    if (!q) {
+      return false;
     }
 
-    return false;
+    switch (type) {
+      case "poem":
+        return e["text"].includes(q);
+      case "idol":
+        return e["idolName"].includes(q);
+      case "clothe":
+        return e["clothesTitle"].includes(q);
+      default:
+        return false;
+    }
   });
 
   // アイドル名での検索なら衣装名昇順でソート
-  if (idol) {
-    results.sort((a, b) => (a.clothesName > b.clothesName ? 1 : -1));
+  if (type === "idol") {
+    results.sort((a, b) => a.clothesName.localeCompare(b.clothesName));
   }
 
-  return { poems: results };
+  return results;
 }

@@ -3,12 +3,17 @@ import { FiSearch } from "react-icons/fi";
 
 const Input = (props: ComponentPropsWithRef<"input">): JSX.Element => {
   return (
-    <div className="relative inline-flex w-full items-center text-main lg:w-72">
+    <form
+      className="relative inline-flex w-full items-center text-main lg:w-72"
+      id="search"
+      role="search"
+    >
+      <input name="type" type="hidden" value="poem" />
       <input
-        {...props}
-        className="m-2 w-full rounded-md border-2 border-main p-2 pr-8 placeholder-sub focus:ring-4"
+        className="m-2 h-10 w-full rounded-md border-2 border-main p-2 pr-8 placeholder-sub focus:ring-4"
         type="text"
         data-testid="poem-textbox"
+        {...props}
       />
       <button
         className="absolute right-5 text-lg transition-colors"
@@ -17,7 +22,7 @@ const Input = (props: ComponentPropsWithRef<"input">): JSX.Element => {
       >
         <FiSearch />
       </button>
-    </div>
+    </form>
   );
 };
 

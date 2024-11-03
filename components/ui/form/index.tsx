@@ -1,48 +1,33 @@
 "use client";
 
-import { FormEventHandler, useRef } from "react";
-import { SelectOptions } from "types/select-options";
+import { redirect } from "next/navigation";
+import { GroupBase } from "react-select";
+import { Query } from "types/query";
 import Input from "./input";
 import Label from "./label";
-import Select, { SelectElement } from "./select";
+import Select, { Option } from "./select";
 
 export type FormProps = {
-  selectOptions: SelectOptions;
-  dispatch: (payload: FormData) => void;
+  query: Query;
+  idolOptions: GroupBase<Option>[];
+  clotheOptions: Option[];
 };
 
-const Form = ({ selectOptions, dispatch }: FormProps) => {
-  const idolSelectRef = useRef<SelectElement>(null);
-  const clotheSelectRef = useRef<SelectElement>(null);
+const Form = ({ query, idolOptions, clotheOptions }: FormProps) => {
+  const { type, q } = query;
 
-  const handleSubmit: FormEventHandler<HTMLFormElement> = ({
-    currentTarget
-  }) => {
-    // ポエムの一部からの検索なら他の選択状態をクリア
-    if (currentTarget.query?.value) {
-      idolSelectRef.current?.clear();
-      clotheSelectRef.current?.clear();
-    }
+  const handleChangeIdolSelect = (e: Option): void => {
+    const searchParams = new URLSearchParams();
+    searchParams.set("type", "idol");
+    searchParams.set("q", e.value);
+    redirect(`/?${searchParams.toString()}`);
   };
 
-  const handleIdolChange: FormEventHandler<HTMLSelectElement> = ({
-    currentTarget: { form }
-  }) => {
-    if (form) {
-      form.query.value = "";
-      clotheSelectRef.current?.clear();
-      form.requestSubmit();
-    }
-  };
-
-  const handleClotheChange: FormEventHandler<HTMLSelectElement> = ({
-    currentTarget: { form }
-  }) => {
-    if (form) {
-      form.query.value = "";
-      idolSelectRef.current?.clear();
-      form.requestSubmit();
-    }
+  const handleChangeClotheSelect = (e: Option): void => {
+    const searchParams = new URLSearchParams();
+    searchParams.set("type", "clothe");
+    searchParams.set("q", e.value);
+    redirect(`/?${searchParams.toString()}`);
   };
 
   return (
@@ -50,43 +35,29 @@ const Form = ({ selectOptions, dispatch }: FormProps) => {
       {/* 画面幅が lg 以下なら縦並びにする */}
       <div className="w-full max-w-lg lg:w-auto lg:max-w-none">
         <Label />
-        <form
-          className="flex flex-wrap"
-          action={dispatch}
-          onSubmit={handleSubmit}
-        >
-          <Input name="query" placeholder="ポエムの一部から" />
+        <div className="flex flex-wrap">
+          <Input
+            type="search"
+            form="search"
+            name="q"
+            placeholder="ポエムの一部から"
+            defaultValue={type === "poem" && q ? q : undefined}
+          />
           <Select
-            name="idol"
             placeholder="アイドルから"
-            onChange={handleIdolChange}
-            ref={idolSelectRef}
+            options={idolOptions}
+            value={type === "idol" && q ? { label: q, value: q } : undefined}
+            onChange={handleChangeIdolSelect}
             data-testid="idol-combobox"
-          >
-            {selectOptions.units.map(({ name, members }) => (
-              <optgroup key={name} label={name}>
-                {members.map((m) => (
-                  <option key={m} value={m}>
-                    {m}
-                  </option>
-                ))}
-              </optgroup>
-            ))}
-          </Select>
+          />
           <Select
-            name="clothe"
             placeholder="衣装から"
-            onChange={handleClotheChange}
-            ref={clotheSelectRef}
+            options={clotheOptions}
+            value={type === "clothe" && q ? { label: q, value: q } : undefined}
+            onChange={handleChangeClotheSelect}
             data-testid="clothe-combobox"
-          >
-            {selectOptions.clothes.map((e) => (
-              <option key={e} value={e}>
-                {e}
-              </option>
-            ))}
-          </Select>
-        </form>
+          />
+        </div>
       </div>
     </div>
   );

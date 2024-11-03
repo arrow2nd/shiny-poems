@@ -3,18 +3,13 @@ import { poems } from "data/poems";
 import { Poem } from "types/poem";
 
 /**
- * クエリパラメータから取得した生のポエムID
- */
-type RawPoemId = string | string[] | undefined;
-
-/**
  * IDからポエムの本文を取得
  * @param id ポエムID
- * @returns ポエム本文
+ * @returns ポエム
  */
-export const getPoem = cache((id: RawPoemId): Poem | undefined => {
-  const idStr = Array.isArray(id) ? "" : id;
-  return idStr ? poems.find((e) => e.id === idStr) : undefined;
+export const getPoem = cache((poemId: string): Poem[] => {
+  const matchedPoem = poemId ? poems.find((e) => e.id === poemId) : undefined;
+  return matchedPoem ? [matchedPoem] : [];
 });
 
 /**

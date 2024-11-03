@@ -1,63 +1,76 @@
-import React, {
-  HTMLProps,
-  MutableRefObject,
-  forwardRef,
-  useImperativeHandle,
-  useRef,
-  useState
-} from "react";
+import dynamic from "next/dynamic";
+import { ComponentProps } from "react";
+import {
+  GroupBase,
+  OptionsOrGroups,
+  StylesConfig,
+  ThemeConfig
+} from "react-select";
 
-const placeholderValue = "empty";
+type Props = {
+  options: OptionsOrGroups<Option, GroupBase<Option>>;
+  placeholder?: string;
+} & Omit<ComponentProps<typeof ReactSelect>, "onKeyDown">;
 
-export type SelectElement = {
-  clear(): void;
-} & HTMLSelectElement;
+export type Option = {
+  label: string;
+  value: string;
+};
 
-const Select = (
-  props: HTMLProps<HTMLSelectElement>,
-  ref: MutableRefObject<SelectElement>
-) => {
-  const [showPlaceholder, setShowPlaceholder] = useState(true);
-  const selectRef = useRef<HTMLSelectElement>(null);
+const ReactSelect = dynamic(() => import("react-select"), {
+  ssr: false,
+  loading: () => (
+    <input
+      className="m-2 flex h-10 w-full items-center rounded-md border-2 border-main bg-white p-2 text-main lg:w-72"
+      type="text"
+      disabled
+    />
+  )
+});
 
-  useImperativeHandle(ref, () => ({
-    ...selectRef.current!,
-    clear() {
-      setShowPlaceholder(true);
+const Select = ({ placeholder, options, ...props }: Props) => {
+  const styles: StylesConfig = {
+    control: (provided) => ({
+      ...provided,
+      borderWidth: 2,
+      boxShadow: "none"
+    })
+  };
 
-      if (selectRef.current) {
-        selectRef.current.selectedIndex = 0;
-        selectRef.current.value = placeholderValue;
-      }
+  const theme: ThemeConfig = (theme) => ({
+    ...theme,
+    borderRadius: 6, // rounded-md
+    colors: {
+      ...theme.colors,
+      primary: "#4C7ABE",
+      primary25: "#8FA2BE",
+      primary50: "#8FA2BE",
+      primary75: "#4C7ABE",
+      neutral5: "#4C7ABE",
+      neutral10: "#4C7ABE",
+      neutral20: "#4C7ABE",
+      neutral30: "#4C7ABE",
+      neutral40: "#4C7ABE",
+      neutral50: "#8FA2BE",
+      neutral60: "#4C7ABE",
+      neutral70: "#4C7ABE",
+      neutral80: "#4C7ABE",
+      neutral90: "#4C7ABE"
     }
-  }));
+  });
 
   return (
-    <select
-      className={`m-2 w-full appearance-none rounded-md border-2 border-main bg-white bg-arrow-down bg-right-center bg-no-repeat p-2 focus:ring-4 lg:w-72 ${
-        showPlaceholder ? "text-sub" : "text-main"
-      }`}
+    <ReactSelect
+      className="m-2 h-10 w-full bg-white lg:w-72"
+      instanceId={placeholder}
+      placeholder={<p>{placeholder}</p>}
+      options={options}
+      styles={styles}
+      theme={theme}
+      noOptionsMessage={() => "見つかりません…"}
       {...props}
-      ref={selectRef}
-      value={showPlaceholder ? placeholderValue : undefined}
-      onChange={(event) => {
-        if (showPlaceholder && event.currentTarget.value !== placeholderValue) {
-          setShowPlaceholder(false);
-        }
-
-        if (props.onChange) {
-          props.onChange(event);
-        }
-      }}
-    >
-      {props.placeholder && (
-        <option value={placeholderValue} disabled style={{ display: "none" }}>
-          {props.placeholder}
-        </option>
-      )}
-      {props.children}
-    </select>
+    />
   );
 };
 
-export default forwardRef(Select);
+export default Select;

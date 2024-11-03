@@ -1,26 +1,36 @@
-"use client";
-
-import { type JSX, useActionState } from "react";
+import { type JSX } from "react";
+import { GroupBase } from "react-select";
 import Poems from "components/poems";
-import { searchPoems } from "libs/search";
+import { clothes } from "data/clothes";
+import { units } from "data/units";
 import { Poem } from "types/poem";
-import { SelectOptions } from "types/select-options";
-import Form from "./form";
+import Form, { FormProps } from "./form";
+import { Option } from "./form/select";
 import Line from "./line";
 
 type Props = {
-  selectOptions: SelectOptions;
   poems: Poem[];
-};
+} & Pick<FormProps, "query">;
 
-const UI = ({ selectOptions, poems }: Props): JSX.Element => {
-  const [state, dispatch] = useActionState(searchPoems, { poems });
+const UI = ({ poems, query }: Props): JSX.Element => {
+  const idolOptions: GroupBase<Option>[] = units.map(({ name, members }) => ({
+    label: name,
+    options: members.map((m) => ({ label: m, value: m }))
+  }));
+
+  const clotheOptions: Option[] = [
+    ...Array.from(new Set(clothes)).map((e) => ({ value: e, label: e }))
+  ];
 
   return (
     <div className="mx-6 flex-grow md:mx-12">
-      <Form selectOptions={selectOptions} dispatch={dispatch} />
+      <Form
+        query={query}
+        idolOptions={idolOptions}
+        clotheOptions={clotheOptions}
+      />
       <Line />
-      <Poems items={state.poems} />
+      <Poems items={poems} />
     </div>
   );
 };

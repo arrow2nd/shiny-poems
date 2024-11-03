@@ -2,20 +2,19 @@ import { Metadata } from "next/types";
 import Footer from "components/common/footer";
 import Header from "components/common/header";
 import UI from "components/ui";
+import { searchPoems } from "libs/search";
 import { getPoem } from "libs/utils";
-import { clothes } from "data/clothes";
 import { SiteInfo } from "data/site";
-import { units } from "data/units";
+import { Query } from "types/query";
 import { kiwiMaru } from "./font";
 
 type Props = {
-  searchParams: Promise<{ id?: string }>;
+  searchParams: Promise<{ id?: string } & Query>;
 };
-
-export const dynamic = "force-dynamic";
 
 export async function generateMetadata(props: Props): Promise<Metadata> {
   const searchParams = await props.searchParams;
+
   const imageUrl = searchParams?.id
     ? `/${searchParams.id}/opengraph-image`
     : "/og-image-default.png";
@@ -44,13 +43,14 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 }
 
 export default async function Page(props: Props) {
-  const searchParams = await props.searchParams;
-  const poem = getPoem(searchParams.id);
+  const { id, ...query } = await props.searchParams;
+
+  const poems = id ? getPoem(id) : await searchPoems(query);
 
   return (
     <main className={kiwiMaru.variable}>
       <Header />
-      <UI selectOptions={{ units, clothes }} poems={poem ? [poem] : []} />
+      <UI poems={poems} query={query} />
       <Footer />
     </main>
   );
