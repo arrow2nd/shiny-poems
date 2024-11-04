@@ -69,6 +69,7 @@ const Select = ({ placeholder, options, ...props }: Props) => {
       styles={styles}
       theme={theme}
       noOptionsMessage={() => "見つかりません…"}
+      blurInputOnSelect
       {...props}
     />
   );
