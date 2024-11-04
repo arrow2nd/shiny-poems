@@ -16,17 +16,10 @@ export type FormProps = {
 const Form = ({ query, idolOptions, clotheOptions }: FormProps) => {
   const { type, q } = query;
 
-  const handleChangeIdolSelect = (e: Option): void => {
+  const submitQuery = (type: NonNullable<Query["type"]>, q: string): void => {
     const searchParams = new URLSearchParams();
-    searchParams.set("type", "idol");
-    searchParams.set("q", e.value);
-    redirect(`/?${searchParams.toString()}`);
-  };
-
-  const handleChangeClotheSelect = (e: Option): void => {
-    const searchParams = new URLSearchParams();
-    searchParams.set("type", "clothe");
-    searchParams.set("q", e.value);
+    searchParams.set("type", type);
+    searchParams.set("q", q);
     redirect(`/?${searchParams.toString()}`);
   };
 
@@ -47,13 +40,13 @@ const Form = ({ query, idolOptions, clotheOptions }: FormProps) => {
             placeholder="アイドルから"
             options={idolOptions}
             value={type === "idol" && q ? { label: q, value: q } : undefined}
-            onChange={handleChangeIdolSelect}
+            onChange={(e: Option) => submitQuery("idol", e.value)}
           />
           <Select
             placeholder="衣装から"
             options={clotheOptions}
             value={type === "clothe" && q ? { label: q, value: q } : undefined}
-            onChange={handleChangeClotheSelect}
+            onChange={(e: Option) => submitQuery("clothe", e.value)}
           />
         </div>
       </div>
