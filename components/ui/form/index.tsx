@@ -1,7 +1,8 @@
 "use client";
 
-import { redirect } from "next/navigation";
-import { GroupBase } from "react-select";
+import { useRouter } from "next/navigation";
+import { useRef } from "react";
+import { GroupBase, SelectInstance } from "react-select";
 import { Query } from "types/query";
 import Input from "./input";
 import Label from "./label";
@@ -14,13 +15,36 @@ export type FormProps = {
 };
 
 const Form = ({ query, idolOptions, clotheOptions }: FormProps) => {
+  const router = useRouter();
+  const idolSelectRef = useRef<SelectInstance>(null);
+  const clotheSelectRef = useRef<SelectInstance>(null);
+
   const { type, q } = query;
 
-  const submitQuery = (type: NonNullable<Query["type"]>, q: string): void => {
+  const submitQuery = (
+    type: NonNullable<Query["type"]>,
+    q: string | undefined
+  ) => {
+    if (!q) {
+      return;
+    }
+
     const searchParams = new URLSearchParams();
     searchParams.set("type", type);
     searchParams.set("q", q);
-    redirect(`/?${searchParams.toString()}`);
+
+    router.replace(`/?${searchParams.toString()}`);
+
+    switch (type) {
+      case "idol":
+        idolSelectRef.current?.blur();
+        clotheSelectRef.current?.clearValue();
+        break;
+      case "clothe":
+        clotheSelectRef.current?.blur();
+        idolSelectRef.current?.clearValue();
+        break;
+    }
   };
 
   return (
@@ -40,13 +64,15 @@ const Form = ({ query, idolOptions, clotheOptions }: FormProps) => {
             placeholder="アイドルから"
             options={idolOptions}
             value={type === "idol" && q ? { label: q, value: q } : undefined}
-            onChange={(e: Option) => submitQuery("idol", e.value)}
+            onChange={(e?: Option) => submitQuery("idol", e?.value)}
+            ref={idolSelectRef}
           />
           <Select
             placeholder="衣装から"
             options={clotheOptions}
             value={type === "clothe" && q ? { label: q, value: q } : undefined}
-            onChange={(e: Option) => submitQuery("clothe", e.value)}
+            onChange={(e?: Option) => submitQuery("clothe", e?.value)}
+            ref={clotheSelectRef}
           />
         </div>
       </div>

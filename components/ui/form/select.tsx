@@ -1,9 +1,8 @@
 import dynamic from "next/dynamic";
-import { ComponentProps, useRef } from "react";
+import { ComponentProps } from "react";
 import {
   GroupBase,
   OptionsOrGroups,
-  SelectInstance,
   StylesConfig,
   ThemeConfig
 } from "react-select";
@@ -31,8 +30,6 @@ const ReactSelect = dynamic(() => import("react-select"), {
 });
 
 const Select = ({ placeholder, options, ...props }: Props) => {
-  const ref = useRef<SelectInstance>(null);
-
   const styles: StylesConfig = {
     control: (provided) => ({
       ...provided,
@@ -72,11 +69,6 @@ const Select = ({ placeholder, options, ...props }: Props) => {
       styles={styles}
       theme={theme}
       noOptionsMessage={() => "見つかりません…"}
-      onMenuClose={() => {
-        // NOTE: blurInputOnSelectが効かないので
-        ref.current?.blur();
-      }}
-      ref={ref}
       {...props}
     />
   );
