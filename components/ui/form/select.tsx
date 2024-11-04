@@ -10,7 +10,7 @@ import {
 type Props = {
   options: OptionsOrGroups<Option, GroupBase<Option>>;
   placeholder?: string;
-} & Omit<ComponentProps<typeof ReactSelect>, "onKeyDown">;
+} & Omit<ComponentProps<typeof ReactSelect>, "onMenuClose">;
 
 export type Option = {
   label: string;

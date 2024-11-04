@@ -10,7 +10,7 @@ const Input = (props: ComponentPropsWithRef<"input">): JSX.Element => {
     >
       <input name="type" type="hidden" value="poem" />
       <input
-        className="m-2 h-10 w-full rounded-md border-2 border-main p-2 pr-8 placeholder-sub focus:ring-4"
+        className="m-2 h-10 w-full rounded-md border-2 border-main p-2 pr-8 placeholder-sub focus:outline-none"
         type="text"
         data-testid="poem-textbox"
         {...props}
