@@ -1,6 +1,6 @@
 import { Poem } from "types/poem";
 
-export const updatedAtUTC = "2024/10/13 (JST)";
+export const updatedAtUTC = "2024/11/12 (JST)";
 export const poems: Poem[] = [
   {
     id: "CelestialColors_SakuragiMano",
@@ -3706,32 +3706,11 @@ export const poems: Poem[] = [
     text: "フルーツパーラー。メロン党、起立。"
   },
   {
-    id: "TeddyFollowWhite_IchikawaHinana",
-    idolName: "浅倉透",
-    clothesTitle: "テディフォローホワイト",
-    clothesName: "テディフォローホワイト",
-    text: "フワーフワーベアー♡ ふわふわキャンディーはどこ？"
-  },
-  {
-    id: "TeddyFollowWhite_HiguchiMadoka",
-    idolName: "浅倉透",
-    clothesTitle: "テディフォローホワイト",
-    clothesName: "テディフォローホワイト",
-    text: "フワーフワーベアー♡ ガウガウ・メルティスノー"
-  },
-  {
     id: "TeddyFollowWhite_AsakuraToru",
     idolName: "浅倉透",
     clothesTitle: "テディフォローホワイト",
     clothesName: "テディフォローホワイト",
     text: "フワーフワーベアー♡ クマ式、飴獲得大作戦"
-  },
-  {
-    id: "TeddyFollowWhite_FukumaruKoito",
-    idolName: "浅倉透",
-    clothesTitle: "テディフォローホワイト",
-    clothesName: "テディフォローホワイト",
-    text: "フワーフワーベアー♡ 真っ白な気持ちに信頼を描いて"
   },
   {
     id: "FlowingBhel_AsakuraToru",
@@ -3888,6 +3867,13 @@ export const poems: Poem[] = [
     text: "フルーツパーラー。乙女と浪漫とイチゴクリーム"
   },
   {
+    id: "TeddyFollowWhite_HiguchiMadoka",
+    idolName: "樋口円香",
+    clothesTitle: "テディフォローホワイト",
+    clothesName: "テディフォローホワイト",
+    text: "フワーフワーベアー♡ ガウガウ・メルティスノー"
+  },
+  {
     id: "FlowingBhel_HiguchiMadoka",
     idolName: "樋口円香",
     clothesTitle: "フローウィングベル",
@@ -4042,6 +4028,13 @@ export const poems: Poem[] = [
     text: "フルーツパーラー。パーフェクトアイスクリーム"
   },
   {
+    id: "TeddyFollowWhite_IchikawaHinana",
+    idolName: "市川雛菜",
+    clothesTitle: "テディフォローホワイト",
+    clothesName: "テディフォローホワイト",
+    text: "フワーフワーベアー♡ ふわふわキャンディーはどこ？"
+  },
+  {
     id: "FlowingBhel_IchikawaHinana",
     idolName: "市川雛菜",
     clothesTitle: "フローウィングベル",
@@ -4194,6 +4187,13 @@ export const poems: Poem[] = [
     clothesTitle: "アソヲトパッフェ",
     clothesName: "アソヲトパッフェ",
     text: "フルーツパーラー。特別な日のめしあがれ"
+  },
+  {
+    id: "TeddyFollowWhite_FukumaruKoito",
+    idolName: "福丸小糸",
+    clothesTitle: "テディフォローホワイト",
+    clothesName: "テディフォローホワイト",
+    text: "フワーフワーベアー♡ 真っ白な気持ちに信頼を描いて"
   },
   {
     id: "FlowingBhel_FukumaruKoito",
