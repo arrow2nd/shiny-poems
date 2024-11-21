@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useRef } from "react";
 import { GroupBase, SelectInstance } from "react-select";
+import { generateSearchQueryPath } from "libs/url";
 import { Query } from "types/query";
 import Input from "./input";
 import Label from "./label";
@@ -29,11 +30,8 @@ const Form = ({ query, idolOptions, clotheOptions }: FormProps) => {
       return;
     }
 
-    const searchParams = new URLSearchParams();
-    searchParams.set("type", type);
-    searchParams.set("q", q);
-
-    router.replace(`/?${searchParams.toString()}`);
+    const pagePath = generateSearchQueryPath(type, q);
+    router.replace(pagePath);
 
     switch (type) {
       case "idol":
