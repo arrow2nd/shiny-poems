@@ -10,8 +10,8 @@ type Props = {
 };
 
 const Card = ({ poem }: Props) => {
-  const splittedPoem = splitPoemText(poem.text);
-  const poemContents = splittedPoem.map((e) => <p key={e}>{e.trim()}</p>);
+  const splitPoem = splitPoemText(poem.text);
+  const poemContents = splitPoem.map((e) => <p key={e}>{e.trim()}</p>);
 
   const linkText = [
     `#シャニマス #${poem.clothesName} #${poem.idolName}`,
@@ -19,7 +19,7 @@ const Card = ({ poem }: Props) => {
   ];
 
   const texts = {
-    tweetText: [...splittedPoem, ...linkText].join("\n"),
+    tweetText: [...splitPoem, ...linkText].join("\n"),
     copyText: [poem.text, ...linkText].join(" ")
   };
 
