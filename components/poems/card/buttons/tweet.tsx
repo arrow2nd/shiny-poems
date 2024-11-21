@@ -17,6 +17,7 @@ const TweetButton = ({ text }: Props) => {
       href={tweetUrl}
       target="_blank"
       rel="noopener noreferrer"
+      data-testid="share-button"
     >
       <FiShare2 />
     </a>

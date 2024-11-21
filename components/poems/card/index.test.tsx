@@ -38,8 +38,8 @@ describe("Card", () => {
   });
 
   test("共有リンクの内容が正しい", () => {
-    const { getByRole } = render(<Card poem={poem} />);
-    const href = getByRole("link").getAttribute("href");
+    const { getByTestId } = render(<Card poem={poem} />);
+    const href = getByTestId("share-button").getAttribute("href");
 
     expect(href).toContain(encodeURIComponent("#シャニマス"));
     expect(href).toContain(encodeURIComponent(`#${poem.clothesName}`));

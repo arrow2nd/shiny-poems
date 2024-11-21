@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { generateSearchQueryPath } from "libs/url";
 import { splitPoemText } from "libs/utils";
 import { colors } from "data/colors";
 import { SiteInfo } from "data/site";
@@ -10,8 +12,8 @@ type Props = {
 };
 
 const Card = ({ poem }: Props) => {
-  const splittedPoem = splitPoemText(poem.text);
-  const poemContents = splittedPoem.map((e) => <p key={e}>{e.trim()}</p>);
+  const splitPoem = splitPoemText(poem.text);
+  const poemContents = splitPoem.map((e) => <p key={e}>{e.trim()}</p>);
 
   const linkText = [
     `#シャニマス #${poem.clothesName} #${poem.idolName}`,
@@ -19,7 +21,7 @@ const Card = ({ poem }: Props) => {
   ];
 
   const texts = {
-    tweetText: [...splittedPoem, ...linkText].join("\n"),
+    tweetText: [...splitPoem, ...linkText].join("\n"),
     copyText: [poem.text, ...linkText].join(" ")
   };
 
@@ -36,16 +38,21 @@ const Card = ({ poem }: Props) => {
           {poemContents}
         </div>
         <Accent bgColor={accentColor} />
-        <div>
-          <p
-            className="mb-1 text-sm md:text-base"
+        <div className="space-y-2">
+          <Link
+            className="block text-sm underline decoration-dashed decoration-1 underline-offset-4 transition-colors hover:text-black md:text-base"
+            href={generateSearchQueryPath("clothe", poem.clothesName)}
             data-testid="poem-card-clothe"
           >
             {poem.clothesName}
-          </p>
-          <p className="text-xs md:text-sm" data-testid="poem-card-idol">
+          </Link>
+          <Link
+            className="block text-xs underline decoration-dashed decoration-1 underline-offset-4 transition-colors hover:text-black md:text-sm"
+            href={generateSearchQueryPath("idol", poem.idolName)}
+            data-testid="poem-card-idol"
+          >
             {poem.idolName}
-          </p>
+          </Link>
         </div>
       </div>
       <Buttons {...texts} />

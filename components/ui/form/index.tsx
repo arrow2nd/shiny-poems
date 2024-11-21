@@ -1,8 +1,9 @@
 "use client";
 
-import { useRouter } from "next/navigation";
-import { useRef } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
+import { useEffect, useRef } from "react";
 import { GroupBase, SelectInstance } from "react-select";
+import { generateSearchQueryPath } from "libs/url";
 import { Query } from "types/query";
 import Input from "./input";
 import Label from "./label";
@@ -16,6 +17,7 @@ export type FormProps = {
 
 const Form = ({ query, idolOptions, clotheOptions }: FormProps) => {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const idolSelectRef = useRef<SelectInstance>(null);
   const clotheSelectRef = useRef<SelectInstance>(null);
 
@@ -29,11 +31,12 @@ const Form = ({ query, idolOptions, clotheOptions }: FormProps) => {
       return;
     }
 
-    const searchParams = new URLSearchParams();
-    searchParams.set("type", type);
-    searchParams.set("q", q);
+    const pagePath = generateSearchQueryPath(type, q);
+    router.replace(pagePath);
+  };
 
-    router.replace(`/?${searchParams.toString()}`);
+  useEffect(() => {
+    const type = searchParams.get("type") as Query["type"];
 
     switch (type) {
       case "idol":
@@ -44,8 +47,11 @@ const Form = ({ query, idolOptions, clotheOptions }: FormProps) => {
         clotheSelectRef.current?.blur();
         idolSelectRef.current?.clearValue();
         break;
+      default:
+        idolSelectRef.current?.clearValue();
+        clotheSelectRef.current?.clearValue();
     }
-  };
+  }, [searchParams]);
 
   return (
     <div className="mb-16 flex justify-center">
