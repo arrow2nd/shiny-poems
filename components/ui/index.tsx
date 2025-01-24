@@ -23,7 +23,7 @@ const UI = ({ poems, query }: Props): JSX.Element => {
   ];
 
   return (
-    <div className="mx-6 flex-grow md:mx-12">
+    <div className="mx-6 grow md:mx-12">
       <Form
         query={query}
         idolOptions={idolOptions}

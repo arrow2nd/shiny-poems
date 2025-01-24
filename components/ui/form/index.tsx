@@ -54,7 +54,7 @@ const Form = ({ query, idolOptions, clotheOptions }: FormProps) => {
   }, [searchParams]);
 
   return (
-    <div className="mb-16 flex justify-center">
+    <div className="mb-16 flex justify-center font-sans">
       {/* 画面幅が lg 以下なら縦並びにする */}
       <div className="w-full max-w-lg lg:w-auto lg:max-w-none">
         <Label />

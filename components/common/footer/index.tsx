@@ -5,7 +5,7 @@ import { updatedAtUTC } from "data/poems";
 import Links from "./links";
 
 const Footer = () => (
-  <footer className="w-full">
+  <footer className="w-full font-sans">
     <Wave
       className="relative top-0.5 h-24 align-bottom"
       fill="#4C7ABE"
@@ -16,7 +16,7 @@ const Footer = () => (
         speed: 0.155
       }}
     />
-    <div className="flex flex-col items-center justify-center bg-main px-8 pb-20 pt-0.5 text-center text-sm tracking-wider text-white">
+    <div className="bg-main flex flex-col items-center justify-center px-8 pt-0.5 pb-20 text-center text-sm tracking-wider text-white">
       <Links />
       <span className="mb-8 w-8 border-b-2 border-dashed border-white" />
       <span className="mb-2" data-testid="last-updated">
