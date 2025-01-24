@@ -46,7 +46,7 @@ export default async function Page(props: Props) {
   const poems = id ? getPoem(id) : await searchPoems(query);
 
   return (
-    <main className={kiwiMaru.variable}>
+    <main className={kiwiMaru.className}>
       <Header />
       <UI poems={poems} query={query} />
       <Footer />
