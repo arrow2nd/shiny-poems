@@ -32,5 +32,9 @@ export const units: Unit[] = [
   {
     name: "CoMETIK",
     members: ["鈴木羽那", "斑鳩ルカ", "郁田はるき"]
+  },
+  {
+    name: "スタッフ",
+    members: ["七草はづき"]
   }
 ];
