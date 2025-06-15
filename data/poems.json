@@ -4718,6 +4718,167 @@
       "clothesName": "リスペクティブワークスタイル",
       "text": "WORKING：どうぞ、末永くご贔屓に",
       "id": "RespectiveWorkStyle_IkutaHaruki"
+    },
+    {
+      "idolName": "浅倉透",
+      "clothesTitle": "エモーショナルユニフォーム",
+      "clothesName": "エモーショナルユニフォーム",
+      "text": "Re:Fresh 名もなき命",
+      "id": "EmotionalUniform_AsakuraTooru"
+    },
+    {
+      "idolName": "七草はづき",
+      "clothesTitle": "クリスマスサンタ",
+      "clothesName": "クリスマスサンタ",
+      "text": "クリスマス事務員",
+      "id": "ChristmasSanta_NanakusaHazuki"
+    },
+    {
+      "idolName": "七草はづき",
+      "clothesTitle": "振袖",
+      "clothesName": "振袖",
+      "text": "お正月事務員",
+      "id": "Furisode_NanakusaHazuki"
+    },
+    {
+      "idolName": "七草はづき",
+      "clothesTitle": "ビジュアルレッスン",
+      "clothesName": "ビジュアルレッスン",
+      "text": "ファッショナブル事務員",
+      "id": "VisualLesson_NanakusaHazuki"
+    },
+    {
+      "idolName": "三峰結華",
+      "clothesTitle": "エモーショナルユニフォーム",
+      "clothesName": "エモーショナルユニフォーム",
+      "text": "Re:Fresh 枠線の内側",
+      "id": "EmotionalUniform_MitsumineYuka"
+    },
+    {
+      "idolName": "大崎甜花",
+      "clothesTitle": "エモーショナルユニフォーム",
+      "clothesName": "エモーショナルユニフォーム",
+      "text": "Re:Fresh Heart-Aid",
+      "id": "EmotionalUniform_OsakiTenka"
+    },
+    {
+      "idolName": "田中摩美々",
+      "clothesTitle": "エモーショナルユニフォーム",
+      "clothesName": "エモーショナルユニフォーム",
+      "text": "Re:Fresh 真面目に着崩し",
+      "id": "EmotionalUniform_TanakaMamimi"
+    },
+    {
+      "idolName": "黛冬優子",
+      "clothesTitle": "エモーショナルユニフォーム",
+      "clothesName": "エモーショナルユニフォーム",
+      "text": "Re:Fresh 両手に昇竜",
+      "id": "EmotionalUniform_MayuzumiFuyuko"
+    },
+    {
+      "idolName": "八宮めぐる",
+      "clothesTitle": "エモーショナルユニフォーム",
+      "clothesName": "エモーショナルユニフォーム",
+      "text": "Re:Fresh 彩りを持つ",
+      "id": "EmotionalUniform_HachimiyaMeguru"
+    },
+    {
+      "idolName": "白瀬咲耶",
+      "clothesTitle": "エモーショナルユニフォーム",
+      "clothesName": "エモーショナルユニフォーム",
+      "text": "Re:Fresh 模範生の麗姿",
+      "id": "EmotionalUniform_ShiraseSakuya"
+    },
+    {
+      "idolName": "七草はづき",
+      "clothesTitle": "バレンタインエプロン",
+      "clothesName": "バレンタインエプロン",
+      "text": "バレンタイン事務員",
+      "id": "ValentineApron_NanakusaHazuki"
+    },
+    {
+      "idolName": "七草はづき",
+      "clothesTitle": "ボーカルレッスン",
+      "clothesName": "ボーカルレッスン",
+      "text": "歌の事務員",
+      "id": "VocalLesson_NanakusaHazuki"
+    },
+    {
+      "idolName": "七草はづき",
+      "clothesTitle": "スペシャルドレス",
+      "clothesName": "スペシャルドレス",
+      "text": "ドレッシー事務員",
+      "id": "SpecialDress_NanakusaHazuki"
+    },
+    {
+      "idolName": "大崎甘奈",
+      "clothesTitle": "エモーショナルユニフォーム",
+      "clothesName": "エモーショナルユニフォーム",
+      "text": "Re:Fresh ☆ctive☆",
+      "id": "EmotionalUniform_OsakiAmana"
+    },
+    {
+      "idolName": "西城樹里",
+      "clothesTitle": "エモーショナルユニフォーム",
+      "clothesName": "エモーショナルユニフォーム",
+      "text": "Re:Fresh 黄金を翻して",
+      "id": "EmotionalUniform_SaijoJuri"
+    },
+    {
+      "idolName": "風野灯織",
+      "clothesTitle": "エモーショナルユニフォーム",
+      "clothesName": "エモーショナルユニフォーム",
+      "text": "Re:Fresh 不可侵な白線",
+      "id": "EmotionalUniform_KazanoHiori"
+    },
+    {
+      "idolName": "園田智代子",
+      "clothesTitle": "エモーショナルユニフォーム",
+      "clothesName": "エモーショナルユニフォーム",
+      "text": "Re:Fresh きっとこの学校の校則はユルい",
+      "id": "EmotionalUniform_SonodaChiyoko"
+    },
+    {
+      "idolName": "幽谷霧子",
+      "clothesTitle": "エモーショナルユニフォーム",
+      "clothesName": "エモーショナルユニフォーム",
+      "text": "Re:Fresh 白の前の前奏曲",
+      "id": "EmotionalUniform_YukokuKiriko"
+    },
+    {
+      "idolName": "芹沢あさひ",
+      "clothesTitle": "エモーショナルユニフォーム",
+      "clothesName": "エモーショナルユニフォーム",
+      "text": "Re:Fresh オルタナティブR",
+      "id": "EmotionalUniform_SerizawaAsahi"
+    },
+    {
+      "idolName": "七草はづき",
+      "clothesTitle": "水着",
+      "clothesName": "水着",
+      "text": "水着事務員",
+      "id": "Mizugi_NanakusaHazuki"
+    },
+    {
+      "idolName": "七草はづき",
+      "clothesTitle": "ダンスレッスン",
+      "clothesName": "ダンスレッスン",
+      "text": "ダンスの事務員",
+      "id": "DanceLesson_NanakusaHazuki"
+    },
+    {
+      "idolName": "七草はづき",
+      "clothesTitle": "浴衣",
+      "clothesName": "浴衣",
+      "text": "お祭り事務員",
+      "id": "Yukata_NanakusaHazuki"
+    },
+    {
+      "idolName": "櫻木真乃",
+      "clothesTitle": "ホッとキューティスプリング",
+      "clothesName": "ホッとキューティスプリング",
+      "text": "旅の思い出をあたためて",
+      "id": "HottCutieSpring_SakuragiMano"
     }
   ]
 }
