@@ -4,6 +4,9 @@ const prodUrl = "https://shiny-poems.vercel.app";
 const localUrl = "http://localhost:3000";
 
 export default defineConfig({
+  testDir: "./tests",
+  testMatch: ["**/tests/**/*.spec.ts"],
+  testIgnore: ["**/*.test.tsx", "**/*.test.ts"],
   reporter: "html",
   timeout: 30 * 1000,
   retries: 1,
