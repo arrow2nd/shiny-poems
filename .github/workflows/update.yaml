@@ -6,6 +6,10 @@ on:
     # 日本時間の深夜0時
     - cron: "0 15 * * *"
 
+permissions:
+  contents: read
+  pull-requests: write
+
 jobs:
   update:
     runs-on: ubuntu-latest
