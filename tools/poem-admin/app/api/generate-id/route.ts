@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 export async function POST(request: Request) {
   let clothesName = "",
     idolName = "",
-    existingIds = [];
+    existingIds: string[] = [];
 
   try {
     const requestData = await request.json();
