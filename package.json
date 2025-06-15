@@ -14,7 +14,8 @@
     "fmt": "prettier --write .",
     "fmt:data": "prettier --write ./data/*",
     "update:poem": "ts-node ./tools/update-poem-data.ts",
-    "update:color": "ts-node ./tools/update-color-data.ts"
+    "update:color": "ts-node ./tools/update-color-data.ts",
+    "poem:add": "cd tools/poem-admin && pnpm install && pnpm dev"
   },
   "dependencies": {
     "next": "15.3.3",
@@ -48,6 +49,7 @@
     "prettier-plugin-tailwindcss": "^0.6.11",
     "tailwindcss": "^4.0.0",
     "ts-node": "^10.9.2",
+    "tsx": "^4.20.3",
     "typescript": "^5.3.3"
   }
 }

@@ -1,6 +1,6 @@
-import { poems } from "data/poems";
 import { Poem } from "types/poem";
 import { Query } from "types/query";
+import { poems } from "./poem-data";
 
 export type State = {
   poems: Poem[];
