@@ -45,8 +45,7 @@ export async function POST(request: Request) {
             month: "2-digit",
             day: "2-digit",
             timeZone: "Asia/Tokyo"
-          })
-          .replace(/\//g, "/") + " (JST)";
+          }) + " (JST)";
 
       await savePoems(data);
       return NextResponse.json({ success: true, poem: newPoem });
@@ -102,8 +101,7 @@ export async function POST(request: Request) {
             month: "2-digit",
             day: "2-digit",
             timeZone: "Asia/Tokyo"
-          })
-          .replace(/\//g, "/") + " (JST)";
+          }) + " (JST)";
 
       await savePoems(data);
       return NextResponse.json({ success: true });
