@@ -1,3 +1,6 @@
-import { poems } from "./poems";
+import poemsData from "./poems.json";
 
-export const clothes = [...new Set(poems.map((e) => e.clothesTitle))].sort();
+export const clothes = [
+  ...new Set(poemsData.poems.map((e) => e.clothesTitle))
+].sort();
+

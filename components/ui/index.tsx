@@ -19,7 +19,10 @@ const UI = ({ poems, query }: Props): JSX.Element => {
   }));
 
   const clotheOptions: Option[] = [
-    ...Array.from(new Set(clothes)).map((e) => ({ value: e, label: e }))
+    ...Array.from(new Set(clothes)).map((e) => ({
+      value: e as string,
+      label: e as string
+    }))
   ];
 
   return (

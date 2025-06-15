@@ -1,5 +1,5 @@
 import { cache } from "react";
-import { poems } from "data/poems";
+import poemsData from "data/poems.json";
 import { Poem } from "types/poem";
 
 /**
@@ -8,7 +8,9 @@ import { Poem } from "types/poem";
  * @returns ポエム
  */
 export const getPoem = cache((poemId: string): Poem[] => {
-  const matchedPoem = poemId ? poems.find((e) => e.id === poemId) : undefined;
+  const matchedPoem = poemId
+    ? poemsData.poems.find((e) => e.id === poemId)
+    : undefined;
   return matchedPoem ? [matchedPoem] : [];
 });
 
