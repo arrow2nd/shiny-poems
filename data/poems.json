@@ -4879,6 +4879,328 @@
       "clothesName": "ホッとキューティスプリング",
       "text": "旅の思い出をあたためて",
       "id": "HottCutieSpring_SakuragiMano"
+    },
+    {
+      "idolName": "大崎甜花",
+      "clothesTitle": "ホッとキューティスプリング",
+      "clothesName": "ホッとキューティスプリング",
+      "text": "トキメキかけ渡し",
+      "id": "HottCutieSpring_OsakiTenka"
+    },
+    {
+      "idolName": "樋口円香",
+      "clothesTitle": "ホッとキューティスプリング",
+      "clothesName": "ホッとキューティスプリング",
+      "text": "のぼせた♡にーちゅ",
+      "id": "HottCutieSpring_HiguchiMadoka"
+    },
+    {
+      "idolName": "緋田美琴",
+      "clothesTitle": "ホッとキューティスプリング",
+      "clothesName": "ホッとキューティスプリング",
+      "text": "熱が冷めないうちに",
+      "id": "HottCutieSpring_AketaMikoto"
+    },
+    {
+      "idolName": "櫻木真乃",
+      "clothesTitle": "レジスタンスオーダー・ネオス",
+      "clothesName": "レジスタンスオーダー・ネオス",
+      "text": "new endeavors 輝きのハーモニーを重ねて",
+      "id": "ResistanceOrderNeos_SakuragiMano"
+    },
+    {
+      "idolName": "風野灯織",
+      "clothesTitle": "レジスタンスオーダー・ネオス",
+      "clothesName": "レジスタンスオーダー・ネオス",
+      "text": "new endeavors 踏み出した世界で、願い輝いて",
+      "id": "ResistanceOrderNeos_KazanoHiori"
+    },
+    {
+      "idolName": "八宮めぐる",
+      "clothesTitle": "レジスタンスオーダー・ネオス",
+      "clothesName": "レジスタンスオーダー・ネオス",
+      "text": "new endeavors 弾けた光を集めて",
+      "id": "ResistanceOrderNeos_HachimiyaMeguru"
+    },
+    {
+      "idolName": "月岡恋鐘",
+      "clothesTitle": "レジスタンスオーダー・ネオス",
+      "clothesName": "レジスタンスオーダー・ネオス",
+      "text": "new endeavors まだ見ぬ世界へ、まだ見ぬ自分へ",
+      "id": "ResistanceOrderNeos_TsukiokaKogane"
+    },
+    {
+      "idolName": "田中摩美々",
+      "clothesTitle": "レジスタンスオーダー・ネオス",
+      "clothesName": "レジスタンスオーダー・ネオス",
+      "text": "new endeavors なんとなく光りそう",
+      "id": "ResistanceOrderNeos_TanakaMamimi"
+    },
+    {
+      "idolName": "白瀬咲耶",
+      "clothesTitle": "レジスタンスオーダー・ネオス",
+      "clothesName": "レジスタンスオーダー・ネオス",
+      "text": "new endeavors 手を伸ばして世界を繋ぐ",
+      "id": "ResistanceOrderNeos_ShiraseSakuya"
+    },
+    {
+      "idolName": "三峰結華",
+      "clothesTitle": "レジスタンスオーダー・ネオス",
+      "clothesName": "レジスタンスオーダー・ネオス",
+      "text": "new endeavors 交わった線で色を引く",
+      "id": "ResistanceOrderNeos_MitsumineYuika"
+    },
+    {
+      "idolName": "幽谷霧子",
+      "clothesTitle": "レジスタンスオーダー・ネオス",
+      "clothesName": "レジスタンスオーダー・ネオス",
+      "text": "new endeavors すべての音を感じて",
+      "id": "ResistanceOrderNeos_YukokuKiriko"
+    },
+    {
+      "idolName": "小宮果穂",
+      "clothesTitle": "レジスタンスオーダー・ネオス",
+      "clothesName": "レジスタンスオーダー・ネオス",
+      "text": "new endeavors あたしはここにいる",
+      "id": "ResistanceOrderNeos_KomiyaKaho"
+    },
+    {
+      "idolName": "園田智代子",
+      "clothesTitle": "レジスタンスオーダー・ネオス",
+      "clothesName": "レジスタンスオーダー・ネオス",
+      "text": "new endeavors フード、もこっとなるのが可愛い",
+      "id": "ResistanceOrderNeos_SonodaChiyoko"
+    },
+    {
+      "idolName": "西城樹里",
+      "clothesTitle": "レジスタンスオーダー・ネオス",
+      "clothesName": "レジスタンスオーダー・ネオス",
+      "text": "new endeavors 向こう側のその先、風に乗って",
+      "id": "ResistanceOrderNeos_SaijoJuri"
+    },
+    {
+      "idolName": "杜野凛世",
+      "clothesTitle": "レジスタンスオーダー・ネオス",
+      "clothesName": "レジスタンスオーダー・ネオス",
+      "text": "new endeavors 世界を識るために",
+      "id": "ResistanceOrderNeos_MorinoRinze"
+    },
+    {
+      "idolName": "有栖川夏葉",
+      "clothesTitle": "レジスタンスオーダー・ネオス",
+      "clothesName": "レジスタンスオーダー・ネオス",
+      "text": "new endeavors 恐れないために進むの",
+      "id": "ResistanceOrderNeos_ArisugawaNatsuha"
+    },
+    {
+      "idolName": "大崎甘奈",
+      "clothesTitle": "レジスタンスオーダー・ネオス",
+      "clothesName": "レジスタンスオーダー・ネオス",
+      "text": "new endeavors 知ってもらうの、本当の心",
+      "id": "ResistanceOrderNeos_OsakiAmana"
+    },
+    {
+      "idolName": "大崎甜花",
+      "clothesTitle": "レジスタンスオーダー・ネオス",
+      "clothesName": "レジスタンスオーダー・ネオス",
+      "text": "new endeavors 見え始めた世界に",
+      "id": "ResistanceOrderNeos_OsakiTenka"
+    },
+    {
+      "idolName": "桑山千雪",
+      "clothesTitle": "レジスタンスオーダー・ネオス",
+      "clothesName": "レジスタンスオーダー・ネオス",
+      "text": "new endeavors 巡り、たどり着いた先で纏う輝き",
+      "id": "ResistanceOrderNeos_KuwayamaChiyuki"
+    },
+    {
+      "idolName": "芹沢あさひ",
+      "clothesTitle": "レジスタンスオーダー・ネオス",
+      "clothesName": "レジスタンスオーダー・ネオス",
+      "text": "new endeavors 開けた空、一番に飛び立って",
+      "id": "ResistanceOrderNeos_SerizawaAsahi"
+    },
+    {
+      "idolName": "黛冬優子",
+      "clothesTitle": "レジスタンスオーダー・ネオス",
+      "clothesName": "レジスタンスオーダー・ネオス",
+      "text": "new endeavors この想い、宙の果てまで",
+      "id": "ResistanceOrderNeos_MayuzumiFuyuko"
+    },
+    {
+      "idolName": "和泉愛依",
+      "clothesTitle": "レジスタンスオーダー・ネオス",
+      "clothesName": "レジスタンスオーダー・ネオス",
+      "text": "new endeavors 夢見た、最高の世界のために",
+      "id": "ResistanceOrderNeos_IzumiMei"
+    },
+    {
+      "idolName": "浅倉透",
+      "clothesTitle": "レジスタンスオーダー・ネオス",
+      "clothesName": "レジスタンスオーダー・ネオス",
+      "text": "new endeavors われらはひかるわれらとともに",
+      "id": "ResistanceOrderNeos_AsakuraToru"
+    },
+    {
+      "idolName": "樋口円香",
+      "clothesTitle": "レジスタンスオーダー・ネオス",
+      "clothesName": "レジスタンスオーダー・ネオス",
+      "text": "new endeavors 空に透く、円な願い",
+      "id": "ResistanceOrderNeos_HiguchiMadoka"
+    },
+    {
+      "idolName": "福丸小糸",
+      "clothesTitle": "レジスタンスオーダー・ネオス",
+      "clothesName": "レジスタンスオーダー・ネオス",
+      "text": "new endeavors いろどる糸を紡ぐ",
+      "id": "ResistanceOrderNeos_FukumaruKoito"
+    },
+    {
+      "idolName": "市川雛菜",
+      "clothesTitle": "レジスタンスオーダー・ネオス",
+      "clothesName": "レジスタンスオーダー・ネオス",
+      "text": "new endeavors 宙の色を見つけて",
+      "id": "ResistanceOrderNeos_IchikawaHinana"
+    },
+    {
+      "idolName": "七草にちか",
+      "clothesTitle": "レジスタンスオーダー・ネオス",
+      "clothesName": "レジスタンスオーダー・ネオス",
+      "text": "new endeavors てのひらに、落ちる",
+      "id": "ResistanceOrderNeos_NanakusaNichika"
+    },
+    {
+      "idolName": "緋田美琴",
+      "clothesTitle": "レジスタンスオーダー・ネオス",
+      "clothesName": "レジスタンスオーダー・ネオス",
+      "text": "new endeavors 星と共に踊る",
+      "id": "ResistanceOrderNeos_AketaMikoto"
+    },
+    {
+      "idolName": "斑鳩ルカ",
+      "clothesTitle": "レジスタンスオーダー・ネオス",
+      "clothesName": "レジスタンスオーダー・ネオス",
+      "text": "new endeavors 果てを掴むために",
+      "id": "ResistanceOrderNeos_IkurugaLuca"
+    },
+    {
+      "idolName": "鈴木羽那",
+      "clothesTitle": "レジスタンスオーダー・ネオス",
+      "clothesName": "レジスタンスオーダー・ネオス",
+      "text": "new endeavors ミチナミチ",
+      "id": "ResistanceOrderNeos_SuzukiHana"
+    },
+    {
+      "idolName": "郁田はるき",
+      "clothesTitle": "レジスタンスオーダー・ネオス",
+      "clothesName": "レジスタンスオーダー・ネオス",
+      "text": "new endeavors もっと自由に、軽やかに",
+      "id": "ResistanceOrderNeos_IkutaHaruki"
+    },
+    {
+      "idolName": "斑鳩ルカ",
+      "clothesTitle": "オーバーキャストモノクローム",
+      "clothesName": "オーバーキャストモノクローム",
+      "text": "ワンステップ。色なんかいらない",
+      "id": "OvercastMonochrome_IkurugaLuca"
+    },
+    {
+      "idolName": "鈴木羽那",
+      "clothesTitle": "オーバーキャストモノクローム",
+      "clothesName": "オーバーキャストモノクローム",
+      "text": "ワンステップ。着慣れたモノクロ",
+      "id": "OvercastMonochrome_SuzukiHana"
+    },
+    {
+      "idolName": "郁田はるき",
+      "clothesTitle": "オーバーキャストモノクローム",
+      "clothesName": "オーバーキャストモノクローム",
+      "text": "ワンステップ。声　聴こえたから",
+      "id": "OvercastMonochrome_IkutaHaruki"
+    },
+    {
+      "idolName": "斑鳩ルカ",
+      "clothesTitle": "サンセットスカイパッセージ",
+      "clothesName": "サンセットスカイパッセージ",
+      "text": "スタッカート。虹的不協和",
+      "id": "SunsetSkyPassage_IkurugaLuca"
+    },
+    {
+      "idolName": "鈴木羽那",
+      "clothesTitle": "サンセットスカイパッセージ",
+      "clothesName": "サンセットスカイパッセージ",
+      "text": "スタッカート。カラフル！",
+      "id": "SunsetSkyPassage_SuzukiHana"
+    },
+    {
+      "idolName": "郁田はるき",
+      "clothesTitle": "サンセットスカイパッセージ",
+      "clothesName": "サンセットスカイパッセージ",
+      "text": "スタッカート。絶え間なく降り注ぐ",
+      "id": "SunsetSkyPassage_IkutaHaruki"
+    },
+    {
+      "idolName": "斑鳩ルカ",
+      "clothesTitle": "ユナイトバースプラネタリ",
+      "clothesName": "ユナイトバースプラネタリ",
+      "text": "リフトオフ。暴走上等衝突注意",
+      "id": "UniteversePlanetary_IkurugaLuca"
+    },
+    {
+      "idolName": "鈴木羽那",
+      "clothesTitle": "ユナイトバースプラネタリ",
+      "clothesName": "ユナイトバースプラネタリ",
+      "text": "リフトオフ。宇宙だー",
+      "id": "UniteversePlanetary_SuzukiHana"
+    },
+    {
+      "idolName": "郁田はるき",
+      "clothesTitle": "ユナイトバースプラネタリ",
+      "clothesName": "ユナイトバースプラネタリ",
+      "text": "リフトオフ。紺青に投げかける",
+      "id": "UniteversePlanetary_IkutaHaruki"
+    },
+    {
+      "idolName": "斑鳩ルカ",
+      "clothesTitle": "セレスティアルカラーズ",
+      "clothesName": "セレスティアルカラーズ",
+      "text": "#Shiny nanimoiuna",
+      "id": "CelestialColors_IkurugaLuca"
+    },
+    {
+      "idolName": "鈴木羽那",
+      "clothesTitle": "セレスティアルカラーズ",
+      "clothesName": "セレスティアルカラーズ",
+      "text": "#Shiny 淡め",
+      "id": "CelestialColors_SuzukiHana"
+    },
+    {
+      "idolName": "郁田はるき",
+      "clothesTitle": "セレスティアルカラーズ",
+      "clothesName": "セレスティアルカラーズ",
+      "text": "#Shiny 抱えきれないくらいならいっそ",
+      "id": "CelestialColors_IkutaHaruki"
+    },
+    {
+      "idolName": "有栖川夏葉",
+      "clothesTitle": "ヴォンディヴェルティメント",
+      "clothesName": "ヴォンディヴェルティメント",
+      "text": "淑やかなだけなら彼女じゃない",
+      "id": "VondiVeltimento_ArisugawaNatsuha"
+    },
+    {
+      "idolName": "桑山千雪",
+      "clothesTitle": "ヴォンディヴェルティメント",
+      "clothesName": "ヴォンディヴェルティメント",
+      "text": "船上、一輪の銀を咲かせて",
+      "id": "VondiVeltimento_KuwayamaChiyuki"
+    },
+    {
+      "idolName": "斑鳩ルカ",
+      "clothesTitle": "ヴォンディヴェルティメント",
+      "clothesName": "ヴォンディヴェルティメント",
+      "text": "能あるアイドルは牙を隠す",
+      "id": "VondiVeltimento_IkurugaLuca"
     }
   ]
 }
