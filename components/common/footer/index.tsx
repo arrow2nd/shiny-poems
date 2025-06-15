@@ -1,7 +1,7 @@
 "use client";
 
 import Wave from "react-wavify";
-import { updatedAtUTC } from "data/poems";
+import { UPDATED_AT } from "libs/build-constants";
 import Links from "./links";
 
 const Footer = () => (
@@ -20,7 +20,7 @@ const Footer = () => (
       <Links />
       <span className="mb-8 w-8 border-b-2 border-dashed border-white" />
       <span className="mb-2" data-testid="last-updated">
-        Last updated : {updatedAtUTC}
+        Last updated : {UPDATED_AT}
       </span>
       <span>
         The rights to all content related to THE IDOLM@STER™ belong to Bandai

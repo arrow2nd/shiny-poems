@@ -25,4 +25,4 @@ pnpm build && pnpm start
 
 ## Thanks!
 
-ポエムや各種データは [im@sparql](https://sparql.crssnky.xyz/imas/) より取得したものを利用しています。
+ポエムや各種データの一部は [im@sparql](https://sparql.crssnky.xyz/imas/) より取得したものを利用しています。
