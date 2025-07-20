@@ -40,7 +40,7 @@
     "@types/react-dom": "19.1.6",
     "axios": "^1.6.7",
     "eslint": "^9.0.0",
-    "eslint-config-next": "15.3.3",
+    "eslint-config-next": "15.4.2",
     "eslint-config-prettier": "^10.1.8",
     "jest": "^30.0.0",
     "jest-environment-jsdom": "^30.0.0",
