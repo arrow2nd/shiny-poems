@@ -3,5 +3,5 @@
   "commitMessagePrefix": ":arrow_up: ",
   "automerge": true,
   "unicodeEmoji": true,
-  "extends": ["config:base"]
+  "extends": ["config:recommended"]
 }
