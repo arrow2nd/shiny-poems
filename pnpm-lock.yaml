@@ -50,7 +50,7 @@ importers:
         version: 14.6.1(@testing-library/dom@10.4.0)
       '@trivago/prettier-plugin-sort-imports':
         specifier: ^6.0.0
-        version: 6.0.0(prettier@3.7.0)
+        version: 6.0.0(prettier@3.7.1)
       '@types/jest':
         specifier: ^30.0.0
         version: 30.0.0
@@ -86,10 +86,10 @@ importers:
         version: 8.5.6
       prettier:
         specifier: ^3.2.5
-        version: 3.7.0
+        version: 3.7.1
       prettier-plugin-tailwindcss:
         specifier: ^0.7.0
-        version: 0.7.1(@trivago/prettier-plugin-sort-imports@6.0.0(prettier@3.7.0))(prettier@3.7.0)
+        version: 0.7.1(@trivago/prettier-plugin-sort-imports@6.0.0(prettier@3.7.1))(prettier@3.7.1)
       tailwindcss:
         specifier: ^4.0.0
         version: 4.1.17
@@ -3046,8 +3046,8 @@ packages:
       prettier-plugin-svelte:
         optional: true
 
-  prettier@3.7.0:
-    resolution: {integrity: sha512-pBiBj/gjRY9Qpk1b7cDda6Rbwvkaggos779AHQ0Ek/odwDx6xG6DRBxtnp1QmxbuD7pAO8/SQ8vuhtGv9LoLWA==}
+  prettier@3.7.1:
+    resolution: {integrity: sha512-RWKXE4qB3u5Z6yz7omJkjWwmTfLdcbv44jUVHC5NpfXwFGzvpQM798FGv/6WNK879tc+Cn0AAyherCl1KjbyZQ==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -4645,7 +4645,7 @@ snapshots:
     dependencies:
       '@testing-library/dom': 10.4.0
 
-  '@trivago/prettier-plugin-sort-imports@6.0.0(prettier@3.7.0)':
+  '@trivago/prettier-plugin-sort-imports@6.0.0(prettier@3.7.1)':
     dependencies:
       '@babel/generator': 7.28.3
       '@babel/parser': 7.28.4
@@ -4655,7 +4655,7 @@ snapshots:
       lodash-es: 4.17.21
       minimatch: 9.0.5
       parse-imports-exports: 0.2.4
-      prettier: 3.7.0
+      prettier: 3.7.1
     transitivePeerDependencies:
       - supports-color
 
@@ -6910,13 +6910,13 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-tailwindcss@0.7.1(@trivago/prettier-plugin-sort-imports@6.0.0(prettier@3.7.0))(prettier@3.7.0):
+  prettier-plugin-tailwindcss@0.7.1(@trivago/prettier-plugin-sort-imports@6.0.0(prettier@3.7.1))(prettier@3.7.1):
     dependencies:
-      prettier: 3.7.0
+      prettier: 3.7.1
     optionalDependencies:
-      '@trivago/prettier-plugin-sort-imports': 6.0.0(prettier@3.7.0)
+      '@trivago/prettier-plugin-sort-imports': 6.0.0(prettier@3.7.1)
 
-  prettier@3.7.0: {}
+  prettier@3.7.1: {}
 
   pretty-format@27.5.1:
     dependencies:
