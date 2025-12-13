@@ -9,6 +9,7 @@ importers:
   .:
     dependencies:
       next:
+<<<<<<< HEAD
         specifier: ^16.0.10
         version: 16.0.10(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       react:
@@ -21,6 +22,20 @@ importers:
       '@types/node':
         specifier: ^25.0.1
         version: 25.0.1
+=======
+        specifier: ^16.0.0
+        version: 16.0.10(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      react:
+        specifier: ^19.1.0
+        version: 19.2.3
+      react-dom:
+        specifier: ^19.1.0
+        version: 19.2.3(react@19.2.3)
+    devDependencies:
+      '@types/node':
+        specifier: ^24.0.0
+        version: 24.10.3
+>>>>>>> 5f467616bbd18a9d04d12f4281c825faea9951f4
       '@types/react':
         specifier: ^19.2.7
         version: 19.2.7
@@ -247,8 +262,13 @@ packages:
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
 
+<<<<<<< HEAD
   '@types/node@25.0.1':
     resolution: {integrity: sha512-czWPzKIAXucn9PtsttxmumiQ9N0ok9FrBwgRWrwmVLlp86BrMExzvXRLFYRJ+Ex3g6yqj+KuaxfX1JTgV2lpfg==}
+=======
+  '@types/node@24.10.3':
+    resolution: {integrity: sha512-gqkrWUsS8hcm0r44yn7/xZeV1ERva/nLgrLxFRUGb7aoNMIJfZJ3AC261zDQuOAKC7MiXai1WCpYc48jAHoShQ==}
+>>>>>>> 5f467616bbd18a9d04d12f4281c825faea9951f4
 
   '@types/react-dom@19.2.3':
     resolution: {integrity: sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ==}
@@ -487,7 +507,11 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
+<<<<<<< HEAD
   '@types/node@25.0.1':
+=======
+  '@types/node@24.10.3':
+>>>>>>> 5f467616bbd18a9d04d12f4281c825faea9951f4
     dependencies:
       undici-types: 7.16.0
 
